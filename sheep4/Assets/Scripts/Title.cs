@@ -9,6 +9,8 @@ public class Title : MonoBehaviour {
 	private GameObject Btn_start;
 	private GameObject Btn_record;
 	private GameObject Btn_option;
+	private GameObject[] clouds;
+	private GameObject[] sheeps;
 
 	// Use this for initialization
 	void Start () {
@@ -33,6 +35,16 @@ public class Title : MonoBehaviour {
 		Btn_record.GetComponent<TweenAlpha> ().enabled = true;
 		Btn_option.GetComponent<TweenAlpha> ().enabled = true;
 		Background.GetComponent<TweenPosition> ().enabled = true;
+
+		GameObject[] clouds = GameObject.FindGameObjectsWithTag("cloud");
+		foreach(GameObject cloud in clouds) {
+			Destroy(cloud);
+		}
+
+		GameObject[] sheeps = GameObject.FindGameObjectsWithTag("sheep");
+		foreach(GameObject sheep in sheeps) {
+			Destroy(sheep);
+		}
 	}
 
 	// called from TweenPosition of GameObject"Background"
