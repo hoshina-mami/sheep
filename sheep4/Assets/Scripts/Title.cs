@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Title : MonoBehaviour {
-
+	
+	//private
 	private GameObject Background;
 	private GameObject Logo;
 	private GameObject Btn_start;
@@ -24,7 +25,7 @@ public class Title : MonoBehaviour {
 	void Update () {
 	
 	}
-
+	
 	// called from onRelease Event of GameObject"Btn_start"
 	void ClickStartBtn () {
 		Logo.GetComponent<TweenAlpha> ().enabled = true;
