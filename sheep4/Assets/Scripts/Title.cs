@@ -2,12 +2,15 @@
 using System.Collections;
 
 public class Title : MonoBehaviour {
-
+	
+	//private
 	private GameObject Background;
 	private GameObject Logo;
 	private GameObject Btn_start;
 	private GameObject Btn_record;
 	private GameObject Btn_option;
+	private GameObject[] clouds;
+	private GameObject[] sheeps;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +27,7 @@ public class Title : MonoBehaviour {
 	void Update () {
 	
 	}
-
+	
 	// called from onRelease Event of GameObject"Btn_start"
 	void ClickStartBtn () {
 		Logo.GetComponent<TweenAlpha> ().enabled = true;
@@ -32,6 +35,16 @@ public class Title : MonoBehaviour {
 		Btn_record.GetComponent<TweenAlpha> ().enabled = true;
 		Btn_option.GetComponent<TweenAlpha> ().enabled = true;
 		Background.GetComponent<TweenPosition> ().enabled = true;
+
+		GameObject[] clouds = GameObject.FindGameObjectsWithTag("cloud");
+		foreach(GameObject cloud in clouds) {
+			Destroy(cloud);
+		}
+
+		GameObject[] sheeps = GameObject.FindGameObjectsWithTag("sheep");
+		foreach(GameObject sheep in sheeps) {
+			Destroy(sheep);
+		}
 	}
 
 	// called from TweenPosition of GameObject"Background"
