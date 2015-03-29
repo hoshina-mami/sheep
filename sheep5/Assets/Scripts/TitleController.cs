@@ -27,4 +27,31 @@ public class TitleController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	// called from onRelease Event of GameObject"Btn_start"
+	void ClickStartBtn () {
+		//makes object's alpha 0
+		Logo.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+		Btn_start.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+		Btn_record.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+		Btn_option.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+		Background.GetComponent<uTools.uTweenPosition> ().enabled = true;
+		
+		//remove clouds
+		GameObject[] clouds = GameObject.FindGameObjectsWithTag("cloud");
+		foreach(GameObject cloud in clouds) {
+			cloud.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+		}
+		
+		//remove sheeps
+		GameObject[] sheeps = GameObject.FindGameObjectsWithTag("sheep");
+		foreach(GameObject sheep in sheeps) {
+			sheep.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+		}
+	}
+	
+	// called from TweenPosition of GameObject"Background"
+	void LoadMainScene () {
+		Application.LoadLevel("Main");
+	}
 }

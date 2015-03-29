@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\CreateSheeps.cs" />
      <Compile Include="Assets\Scripts\SheepObject.cs" />
      <Compile Include="Assets\Scripts\SheepRotation.cs" />
+     <Compile Include="Assets\Scripts\SheepSpriteAnim.cs" />
      <Compile Include="Assets\Scripts\TitleController.cs" />
      <Compile Include="Assets\uGUI\Scripts\Internal\uDragObject.cs" />
      <Compile Include="Assets\uGUI\Scripts\Internal\uEnum.cs" />
