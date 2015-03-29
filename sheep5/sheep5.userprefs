@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CreateSheeps.cs">
+    <Files>
+      <File FileName="../../../nativegrowup/hoshina_mami/Assets/Scripts/Generate.cs" Line="15" Column="36" />
+      <File FileName="../../../nativegrowup/hoshina_mami/Assets/Scripts/Main.cs" Line="149" Column="37" />
+      <File FileName="../sheep4/Assets/Scripts/Title.cs" Line="33" Column="25" />
+      <File FileName="../../../nativegrowup/hoshina_mami/Assets/Scripts/Obstacle.cs" Line="6" Column="32" />
+      <File FileName="../../../nativegrowup/hoshina_mami/Assets/Scripts/ControlBird.cs" Line="11" Column="2" />
+      <File FileName="../sheep4/Assets/Scripts/SheepRotation.cs" Line="18" Column="22" />
+      <File FileName="../sheep4/Assets/Scripts/CreateSheeps.cs" Line="55" Column="3" />
+      <File FileName="Assets/Scripts/TitleController.cs" Line="18" Column="34" />
+      <File FileName="Assets/Scripts/CreateSheeps.cs" Line="55" Column="4" />
+      <File FileName="Assets/Scripts/SheepObject.cs" Line="18" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
