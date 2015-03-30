@@ -3,23 +3,30 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class SheepSpriteAnim : MonoBehaviour {
-
-	private GameObject  sheep;
-
-	SpriteRenderer spriteRenderer;
+	
 	public Sprite sprite1;
+	public Sprite sprite2;
 
 	// Use this for initialization
 	void Start () {
 
-		sheep = this.gameObject;
-
-		sheep.GetComponent<Image> ().sprite = sprite1;
+		InvokeRepeating("ChangeSprite", 0f, 0.5f);
 	
 	}
+
+	void ChangeSprite () {
+		if (GetComponent<Image> ().sprite == sprite1) {
+
+			GetComponent<Image> ().sprite = sprite2;
+
+		} else {
+
+			GetComponent<Image> ().sprite = sprite1;
+
+		}
+	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	void StopChangeSprite() {
+		CancelInvoke();
 	}
 }
