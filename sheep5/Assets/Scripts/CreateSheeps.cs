@@ -22,7 +22,7 @@ public class CreateSheeps : MonoBehaviour {
 
 	 //start to create sheeps
 	void StartCreateSheep () {
-		InvokeRepeating("CreateSheep", 0f, 1.5f);
+		InvokeRepeating("CreateSheep", 0f, 1f);
 	}
 
 	//stop to create sheeps
