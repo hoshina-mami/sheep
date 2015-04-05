@@ -21,8 +21,9 @@ public class TitleController : MonoBehaviour {
 		Btn_record         = GameObject.Find("Btn_record");
 		Btn_option         = GameObject.Find("Btn_option");
 
-		//init StageNum
-		PlayerPrefs.SetInt("StageNum" , 0);
+		//init PlayerPrefs
+		PlayerPrefs.SetInt("StageNum" ,  1);
+//		PlayerPrefs.SetInt("HighScoreStageNum" , 0);
 	
 	}
 	
