@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class StageData {
+public class StageData : MonoBehaviour {
 
 	public int StageNum = 0;
 

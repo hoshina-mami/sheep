@@ -1,15 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameData.cs">
     <Files>
       <File FileName="../../../nativegrowup/hoshina_mami/Assets/Scripts/Main.cs" Line="149" Column="37" />
-      <File FileName="Assets/Scripts/TitleController.cs" Line="41" Column="68" />
-      <File FileName="Assets/Scripts/CreateSheeps.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SheepSpriteAnim.cs" Line="2" Column="1" />
-      <File FileName="Assets/Scripts/SheepRotation.cs" Line="1" Column="1" />
-      <File FileName="../../../nativegrowup/hoshina_mami/Assets/Scripts/AppFacade.cs" Line="10" Column="3" />
-      <File FileName="Assets/Scripts/MainController.cs" Line="27" Column="2" />
-      <File FileName="Assets/Scripts/GameData.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/TitleController.cs" Line="27" Column="25" />
+      <File FileName="Assets/Scripts/CreateSheeps.cs" Line="26" Column="3" />
+      <File FileName="Assets/Scripts/SheepSpriteAnim.cs" Line="20" Column="24" />
+      <File FileName="../../../nativegrowup/hoshina_mami/Assets/Scripts/AppFacade.cs" Line="9" Column="40" />
+      <File FileName="Assets/Scripts/MainController.cs" Line="81" Column="4" />
+      <File FileName="Assets/Scripts/GameData.cs" Line="33" Column="4" />
+      <File FileName="Assets/Scripts/SheepData.cs" Line="5" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

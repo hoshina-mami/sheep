@@ -24,13 +24,14 @@ public class TitleController : MonoBehaviour {
 		//init PlayerPrefs
 		PlayerPrefs.SetInt("StageNum" ,  1);
 //		PlayerPrefs.SetInt("HighScoreStageNum" , 0);
+//		PlayerPrefs.SetInt("TotalCountNum" , 0);
+
+
+		//start sheep animation
+		TitleControllerObj.GetComponent<CreateSheeps>().StartCreateSheep ();
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 
 	// called from onRelease Event of GameObject"Btn_start"
 	void ClickStartBtn () {

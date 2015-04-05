@@ -5,34 +5,7 @@ using System.Collections.Generic;
 public class GameData : MonoBehaviour {
 	
 
-	void Start () {
-
-		createGameData();
-
-	}
-
-
-	//create gamedata
-	void createGameData () {
-	
-	//Stage data
-		StageData Stage_1 = new StageData();
-		Stage_1.BackgroundType = 1;
-		Stage_1.AnswerNum = 5;
-		Stage_1.ApperingSheepIds = new int[] { 1 };
-
-		StageData Stage_2 = new StageData();
-		Stage_2.BackgroundType = 1;
-		Stage_2.AnswerNum = 10;
-		Stage_2.ApperingSheepIds = new int[] { 1 };
-
-		StageData Stage_3 = new StageData();
-		Stage_3.BackgroundType = 1;
-		Stage_3.AnswerNum = 13;
-		Stage_3.ApperingSheepIds = new int[] { 1 };
-	}
-
-	 public StageData GetStageData (int stageNum) {
+	public StageData GetStageData (int stageNum) {
 
 		StageData _stage = new StageData();
 
@@ -63,6 +36,30 @@ public class GameData : MonoBehaviour {
 				break;
 		}
 
+	}
+
+
+	public SheepData GetStSheepData (int sheepId) {
+		
+		SheepData _sheep = new SheepData();
+		
+		switch (sheepId) {
+		case 1:
+			_sheep.SheepId = 1;
+			_sheep.SheepName = "ひつじ";
+			_sheep.SheepDescription = "ふつうのひつじ。";
+			_sheep.UnlockedDate = "";
+			_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_1");
+			_sheep.TweenSpeed = 4;
+			return _sheep;
+			break;
+
+			
+		default:
+			return _sheep;
+			break;
+		}
+		
 	}
 
 

@@ -14,15 +14,13 @@ public class CreateSheeps : MonoBehaviour {
 	void Start () {
 
 		Sheeps = GameObject.Find("Sheeps");
-		 
-		StartCreateSheep ();
 	
 	}
 
 
 	 //start to create sheeps
-	void StartCreateSheep () {
-		InvokeRepeating("CreateSheep", 0f, 1f);
+	public void StartCreateSheep () {
+		InvokeRepeating("CreateSheep", 0.5f, 1f);
 	}
 
 	//stop to create sheeps
