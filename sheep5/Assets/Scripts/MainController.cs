@@ -14,23 +14,30 @@ public class MainController : MonoBehaviour {
 	private GameObject Btn_minus;
 	private GameObject Text_stage;
 	private GameObject Text_readyGo;
+	private GameObject Text_count;
 	private GameObject Pic_tutorial;
 	private Text Text_readyGo_text;
+	private Text Text_count_text;
+	private MainCreateSheeps createSheeps;
 
 
 	// Use this for initializationb -----------------------------------------------------
 	void Start () {
 
-		GameData     = GameObject.Find("GameData");
-		Btn_plus     = GameObject.Find("Btn_plus");
-		Btn_minus    = GameObject.Find("Btn_minus");
-		Text_stage   = GameObject.Find("Text_stage");
-		Text_readyGo = GameObject.Find("Text_readyGo");
-		Pic_tutorial = GameObject.Find("Pic_tutorial");
+		GameData          = GameObject.Find("GameData");
+		Btn_plus          = GameObject.Find("Btn_plus");
+		Btn_minus         = GameObject.Find("Btn_minus");
+		Text_stage        = GameObject.Find("Text_stage");
+		Text_readyGo      = GameObject.Find("Text_readyGo");
+		Text_count        = GameObject.Find("Text_count");
+		Pic_tutorial      = GameObject.Find("Pic_tutorial");
 		Text_readyGo_text = Text_readyGo.GetComponent<Text> ();
+		Text_count_text   = Text_count.GetComponent<Text> ();
+		createSheeps      = GetComponent<MainCreateSheeps> ();
 
 		//get stageNum
-		_StageNum = PlayerPrefs.GetInt("StageNum");
+//		_StageNum = PlayerPrefs.GetInt("StageNum");
+		_StageNum = 2;
 
 		//set current stage data
 		_StageData = GameData.GetComponent <GameData> ().GetStageData(_StageNum);
@@ -85,16 +92,15 @@ public class MainController : MonoBehaviour {
 	//show text "readygo"
 	void showReadyGo () {
 
-		Text_readyGo_text.text = "よーい";
+		Text_readyGo_text.text = "よーい.";
 
 		Invoke("addDot",  0.5f);
 		Invoke("addDot",  1.0f);
-		Invoke("addDot",  1.5f);
-		Invoke("showGo",  2.0f);
-		Invoke("hideReadyGo",  2.5f);
+		Invoke("showGo",  1.5f);
+		Invoke("hideReadyGo",  2.0f);
 
 		//start sheep moving
-		Invoke("startSheep",  2.5f);
+		Invoke("startSheep",  2.0f);
 
 	}
 	void addDot () {
@@ -125,5 +131,27 @@ public class MainController : MonoBehaviour {
 		switchButtonInteractable (Btn_plus,  true);
 		switchButtonInteractable (Btn_minus, true);
 
+		// start sheep animation
+		createSheeps.StartCreateSheep ();
+
+	}
+
+
+	// control count buttons --------------------------------------------------------------------------
+	void countUp () {
+		int countNum = int.Parse (Text_count_text.text);
+		if (countNum < 999) {
+			countNum = countNum + 1;
+			Text_count_text.text = countNum.ToString();
+		}
+	}
+
+	void countDown () {
+		int countNum = int.Parse (Text_count_text.text);
+		if (countNum > 0) {
+			countNum = countNum - 1;
+			Text_count_text.text = countNum.ToString();
+		}
 	}
 }
+

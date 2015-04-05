@@ -20,7 +20,7 @@ public class GameData : MonoBehaviour {
 			case 2:
 				_stage.BackgroundType = 1;
 				_stage.AnswerNum = 10;
-				_stage.ApperingSheepIds = new int[] { 1 };
+				_stage.ApperingSheepIds = new int[] { 1, 2 };
 				return _stage;
 				break;
 
@@ -44,20 +44,30 @@ public class GameData : MonoBehaviour {
 		SheepData _sheep = new SheepData();
 		
 		switch (sheepId) {
-		case 1:
-			_sheep.SheepId = 1;
-			_sheep.SheepName = "ひつじ";
-			_sheep.SheepDescription = "ふつうのひつじ。";
-			_sheep.UnlockedDate = "";
-			_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_1");
-			_sheep.TweenSpeed = 4;
-			return _sheep;
-			break;
+			case 1:
+				_sheep.SheepId = 1;
+				_sheep.SheepName = "ひつじ";
+				_sheep.SheepDescription = "ふつうのひつじ。";
+				_sheep.UnlockedDate = "";
+				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_1");
+				_sheep.TweenSpeed = 4;
+				return _sheep;
+				break;
 
-			
-		default:
-			return _sheep;
-			break;
+			case 12:
+				_sheep.SheepId = 2;
+				_sheep.SheepName = "しろひつじ";
+				_sheep.SheepDescription = "まっしろなひつじ。";
+				_sheep.UnlockedDate = "";
+				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_2");
+				_sheep.TweenSpeed = 3;
+				return _sheep;
+				break;
+				
+				
+			default:
+				return _sheep;
+				break;
 		}
 		
 	}

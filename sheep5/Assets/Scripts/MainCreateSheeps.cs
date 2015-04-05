@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CreateSheeps : MonoBehaviour {
+public class MainCreateSheeps : MonoBehaviour {
 
 	//public
 	public GameObject sheep;//object created
