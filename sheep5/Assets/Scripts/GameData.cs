@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class GameData : MonoBehaviour {
+public class GameData {
 	
 
 	public StageData GetStageData (int stageNum) {
@@ -14,27 +14,25 @@ public class GameData : MonoBehaviour {
 				_stage.BackgroundType = 1;
 				_stage.AnswerNum = 5;
 				_stage.ApperingSheepIds = new int[] { 1 };
-				return _stage;
 				break;
 
 			case 2:
 				_stage.BackgroundType = 1;
 				_stage.AnswerNum = 10;
 				_stage.ApperingSheepIds = new int[] { 1, 2 };
-				return _stage;
 				break;
 
 			case 3:
 				_stage.BackgroundType = 1;
 				_stage.AnswerNum = 13;
 				_stage.ApperingSheepIds = new int[] { 1 };
-				return _stage;
 				break;
 
 			default:
-				return _stage;
 				break;
 		}
+
+		return _stage;
 
 	}
 
@@ -51,7 +49,6 @@ public class GameData : MonoBehaviour {
 				_sheep.UnlockedDate = "";
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_1");
 				_sheep.TweenSpeed = 4;
-				return _sheep;
 				break;
 
 			case 12:
@@ -61,14 +58,14 @@ public class GameData : MonoBehaviour {
 				_sheep.UnlockedDate = "";
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_2");
 				_sheep.TweenSpeed = 3;
-				return _sheep;
 				break;
 				
 				
 			default:
-				return _sheep;
 				break;
 		}
+
+		return _sheep;
 		
 	}
 

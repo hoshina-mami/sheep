@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class SheepData : MonoBehaviour {
+public class SheepData {
 
 	public int  SheepId;
 

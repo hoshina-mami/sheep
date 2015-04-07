@@ -7,9 +7,9 @@ public class MainController : MonoBehaviour {
 
 	private int  _StageNum;
 	private StageData _StageData;
+	private GameData _GameData;
 
 	//GameObjects
-	private GameObject GameData;
 	private GameObject Btn_plus;
 	private GameObject Btn_minus;
 	private GameObject Text_stage;
@@ -24,7 +24,8 @@ public class MainController : MonoBehaviour {
 	// Use this for initializationb -----------------------------------------------------
 	void Start () {
 
-		GameData          = GameObject.Find("GameData");
+		_GameData = new GameData();
+
 		Btn_plus          = GameObject.Find("Btn_plus");
 		Btn_minus         = GameObject.Find("Btn_minus");
 		Text_stage        = GameObject.Find("Text_stage");
@@ -35,19 +36,20 @@ public class MainController : MonoBehaviour {
 		Text_count_text   = Text_count.GetComponent<Text> ();
 		createSheeps      = GetComponent<MainCreateSheeps> ();
 
-		//get stageNum
+		//ステージ番号を取得する
 //		_StageNum = PlayerPrefs.GetInt("StageNum");
 		_StageNum = 2;
 
-		//set current stage data
-		_StageData = GameData.GetComponent <GameData> ().GetStageData(_StageNum);
+		//今回のステージデータを取得する
+		_StageData = _GameData.GetStageData(_StageNum);
+		
 
-		//make buttons unenable
+		//ボタンを非アクティブにする
 		switchButtonInteractable (Btn_plus, false);
 		switchButtonInteractable (Btn_minus, false);
 
 
-		//start game --------------------
+		//ゲームスタート --------------------
 		showStageInfo();
 	
 	}
