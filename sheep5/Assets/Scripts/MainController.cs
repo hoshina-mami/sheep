@@ -3,10 +3,15 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
+
+/**
+ * メインシーンを制御するクラス
+ * @scene Main
+ */
 public class MainController : MonoBehaviour {
 
-	private int  _StageNum;
-	private StageData _StageData;
+	private int _StageNum;//今回のステージ番号
+	private StageData _StageData;//今回のステージデータ
 	private GameData _GameData;
 
 	//GameObjects
@@ -15,9 +20,9 @@ public class MainController : MonoBehaviour {
 	private GameObject Text_stage;
 	private GameObject Text_readyGo;
 	private GameObject Text_count;
-	private GameObject Pic_tutorial;
-	private Text Text_readyGo_text;
-	private Text Text_count_text;
+	private GameObject Pic_tutorial;//チュートリアル画像
+	private Text Text_readyGo_text;//「よーいどん」のテキスト
+	private Text Text_count_text;//カウンターのテキスト
 	private MainCreateSheeps createSheeps;
 
 
@@ -55,14 +60,21 @@ public class MainController : MonoBehaviour {
 	}
 
 
-	//function switch button's interactable
+	/*
+	 * ボタンのアクティブ、非アクティブを切り替える
+	 * @param {GameObject} ボタンのオブジェクト, {Bool} アクティブかどうか
+	 */
 	void switchButtonInteractable  (GameObject _target, bool _isInteractable) {
 
 		_target.GetComponent <Button> () .interactable = _isInteractable;
 
 	}
 
-	//function turn on GameObject's TweenAlpha for hide
+	/*
+	 * ゲームオブジェクトのuTweenAlphaをアクティブにする
+	 * 画面から消す際にアルファを1→0にするために使用する
+	 * @param {GameObject} 対象のゲームオブジェクト
+	 */
 	void hideObjectAnimation  (GameObject _target) {
 		
 		_target.GetComponent<uTools.uTweenAlpha> ().enabled = true;
@@ -70,14 +82,17 @@ public class MainController : MonoBehaviour {
 	}
 
 
-	//show information when stage starts -----------------------------------------------------
+	/*
+	 * ステージ開始時に情報を表示する
+	 */
 	void showStageInfo () {
 
-		//show text
+		//ステージ番号を表示
 		Text_stage.GetComponent<Text>().text = "ステージ  " + _StageNum;
 
 		switch (_StageNum) {
 			case 1:
+				//ステージ1の場合、チュートリアル画像を残す＆そのための間をとる
 				Invoke("hideStageNum",  2.0f);
 				Invoke("showReadyGo",  2.5f);
 				break;
@@ -91,7 +106,7 @@ public class MainController : MonoBehaviour {
 
 	}
 
-	//show text "readygo"
+	//「よーいどん！」を表示
 	void showReadyGo () {
 
 		Text_readyGo_text.text = "よーい.";
@@ -101,7 +116,7 @@ public class MainController : MonoBehaviour {
 		Invoke("showGo",  1.5f);
 		Invoke("hideReadyGo",  2.0f);
 
-		//start sheep moving
+		//ひつじを動かし始める
 		Invoke("startSheep",  2.0f);
 
 	}
@@ -127,19 +142,23 @@ public class MainController : MonoBehaviour {
 	}
 
 
-	//start sheep moving ---------------------------------------------------------------------------
+	/*
+	 * ひつじの動きを開始する
+	 */
 	void startSheep () {
-		//make buttons enable
+		// カウントボタンをアクティブにする
 		switchButtonInteractable (Btn_plus,  true);
 		switchButtonInteractable (Btn_minus, true);
 
-		// start sheep animation
+		// ひつじのアニメーションを開始
 		createSheeps.StartCreateSheep ();
 
 	}
 
 
-	// control count buttons --------------------------------------------------------------------------
+	/*
+	 * カウントボタン（＋）の制御
+	 */
 	void countUp () {
 		int countNum = int.Parse (Text_count_text.text);
 		if (countNum < 999) {
@@ -148,6 +167,10 @@ public class MainController : MonoBehaviour {
 		}
 	}
 
+	
+	/*
+	 * カウントボタン（ー）の制御
+	 */
 	void countDown () {
 		int countNum = int.Parse (Text_count_text.text);
 		if (countNum > 0) {

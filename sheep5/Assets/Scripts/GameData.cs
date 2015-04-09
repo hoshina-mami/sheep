@@ -2,9 +2,18 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
+/**
+ * ゲームデータを生成するクラス
+ * @scene Main
+ */
 public class GameData {
 	
 
+	/*
+	 * ステージデータを返却する関数
+	 * @param {Int} stageNum ステージ番号
+	 */
 	public StageData GetStageData (int stageNum) {
 
 		StageData _stage = new StageData();
@@ -37,6 +46,11 @@ public class GameData {
 	}
 
 
+	
+	/*
+	 * ひつじデータを返却する関数
+	 * @param {Int} sheepId ひつじId
+	 */
 	public SheepData GetStSheepData (int sheepId) {
 		
 		SheepData _sheep = new SheepData();
