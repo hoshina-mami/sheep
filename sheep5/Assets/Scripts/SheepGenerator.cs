@@ -4,27 +4,39 @@ using System.Collections;
 public class SheepGenerator : MonoBehaviour {
 
 	//public
-	public GameObject sheep;//object created
 	public float positonTop;
 	public float positonBottom;
 	public float incidence;//出現率(%)
-	public float duration;//アニメーション所要時間
 
 	//private
+	private MainController MainController;
+	private GameObject sheep;//object created
 	private GameObject clone;
 	private GameObject Sheeps;
 	private Transform cloneTransfrom;
 
 	private Vector3 newScale;
 	private Vector3 newPosition;
-	private uTools.uTweenPosition tweenPos;
 	private Vector3 fromPosition;
 	private Vector3 toPosition;
+	private uTools.uTweenPosition tweenPos;
+
 
 	// Use this for initialization
 	void Start () {
 
+		MainController = GameObject.Find("MainController").GetComponent<MainController>();
 		Sheeps = GameObject.Find("Sheeps");
+	
+	}
+
+	/*
+	 * ひつじの初期化
+	 */
+	public void InitSheep (int sheepId) {
+
+		//ひつじのプレハブをSheepDataから設定
+		sheep = (GameObject)Resources.Load ("Sheep" + sheepId);
 
 		//cloneのscaleのデフォルト値を用意
 		newScale = sheep.transform.localScale;
@@ -43,25 +55,23 @@ public class SheepGenerator : MonoBehaviour {
 		fromPosition = tweenPos.from;
 		toPosition = tweenPos.to;
 
-		//ひつじの回転スピードをSheepDataから設定
-
-		//ひつじのスプライトをSheepDataから設定
-
-		//ひつじの速度をSheepDataから設定
-
-		
-
 		//ひつじの生成開始
 		StartCreateSheep();
-	
+
 	}
+
 
 
 	/*
 	 * ひつじの生成を開始する
 	 */
-	public void StartCreateSheep () {
+	void StartCreateSheep () {
+
 		InvokeRepeating("CreateSheep", 0.5f, 0.5f);
+
+		//5秒後に停止する
+		Invoke("StopCreateSheep",  5.0f);
+
 	}
 
 	/*
@@ -80,9 +90,10 @@ public class SheepGenerator : MonoBehaviour {
 		randomIncidence = Random.Range (0, 100);
 
 
+		//一定の確率で出現
 		if (randomIncidence <= incidence) {
 			clone = (GameObject)Instantiate(sheep);
-			clone.transform.parent = Sheeps.transform;
+			clone.transform.SetParent(Sheeps.transform, true );
 
 			// デフォルトのscaleとpositionをセット
 			clone.transform.localScale = newScale;
@@ -98,8 +109,9 @@ public class SheepGenerator : MonoBehaviour {
 			tweenPos.from = fromPosition;
 			tweenPos.to = toPosition;
 
-			//ひつじが転がる速さを設定
-			tweenPos.duration = duration;
+			//ひつじの出現数をプラス
+			MainController.CountSheepNum();
+
 		}
 
 	}

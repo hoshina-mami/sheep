@@ -21,19 +21,19 @@ public class GameData {
 		switch (stageNum) {
 			case 1:
 				_stage.BackgroundType = 1;
-				_stage.AnswerNum = 5;
+				_stage.Incidence = 10;
 				_stage.ApperingSheepIds = new int[] { 1 };
 				break;
 
 			case 2:
 				_stage.BackgroundType = 1;
-				_stage.AnswerNum = 10;
-				_stage.ApperingSheepIds = new int[] { 1, 2 };
+				_stage.Incidence = 10;
+				_stage.ApperingSheepIds = new int[] { 1, 3 };
 				break;
 
 			case 3:
 				_stage.BackgroundType = 1;
-				_stage.AnswerNum = 13;
+				_stage.Incidence = 15;
 				_stage.ApperingSheepIds = new int[] { 1 };
 				break;
 
@@ -62,16 +62,25 @@ public class GameData {
 				_sheep.SheepDescription = "ふつうのひつじ。";
 				_sheep.UnlockedDate = "";
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_1");
-				_sheep.TweenSpeed = 4;
+				_sheep.TweenDuration = 4;
 				break;
 
-			case 12:
+			case 2:
 				_sheep.SheepId = 2;
 				_sheep.SheepName = "しろひつじ";
 				_sheep.SheepDescription = "まっしろなひつじ。";
 				_sheep.UnlockedDate = "";
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_2");
-				_sheep.TweenSpeed = 3;
+				_sheep.TweenDuration = 3;
+				break;
+
+			case 3:
+				_sheep.SheepId = 3;
+				_sheep.SheepName = "くろひつじ";
+				_sheep.SheepDescription = "くろいひつじ。";
+				_sheep.UnlockedDate = "";
+				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_3");
+				_sheep.TweenDuration = 3;
 				break;
 				
 				

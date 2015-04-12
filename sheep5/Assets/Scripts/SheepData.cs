@@ -14,6 +14,6 @@ public class SheepData {
 
 	public int IsUnlocked;
 
-	public float TweenSpeed;
+	public float TweenDuration;
 
 }

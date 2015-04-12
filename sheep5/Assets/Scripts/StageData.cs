@@ -8,8 +8,8 @@ public class StageData {
 
 	public int BackgroundType;
 
-	public int AnswerNum;
+	public int Incidence; //ひつじの出現率
 
-	public int[] ApperingSheepIds;
+	public int[] ApperingSheepIds; //登場するひつじのidを格納する配列
 
 }

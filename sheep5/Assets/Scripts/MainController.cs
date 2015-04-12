@@ -13,6 +13,7 @@ public class MainController : MonoBehaviour {
 	private int _StageNum;//今回のステージ番号
 	private StageData _StageData;//今回のステージデータ
 	private GameData _GameData;
+	private int ResultSheepCount;
 
 	//GameObjects
 	private GameObject Btn_plus;
@@ -23,6 +24,9 @@ public class MainController : MonoBehaviour {
 	private GameObject Pic_tutorial;//チュートリアル画像
 	private Text Text_readyGo_text;//「よーいどん」のテキスト
 	private Text Text_count_text;//カウンターのテキスト
+
+	//ひつじを生成するもの
+	public GameObject SheepGenerator;
 
 
 	// Use this for initializationb -----------------------------------------------------
@@ -38,6 +42,7 @@ public class MainController : MonoBehaviour {
 		Pic_tutorial      = GameObject.Find("Pic_tutorial");
 		Text_readyGo_text = Text_readyGo.GetComponent<Text> ();
 		Text_count_text   = Text_count.GetComponent<Text> ();
+
 
 		//ステージ番号を取得する
 //		_StageNum = PlayerPrefs.GetInt("StageNum");
@@ -56,6 +61,15 @@ public class MainController : MonoBehaviour {
 		showStageInfo();
 	
 	}
+
+
+	/*
+	 * ひつじのスプライトデータを返す
+	 * @param {GameObject} ボタンのオブジェクト, {Bool} アクティブかどうか
+	 */
+	//public Sprite GetSheepSprite(string spriteName) {
+	//	return System.Array.Find<Sprite>(sprites, (sprite) => sprite.name.Equals(spriteName));
+	//}
 
 
 	/*
@@ -149,8 +163,23 @@ public class MainController : MonoBehaviour {
 		switchButtonInteractable (Btn_minus, true);
 
 		// ひつじのアニメーションを開始
-		//createSheeps.StartCreateSheep ();
+		for (int i = 0; i < _StageData.ApperingSheepIds.Length; i++) {
+			//ひつじジェネレーターを複製
+			GameObject _SheepGenerator = (GameObject)Instantiate(SheepGenerator);
+			//ひつじidによってスプライトを設定
+			_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(_StageData.ApperingSheepIds[i]);
+		}
 
+	}
+
+
+	/*
+	 * ひつじの出現数をカウントする
+	 */
+	public void CountSheepNum () {
+		ResultSheepCount++;
+
+		GameObject.Find("Text_testCount").GetComponent<Text> ().text = ResultSheepCount.ToString();
 	}
 
 
