@@ -23,7 +23,6 @@ public class MainController : MonoBehaviour {
 	private GameObject Pic_tutorial;//チュートリアル画像
 	private Text Text_readyGo_text;//「よーいどん」のテキスト
 	private Text Text_count_text;//カウンターのテキスト
-	private MainCreateSheeps createSheeps;
 
 
 	// Use this for initializationb -----------------------------------------------------
@@ -39,7 +38,6 @@ public class MainController : MonoBehaviour {
 		Pic_tutorial      = GameObject.Find("Pic_tutorial");
 		Text_readyGo_text = Text_readyGo.GetComponent<Text> ();
 		Text_count_text   = Text_count.GetComponent<Text> ();
-		createSheeps      = GetComponent<MainCreateSheeps> ();
 
 		//ステージ番号を取得する
 //		_StageNum = PlayerPrefs.GetInt("StageNum");
@@ -151,7 +149,7 @@ public class MainController : MonoBehaviour {
 		switchButtonInteractable (Btn_minus, true);
 
 		// ひつじのアニメーションを開始
-		createSheeps.StartCreateSheep ();
+		//createSheeps.StartCreateSheep ();
 
 	}
 

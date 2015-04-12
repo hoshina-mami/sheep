@@ -49,8 +49,8 @@
      <Compile Include="Assets\Scripts\CreateSheeps.cs" />
      <Compile Include="Assets\Scripts\GameData.cs" />
      <Compile Include="Assets\Scripts\MainController.cs" />
-     <Compile Include="Assets\Scripts\MainCreateSheeps.cs" />
      <Compile Include="Assets\Scripts\SheepData.cs" />
+     <Compile Include="Assets\Scripts\SheepGenerator.cs" />
      <Compile Include="Assets\Scripts\SheepObject.cs" />
      <Compile Include="Assets\Scripts\SheepRotation.cs" />
      <Compile Include="Assets\Scripts\SheepSpriteAnim.cs" />
