@@ -21,6 +21,8 @@ public class SheepGenerator : MonoBehaviour {
 	private Vector3 toPosition;
 	private uTools.uTweenPosition tweenPos;
 
+	private bool isFirstSheep;
+
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +32,9 @@ public class SheepGenerator : MonoBehaviour {
 
 		//ひつじの出現率をStageDataから設定
 		incidence = MainController.GetStageIncidence();
+
+		//少なくとも1匹はひつじを出すためのフラグを立てておく
+		isFirstSheep = true;
 	
 	}
 
@@ -94,7 +99,10 @@ public class SheepGenerator : MonoBehaviour {
 
 
 		//一定の確率で出現
-		if (randomIncidence <= incidence) {
+		if (isFirstSheep || randomIncidence <= incidence) {
+			
+			isFirstSheep = false;
+
 			clone = (GameObject)Instantiate(sheep);
 			clone.transform.SetParent(Sheeps.transform, true );
 

@@ -17,8 +17,12 @@ public class MainController : MonoBehaviour {
 	private int DestroySheepCount;
 
 	//GameObjects
+	private GameObject Board;
+	private GameObject CountBox;
 	private GameObject Btn_plus;
 	private GameObject Btn_minus;
+	private GameObject Btn_ok;
+	private GameObject Text_ok;
 	private GameObject Text_stage;
 	private GameObject Text_readyGo;
 	private GameObject Text_count;
@@ -35,8 +39,12 @@ public class MainController : MonoBehaviour {
 
 		_GameData = new GameData();
 
+		Board             = GameObject.Find("Board");
+		CountBox             = GameObject.Find("CountBox");
 		Btn_plus          = GameObject.Find("Btn_plus");
 		Btn_minus         = GameObject.Find("Btn_minus");
+		Btn_ok            = GameObject.Find("Btn_ok");
+		Text_ok           = GameObject.Find("Text_ok");
 		Text_stage        = GameObject.Find("Text_stage");
 		Text_readyGo      = GameObject.Find("Text_readyGo");
 		Text_count        = GameObject.Find("Text_count");
@@ -45,8 +53,11 @@ public class MainController : MonoBehaviour {
 		Text_count_text   = Text_count.GetComponent<Text> ();
 
 
+		//初期表示で必要ないものを消す
+		Btn_ok.SetActive (false);//okボタン
+
 		//ステージ番号を取得する
-//		_StageNum = PlayerPrefs.GetInt("StageNum");
+		//_StageNum = PlayerPrefs.GetInt("StageNum");
 		_StageNum = 2;
 
 		//今回のステージデータを取得する
@@ -200,8 +211,41 @@ public class MainController : MonoBehaviour {
 			}
 
 			//確認画面へ
+			Board.GetComponent<uTools.uTweenPosition> ().enabled = true;
 
 		}
+	}
+
+
+	/*
+	 * okボタンを表示させる
+	 * BoardのTweenPositionが終わったら呼ばれる
+	 */
+	public void showOkBtn () {
+		Btn_ok.SetActive (true);
+	}
+
+
+	/*
+	 * 解答画面を表示する
+	 * Btn_okを押すと呼ばれる
+	 */
+	public void showResult () {
+
+		//Btn_okを消す
+		switchButtonInteractable (Btn_ok,  false);
+		hideObjectAnimation (Btn_ok);
+
+		//Boardのカウント部分以外を消す
+		switchButtonInteractable (Btn_plus,  false);
+		switchButtonInteractable (Btn_minus, false);
+		hideObjectAnimation (Board);
+		hideObjectAnimation (Btn_plus);
+		hideObjectAnimation (Btn_minus);
+
+		//カウント部分を上にずらす
+		CountBox.GetComponent<uTools.uTweenPosition> ().enabled = true;
+		
 	}
 
 
