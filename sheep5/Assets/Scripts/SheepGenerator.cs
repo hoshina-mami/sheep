@@ -27,6 +27,9 @@ public class SheepGenerator : MonoBehaviour {
 
 		MainController = GameObject.Find("MainController").GetComponent<MainController>();
 		Sheeps = GameObject.Find("Sheeps");
+
+		//ひつじの出現率をStageDataから設定
+		incidence = MainController.GetStageIncidence();
 	
 	}
 
@@ -36,7 +39,7 @@ public class SheepGenerator : MonoBehaviour {
 	public void InitSheep (int sheepId) {
 
 		//ひつじのプレハブをSheepDataから設定
-		sheep = (GameObject)Resources.Load ("Sheep" + sheepId);
+		sheep = (GameObject)Resources.Load("Sheep" + sheepId);
 
 		//cloneのscaleのデフォルト値を用意
 		newScale = sheep.transform.localScale;

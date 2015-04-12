@@ -14,6 +14,7 @@ public class MainController : MonoBehaviour {
 	private StageData _StageData;//今回のステージデータ
 	private GameData _GameData;
 	private int ResultSheepCount;
+	private int DestroySheepCount;
 
 	//GameObjects
 	private GameObject Btn_plus;
@@ -64,12 +65,12 @@ public class MainController : MonoBehaviour {
 
 
 	/*
-	 * ひつじのスプライトデータを返す
-	 * @param {GameObject} ボタンのオブジェクト, {Bool} アクティブかどうか
+	 * 今回のステージでのひつじの出現率を返す
+	 * @return {int} ひつじの出現率(%)
 	 */
-	//public Sprite GetSheepSprite(string spriteName) {
-	//	return System.Array.Find<Sprite>(sprites, (sprite) => sprite.name.Equals(spriteName));
-	//}
+	public int GetStageIncidence() {
+		return _StageData.Incidence;
+	}
 
 
 	/*
@@ -179,7 +180,28 @@ public class MainController : MonoBehaviour {
 	public void CountSheepNum () {
 		ResultSheepCount++;
 
+		//Debug
 		GameObject.Find("Text_testCount").GetComponent<Text> ().text = ResultSheepCount.ToString();
+	}
+
+
+	/*
+	 * 流れ終わったひつじを数え、
+	 * 全てのひつじが流れたら確認画面へ進む
+	 */
+	public void CountDetroySheepNum () {
+		DestroySheepCount++;
+
+		if (DestroySheepCount == ResultSheepCount) {
+			//ひつじジェネレータを消す
+			GameObject[] generators = GameObject.FindGameObjectsWithTag("generator");
+			foreach(GameObject generator in generators) {
+				Destroy(generator);
+			}
+
+			//確認画面へ
+
+		}
 	}
 
 
