@@ -18,6 +18,12 @@ public class CreateSheeps : MonoBehaviour {
 	private GameObject Sheeps;
 	private Transform cloneTransfrom;
 
+	private Vector3 newScale;
+	private Vector3 newPosition;
+	private Vector3 fromPosition;
+	private Vector3 toPosition;
+	private uTools.uTweenPosition tweenPos;
+
 
 	// Use this for initialization
 	void Start () {
@@ -49,16 +55,16 @@ public class CreateSheeps : MonoBehaviour {
 	 */
 	void CreateSheep(){
 		clone = (GameObject)Instantiate(sheep);
-		clone.transform.parent = Sheeps.transform;
+		clone.transform.SetParent(Sheeps.transform, true );
 
 		// ひつじのデフォルトのposition, scaleを設定する
-		Vector3 newScale = clone.transform.localScale;
+		newScale = clone.transform.localScale;
 		newScale.x = 1;
 		newScale.y = 1;
 		newScale.z = 1;
 		clone.transform.localScale = newScale;
 		
-		Vector3 newPosition = clone.transform.position;
+		newPosition = clone.transform.position;
 		newPosition.x = 200;
 		newPosition.y = 0;
 		newPosition.z = 0;
@@ -69,15 +75,15 @@ public class CreateSheeps : MonoBehaviour {
 		randomNum = Random.Range (positonTop, positonBottom);
 		
 		// 生成した数値をTweenPositionのy座標に設定する
-		uTools.uTweenPosition tweenPos = clone.GetComponent("uTools.uTweenPosition") as uTools.uTweenPosition;
+		tweenPos = clone.GetComponent("uTools.uTweenPosition") as uTools.uTweenPosition;
 		
-		Vector3 newFromPosition = tweenPos.from;
-		newFromPosition.y = randomNum;
-		Vector3 newToPosition = tweenPos.to;
-		newToPosition.y = randomNum;
+		fromPosition = tweenPos.from;
+		fromPosition.y = randomNum;
+		toPosition = tweenPos.to;
+		toPosition.y = randomNum;
 		
-		tweenPos.from = newFromPosition;
-		tweenPos.to = newToPosition;
+		tweenPos.from = fromPosition;
+		tweenPos.to = toPosition;
 
 	}
 	

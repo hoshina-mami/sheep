@@ -10,11 +10,14 @@ using System.Collections.Generic;
  */
 public class MainController : MonoBehaviour {
 
-	private int _StageNum;//今回のステージ番号
+
+	private GameData _GameData;//ゲーム全体のデータ
 	private StageData _StageData;//今回のステージデータ
-	private GameData _GameData;
-	private int ResultSheepCount;
-	private int DestroySheepCount;
+	private int _StageNum;//今回のステージ番号
+	private int _HighScoreStageNum;//ユーザーのハイスコア
+
+	private int ResultSheepCount;//出現したひつじを数える変数
+	private int DestroySheepCount;//通り終わったひつじを数える変数
 
 	//GameObjects
 	private GameObject Board;
@@ -26,7 +29,11 @@ public class MainController : MonoBehaviour {
 	private GameObject Text_readyGo;
 	private GameObject Text_count;
 	private GameObject Text_maruCount;//正解時の正解表示
+	private GameObject Text_stageClear;//正解時の文言
 	private GameObject Text_batsuCount;//不正解時の正解表示
+	private GameObject Text_currentRecord;//不正解時の文言
+	private GameObject Text_bestRecord;//最高記録表示
+	private GameObject Text_newRecord;//新記録表示
 	private GameObject Pic_tutorial;//チュートリアル画像
 	private GameObject Pic_maru;//正解画像
 	private GameObject Pic_batsu;//不正解画像
@@ -42,21 +49,25 @@ public class MainController : MonoBehaviour {
 
 		_GameData = new GameData();
 
-		Board             = GameObject.Find("Board");
-		CountBox          = GameObject.Find("CountBox");
-		Btn_plus          = GameObject.Find("Btn_plus");
-		Btn_minus         = GameObject.Find("Btn_minus");
-		Btn_ok            = GameObject.Find("Btn_ok");
-		Text_stage        = GameObject.Find("Text_stage");
-		Text_readyGo      = GameObject.Find("Text_readyGo");
-		Text_count        = GameObject.Find("Text_count");
-		Text_maruCount    = GameObject.Find("Text_maruCount");
-		Text_batsuCount   = GameObject.Find("Text_batsuCount");
-		Pic_tutorial      = GameObject.Find("Pic_tutorial");
-		Pic_maru          = GameObject.Find("Pic_maru");
-		Pic_batsu         = GameObject.Find("Pic_batsu");
-		Text_readyGo_text = Text_readyGo.GetComponent<Text> ();
-		Text_count_text   = Text_count.GetComponent<Text> ();
+		Board              = GameObject.Find("Board");
+		CountBox           = GameObject.Find("CountBox");
+		Btn_plus           = GameObject.Find("Btn_plus");
+		Btn_minus          = GameObject.Find("Btn_minus");
+		Btn_ok             = GameObject.Find("Btn_ok");
+		Text_stage         = GameObject.Find("Text_stage");
+		Text_readyGo       = GameObject.Find("Text_readyGo");
+		Text_count         = GameObject.Find("Text_count");
+		Text_maruCount     = GameObject.Find("Text_maruCount");
+		Text_stageClear    = GameObject.Find("Text_stageClear");
+		Text_batsuCount    = GameObject.Find("Text_batsuCount");
+		Text_currentRecord = GameObject.Find("Text_currentRecord");
+		Text_bestRecord    = GameObject.Find("Text_bestRecord");
+		Text_newRecord     = GameObject.Find("Text_newRecord");
+		Pic_tutorial       = GameObject.Find("Pic_tutorial");
+		Pic_maru           = GameObject.Find("Pic_maru");
+		Pic_batsu          = GameObject.Find("Pic_batsu");
+		Text_readyGo_text  = Text_readyGo.GetComponent<Text> ();
+		Text_count_text    = Text_count.GetComponent<Text> ();
 
 
 		//初期表示で必要ないものを消す
@@ -70,6 +81,9 @@ public class MainController : MonoBehaviour {
 
 		//今回のステージデータを取得する
 		_StageData = _GameData.GetStageData(_StageNum);
+
+		//ユーザーのハイスコアを取得する
+		_HighScoreStageNum = PlayerPrefs.GetInt("HighScoreStageNum");
 		
 
 		//ボタンを非アクティブにする
@@ -270,13 +284,37 @@ public class MainController : MonoBehaviour {
 			//正解の場合
 			Text_maruCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
 			Pic_maru.GetComponent<uTools.uTweenAlpha> ().enabled = true;
-			Pic_maru.SetActive (true);//正解画像表示
+			Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
+
+			if (_StageNum > _HighScoreStageNum) {
+				//新記録を出した時
+				PlayerPrefs.SetInt("HighScoreStageNum" , _StageNum);
+			} else {
+				Text_newRecord.SetActive (false);
+			}
+			
+			//正解画像表示
+			Pic_maru.SetActive (true);
+
+			//次のステージ番号をセット
+			PlayerPrefs.SetInt("StageNum" ,  _StageNum + 1);
 		
 		} else {
 			//不正解の場合
 			Text_batsuCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
 			Pic_batsu.GetComponent<uTools.uTweenAlpha> ().enabled = true;
-			Pic_batsu.SetActive (true);//不正解画像表示
+			Text_currentRecord.GetComponent<Text> ().text = "きろく　ステージ" + (_StageNum - 1).ToString();
+
+			if ((_StageNum - 1) > _HighScoreStageNum) {
+				//新記録を出した時
+				PlayerPrefs.SetInt("HighScoreStageNum" , _StageNum - 1);
+			} else {
+				Text_newRecord.SetActive (false);
+				Text_bestRecord.GetComponent<Text> ().text = "さいこうきろく　ステージ" + _HighScoreStageNum.ToString();
+			}
+
+			//不正解画像表示
+			Pic_batsu.SetActive (true);
 		}
 	}
 

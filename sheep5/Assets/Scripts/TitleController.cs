@@ -23,6 +23,7 @@ public class TitleController : MonoBehaviour {
 
 		//init PlayerPrefs
 		PlayerPrefs.SetInt("StageNum" ,  1);
+		//Debug.Log(PlayerPrefs.GetInt("HighScoreStageNum"));
 //		PlayerPrefs.SetInt("HighScoreStageNum" , 0);
 //		PlayerPrefs.SetInt("TotalCountNum" , 0);
 
