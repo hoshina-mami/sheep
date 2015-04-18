@@ -22,13 +22,16 @@ public class MainController : MonoBehaviour {
 	private GameObject Btn_plus;
 	private GameObject Btn_minus;
 	private GameObject Btn_ok;
-	private GameObject Text_ok;
 	private GameObject Text_stage;
 	private GameObject Text_readyGo;
 	private GameObject Text_count;
+	private GameObject Text_maruCount;//正解時の正解表示
+	private GameObject Text_batsuCount;//不正解時の正解表示
 	private GameObject Pic_tutorial;//チュートリアル画像
+	private GameObject Pic_maru;//正解画像
+	private GameObject Pic_batsu;//不正解画像
 	private Text Text_readyGo_text;//「よーいどん」のテキスト
-	private Text Text_count_text;//カウンターのテキスト
+	private Text Text_count_text;//ユーザーのカウンターのテキスト
 
 	//ひつじを生成するもの
 	public GameObject SheepGenerator;
@@ -40,21 +43,26 @@ public class MainController : MonoBehaviour {
 		_GameData = new GameData();
 
 		Board             = GameObject.Find("Board");
-		CountBox             = GameObject.Find("CountBox");
+		CountBox          = GameObject.Find("CountBox");
 		Btn_plus          = GameObject.Find("Btn_plus");
 		Btn_minus         = GameObject.Find("Btn_minus");
 		Btn_ok            = GameObject.Find("Btn_ok");
-		Text_ok           = GameObject.Find("Text_ok");
 		Text_stage        = GameObject.Find("Text_stage");
 		Text_readyGo      = GameObject.Find("Text_readyGo");
 		Text_count        = GameObject.Find("Text_count");
+		Text_maruCount    = GameObject.Find("Text_maruCount");
+		Text_batsuCount   = GameObject.Find("Text_batsuCount");
 		Pic_tutorial      = GameObject.Find("Pic_tutorial");
+		Pic_maru          = GameObject.Find("Pic_maru");
+		Pic_batsu         = GameObject.Find("Pic_batsu");
 		Text_readyGo_text = Text_readyGo.GetComponent<Text> ();
 		Text_count_text   = Text_count.GetComponent<Text> ();
 
 
 		//初期表示で必要ないものを消す
 		Btn_ok.SetActive (false);//okボタン
+		Pic_maru.SetActive (false);//正解画像
+		Pic_batsu.SetActive (false);//不正解画像
 
 		//ステージ番号を取得する
 		//_StageNum = PlayerPrefs.GetInt("StageNum");
@@ -178,7 +186,7 @@ public class MainController : MonoBehaviour {
 		for (int i = 0; i < _StageData.ApperingSheepIds.Length; i++) {
 			//ひつじジェネレーターを複製
 			GameObject _SheepGenerator = (GameObject)Instantiate(SheepGenerator);
-			//ひつじidによってスプライトを設定
+			//ひつじidによってひつじの種類を設定
 			_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(_StageData.ApperingSheepIds[i]);
 		}
 
@@ -245,7 +253,31 @@ public class MainController : MonoBehaviour {
 
 		//カウント部分を上にずらす
 		CountBox.GetComponent<uTools.uTweenPosition> ().enabled = true;
+
+		//正解・不正解のチェックと表示
+		Invoke("checkAnswer",  1.0f);
 		
+	}
+
+
+	/*
+	 * 正解・不正解のチェックをする
+	 */
+	void checkAnswer () {
+		int countNum = int.Parse (Text_count_text.text);
+
+		if (countNum == ResultSheepCount) {
+			//正解の場合
+			Text_maruCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
+			Pic_maru.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+			Pic_maru.SetActive (true);//正解画像表示
+		
+		} else {
+			//不正解の場合
+			Text_batsuCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
+			Pic_batsu.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+			Pic_batsu.SetActive (true);//不正解画像表示
+		}
 	}
 
 
