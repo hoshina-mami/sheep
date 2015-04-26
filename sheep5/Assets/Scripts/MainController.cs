@@ -118,10 +118,9 @@ public class MainController : MonoBehaviour {
 
 	/*
 	 * ゲームオブジェクトのuTweenAlphaをアクティブにする
-	 * 画面から消す際にアルファを1→0にするために使用する
 	 * @param {GameObject} 対象のゲームオブジェクト
 	 */
-	void hideObjectAnimation  (GameObject _target) {
+	void turnOnAlphaAnimation  (GameObject _target) {
 		
 		_target.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		
@@ -178,12 +177,12 @@ public class MainController : MonoBehaviour {
 	}
 	void hideReadyGo () {
 		
-		hideObjectAnimation (Text_readyGo);
+		turnOnAlphaAnimation (Text_readyGo);
 		
 	}
 	void hideStageNum () {
 		
-		hideObjectAnimation (Text_stage);
+		turnOnAlphaAnimation (Text_stage);
 		
 	}
 
@@ -256,14 +255,14 @@ public class MainController : MonoBehaviour {
 
 		//Btn_okを消す
 		switchButtonInteractable (Btn_ok,  false);
-		hideObjectAnimation (Btn_ok);
+		turnOnAlphaAnimation (Btn_ok);
 
 		//Boardのカウント部分以外を消す
 		switchButtonInteractable (Btn_plus,  false);
 		switchButtonInteractable (Btn_minus, false);
-		hideObjectAnimation (Board);
-		hideObjectAnimation (Btn_plus);
-		hideObjectAnimation (Btn_minus);
+		turnOnAlphaAnimation (Board);
+		turnOnAlphaAnimation (Btn_plus);
+		turnOnAlphaAnimation (Btn_minus);
 
 		//カウント部分を上にずらす
 		CountBox.GetComponent<uTools.uTweenPosition> ().enabled = true;
@@ -283,7 +282,6 @@ public class MainController : MonoBehaviour {
 		if (countNum == ResultSheepCount) {
 			//正解の場合
 			Text_maruCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
-			Pic_maru.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 			Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
 
 			if (_StageNum > _HighScoreStageNum) {
@@ -302,7 +300,6 @@ public class MainController : MonoBehaviour {
 		} else {
 			//不正解の場合
 			Text_batsuCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
-			Pic_batsu.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 			Text_currentRecord.GetComponent<Text> ().text = "きろく　ステージ" + (_StageNum - 1).ToString();
 
 			if ((_StageNum - 1) > _HighScoreStageNum) {
@@ -315,6 +312,7 @@ public class MainController : MonoBehaviour {
 
 			//不正解画像表示
 			Pic_batsu.SetActive (true);
+
 		}
 	}
 
