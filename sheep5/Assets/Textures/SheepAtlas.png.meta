@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4194a094cbaf044ba8d1c4fc0b64bf41
-timeCreated: 1427860733
+timeCreated: 1430321775
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,12 @@ TextureImporter:
     21300010: pic_1_2
     21300012: pic_4_1
     21300014: pic_1_1
+    21300016: pic_6_1
+    21300018: pic_5_2
+    21300020: pic_5_1
+    21300022: pic_7_2
+    21300024: pic_6_2
+    21300026: pic_7_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -100,8 +106,8 @@ TextureImporter:
     - name: pic_3_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 272
+        x: 136
+        y: 136
         width: 134
         height: 134
       alignment: 0
@@ -110,7 +116,7 @@ TextureImporter:
     - name: pic_1_2
       rect:
         serializedVersion: 2
-        x: 136
+        x: 272
         y: 136
         width: 134
         height: 134
@@ -120,8 +126,8 @@ TextureImporter:
     - name: pic_4_1
       rect:
         serializedVersion: 2
-        x: 272
-        y: 136
+        x: 0
+        y: 272
         width: 134
         height: 134
       alignment: 0
@@ -132,6 +138,66 @@ TextureImporter:
         serializedVersion: 2
         x: 136
         y: 272
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pic_6_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 272
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pic_5_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pic_5_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 408
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pic_7_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 408
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pic_6_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pic_7_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
         width: 134
         height: 134
       alignment: 0

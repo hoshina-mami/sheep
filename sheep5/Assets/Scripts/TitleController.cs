@@ -35,7 +35,7 @@ public class TitleController : MonoBehaviour {
 
 
 	// called from onRelease Event of GameObject"Btn_start"
-	void ClickStartBtn () {
+	public void ClickStartBtn () {
 		//makes object's alpha 0
 		Logo.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Btn_start.GetComponent<uTools.uTweenAlpha> ().enabled = true;

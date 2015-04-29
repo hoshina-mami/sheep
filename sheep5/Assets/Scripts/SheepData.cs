@@ -10,6 +10,8 @@ public class SheepData {
 
 	public string SheepDescription;
 
+    public string SheepHint;
+
 	public string UnlockedDate;
 
 	public int IsUnlocked;
