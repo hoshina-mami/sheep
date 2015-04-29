@@ -27,13 +27,13 @@ public class GameData {
 
 			case 2:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 15;
+				_stage.Incidence = 20;
 				_stage.ApperingSheepIds = new int[] { 1 };
 				break;
 
 			case 3:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1 };
 				break;
 
@@ -45,49 +45,49 @@ public class GameData {
 
 			case 5:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 18;
+				_stage.Incidence = 25;
 				_stage.ApperingSheepIds = new int[] { 1, 6 };
 				break;
 
 			case 6:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1, 6 };
 				break;
 
 			case 7:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 10;
+				_stage.Incidence = 20;
 				_stage.ApperingSheepIds = new int[] { 1, 6, 2 };
 				break;
 
 			case 8:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 14;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1, 6, 2 };
 				break;
 
 			case 9:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 40;
 				_stage.ApperingSheepIds = new int[] { 1, 6, 2 };
 				break;
 
 			case 10:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 10;
+				_stage.Incidence = 20;
 				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
 				break;
 
 			case 11:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 15;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
 				break;
 
 			case 12:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 40;
 				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
 				break;
 
@@ -99,13 +99,13 @@ public class GameData {
 
 			case 14:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 15;
+				_stage.Incidence = 20;
 				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7 };
 				break;
 
 			case 15:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7, 5 };
 				break;
 
