@@ -28,7 +28,7 @@ public class GameData {
 			case 2:
 				_stage.BackgroundType = 1;
 				_stage.Incidence = 10;
-				_stage.ApperingSheepIds = new int[] { 1, 3 };
+				_stage.ApperingSheepIds = new int[] { 1 };
 				break;
 
 			case 3:
