@@ -305,7 +305,8 @@ public class MainController : MonoBehaviour {
 			updateTotalCount(countNum);
 
 			//3回目クリアでステージクリア
-			if ((thisStageClearCount + 1) > 3) {
+			thisStageClearCount = thisStageClearCount + 1;
+			if (thisStageClearCount > 3) {
 				Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
 
 				if (_StageNum > _HighScoreStageNum) {
@@ -323,7 +324,7 @@ public class MainController : MonoBehaviour {
 				Btn_maruEnd.SetActive(false);
 
 				//クリア問題数を更新
-				PlayerPrefs.SetInt("thisStageClearCount" , thisStageClearCount + 1);
+				PlayerPrefs.SetInt("thisStageClearCount", thisStageClearCount);
 
 			}
 
