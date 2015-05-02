@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BtnStageNumController.cs" />
      <Compile Include="Assets\Scripts\CreateSheeps.cs" />
      <Compile Include="Assets\Scripts\GameData.cs" />
      <Compile Include="Assets\Scripts\MainController.cs" />
@@ -55,6 +56,7 @@
      <Compile Include="Assets\Scripts\SheepRotation.cs" />
      <Compile Include="Assets\Scripts\SheepSpriteAnim.cs" />
      <Compile Include="Assets\Scripts\StageData.cs" />
+     <Compile Include="Assets\Scripts\StageSelectController.cs" />
      <Compile Include="Assets\Scripts\TitleController.cs" />
      <Compile Include="Assets\uGUI\Scripts\Internal\uDragObject.cs" />
      <Compile Include="Assets\uGUI\Scripts\Internal\uEnum.cs" />

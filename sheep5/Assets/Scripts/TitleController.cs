@@ -58,6 +58,6 @@ public class TitleController : MonoBehaviour {
 	
 	// called from TweenPosition of GameObject"Background"
 	void LoadMainScene () {
-		Application.LoadLevel("Main");
+		Application.LoadLevel("StageSelect");
 	}
 }

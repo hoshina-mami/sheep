@@ -288,23 +288,13 @@ public class MainController : MonoBehaviour {
 			Text_maruCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
 			Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
 
-			//debug
-			Debug.Log(_HighScoreStageNum);
-
 			//正解画像表示
 			Pic_maru.SetActive(true);
 
 			if (_StageNum > _HighScoreStageNum) {
 				//新記録を出した時
-				Debug.Log("しんきろく");
 				PlayerPrefs.SetInt("HighScoreStageNum" , _StageNum);
-				Text_newRecord.GetComponent<Text> ().text = "しんきろく！";
-			} else {
-				Debug.Log("しんきろくじゃない");
-				Text_newRecord.GetComponent<Text> ().text = "";
-			}
-			
-			
+			}		
 
 			//これまで数えたトータル数を更新
 			updateTotalCount(countNum);
@@ -313,18 +303,10 @@ public class MainController : MonoBehaviour {
 			PlayerPrefs.SetInt("StageNum" ,  _StageNum + 1);
 		
 		} else {
+
 			//不正解の場合
 			Text_batsuCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
 			Text_currentRecord.GetComponent<Text> ().text = "きろく　ステージ" + (_StageNum - 1).ToString();
-
-			if ((_StageNum - 1) > _HighScoreStageNum) {
-				//新記録を出した時
-				Text_newRecord.GetComponent<Text> ().text = "しんきろく！";
-				PlayerPrefs.SetInt("HighScoreStageNum" , _StageNum - 1);
-			} else {
-				Text_newRecord.GetComponent<Text> ().text = "";
-				Text_bestRecord.GetComponent<Text> ().text = "さいこうきろく　ステージ" + _HighScoreStageNum.ToString();
-			}
 
 			//不正解画像表示
 			Pic_batsu.SetActive(true);
