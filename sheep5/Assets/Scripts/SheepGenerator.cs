@@ -22,6 +22,7 @@ public class SheepGenerator : MonoBehaviour {
 	private uTools.uTweenPosition tweenPos;
 
 	private bool isFirstSheep;
+	private int currentSheepId;
 
 
 	// Use this for initialization
@@ -42,6 +43,9 @@ public class SheepGenerator : MonoBehaviour {
 	 * ひつじの初期化
 	 */
 	public void InitSheep (int sheepId) {
+
+		//ひつじのidを保存
+		currentSheepId = sheepId;
 
 		//ひつじのプレハブをSheepDataから設定
 		sheep = (GameObject)Resources.Load("Sheep" + sheepId);
@@ -120,8 +124,10 @@ public class SheepGenerator : MonoBehaviour {
 			tweenPos.from = fromPosition;
 			tweenPos.to = toPosition;
 
-			//ひつじの出現数をプラス
-			MainController.CountSheepNum();
+			//ひつじの出現数をプラス（くろひつじは数えない）
+			if (currentSheepId != 6) {
+				MainController.CountSheepNum();
+			}
 
 		}
 

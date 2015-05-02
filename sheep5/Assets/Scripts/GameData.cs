@@ -28,13 +28,13 @@ public class GameData {
 			case 2:
 				_stage.BackgroundType = 1;
 				_stage.Incidence = 20;
-				_stage.ApperingSheepIds = new int[] { 1 };
+				_stage.ApperingSheepIds = new int[] { 1, 2 };
 				break;
 
 			case 3:
 				_stage.BackgroundType = 1;
 				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1 };
+				_stage.ApperingSheepIds = new int[] { 1, 3 };
 				break;
 
 			case 4:
@@ -135,7 +135,6 @@ public class GameData {
 				_sheep.SheepHint = "1度あそべば出会えるかも…？";
 				_sheep.UnlockedDate = "";
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_1");
-				_sheep.TweenDuration = 4;
 				break;
 
 			case 2:

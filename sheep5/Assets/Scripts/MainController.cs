@@ -78,8 +78,8 @@ public class MainController : MonoBehaviour {
 		//ステージ番号を取得する
 		_StageNum = PlayerPrefs.GetInt("StageNum");
 
-		//bebug
-		GameObject.Find("Text_testCount").SetActive(false);
+		//debug
+		//GameObject.Find("Text_testCount").SetActive(false);
 		Debug.Log(_StageNum);
 		//_StageNum = 2;
 
@@ -217,7 +217,7 @@ public class MainController : MonoBehaviour {
 		ResultSheepCount++;
 
 		//Debug
-		//GameObject.Find("Text_testCount").GetComponent<Text> ().text = ResultSheepCount.ToString();
+		GameObject.Find("Text_testCount").GetComponent<Text> ().text = ResultSheepCount.ToString();
 	}
 
 
