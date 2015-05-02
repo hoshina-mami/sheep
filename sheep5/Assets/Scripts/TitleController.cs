@@ -21,12 +21,8 @@ public class TitleController : MonoBehaviour {
 		Btn_record         = GameObject.Find("Btn_record");
 		Btn_option         = GameObject.Find("Btn_option");
 
-		//init PlayerPrefs
-		PlayerPrefs.SetInt("StageNum" ,  1);
-		//Debug.Log(PlayerPrefs.GetInt("HighScoreStageNum"));
-//		PlayerPrefs.SetInt("HighScoreStageNum" , 0);
-//		PlayerPrefs.SetInt("TotalCountNum" , 0);
-
+		//クリア問題数をリセット
+		PlayerPrefs.SetInt("thisStageClearCount" , 0);
 
 		//start sheep animation
 		TitleControllerObj.GetComponent<CreateSheeps>().StartCreateSheep ();

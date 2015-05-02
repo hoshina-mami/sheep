@@ -21,182 +21,182 @@ public class GameData {
 		switch (stageNum) {
 			case 1:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 25;
 				_stage.ApperingSheepIds = new int[] { 1 };
 				break;
 
 			case 2:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
+				_stage.Incidence = 20;
 				_stage.ApperingSheepIds = new int[] { 1, 2 };
 				break;
 
 			case 3:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 40;
-				_stage.ApperingSheepIds = new int[] { 1, 3 };
+				_stage.Incidence = 30;
+				_stage.ApperingSheepIds = new int[] { 1, 2 };
 				break;
 
 			case 4:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 25;
-				_stage.ApperingSheepIds = new int[] { 1, 6 };
+				_stage.Incidence = 20;
+				_stage.ApperingSheepIds = new int[] { 1, 2, 4 };
 				break;
 
 			case 5:
 				_stage.BackgroundType = 1;
 				_stage.Incidence = 35;
-				_stage.ApperingSheepIds = new int[] { 1, 6 };
+				_stage.ApperingSheepIds = new int[] { 1, 2, 4 };
 				break;
 
 			case 6:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 40;
-				_stage.ApperingSheepIds = new int[] { 1, 6 };
+				_stage.Incidence = 20;
+				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6 };
 				break;
 
 			case 7:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2 };
+				_stage.Incidence = 30;
+				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6 };
 				break;
 
 			case 8:
 				_stage.BackgroundType = 1;
 				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2 };
+				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6, 8};
 				break;
 
 			case 9:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 40;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2 };
+				_stage.Incidence = 35;
+				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6, 8 };
 				break;
 
 			case 10:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
+				_stage.Incidence = 40;
+				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6, 8 };
 				break;
 
 			case 11:
 				_stage.BackgroundType = 1;
 				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
+				_stage.ApperingSheepIds = new int[] { 1, 4, 7, 12 };
 				break;
 
 			case 12:
 				_stage.BackgroundType = 1;
 				_stage.Incidence = 40;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
+				_stage.ApperingSheepIds = new int[] { 1, 4, 7, 12 };
 				break;
 
 			case 13:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 10;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7 };
+				_stage.Incidence = 20;
+				_stage.ApperingSheepIds = new int[] { 1, 4, 7, 12, 8 };
 				break;
 
 			case 14:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7 };
+				_stage.Incidence = 30;
+				_stage.ApperingSheepIds = new int[] { 1, 4, 7, 12, 8 };
 				break;
 
 			case 15:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7, 5 };
+				_stage.Incidence = 25;
+				_stage.ApperingSheepIds = new int[] { 1, 4, 7, 12, 8, 6 };
 				break;
 
 			case 16:
 				_stage.BackgroundType = 1;
 				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
+				_stage.ApperingSheepIds = new int[] { 1, 4, 7, 12, 8, 6 };
 				break;
 
 			case 17:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 40;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
+				_stage.Incidence = 20;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 8, 6 };
 				break;
 
 			case 18:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 10;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7 };
+				_stage.Incidence = 30;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 8, 6 };
 				break;
 
 			case 19:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7 };
+				_stage.Incidence = 35;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 8, 6 };
 				break;
 
 			case 20:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7, 5 };
+				_stage.Incidence = 40;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 8, 6 };
 				break;
 
 			case 21:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
+				_stage.Incidence = 25;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10 };
 				break;
 
 			case 22:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 40;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
+				_stage.Incidence = 35;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10 };
 				break;
 
 			case 23:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 10;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7 };
+				_stage.Incidence = 30;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10, 14 };
 				break;
 
 			case 24:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7 };
+				_stage.Incidence = 35;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10, 14 };
 				break;
 
 			case 25:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7, 5 };
+				_stage.Incidence = 25;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10, 14, 6 };
 				break;
 
 			case 26:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
+				_stage.Incidence = 35;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10, 14, 6 };
 				break;
 
 			case 27:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 40;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4 };
+				_stage.Incidence = 30;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10, 14, 6, 15 };
 				break;
 
 			case 28:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 10;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7 };
+				_stage.Incidence = 40;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10, 14, 6, 15 };
 				break;
 
 			case 29:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7 };
+				_stage.Incidence = 50;
+				_stage.ApperingSheepIds = new int[] {  1, 13, 7, 12, 10, 14, 6, 15 };
 				break;
 
 			case 30:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
-				_stage.ApperingSheepIds = new int[] { 1, 6, 2, 4, 7, 5 };
+				_stage.Incidence = 50;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10, 14, 6, 15, 16 };
 				break;
 
 			default:

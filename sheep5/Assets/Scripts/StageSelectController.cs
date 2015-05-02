@@ -27,9 +27,11 @@ public class StageSelectController : MonoBehaviour {
 		newScale.y = 1;
 		newScale.z = 1;
 
+		//クリア問題数をリセット
+		PlayerPrefs.SetInt("thisStageClearCount" , 0);
+
 		//ユーザーのハイスコアを取得する
 		_HighScoreStageNum = PlayerPrefs.GetInt("HighScoreStageNum");
-		Debug.Log(_HighScoreStageNum);
 
 		//ステージ選択ボタン生成
 		CreateStageNumBtn();

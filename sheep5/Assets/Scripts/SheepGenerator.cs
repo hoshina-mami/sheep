@@ -33,9 +33,6 @@ public class SheepGenerator : MonoBehaviour {
 
 		//ひつじの出現率をStageDataから設定
 		incidence = MainController.GetStageIncidence();
-
-		//少なくとも1匹はひつじを出すためのフラグを立てておく
-		isFirstSheep = true;
 	
 	}
 
@@ -46,6 +43,11 @@ public class SheepGenerator : MonoBehaviour {
 
 		//ひつじのidを保存
 		currentSheepId = sheepId;
+
+		//少なくとも1匹はひつじを出すためのフラグを立てておく
+		if (sheepId == 1) {
+			isFirstSheep = true;
+		}
 
 		//ひつじのプレハブをSheepDataから設定
 		sheep = (GameObject)Resources.Load("Sheep" + sheepId);
@@ -124,10 +126,13 @@ public class SheepGenerator : MonoBehaviour {
 			tweenPos.from = fromPosition;
 			tweenPos.to = toPosition;
 
-			//ひつじの出現数をプラス（くろひつじは数えない）
+			//ひつじの正解出現数をプラス（くろひつじは数えない）
 			if (currentSheepId != 6) {
-				MainController.CountSheepNum();
+				MainController.CountResultSheepNum();
 			}
+
+			//ひつじの出現数をプラス（くろひつじも数える）
+			MainController.CountSheepNum();
 
 		}
 

@@ -16,7 +16,9 @@ public class MainController : MonoBehaviour {
 	private int _StageNum;//今回のステージ番号
 	private int _HighScoreStageNum;//ユーザーのハイスコア
 
-	private int ResultSheepCount;//出現したひつじを数える変数
+	private int thisStageClearCount;//現在のステージで何問正解したか
+	private int GenerateSheepCount;//出現したひつじを数える変数
+	private int ResultSheepCount;//正解数のひつじを数える変数
 	private int DestroySheepCount;//通り終わったひつじを数える変数
 
 	//GameObjects
@@ -25,6 +27,7 @@ public class MainController : MonoBehaviour {
 	private GameObject Btn_plus;
 	private GameObject Btn_minus;
 	private GameObject Btn_ok;
+	private GameObject Btn_maruEnd;
 	private GameObject Text_stage;
 	private GameObject Text_readyGo;
 	private GameObject Text_count;
@@ -52,6 +55,7 @@ public class MainController : MonoBehaviour {
 		Btn_plus           = GameObject.Find("Btn_plus");
 		Btn_minus          = GameObject.Find("Btn_minus");
 		Btn_ok             = GameObject.Find("Btn_ok");
+		Btn_maruEnd        = GameObject.Find("Btn_maruEnd");
 		Text_stage         = GameObject.Find("Text_stage");
 		Text_readyGo       = GameObject.Find("Text_readyGo");
 		Text_count         = GameObject.Find("Text_count");
@@ -77,13 +81,18 @@ public class MainController : MonoBehaviour {
 		//debug
 		//GameObject.Find("Text_testCount").SetActive(false);
 		Debug.Log(_StageNum);
-		//_StageNum = 2;
 
 		//今回のステージデータを取得する
 		_StageData = _GameData.GetStageData(_StageNum);
 
 		//ユーザーのハイスコアを取得する
 		_HighScoreStageNum = PlayerPrefs.GetInt("HighScoreStageNum");
+
+		//今回のステージの問題数をリセットする
+		thisStageClearCount = PlayerPrefs.GetInt("thisStageClearCount");
+		if (thisStageClearCount == 0) {
+			thisStageClearCount = 1;
+		}
 		
 
 		//ボタンを非アクティブにする
@@ -132,8 +141,10 @@ public class MainController : MonoBehaviour {
 	 */
 	void showStageInfo () {
 
+		Debug.Log(thisStageClearCount);
+
 		//ステージ番号を表示
-		Text_stage.GetComponent<Text>().text = "ステージ  " + _StageNum;
+		Text_stage.GetComponent<Text>().text = "ステージ  " + _StageNum.ToString() + "-" + thisStageClearCount.ToString();
 
 		switch (_StageNum) {
 			case 1:
@@ -207,9 +218,16 @@ public class MainController : MonoBehaviour {
 
 
 	/*
-	 * ひつじの出現数をカウントする
+	 * ひつじの出現数をカウントする（くろひつじ含む）
 	 */
 	public void CountSheepNum () {
+		GenerateSheepCount++;
+	}
+
+	/*
+	 * ひつじの正解出現数をカウントする（くろひつじ含まない）
+	 */
+	public void CountResultSheepNum () {
 		ResultSheepCount++;
 
 		//Debug
@@ -224,7 +242,7 @@ public class MainController : MonoBehaviour {
 	public void CountDetroySheepNum () {
 		DestroySheepCount++;
 
-		if (DestroySheepCount == ResultSheepCount) {
+		if (DestroySheepCount == GenerateSheepCount) {
 			//ひつじジェネレータを消す
 			GameObject[] generators = GameObject.FindGameObjectsWithTag("generator");
 			foreach(GameObject generator in generators) {
@@ -282,30 +300,48 @@ public class MainController : MonoBehaviour {
 		if (countNum == ResultSheepCount) {
 			//正解の場合
 			Text_maruCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
-			Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
-
-			//正解画像表示
-			Pic_maru.SetActive(true);
-
-			if (_StageNum > _HighScoreStageNum) {
-				//新記録を出した時
-				PlayerPrefs.SetInt("HighScoreStageNum" , _StageNum);
-			}		
 
 			//これまで数えたトータル数を更新
 			updateTotalCount(countNum);
 
-			//次のステージ番号をセット
-			PlayerPrefs.SetInt("StageNum" ,  _StageNum + 1);
+			//3回目クリアでステージクリア
+			if ((thisStageClearCount + 1) > 3) {
+				Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
+
+				if (_StageNum > _HighScoreStageNum) {
+					//新記録を出した時
+					PlayerPrefs.SetInt("HighScoreStageNum" , _StageNum);
+				}
+
+				//次のステージ番号をセット＆クリア問題数をリセット
+				PlayerPrefs.SetInt("StageNum" ,  _StageNum + 1);
+				PlayerPrefs.SetInt("thisStageClearCount" , 0);
+
+			} else {
+
+				//おわるボタンを非表示
+				Btn_maruEnd.SetActive(false);
+
+				//クリア問題数を更新
+				PlayerPrefs.SetInt("thisStageClearCount" , thisStageClearCount + 1);
+
+			}
+
+			//正解画像表示
+			Pic_maru.SetActive(true);
 		
 		} else {
 
 			//不正解の場合
 			Text_batsuCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
-			Text_currentRecord.GetComponent<Text> ().text = "きろく　ステージ" + (_StageNum - 1).ToString();
+			Text_currentRecord.GetComponent<Text> ().text = "ざんねん...";
+			//Text_currentRecord.GetComponent<Text> ().text = "きろく　ステージ" + (_StageNum - 1).ToString();
 
 			//不正解画像表示
 			Pic_batsu.SetActive(true);
+
+			//クリア問題数をリセット
+			PlayerPrefs.SetInt("thisStageClearCount" , 0);
 
 		}
 	}
