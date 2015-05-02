@@ -32,8 +32,6 @@ public class MainController : MonoBehaviour {
 	private GameObject Text_stageClear;//正解時の文言
 	private GameObject Text_batsuCount;//不正解時の正解表示
 	private GameObject Text_currentRecord;//不正解時の文言
-	private GameObject Text_bestRecord;//最高記録表示
-	private GameObject Text_newRecord;//新記録表示
 	private GameObject Pic_tutorial;//チュートリアル画像
 	private GameObject Pic_maru;//正解画像
 	private GameObject Pic_batsu;//不正解画像
@@ -61,8 +59,6 @@ public class MainController : MonoBehaviour {
 		Text_stageClear    = GameObject.Find("Text_stageClear");
 		Text_batsuCount    = GameObject.Find("Text_batsuCount");
 		Text_currentRecord = GameObject.Find("Text_currentRecord");
-		Text_bestRecord    = GameObject.Find("Text_bestRecord");
-		Text_newRecord     = GameObject.Find("Text_newRecord");
 		Pic_tutorial       = GameObject.Find("Pic_tutorial");
 		Pic_maru           = GameObject.Find("Pic_maru");
 		Pic_batsu          = GameObject.Find("Pic_batsu");

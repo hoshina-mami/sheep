@@ -59,7 +59,7 @@ public class StageSelectController : MonoBehaviour {
 				cloneBtnNum.text = thisStageNum.ToString();
 
 				//ボタンのアクティブ・非アクティブを設定
-				if (thisStageNum <= (_HighScoreStageNum + 1)) {
+				if (thisStageNum == 1 || thisStageNum <= (_HighScoreStageNum + 1)) {
 					cloneBtn.GetComponent<Button>().interactable = true;
 				}
 
@@ -68,6 +68,13 @@ public class StageSelectController : MonoBehaviour {
 		}
 
 	}
+
+	/*
+     * タイトル画面へ飛ぶ
+     */
+    public void LoadTitleScene () {
+        Application.LoadLevel("Title");
+    }
 
 }
 
