@@ -32,6 +32,25 @@ public class TitleController : MonoBehaviour {
 
 	// called from onRelease Event of GameObject"Btn_start"
 	public void ClickStartBtn () {
+
+		hideObjects ();
+
+		Invoke("LoadStageSelectScene",  1f);
+
+	}
+
+	// called from onRelease Event of GameObject"Btn_record"
+	public void ClickRecordBtn () {
+
+		hideObjects();
+
+		Invoke("LoadRecordScene",  1f);
+
+	}
+
+	//画面遷移のさいにオブジェクトを消す
+	void hideObjects () {
+
 		//makes object's alpha 0
 		Logo.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Btn_start.GetComponent<uTools.uTweenAlpha> ().enabled = true;
@@ -52,8 +71,14 @@ public class TitleController : MonoBehaviour {
 		}
 	}
 	
-	// called from TweenPosition of GameObject"Background"
-	void LoadMainScene () {
+	// ステージ選択画面へとぶ
+	public void LoadStageSelectScene () {
 		Application.LoadLevel("StageSelect");
 	}
+
+	// ステージ選択画面へとぶ
+	public void LoadRecordScene () {
+		Application.LoadLevel("Record");
+	}
+
 }

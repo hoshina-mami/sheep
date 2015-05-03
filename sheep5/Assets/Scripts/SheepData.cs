@@ -12,7 +12,7 @@ public class SheepData {
 
     public string SheepHint;
 
-	public string UnlockedDate;
+	public int UnlockStage;
 
 	public int IsUnlocked;
 

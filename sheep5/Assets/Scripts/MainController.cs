@@ -20,6 +20,7 @@ public class MainController : MonoBehaviour {
 	private int GenerateSheepCount;//出現したひつじを数える変数
 	private int ResultSheepCount;//正解数のひつじを数える変数
 	private int DestroySheepCount;//通り終わったひつじを数える変数
+	private int[] SheepIndex;//ひつじの表示順序を管理する配列
 
 	//GameObjects
 	private GameObject Board;
@@ -80,7 +81,6 @@ public class MainController : MonoBehaviour {
 
 		//debug
 		//GameObject.Find("Text_testCount").SetActive(false);
-		Debug.Log(_StageNum);
 
 		//今回のステージデータを取得する
 		_StageData = _GameData.GetStageData(_StageNum);

@@ -7,13 +7,16 @@ public class StageSelectController : MonoBehaviour {
 	//public
 	public GameObject BtnBox;//ステージ選択ボタンを横に並べる用のプレハブ
 	public GameObject Btn_stageNum;//ステージ選択ボタン用のプレハブ
+	public GameObject Pic_btnMaru;//ボタンのまる用のプレハブ
 
 	//private
 	private GameObject Content;
 	private GameObject cloneBox;
 	private GameObject cloneBtn;
+	private GameObject cloneMaru;
 	private Vector3 newScale;
 	private Vector3 newPosition;
+	//private Vector3 maruNewScale;
 	private Text cloneBtnNum;
 	private int _HighScoreStageNum;
 
@@ -26,6 +29,9 @@ public class StageSelectController : MonoBehaviour {
 		newScale.x = 1;
 		newScale.y = 1;
 		newScale.z = 1;
+
+		//maruNewScale.x = 0.15f;
+		//maruNewScale.y = 0.15f;
 
 		//クリア問題数をリセット
 		PlayerPrefs.SetInt("thisStageClearCount" , 0);
@@ -64,6 +70,16 @@ public class StageSelectController : MonoBehaviour {
 				if (thisStageNum == 1 || thisStageNum <= (_HighScoreStageNum + 1)) {
 					cloneBtn.GetComponent<Button>().interactable = true;
 				}
+
+				//クリア済みステージボタンに丸を出す
+				/*
+				if (thisStageNum <= _HighScoreStageNum) {
+					cloneMaru = (GameObject)Instantiate(Pic_btnMaru);
+					cloneMaru.transform.SetParent(cloneBtn.transform, true );
+					cloneMaru.transform.localScale = maruNewScale;
+					cloneMaru.transform.SetAsFirstSibling();
+				}
+				*/
 
 			}
 
