@@ -65,8 +65,8 @@ public class RecordController : MonoBehaviour {
 		popupSheepScale.y = 1.4f;
 		popupSheepScale.z = 1;
 
-		popupSheepPosition.x = 140;
-		popupSheepPosition.y = 260;
+		popupSheepPosition.x = 0;
+		popupSheepPosition.y = 100;
 
 		//クリア問題数をリセット
 		PlayerPrefs.SetInt("thisStageClearCount" , 0);
@@ -147,7 +147,7 @@ public class RecordController : MonoBehaviour {
 		cloneSheepAnim.GetComponent<uTools.uTweenPosition> ().enabled = false;
 		cloneSheepAnim.transform.FindChild("Sheep_1").GetComponent<SheepRotation> ().enabled = false;
         cloneSheepAnim.transform.localScale = popupSheepScale;
-		cloneSheepAnim.transform.position = popupSheepPosition;
+		cloneSheepAnim.transform.localPosition = popupSheepPosition;
 
         Popup_mask.SetActive (true);
 		Popup.SetActive (true);
@@ -161,7 +161,7 @@ public class RecordController : MonoBehaviour {
     public void closeSheepPopup () {
 
 		Destroy(cloneSheepAnim);
-		        
+
         Popup_mask.SetActive (false);
 		Popup.SetActive (false);
 
