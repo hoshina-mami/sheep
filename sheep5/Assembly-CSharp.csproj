@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\GameData.cs" />
      <Compile Include="Assets\Scripts\MainController.cs" />
      <Compile Include="Assets\Scripts\RecordController.cs" />
+     <Compile Include="Assets\Scripts\RecordSheepBtn.cs" />
      <Compile Include="Assets\Scripts\SheepData.cs" />
      <Compile Include="Assets\Scripts\SheepGenerator.cs" />
      <Compile Include="Assets\Scripts\SheepObject.cs" />

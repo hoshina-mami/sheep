@@ -14,11 +14,10 @@ public class RecordController : MonoBehaviour {
 
 	private GameObject Popup_mask;
 	private GameObject Popup;
-	private GameObject Text_sheepName;
-	private GameObject Text_SheepDescription;
-
-	private Text Text_sheepName_text;//ポップアップ　ひつじの名前のテキスト
-	private Text Text_SheepDescription_text;//ポップアップ　ひつじの説明文のテキスト
+	//private GameObject Text_sheepName;
+	//private GameObject Text_SheepDescription;
+	//private Text Text_sheepName_text;//ポップアップ　ひつじの名前のテキスト
+	//private Text Text_SheepDescription_text;//ポップアップ　ひつじの説明文のテキスト
 
 	private GameObject Content;
 	private GameObject cloneBox;
@@ -27,7 +26,7 @@ public class RecordController : MonoBehaviour {
 	private Vector3 newScale;
 	private Vector3 newPosition;
 	private Vector3 sheepNewScale;
-	//private Text cloneBtnNum;
+	private Text cloneSheepNum;
 	private int _HighScoreStageNum;
 
 
@@ -39,10 +38,10 @@ public class RecordController : MonoBehaviour {
 		Content               = GameObject.Find("Content");
 		Popup_mask            = GameObject.Find("Popup_mask");
 		Popup                 = GameObject.Find("Popup");
-		Text_sheepName        = GameObject.Find("Text_sheepName");
-		Text_SheepDescription = GameObject.Find("Text_SheepDescription");
-		Text_sheepName_text   = Text_sheepName.GetComponent<Text> ();
-		Text_SheepDescription_text = Text_SheepDescription.GetComponent<Text> ();
+		//Text_sheepName        = GameObject.Find("Text_sheepName");
+		//Text_SheepDescription = GameObject.Find("Text_SheepDescription");
+		//Text_sheepName_text   = Text_sheepName.GetComponent<Text> ();
+		//Text_SheepDescription_text = Text_SheepDescription.GetComponent<Text> ();
 
 		Popup_mask.SetActive (false);
 		Popup.SetActive (false);
@@ -82,10 +81,10 @@ public class RecordController : MonoBehaviour {
 
 				int thisSheepId = j + i * 4;
 
-				//今回のステージデータを取得する
+				//今回のひつじデータを取得する
 				SheepData thisSheepData = _GameData.GetStSheepData(thisSheepId);
 
-				//出会っていないひつじ
+				//ひつじのクローン作成
 				cloneSheep = (GameObject)Instantiate(SheepImg);
 
 				if (thisSheepData.UnlockStage != 0 && thisSheepData.UnlockStage <= _HighScoreStageNum) {
@@ -93,12 +92,10 @@ public class RecordController : MonoBehaviour {
 					//対象のひつじのスプライトに差し替える
 					cloneSheep.GetComponent<Image> ().sprite = Resources.Load<Sprite>("sheepImg/pic_" + thisSheepId + "_1");
 					
-					/*
-					GameObject sheep = (GameObject)Resources.Load("Sheep" + thisSheepId);
-					sheep.GetComponent<uTools.uTweenPosition> ().enabled = false;
-					sheep.transform.FindChild("Sheep_1").GetComponent<SheepRotation> ().enabled = false;
-					cloneSheep = (GameObject)Instantiate(sheep);
-					*/
+					//ひつじidを見えないように保存しておく
+					cloneSheepNum = cloneSheep.GetComponentInChildren<Text>();
+					cloneSheepNum.text = thisSheepId.ToString();
+
 				
 				} else {
 					

@@ -63,19 +63,19 @@ public class GameData {
 
 			case 8:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
+				_stage.Incidence = 25;
 				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6, 8};
 				break;
 
 			case 9:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 35;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6, 8 };
 				break;
 
 			case 10:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 40;
+				_stage.Incidence = 35;
 				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6, 8 };
 				break;
 
