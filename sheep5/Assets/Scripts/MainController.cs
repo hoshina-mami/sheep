@@ -80,7 +80,7 @@ public class MainController : MonoBehaviour {
 		_StageNum = PlayerPrefs.GetInt("StageNum");
 
 		//debug
-		GameObject.Find("Text_testCount").SetActive(false);
+		//GameObject.Find("Text_testCount").SetActive(false);
 
 		//今回のステージデータを取得する
 		_StageData = _GameData.GetStageData(_StageNum);
@@ -231,7 +231,7 @@ public class MainController : MonoBehaviour {
 		ResultSheepCount++;
 
 		//Debug
-		//GameObject.Find("Text_testCount").GetComponent<Text> ().text = ResultSheepCount.ToString();
+		GameObject.Find("Text_testCount").GetComponent<Text> ().text = ResultSheepCount.ToString();
 	}
 
 
@@ -354,10 +354,11 @@ public class MainController : MonoBehaviour {
 	 * これまで数えたひつじのトータル数を加算
 	 */
 	void updateTotalCount (int currentCount) {
-		
 		int countNum = PlayerPrefs.GetInt("TotalCountNum");
 		PlayerPrefs.SetInt("TotalCountNum" , countNum + currentCount);
 
+		//bebug
+		Debug.Log(PlayerPrefs.GetInt("TotalCountNum"));
 	}
 
 

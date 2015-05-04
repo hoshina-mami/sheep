@@ -14,11 +14,12 @@ public class RecordController : MonoBehaviour {
 
 	private GameObject Popup_mask;
 	private GameObject Popup;
-	//private GameObject Text_sheepName;
-	//private GameObject Text_SheepDescription;
-	//private Text Text_sheepName_text;//ポップアップ　ひつじの名前のテキスト
-	//private Text Text_SheepDescription_text;//ポップアップ　ひつじの説明文のテキスト
+	private GameObject Text_sheepName;
+	private GameObject Text_SheepDescription;
+	private Text Text_sheepName_text;//ポップアップ　ひつじの名前のテキスト
+	private Text Text_SheepDescription_text;//ポップアップ　ひつじの説明文のテキスト
 
+	//ひつじリスト用
 	private GameObject Content;
 	private GameObject cloneBox;
 	private GameObject cloneSheep;
@@ -29,6 +30,12 @@ public class RecordController : MonoBehaviour {
 	private Text cloneSheepNum;
 	private int _HighScoreStageNum;
 
+	//ポップアップ用
+	private GameObject sheep;//object created
+	private GameObject cloneSheepAnim;
+	private Vector3 popupSheepScale;
+	private Vector3 popupSheepPosition;
+
 
 	// Use this for initialization
 	void Start () {
@@ -38,10 +45,10 @@ public class RecordController : MonoBehaviour {
 		Content               = GameObject.Find("Content");
 		Popup_mask            = GameObject.Find("Popup_mask");
 		Popup                 = GameObject.Find("Popup");
-		//Text_sheepName        = GameObject.Find("Text_sheepName");
-		//Text_SheepDescription = GameObject.Find("Text_SheepDescription");
-		//Text_sheepName_text   = Text_sheepName.GetComponent<Text> ();
-		//Text_SheepDescription_text = Text_SheepDescription.GetComponent<Text> ();
+		Text_sheepName        = GameObject.Find("Text_sheepName");
+		Text_SheepDescription = GameObject.Find("Text_SheepDescription");
+		Text_sheepName_text   = Text_sheepName.GetComponent<Text> ();
+		Text_SheepDescription_text = Text_SheepDescription.GetComponent<Text> ();
 
 		Popup_mask.SetActive (false);
 		Popup.SetActive (false);
@@ -53,6 +60,13 @@ public class RecordController : MonoBehaviour {
 		sheepNewScale.x = 0.86f;
 		sheepNewScale.y = 0.86f;
 		sheepNewScale.z = 1;
+
+		popupSheepScale.x = 1.4f;
+		popupSheepScale.y = 1.4f;
+		popupSheepScale.z = 1;
+
+		popupSheepPosition.x = 140;
+		popupSheepPosition.y = 260;
 
 		//クリア問題数をリセット
 		PlayerPrefs.SetInt("thisStageClearCount" , 0);
@@ -98,19 +112,15 @@ public class RecordController : MonoBehaviour {
 
 				
 				} else {
-					
+
+					//未開放のひつじはボタンを非アクティブにする
+					cloneSheep.GetComponent<Button>().interactable = false;
 					
 				}
 
 				cloneSheep.transform.SetParent(cloneBox.transform, true );
 				cloneSheep.transform.localScale = sheepNewScale;
 
-			
-
-				//ボタンのアクティブ・非アクティブを設定
-				//if (thisStageNum == 1 || thisStageNum <= (_HighScoreStageNum + 1)) {
-				//	cloneBtn.GetComponent<Button>().interactable = true;
-				//}
 			}
 
 		}
@@ -121,8 +131,24 @@ public class RecordController : MonoBehaviour {
 	/*
      * ポップアップを開く
      */
-    public void showSheepPopup () {
-        
+    public void showSheepPopup (int _sheepId) {
+
+    	//ポップアップに表示するひつじデータを取得
+    	SheepData popupSheepData = _GameData.GetStSheepData(_sheepId);
+
+    	//名前・説明文を表示
+    	Text_sheepName_text.text = popupSheepData.SheepName;
+    	Text_SheepDescription_text.text = popupSheepData.SheepDescription;
+
+    	//ひつじアニメを表示
+		sheep = (GameObject)Resources.Load("Sheep" + _sheepId);
+		cloneSheepAnim = (GameObject)Instantiate(sheep);
+		cloneSheepAnim.transform.SetParent(Popup.transform, true );
+		cloneSheepAnim.GetComponent<uTools.uTweenPosition> ().enabled = false;
+		cloneSheepAnim.transform.FindChild("Sheep_1").GetComponent<SheepRotation> ().enabled = false;
+        cloneSheepAnim.transform.localScale = popupSheepScale;
+		cloneSheepAnim.transform.position = popupSheepPosition;
+
         Popup_mask.SetActive (true);
 		Popup.SetActive (true);
 
@@ -133,7 +159,9 @@ public class RecordController : MonoBehaviour {
      * ポップアップを閉じる
      */
     public void closeSheepPopup () {
-        
+
+		Destroy(cloneSheepAnim);
+		        
         Popup_mask.SetActive (false);
 		Popup.SetActive (false);
 
