@@ -85,6 +85,8 @@ public class RecordController : MonoBehaviour {
 	 */
 	 void CreateSheepList(){
 
+	 	int unlockedSheepCount = 0;
+
 	 	for (int i = 0; i < 5; i++) {
 
 			cloneBox = (GameObject)Instantiate(SheepBox);
@@ -110,7 +112,36 @@ public class RecordController : MonoBehaviour {
 					cloneSheepNum = cloneSheep.GetComponentInChildren<Text>();
 					cloneSheepNum.text = thisSheepId.ToString();
 
+					unlockedSheepCount++;
+
 				
+				} else if (thisSheepData.UnlockStage == 0) {
+
+					if (thisSheepId == 20 && unlockedSheepCount == 19) {
+						PlayerPrefs.SetInt("SheepUnlockedFlg_10" , 1);
+
+						//対象のひつじのスプライトに差し替える
+						cloneSheep.GetComponent<Image> ().sprite = Resources.Load<Sprite>("sheepImg/pic_" + thisSheepId + "_1");
+						
+						//ひつじidを見えないように保存しておく
+						cloneSheepNum = cloneSheep.GetComponentInChildren<Text>();
+						cloneSheepNum.text = thisSheepId.ToString();
+						
+					}
+
+					if (thisSheepData.IsUnlocked == 1) {
+
+						//対象のひつじのスプライトに差し替える
+						cloneSheep.GetComponent<Image> ().sprite = Resources.Load<Sprite>("sheepImg/pic_" + thisSheepId + "_1");
+						
+						//ひつじidを見えないように保存しておく
+						cloneSheepNum = cloneSheep.GetComponentInChildren<Text>();
+						cloneSheepNum.text = thisSheepId.ToString();
+
+						unlockedSheepCount++;
+
+					}
+
 				} else {
 
 					//未開放のひつじはボタンを非アクティブにする

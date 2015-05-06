@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -212,6 +213,41 @@ public class MainController : MonoBehaviour {
 			GameObject _SheepGenerator = (GameObject)Instantiate(SheepGenerator);
 			//ひつじidによってひつじの種類を設定
 			_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(_StageData.ApperingSheepIds[i]);
+		}
+
+		//ステージ2~10で、日付限定ひつじが出現
+		if (_StageNum >= 2 && _StageNum <= 10) {
+			float randomIncidence;
+			randomIncidence = UnityEngine.Random.Range(0, 100);
+
+			if (randomIncidence < 100) {
+				DateTime thisDay = DateTime.Now;
+				int today = thisDay.Day;
+
+				GameObject _SheepGenerator = (GameObject)Instantiate(SheepGenerator);
+
+				if (today >= 1 && today <= 5) {
+					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(3);
+					PlayerPrefs.SetInt("SheepUnlockedFlg_3" , 1);
+				} else if (today >= 6 && today <= 10) {
+					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(9);
+					PlayerPrefs.SetInt("SheepUnlockedFlg_9" , 1);
+				} else if (today >= 11 && today <= 15) {
+					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(17);
+					PlayerPrefs.SetInt("SheepUnlockedFlg_17" , 1);
+				} else if (today >= 16 && today <= 20) {
+					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(18);
+					PlayerPrefs.SetInt("SheepUnlockedFlg_18" , 1);
+				} else if (today >= 20 && today <= 25) {
+					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(11);
+					PlayerPrefs.SetInt("SheepUnlockedFlg_11" , 1);
+				} else if (today >= 26 && today <= 31) {
+					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(16);
+					PlayerPrefs.SetInt("SheepUnlockedFlg_16" , 1);
+				}
+			}
+			
+
 		}
 
 	}
