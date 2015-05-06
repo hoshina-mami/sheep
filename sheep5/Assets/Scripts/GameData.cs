@@ -189,14 +189,14 @@ public class GameData {
 
 			case 29:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 50;
+				_stage.Incidence = 45;
 				_stage.ApperingSheepIds = new int[] {  1, 13, 7, 12, 10, 14, 6, 15 };
 				break;
 
 			case 30:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 50;
-				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10, 14, 6, 15, 20 };
+				_stage.Incidence = 45;
+				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10, 14, 6, 15, 19 };
 				break;
 
 			default:

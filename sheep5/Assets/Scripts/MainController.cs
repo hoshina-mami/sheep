@@ -30,6 +30,7 @@ public class MainController : MonoBehaviour {
 	private GameObject Btn_minus;
 	private GameObject Btn_ok;
 	private GameObject Btn_maruEnd;
+	private GameObject Btn_next;
 	private GameObject Text_stage;
 	private GameObject Text_readyGo;
 	private GameObject Text_count;
@@ -58,6 +59,7 @@ public class MainController : MonoBehaviour {
 		Btn_minus          = GameObject.Find("Btn_minus");
 		Btn_ok             = GameObject.Find("Btn_ok");
 		Btn_maruEnd        = GameObject.Find("Btn_maruEnd");
+		Btn_next           = GameObject.Find("Btn_next");
 		Text_stage         = GameObject.Find("Text_stage");
 		Text_readyGo       = GameObject.Find("Text_readyGo");
 		Text_count         = GameObject.Find("Text_count");
@@ -215,33 +217,33 @@ public class MainController : MonoBehaviour {
 			_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(_StageData.ApperingSheepIds[i]);
 		}
 
-		//ステージ2~10で、日付限定ひつじが出現
-		if (_StageNum >= 2 && _StageNum <= 10) {
+		//ステージ2~30で、曜日限定ひつじが出現
+		if (_StageNum >= 2 && _StageNum <= 30) {
 			float randomIncidence;
 			randomIncidence = UnityEngine.Random.Range(0, 100);
 
 			if (randomIncidence < 100) {
 				DateTime thisDay = DateTime.Now;
-				int today = thisDay.Day;
+				int today = (int)thisDay.DayOfWeek;
 
 				GameObject _SheepGenerator = (GameObject)Instantiate(SheepGenerator);
 
-				if (today >= 1 && today <= 5) {
+				if (today == 0) {//日曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(3);
 					PlayerPrefs.SetInt("SheepUnlockedFlg_3" , 1);
-				} else if (today >= 6 && today <= 10) {
-					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(9);
-					PlayerPrefs.SetInt("SheepUnlockedFlg_9" , 1);
-				} else if (today >= 11 && today <= 15) {
+				} else if (today == 1) {//月曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(17);
 					PlayerPrefs.SetInt("SheepUnlockedFlg_17" , 1);
-				} else if (today >= 16 && today <= 20) {
-					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(18);
-					PlayerPrefs.SetInt("SheepUnlockedFlg_18" , 1);
-				} else if (today >= 20 && today <= 25) {
+				} else if (today == 2) {//火曜
+					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(9);
+					PlayerPrefs.SetInt("SheepUnlockedFlg_9" , 1);
+				} else if (today == 4) {//木曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(11);
 					PlayerPrefs.SetInt("SheepUnlockedFlg_11" , 1);
-				} else if (today >= 26 && today <= 31) {
+				} else if (today == 5) {//金曜
+					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(18);
+					PlayerPrefs.SetInt("SheepUnlockedFlg_18" , 1);
+				} else if (today == 6) {//土曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(16);
 					PlayerPrefs.SetInt("SheepUnlockedFlg_16" , 1);
 				}
@@ -343,7 +345,14 @@ public class MainController : MonoBehaviour {
 			//3回目クリアでステージクリア
 			thisStageClearCount = thisStageClearCount + 1;
 			if (thisStageClearCount > 3) {
-				Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
+
+				//ステージ30クリアの場合
+				if (_StageNum == 30) {
+					Text_stageClear.GetComponent<Text> ().text = "オールクリアおめでとう！";
+					Btn_next.SetActive(false);
+				} else {
+					Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
+				}
 
 				if (_StageNum > _HighScoreStageNum) {
 					//新記録を出した時
