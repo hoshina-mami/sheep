@@ -24,12 +24,22 @@ public class CreateSheeps : MonoBehaviour {
 	private Vector3 toPosition;
 	private uTools.uTweenPosition tweenPos;
 
+	private int _HighScoreStageNum;//ユーザーのハイスコア
+
 
 	// Use this for initialization
 	void Start () {
 
 		//プレハブ生成の際に親となるGameObjectを格納
 		Sheeps = GameObject.Find("Sheeps");
+
+		//ユーザーのハイスコアを取得する
+		_HighScoreStageNum = PlayerPrefs.GetInt("HighScoreStageNum");
+
+		//全ステージクリアしていたらひつじを変える
+		if (_HighScoreStageNum == 30) {
+			sheep = (GameObject)Resources.Load("Sheep19");
+		}
 	
 	}
 
@@ -84,6 +94,11 @@ public class CreateSheeps : MonoBehaviour {
 		
 		tweenPos.from = fromPosition;
 		tweenPos.to = toPosition;
+
+		if (_HighScoreStageNum == 30) {
+			tweenPos.duration = 4;
+			clone.transform.FindChild("Sheep_1").GetComponent<SheepRotation> ().speed = 4;
+		}
 
 	}
 	

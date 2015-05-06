@@ -222,7 +222,7 @@ public class MainController : MonoBehaviour {
 			float randomIncidence;
 			randomIncidence = UnityEngine.Random.Range(0, 100);
 
-			if (randomIncidence < 100) {
+			if (randomIncidence < 20) {
 				DateTime thisDay = DateTime.Now;
 				int today = (int)thisDay.DayOfWeek;
 
