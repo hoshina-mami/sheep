@@ -57,6 +57,15 @@ public class TitleController : MonoBehaviour {
 
 	}
 
+	// called from onRelease Event of GameObject"Btn_option"
+	public void ClickOptionBtn () {
+
+		hideObjects();
+
+		Invoke("LoadOptionScene",  0.9f);
+
+	}
+
 	//画面遷移のさいにオブジェクトを消す
 	void hideObjects () {
 
@@ -88,6 +97,11 @@ public class TitleController : MonoBehaviour {
 	// ステージ選択画面へとぶ
 	public void LoadRecordScene () {
 		Application.LoadLevel("Record");
+	}
+
+	// オプション画面へとぶ
+	public void LoadOptionScene () {
+		Application.LoadLevel("Option");
 	}
 
 }
