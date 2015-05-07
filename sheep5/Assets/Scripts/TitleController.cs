@@ -35,7 +35,7 @@ public class TitleController : MonoBehaviour {
 
 		hideObjects ();
 
-		Invoke("LoadStageSelectScene",  1f);
+		Invoke("LoadStageSelectScene",  0.8f);
 
 	}
 
@@ -44,7 +44,7 @@ public class TitleController : MonoBehaviour {
 
 		hideObjects();
 
-		Invoke("LoadRecordScene",  1f);
+		Invoke("LoadRecordScene",  0.8f);
 
 	}
 
