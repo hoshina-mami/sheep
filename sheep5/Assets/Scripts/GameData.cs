@@ -250,7 +250,7 @@ public class GameData {
 			case 4:
 				_sheep.SheepId = 4;
 				_sheep.SheepName = "さくらひつじ";
-				_sheep.SheepDescription = "さくらもちみたいなひつじ。春がすき。";
+				_sheep.SheepDescription = "さくらもちみたいなひつじ。双子の弟がいる。";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 4;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_4");
@@ -295,7 +295,7 @@ public class GameData {
 			case 9:
 				_sheep.SheepId = 9;
 				_sheep.SheepName = "かしわひつじ";
-				_sheep.SheepDescription = "かしわもちみたいなひつじ。5月ごろよく見かける。";
+				_sheep.SheepDescription = "かしわもちみたいなひつじ。双子のお姉ちゃんがいる。";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.UnlockDateFrom = 6;
@@ -315,7 +315,7 @@ public class GameData {
 			case 11:
 				_sheep.SheepId = 11;
 				_sheep.SheepName = "さんたひつじ";
-				_sheep.SheepDescription = "クリスマスを楽しみにしているひつじ。";
+				_sheep.SheepDescription = "年中クリスマスを楽しみにしているひつじ。";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.UnlockDateFrom = 21;
@@ -344,7 +344,7 @@ public class GameData {
 			case 14:
 				_sheep.SheepId = 14;
 				_sheep.SheepName = "あじさいひつじ";
-				_sheep.SheepDescription = "梅雨ごろによく見かけるひつじ。カラフル。";
+				_sheep.SheepDescription = "梅雨ごろに元気になるひつじ。カラフル。";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 24;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_14");
@@ -362,7 +362,7 @@ public class GameData {
 			case 16:
 				_sheep.SheepId = 16;
 				_sheep.SheepName = "ほしぞらひつじ";
-				_sheep.SheepDescription = "ロマンティックなひつじ。夜になると現れる。";
+				_sheep.SheepDescription = "ロマンティックなひつじ。流れ星に憧れている。";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.UnlockDateFrom = 26;
@@ -384,7 +384,7 @@ public class GameData {
 			case 18:
 				_sheep.SheepId = 18;
 				_sheep.SheepName = "れもんきゃんでぃーひつじ";
-				_sheep.SheepDescription = "レモン色のひつじ。おやつどきに見かける。";
+				_sheep.SheepDescription = "レモン色のひつじ。初恋の味かもしれない。";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.UnlockDateFrom = 16;
@@ -404,7 +404,7 @@ public class GameData {
 			case 20:
 				_sheep.SheepId = 20;
 				_sheep.SheepName = "はかせひつじ";
-				_sheep.SheepDescription = "秀才ひつじ。博士号を取得している。";
+				_sheep.SheepDescription = "ひつじの博士。博士号を取得している。";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.UnlockDateFrom = 0;
