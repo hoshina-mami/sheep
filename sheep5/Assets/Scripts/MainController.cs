@@ -83,7 +83,7 @@ public class MainController : MonoBehaviour {
 		_StageNum = PlayerPrefs.GetInt("StageNum");
 
 		//debug
-		//GameObject.Find("Text_testCount").SetActive(false);
+		GameObject.Find("Text_testCount").SetActive(false);
 
 		//今回のステージデータを取得する
 		_StageData = _GameData.GetStageData(_StageNum);
@@ -143,8 +143,6 @@ public class MainController : MonoBehaviour {
 	 * ステージ開始時に情報を表示する
 	 */
 	void showStageInfo () {
-
-		Debug.Log(thisStageClearCount);
 
 		//ステージ番号を表示
 		Text_stage.GetComponent<Text>().text = "ステージ  " + _StageNum.ToString() + "-" + thisStageClearCount.ToString();
@@ -217,8 +215,8 @@ public class MainController : MonoBehaviour {
 			_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(_StageData.ApperingSheepIds[i]);
 		}
 
-		//ステージ2~30で、曜日限定ひつじが出現
-		if (_StageNum >= 2 && _StageNum <= 30) {
+		//ステージ3~20で、曜日限定ひつじが出現
+		if (_StageNum >= 3 && _StageNum <= 20) {
 			float randomIncidence;
 			randomIncidence = UnityEngine.Random.Range(0, 100);
 
@@ -287,7 +285,7 @@ public class MainController : MonoBehaviour {
 		ResultSheepCount++;
 
 		//Debug
-		GameObject.Find("Text_testCount").GetComponent<Text> ().text = ResultSheepCount.ToString();
+		//GameObject.Find("Text_testCount").GetComponent<Text> ().text = ResultSheepCount.ToString();
 	}
 
 

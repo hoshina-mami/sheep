@@ -42,7 +42,7 @@ public class TitleController : MonoBehaviour {
 
 		hideObjects ();
 
-		Invoke("LoadStageSelectScene",  0.8f);
+		Invoke("LoadStageSelectScene",  0.9f);
 
 	}
 
@@ -53,7 +53,7 @@ public class TitleController : MonoBehaviour {
 
 		PlayerPrefs.SetInt("titleNotiFlg", 0);
 
-		Invoke("LoadRecordScene",  0.8f);
+		Invoke("LoadRecordScene",  0.9f);
 
 	}
 

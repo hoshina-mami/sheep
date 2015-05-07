@@ -161,7 +161,7 @@ public class GameData {
 
 			case 21:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 25;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 10 };
 				_stage.newSheepFlg = true;
 				break;
