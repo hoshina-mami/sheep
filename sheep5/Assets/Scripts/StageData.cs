@@ -12,4 +12,6 @@ public class StageData {
 
 	public int[] ApperingSheepIds; //登場するひつじのidを格納する配列
 
+    public bool newSheepFlg;
+
 }

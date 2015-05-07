@@ -10,6 +10,7 @@ public class TitleController : MonoBehaviour {
 	private GameObject Btn_start;
 	private GameObject Btn_record;
 	private GameObject Btn_option;
+	private GameObject Pic_noti;
 
 	// Use this for initialization
 	void Start () {
@@ -20,9 +21,15 @@ public class TitleController : MonoBehaviour {
 		Btn_start          = GameObject.Find("Btn_start");
 		Btn_record         = GameObject.Find("Btn_record");
 		Btn_option         = GameObject.Find("Btn_option");
+		Pic_noti           = GameObject.Find("Pic_noti");
 
 		//クリア問題数をリセット
 		PlayerPrefs.SetInt("thisStageClearCount" , 0);
+
+		//ひつじ帳ボタンのnoti表示
+		if (PlayerPrefs.GetInt("titleNotiFlg") == 0) {
+			Pic_noti.SetActive(false);
+		}
 
 		//start sheep animation
 		TitleControllerObj.GetComponent<CreateSheeps>().StartCreateSheep ();
@@ -43,6 +50,8 @@ public class TitleController : MonoBehaviour {
 	public void ClickRecordBtn () {
 
 		hideObjects();
+
+		PlayerPrefs.SetInt("titleNotiFlg", 0);
 
 		Invoke("LoadRecordScene",  0.8f);
 

@@ -109,36 +109,57 @@ public class RecordController : MonoBehaviour {
 					cloneSheep.GetComponent<Image> ().sprite = Resources.Load<Sprite>("sheepImg/pic_" + thisSheepId + "_1");
 					
 					//ひつじidを見えないように保存しておく
-					cloneSheepNum = cloneSheep.GetComponentInChildren<Text>();
+					cloneSheepNum = cloneSheep.transform.FindChild("Text_sheepId").GetComponent<Text>();
 					cloneSheepNum.text = thisSheepId.ToString();
 
 					unlockedSheepCount++;
+
+					//notiの設定
+					if (thisSheepData.IsChecked == 1) {
+						cloneSheep.transform.FindChild("Pic_noti").gameObject.SetActive(false);
+					}
 
 				
 				} else if (thisSheepData.UnlockStage == 0) {
 
 					if (thisSheepId == 20 && unlockedSheepCount == 19) {
-						PlayerPrefs.SetInt("SheepUnlockedFlg_10" , 1);
+
+						//はかせひつじの出現
+						PlayerPrefs.SetInt("SheepUnlockedFlg_20" , 1);
 
 						//対象のひつじのスプライトに差し替える
 						cloneSheep.GetComponent<Image> ().sprite = Resources.Load<Sprite>("sheepImg/pic_" + thisSheepId + "_1");
 						
 						//ひつじidを見えないように保存しておく
-						cloneSheepNum = cloneSheep.GetComponentInChildren<Text>();
+						cloneSheepNum = cloneSheep.transform.FindChild("Text_sheepId").GetComponentInChildren<Text>();
 						cloneSheepNum.text = thisSheepId.ToString();
-						
-					}
 
-					if (thisSheepData.IsUnlocked == 1) {
+						//notiの設定
+						if (thisSheepData.IsChecked == 1) {
+							cloneSheep.transform.FindChild("Pic_noti").gameObject.SetActive(false);
+						}
+
+					} else if (thisSheepData.IsUnlocked == 1) {
 
 						//対象のひつじのスプライトに差し替える
 						cloneSheep.GetComponent<Image> ().sprite = Resources.Load<Sprite>("sheepImg/pic_" + thisSheepId + "_1");
 						
 						//ひつじidを見えないように保存しておく
-						cloneSheepNum = cloneSheep.GetComponentInChildren<Text>();
+						cloneSheepNum = cloneSheep.transform.FindChild("Text_sheepId").GetComponentInChildren<Text>();
 						cloneSheepNum.text = thisSheepId.ToString();
 
 						unlockedSheepCount++;
+
+						//notiの設定
+						if (thisSheepData.IsChecked == 1) {
+							cloneSheep.transform.FindChild("Pic_noti").gameObject.SetActive(false);
+						}
+
+					} else {
+
+						//未開放のひつじはボタンを非アクティブにする
+						cloneSheep.GetComponent<Button>().interactable = false;
+						cloneSheep.transform.FindChild("Pic_noti").gameObject.SetActive(false);
 
 					}
 
@@ -146,6 +167,7 @@ public class RecordController : MonoBehaviour {
 
 					//未開放のひつじはボタンを非アクティブにする
 					cloneSheep.GetComponent<Button>().interactable = false;
+					cloneSheep.transform.FindChild("Pic_noti").gameObject.SetActive(false);
 					
 				}
 

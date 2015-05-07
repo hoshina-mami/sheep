@@ -14,11 +14,9 @@ public class SheepData {
 
     public int UnlockStage;
 
-    public int UnlockDateFrom;
-	
-    public int UnlockDateTo;
+    public int IsUnlocked;
 
-	public int IsUnlocked;
+	public int IsChecked;
 
 	public float TweenDuration;
 

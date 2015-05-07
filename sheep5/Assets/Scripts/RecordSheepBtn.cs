@@ -21,9 +21,15 @@ public class RecordSheepBtn : MonoBehaviour {
      */
     public void showSheepPopup () {
 
+        //notiを消す
+        this.transform.FindChild("Pic_noti").gameObject.SetActive(false);
+
         //ひつじIdを取得
         sheepIdText = GetComponentInChildren<Text>();
         sheepId = int.Parse(sheepIdText.text);
+
+        //今後notiが出ないよう設定
+        PlayerPrefs.SetInt("SheepCheckedFlg_" + sheepId, 1);
 
         RecordController.showSheepPopup(sheepId);
 

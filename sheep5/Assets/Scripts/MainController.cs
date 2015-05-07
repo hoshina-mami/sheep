@@ -230,22 +230,40 @@ public class MainController : MonoBehaviour {
 
 				if (today == 0) {//日曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(3);
-					PlayerPrefs.SetInt("SheepUnlockedFlg_3" , 1);
+					if (PlayerPrefs.GetInt("SheepUnlockedFlg_3") != 1) {
+						PlayerPrefs.SetInt("SheepUnlockedFlg_3" , 1);
+						PlayerPrefs.SetInt("titleNotiFlg", 1);
+					}
 				} else if (today == 1) {//月曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(17);
-					PlayerPrefs.SetInt("SheepUnlockedFlg_17" , 1);
+					if (PlayerPrefs.GetInt("SheepUnlockedFlg_17") != 1) {
+						PlayerPrefs.SetInt("SheepUnlockedFlg_17" , 1);
+						PlayerPrefs.SetInt("titleNotiFlg", 1);
+					}
 				} else if (today == 2) {//火曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(9);
-					PlayerPrefs.SetInt("SheepUnlockedFlg_9" , 1);
+					if (PlayerPrefs.GetInt("SheepUnlockedFlg_9") != 1) {
+						PlayerPrefs.SetInt("SheepUnlockedFlg_9" , 1);
+						PlayerPrefs.SetInt("titleNotiFlg", 1);
+					}
 				} else if (today == 4) {//木曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(11);
-					PlayerPrefs.SetInt("SheepUnlockedFlg_11" , 1);
+					if (PlayerPrefs.GetInt("SheepUnlockedFlg_11") != 1) {
+						PlayerPrefs.SetInt("SheepUnlockedFlg_11" , 1);
+						PlayerPrefs.SetInt("titleNotiFlg", 1);
+					}
 				} else if (today == 5) {//金曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(18);
-					PlayerPrefs.SetInt("SheepUnlockedFlg_18" , 1);
+					if (PlayerPrefs.GetInt("SheepUnlockedFlg_18") != 1) {
+						PlayerPrefs.SetInt("SheepUnlockedFlg_18" , 1);
+						PlayerPrefs.SetInt("titleNotiFlg", 1);
+					}
 				} else if (today == 6) {//土曜
 					_SheepGenerator.GetComponent<SheepGenerator>().InitSheep(16);
-					PlayerPrefs.SetInt("SheepUnlockedFlg_16" , 1);
+					if (PlayerPrefs.GetInt("SheepUnlockedFlg_16") != 1) {
+						PlayerPrefs.SetInt("SheepUnlockedFlg_16" , 1);
+						PlayerPrefs.SetInt("titleNotiFlg", 1);
+					}
 				}
 			}
 			
@@ -357,6 +375,11 @@ public class MainController : MonoBehaviour {
 				if (_StageNum > _HighScoreStageNum) {
 					//新記録を出した時
 					PlayerPrefs.SetInt("HighScoreStageNum" , _StageNum);
+
+					//ひつじが増えた場合
+					if (_StageData.newSheepFlg) {
+						PlayerPrefs.SetInt("titleNotiFlg", 1);
+					}
 				}
 
 				//次のステージ番号をセット＆クリア問題数をリセット
@@ -401,9 +424,6 @@ public class MainController : MonoBehaviour {
 	void updateTotalCount (int currentCount) {
 		int countNum = PlayerPrefs.GetInt("TotalCountNum");
 		PlayerPrefs.SetInt("TotalCountNum" , countNum + currentCount);
-
-		//bebug
-		Debug.Log(PlayerPrefs.GetInt("TotalCountNum"));
 	}
 
 
