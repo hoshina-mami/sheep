@@ -55,6 +55,14 @@ public class OptionController : MonoBehaviour {
 
 
 	/*
+     * 公式サイトへ飛ぶ
+     */
+    public void GoWebSite () {    	
+        Application.OpenURL("http://hitsuji-dama.com/");
+    }
+
+
+	/*
      * タイトル画面へ飛ぶ
      */
     public void LoadTitleScene () {    	
