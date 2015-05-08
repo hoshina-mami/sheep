@@ -40,6 +40,8 @@ public class BtnStageNumController : MonoBehaviour {
         Btn_home.GetComponent<uTools.uTweenAlpha> ().enabled = true;
         Text_stage.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 
+        GetComponent<AudioSource>().Play();
+
         //メイン画面へ飛ぶ
         Invoke("LoadMainScene",  0.7f);
         

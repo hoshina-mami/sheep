@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BGMController.cs" />
      <Compile Include="Assets\Scripts\BtnStageNumController.cs" />
      <Compile Include="Assets\Scripts\CreateSheeps.cs" />
      <Compile Include="Assets\Scripts\GameData.cs" />

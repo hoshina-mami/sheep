@@ -24,6 +24,13 @@ public class StageSelectController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		//音量のON/OFF
+		if (PlayerPrefs.GetInt("SoundFlg") != 0) {
+			AudioListener.volume = 0;
+		} else {
+			AudioListener.volume = 0.7f;
+		}
+
 		Content = GameObject.Find("Content");
 
 		newScale.x = 1;

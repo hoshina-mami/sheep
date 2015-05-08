@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class RecordSheepBtn : MonoBehaviour {
 
+    private GameObject RecordControllerObj;
     private RecordController RecordController;
     private Text sheepIdText;
     private int sheepId;
@@ -12,7 +13,8 @@ public class RecordSheepBtn : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        RecordController = GameObject.Find("RecordController").GetComponent<RecordController>();
+        RecordControllerObj = GameObject.Find("RecordController");
+        RecordController = RecordControllerObj.GetComponent<RecordController>();
 	
 	}
 	
@@ -20,6 +22,8 @@ public class RecordSheepBtn : MonoBehaviour {
      * ポップアップを開く
      */
     public void showSheepPopup () {
+
+        RecordControllerObj.GetComponent<AudioSource>().Play();
 
         //notiを消す
         this.transform.FindChild("Pic_noti").gameObject.SetActive(false);

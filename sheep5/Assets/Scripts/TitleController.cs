@@ -3,7 +3,11 @@ using System.Collections;
 
 public class TitleController : MonoBehaviour {
 
+	//public
+	public GameObject bgm;//生成したいプレハブ
+
 	//private
+	private GameObject cloneBgm;
 	private GameObject TitleControllerObj;
 	private GameObject Background;
 	private GameObject Logo;
@@ -23,6 +27,20 @@ public class TitleController : MonoBehaviour {
 		Btn_option         = GameObject.Find("Btn_option");
 		Pic_noti           = GameObject.Find("Pic_noti");
 
+
+		//音量のON/OFF
+		if (PlayerPrefs.GetInt("SoundFlg") != 0) {
+			AudioListener.volume = 0;
+		} else {
+			AudioListener.volume = 0.7f;
+		}
+
+
+		//BGMを流す
+		if (GameObject.Find("BGM(Clone)") == null) {
+			cloneBgm = (GameObject)Instantiate(bgm);
+		}
+
 		//クリア問題数をリセット
 		PlayerPrefs.SetInt("thisStageClearCount" , 0);
 
@@ -40,6 +58,8 @@ public class TitleController : MonoBehaviour {
 	// called from onRelease Event of GameObject"Btn_start"
 	public void ClickStartBtn () {
 
+		GetComponent<AudioSource>().Play();
+
 		hideObjects ();
 
 		Invoke("LoadStageSelectScene",  0.9f);
@@ -48,6 +68,8 @@ public class TitleController : MonoBehaviour {
 
 	// called from onRelease Event of GameObject"Btn_record"
 	public void ClickRecordBtn () {
+
+		GetComponent<AudioSource>().Play();
 
 		hideObjects();
 
@@ -59,6 +81,8 @@ public class TitleController : MonoBehaviour {
 
 	// called from onRelease Event of GameObject"Btn_option"
 	public void ClickOptionBtn () {
+
+		GetComponent<AudioSource>().Play();
 
 		hideObjects();
 

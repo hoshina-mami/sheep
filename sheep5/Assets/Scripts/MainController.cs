@@ -51,6 +51,13 @@ public class MainController : MonoBehaviour {
 	// Use this for initializationb -----------------------------------------------------
 	void Start () {
 
+		//音量のON/OFF
+		if (PlayerPrefs.GetInt("SoundFlg") != 0) {
+			AudioListener.volume = 0;
+		} else {
+			AudioListener.volume = 0.7f;
+		}
+
 		_GameData = new GameData();
 
 		Board              = GameObject.Find("Board");
@@ -325,6 +332,8 @@ public class MainController : MonoBehaviour {
 	 */
 	public void showResult () {
 
+		GetComponent<AudioSource>().Play();
+
 		//Btn_okを消す
 		switchButtonInteractable (Btn_ok,  false);
 		turnOnAlphaAnimation (Btn_ok);
@@ -396,6 +405,7 @@ public class MainController : MonoBehaviour {
 
 			//正解画像表示
 			Pic_maru.SetActive(true);
+			Pic_maru.GetComponent<AudioSource>().Play();
 		
 		} else {
 
@@ -406,6 +416,7 @@ public class MainController : MonoBehaviour {
 
 			//不正解画像表示
 			Pic_batsu.SetActive(true);
+			Pic_batsu.GetComponent<AudioSource>().Play();
 
 			//クリア問題数をリセット
 			PlayerPrefs.SetInt("thisStageClearCount" , 0);
@@ -433,6 +444,8 @@ public class MainController : MonoBehaviour {
 		if (countNum < 999) {
 			countNum = countNum + 1;
 			Text_count_text.text = countNum.ToString();
+
+			Btn_plus.GetComponent<AudioSource>().Play();
 		}
 	}
 
@@ -445,6 +458,8 @@ public class MainController : MonoBehaviour {
 		if (countNum > 0) {
 			countNum = countNum - 1;
 			Text_count_text.text = countNum.ToString();
+
+			Btn_minus.GetComponent<AudioSource>().Play();
 		}
 	}
 
@@ -462,7 +477,7 @@ public class MainController : MonoBehaviour {
 	 * Titleに戻る関数
 	 * Btn_endから呼ばれる
 	 */
-	public void LoadTitleScene () {
+	public void LoadTitleScene () {		
 		Application.LoadLevel("Title");
 	}
 }

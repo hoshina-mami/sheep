@@ -40,6 +40,13 @@ public class RecordController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		//音量のON/OFF
+		if (PlayerPrefs.GetInt("SoundFlg") != 0) {
+			AudioListener.volume = 0;
+		} else {
+			AudioListener.volume = 0.7f;
+		}
+
 		_GameData = new GameData();
 
 		Content               = GameObject.Find("Content");
@@ -186,6 +193,8 @@ public class RecordController : MonoBehaviour {
      */
     public void showSheepPopup (int _sheepId) {
 
+    	GetComponent<AudioSource>().Play();
+
     	//ポップアップに表示するひつじデータを取得
     	SheepData popupSheepData = _GameData.GetStSheepData(_sheepId);
 
@@ -212,6 +221,8 @@ public class RecordController : MonoBehaviour {
      * ポップアップを閉じる
      */
     public void closeSheepPopup () {
+
+    	GetComponent<AudioSource>().Play();
 
 		Destroy(cloneSheepAnim);
 
