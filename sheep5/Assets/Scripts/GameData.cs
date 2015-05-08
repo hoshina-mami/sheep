@@ -28,7 +28,7 @@ public class GameData {
 
 			case 2:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 25;
 				_stage.ApperingSheepIds = new int[] { 1, 2 };
 				_stage.newSheepFlg = true;
 				break;
@@ -42,7 +42,7 @@ public class GameData {
 
 			case 4:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 25;
 				_stage.ApperingSheepIds = new int[] { 1, 2, 4 };
 				_stage.newSheepFlg = true;
 				break;
@@ -56,28 +56,28 @@ public class GameData {
 
 			case 6:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6 };
 				_stage.newSheepFlg = true;
 				break;
 
 			case 7:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
+				_stage.Incidence = 35;
 				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6 };
 				_stage.newSheepFlg = false;
 				break;
 
 			case 8:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 25;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6, 5};
 				_stage.newSheepFlg = true;
 				break;
 
 			case 9:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
+				_stage.Incidence = 35;
 				_stage.ApperingSheepIds = new int[] { 1, 2, 4, 6, 5 };
 				_stage.newSheepFlg = false;
 				break;
@@ -105,21 +105,21 @@ public class GameData {
 
 			case 13:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 25;
 				_stage.ApperingSheepIds = new int[] { 1, 4, 7, 12, 8 };
 				_stage.newSheepFlg = true;
 				break;
 
 			case 14:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 25;
+				_stage.Incidence = 30;
 				_stage.ApperingSheepIds = new int[] { 1, 4, 7, 12, 8 };
 				_stage.newSheepFlg = false;
 				break;
 
 			case 15:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 30;
+				_stage.Incidence = 35;
 				_stage.ApperingSheepIds = new int[] { 1, 4, 7, 12, 8 };
 				_stage.newSheepFlg = false;
 				break;
@@ -133,7 +133,7 @@ public class GameData {
 
 			case 17:
 				_stage.BackgroundType = 1;
-				_stage.Incidence = 20;
+				_stage.Incidence = 25;
 				_stage.ApperingSheepIds = new int[] { 1, 13, 7, 12, 8, 6 };
 				_stage.newSheepFlg = true;
 				break;
@@ -441,7 +441,7 @@ public class GameData {
 			case 20:
 				_sheep.SheepId = 20;
 				_sheep.SheepName = "はかせひつじ";
-				_sheep.SheepDescription = "ひつじの博士。博士号を取得している。";
+				_sheep.SheepDescription = "博士号を取得しているひつじ。ひつじをコンプリートしてくれてありがとう！";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_20");
