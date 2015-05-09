@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ed5f9ae7de41e4953a11047d1967f482
-timeCreated: 1430654206
+timeCreated: 1431138511
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -35,6 +35,8 @@ TextureImporter:
     21300056: btn_minus_on
     21300058: pic_black
     21300060: pic_new
+    21300062: text_tutorial2
+    21300064: text_tutorial6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -83,8 +85,8 @@ TextureImporter:
     - name: bg_scoreBoard
       rect:
         serializedVersion: 2
-        x: 925
-        y: 667
+        x: 1567
+        y: 1103
         width: 220
         height: 123
       alignment: 0
@@ -94,7 +96,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 548
-        y: 1997
+        y: 1885
         width: 86
         height: 28
       alignment: 0
@@ -104,7 +106,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1544
+        y: 1524
         width: 559
         height: 190
       alignment: 0
@@ -114,7 +116,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 622
         width: 640
         height: 900
       alignment: 0
@@ -123,8 +125,8 @@ TextureImporter:
     - name: text_dot
       rect:
         serializedVersion: 2
-        x: 561
-        y: 1709
+        x: 1464
+        y: 556
         width: 16
         height: 19
       alignment: 0
@@ -133,8 +135,8 @@ TextureImporter:
     - name: pic_sheep_batsu
       rect:
         serializedVersion: 2
-        x: 1686
-        y: 0
+        x: 1284
+        y: 622
         width: 281
         height: 291
       alignment: 0
@@ -143,8 +145,8 @@ TextureImporter:
     - name: btn_home
       rect:
         serializedVersion: 2
-        x: 1473
-        y: 680
+        x: 1372
+        y: 522
         width: 90
         height: 88
       alignment: 0
@@ -153,7 +155,7 @@ TextureImporter:
     - name: pic_maru
       rect:
         serializedVersion: 2
-        x: 1164
+        x: 976
         y: 0
         width: 520
         height: 520
@@ -163,7 +165,7 @@ TextureImporter:
     - name: btn_record
       rect:
         serializedVersion: 2
-        x: 1565
+        x: 976
         y: 522
         width: 302
         height: 88
@@ -173,8 +175,8 @@ TextureImporter:
     - name: btn_plus_on
       rect:
         serializedVersion: 2
-        x: 1147
-        y: 667
+        x: 1891
+        y: 622
         width: 150
         height: 126
       alignment: 0
@@ -184,7 +186,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2039
+        y: 2019
         width: 357
         height: 3
       alignment: 0
@@ -193,8 +195,8 @@ TextureImporter:
     - name: pic_sound
       rect:
         serializedVersion: 2
-        x: 561
-        y: 1544
+        x: 1892
+        y: 522
         width: 68
         height: 64
       alignment: 0
@@ -203,8 +205,8 @@ TextureImporter:
     - name: btn_big
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 612
+        x: 1498
+        y: 522
         width: 300
         height: 88
       alignment: 0
@@ -214,7 +216,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1736
+        y: 1716
         width: 600
         height: 167
       alignment: 0
@@ -223,8 +225,8 @@ TextureImporter:
     - name: pic_sheep_maru
       rect:
         serializedVersion: 2
-        x: 642
-        y: 522
+        x: 1284
+        y: 915
         width: 281
         height: 291
       alignment: 0
@@ -233,8 +235,8 @@ TextureImporter:
     - name: cloud_1
       rect:
         serializedVersion: 2
-        x: 925
-        y: 522
+        x: 1567
+        y: 800
         width: 394
         height: 143
       alignment: 0
@@ -243,8 +245,8 @@ TextureImporter:
     - name: pic_foot
       rect:
         serializedVersion: 2
-        x: 561
-        y: 1610
+        x: 1962
+        y: 522
         width: 63
         height: 63
       alignment: 0
@@ -253,8 +255,8 @@ TextureImporter:
     - name: pic_loading
       rect:
         serializedVersion: 2
-        x: 548
-        y: 1905
+        x: 1280
+        y: 522
         width: 90
         height: 90
       alignment: 0
@@ -263,8 +265,8 @@ TextureImporter:
     - name: cloud_2
       rect:
         serializedVersion: 2
-        x: 1321
-        y: 522
+        x: 1567
+        y: 945
         width: 242
         height: 156
       alignment: 0
@@ -273,8 +275,8 @@ TextureImporter:
     - name: btn_small
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 702
+        x: 642
+        y: 1525
         width: 250
         height: 88
       alignment: 0
@@ -283,7 +285,7 @@ TextureImporter:
     - name: pic_batsu
       rect:
         serializedVersion: 2
-        x: 642
+        x: 1498
         y: 0
         width: 520
         height: 520
@@ -294,7 +296,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1905
+        y: 1885
         width: 546
         height: 132
       alignment: 0
@@ -303,8 +305,8 @@ TextureImporter:
     - name: cloud_3
       rect:
         serializedVersion: 2
-        x: 1686
-        y: 293
+        x: 1567
+        y: 622
         width: 322
         height: 176
       alignment: 0
@@ -313,8 +315,8 @@ TextureImporter:
     - name: bg_sky
       rect:
         serializedVersion: 2
-        x: 0
-        y: 902
+        x: 642
+        y: 622
         width: 640
         height: 640
       alignment: 0
@@ -323,7 +325,7 @@ TextureImporter:
     - name: btn_help
       rect:
         serializedVersion: 2
-        x: 1869
+        x: 1800
         y: 522
         width: 90
         height: 88
@@ -333,8 +335,8 @@ TextureImporter:
     - name: btn_minus_on
       rect:
         serializedVersion: 2
-        x: 1321
-        y: 680
+        x: 1811
+        y: 945
         width: 150
         height: 126
       alignment: 0
@@ -343,8 +345,8 @@ TextureImporter:
     - name: pic_black
       rect:
         serializedVersion: 2
-        x: 561
-        y: 1675
+        x: 1464
+        y: 522
         width: 32
         height: 32
       alignment: 0
@@ -353,10 +355,30 @@ TextureImporter:
     - name: pic_new
       rect:
         serializedVersion: 2
-        x: 1867
-        y: 612
+        x: 1811
+        y: 1073
         width: 99
         height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: text_tutorial2
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1264
+        width: 788
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: text_tutorial6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 974
+        height: 620
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

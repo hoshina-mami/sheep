@@ -39,6 +39,8 @@ public class MainController : MonoBehaviour {
 	private GameObject Text_batsuCount;//不正解時の正解表示
 	private GameObject Text_currentRecord;//不正解時の文言
 	private GameObject Pic_tutorial;//チュートリアル画像
+	private GameObject Pic_tutorial2;//チュートリアル画像
+	private GameObject Pic_tutorial6;//チュートリアル画像
 	private GameObject Pic_maru;//正解画像
 	private GameObject Pic_batsu;//不正解画像
 	private Text Text_readyGo_text;//「よーいどん」のテキスト
@@ -75,6 +77,8 @@ public class MainController : MonoBehaviour {
 		Text_batsuCount    = GameObject.Find("Text_batsuCount");
 		Text_currentRecord = GameObject.Find("Text_currentRecord");
 		Pic_tutorial       = GameObject.Find("Pic_tutorial");
+		Pic_tutorial2      = GameObject.Find("Pic_tutorial2");
+		Pic_tutorial6      = GameObject.Find("Pic_tutorial6");
 		Pic_maru           = GameObject.Find("Pic_maru");
 		Pic_batsu          = GameObject.Find("Pic_batsu");
 		Text_readyGo_text  = Text_readyGo.GetComponent<Text> ();
@@ -156,13 +160,35 @@ public class MainController : MonoBehaviour {
 
 		switch (_StageNum) {
 			case 1:
-				//ステージ1の場合、チュートリアル画像を残す＆そのための間をとる
+				//チュートリアル画像を残す＆そのための間をとる
+				Destroy(Pic_tutorial2);
+				Destroy(Pic_tutorial6);
+				Invoke("hideStageNum",  2.0f);
+				Invoke("showReadyGo",  2.5f);
+				break;
+
+			case 2:
+				//チュートリアル画像を残す＆そのための間をとる
+				Destroy(Pic_tutorial);
+				Destroy(Pic_tutorial6);
+				Invoke("hideStageNum",  2.0f);
+				Invoke("showReadyGo",  2.5f);
+				break;
+
+			case 6:
+			case 16:
+			case 26:
+				//チュートリアル画像を残す＆そのための間をとる
+				Destroy(Pic_tutorial);
+				Destroy(Pic_tutorial2);
 				Invoke("hideStageNum",  2.0f);
 				Invoke("showReadyGo",  2.5f);
 				break;
 
 			default:
 				Destroy(Pic_tutorial);
+				Destroy(Pic_tutorial2);
+				Destroy(Pic_tutorial6);
 				Invoke("hideStageNum",  1.0f);
 				Invoke("showReadyGo",  1.5f);
 				break;
