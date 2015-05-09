@@ -1,66 +1,104 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/**
+ * ひつじのプレハブを生成するクラス
+ * @scene Title
+ */
 public class CreateSheeps : MonoBehaviour {
 
 	//public
-	public GameObject sheep;//object created
+	public GameObject sheep;//生成したいプレハブ
+	public float positonTop;//プレハブを生成したい範囲のy座標の上限
+	public float positonBottom;//プレハブを生成したい範囲のy座標の下限
+
 	//private
 	private GameObject clone;
 	private GameObject Sheeps;
 	private Transform cloneTransfrom;
 
+	private Vector3 newScale;
+	private Vector3 newPosition;
+	private Vector3 fromPosition;
+	private Vector3 toPosition;
+	private uTools.uTweenPosition tweenPos;
+
+	private int _HighScoreStageNum;//ユーザーのハイスコア
+
+
 	// Use this for initialization
 	void Start () {
 
+		//プレハブ生成の際に親となるGameObjectを格納
 		Sheeps = GameObject.Find("Sheeps");
-		 
-		StartCreateSheep ();
+
+		//ユーザーのハイスコアを取得する
+		_HighScoreStageNum = PlayerPrefs.GetInt("HighScoreStageNum");
+
+		//全ステージクリアしていたらひつじを変える
+		if (_HighScoreStageNum == 30) {
+			sheep = (GameObject)Resources.Load("Sheep19");
+		}
 	
 	}
 
 
-	 //start to create sheeps
-	void StartCreateSheep () {
-		InvokeRepeating("CreateSheep", 0f, 1.5f);
+	/*
+	 * ひつじの生成を開始する
+	 */
+	public void StartCreateSheep () {
+		InvokeRepeating("CreateSheep", 0.5f, 1f);
 	}
 
-	//stop to create sheeps
+
+	/*
+	 * ひつじの生成を停止する
+	 */
 	void StopCreateSheep() {
 		CancelInvoke();
 	}
 
-	//create sheep object
+
+	/*
+	 * ひつじを生成する関数
+	 */
 	void CreateSheep(){
 		clone = (GameObject)Instantiate(sheep);
-		clone.transform.parent = Sheeps.transform;
+		clone.transform.SetParent(Sheeps.transform, true );
 
-		// set sheep's base scale and position
-		Vector3 newScale = clone.transform.localScale;
+		// ひつじのデフォルトのposition, scaleを設定する
+		newScale = clone.transform.localScale;
 		newScale.x = 1;
 		newScale.y = 1;
 		newScale.z = 1;
 		clone.transform.localScale = newScale;
 		
-		Vector3 newPosition = clone.transform.position;
+		newPosition = clone.transform.position;
 		newPosition.x = 200;
 		newPosition.y = 0;
 		newPosition.z = 0;
 		clone.transform.position = newPosition;
 
-		// set random value for tweenPosition.y
+		// y位置を指定した範囲内でランダムに生成する
 		float randomNum;
-		randomNum = Random.Range (0, -350);
+		randomNum = Random.Range (positonTop, positonBottom);
 		
-		uTools.uTweenPosition tweenPos = clone.GetComponent("uTools.uTweenPosition") as uTools.uTweenPosition;
+		// 生成した数値をTweenPositionのy座標に設定する
+		tweenPos = clone.GetComponent("uTools.uTweenPosition") as uTools.uTweenPosition;
 		
-		Vector3 newFromPosition = tweenPos.from;
-		newFromPosition.y = randomNum;
-		Vector3 newToPosition = tweenPos.to;
-		newToPosition.y = randomNum;
+		fromPosition = tweenPos.from;
+		fromPosition.y = randomNum;
+		toPosition = tweenPos.to;
+		toPosition.y = randomNum;
 		
-		tweenPos.from = newFromPosition;
-		tweenPos.to = newToPosition;
+		tweenPos.from = fromPosition;
+		tweenPos.to = toPosition;
+
+		if (_HighScoreStageNum == 30) {
+			tweenPos.duration = 4;
+			clone.transform.FindChild("Sheep_1").GetComponent<SheepRotation> ().speed = 4;
+		}
 
 	}
 	

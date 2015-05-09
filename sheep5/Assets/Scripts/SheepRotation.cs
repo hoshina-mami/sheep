@@ -4,7 +4,7 @@ using System.Collections;
 public class SheepRotation : MonoBehaviour {
 
 	private GameObject  sheep;
-	public float speed = 10;
+	public float speed;
 
 	// Use this for initialization
 	void Start () {
