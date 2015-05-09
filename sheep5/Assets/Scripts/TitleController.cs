@@ -19,6 +19,7 @@ public class TitleController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Application.targetFrameRate = 60;
 
 		TitleControllerObj = GameObject.Find("TitleControllerObj");
 		Background         = GameObject.Find("Background");
