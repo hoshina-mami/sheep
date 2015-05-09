@@ -15,6 +15,7 @@ public class TitleController : MonoBehaviour {
 	private GameObject Btn_record;
 	private GameObject Btn_option;
 	private GameObject Pic_noti;
+	private GameObject Text_version;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +27,7 @@ public class TitleController : MonoBehaviour {
 		Btn_record         = GameObject.Find("Btn_record");
 		Btn_option         = GameObject.Find("Btn_option");
 		Pic_noti           = GameObject.Find("Pic_noti");
+		Text_version       = GameObject.Find("Text_version");
 
 
 		//音量のON/OFF
@@ -99,6 +101,7 @@ public class TitleController : MonoBehaviour {
 		Btn_record.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Btn_option.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Background.GetComponent<uTools.uTweenPosition> ().enabled = true;
+		Text_version.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		
 		//remove clouds
 		GameObject[] clouds = GameObject.FindGameObjectsWithTag("cloud");

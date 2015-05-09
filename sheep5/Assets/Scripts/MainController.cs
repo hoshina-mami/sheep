@@ -45,6 +45,7 @@ public class MainController : MonoBehaviour {
 	private GameObject Pic_batsu;//不正解画像
 	private Text Text_readyGo_text;//「よーいどん」のテキスト
 	private Text Text_count_text;//ユーザーのカウンターのテキスト
+	private bool isStarted;
 
 	//ひつじを生成するもの
 	public GameObject SheepGenerator;
@@ -107,9 +108,11 @@ public class MainController : MonoBehaviour {
 		if (thisStageClearCount == 0) {
 			thisStageClearCount = 1;
 		}
-		
 
-		//ボタンを非アクティブにする
+		//ゲームスタートフラグをオフ（カウントボタン制御のため）
+		isStarted = false;
+
+		//カウントボタンの見た目を非アクティブにする
 		switchButtonInteractable (Btn_plus, false);
 		switchButtonInteractable (Btn_minus, false);
 
@@ -237,6 +240,7 @@ public class MainController : MonoBehaviour {
 	 */
 	void startSheep () {
 		// カウントボタンをアクティブにする
+		isStarted = true;
 		switchButtonInteractable (Btn_plus,  true);
 		switchButtonInteractable (Btn_minus, true);
 
@@ -465,13 +469,15 @@ public class MainController : MonoBehaviour {
 	/*
 	 * カウントボタン（＋）の制御
 	 */
-	void countUp () {
-		int countNum = int.Parse (Text_count_text.text);
-		if (countNum < 999) {
-			countNum = countNum + 1;
-			Text_count_text.text = countNum.ToString();
+	public void countUp () {
+		if (isStarted) {
+			int countNum = int.Parse (Text_count_text.text);
+			if (countNum < 999) {
+				countNum = countNum + 1;
+				Text_count_text.text = countNum.ToString();
 
-			Btn_plus.GetComponent<AudioSource>().Play();
+				Btn_plus.GetComponent<AudioSource>().Play();
+			}
 		}
 	}
 
@@ -479,13 +485,15 @@ public class MainController : MonoBehaviour {
 	/*
 	 * カウントボタン（ー）の制御
 	 */
-	void countDown () {
-		int countNum = int.Parse (Text_count_text.text);
-		if (countNum > 0) {
-			countNum = countNum - 1;
-			Text_count_text.text = countNum.ToString();
+	public void countDown () {
+		if (isStarted) {
+			int countNum = int.Parse (Text_count_text.text);
+			if (countNum > 0) {
+				countNum = countNum - 1;
+				Text_count_text.text = countNum.ToString();
 
-			Btn_minus.GetComponent<AudioSource>().Play();
+				Btn_minus.GetComponent<AudioSource>().Play();
+			}
 		}
 	}
 
