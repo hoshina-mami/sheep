@@ -5,14 +5,28 @@ using System.Collections.Generic;
 
 public class OptionController : MonoBehaviour {
 
+	//public
+	public GameObject sheep;//生成したいプレハブ
+
 	private GameObject Btn_on;
 	private GameObject Btn_off;
+
+	private GameObject clone;
+	private GameObject UI;
+	private Transform cloneTransfrom;
+
+	private Vector3 newScale;
+	private Vector3 newPosition;
+	private Vector3 fromPosition;
+	private Vector3 toPosition;
+	private uTools.uTweenPosition tweenPos;
 
 	// Use this for initialization
 	void Start () {
 
-		Btn_on            = GameObject.Find("Btn_on");
-		Btn_off           = GameObject.Find("Btn_off");
+		UI            = GameObject.Find("UI");
+		Btn_on        = GameObject.Find("Btn_on");
+		Btn_off       = GameObject.Find("Btn_off");
 
 		//音量のON/OFF
 		if (PlayerPrefs.GetInt("SoundFlg") != 0) {
@@ -22,6 +36,8 @@ public class OptionController : MonoBehaviour {
 			AudioListener.volume = 0.7f;
 			switchButtonInteractable (Btn_on, false);
 		}
+
+		InvokeRepeating("CreateSheep", 2f, 12f);
 	
 	}
 
@@ -68,6 +84,40 @@ public class OptionController : MonoBehaviour {
     public void LoadTitleScene () {    	
         Application.LoadLevel("Title");
     }
+
+
+    /*
+	 * ひつじを生成する関数
+	 */
+	void CreateSheep(){
+		clone = (GameObject)Instantiate(sheep);
+		clone.transform.SetParent(UI.transform, true );
+
+		// ひつじのデフォルトのposition, scaleを設定する
+		newScale = clone.transform.localScale;
+		newScale.x = 0.9f;
+		newScale.y = 0.9f;
+		newScale.z = 1;
+		clone.transform.localScale = newScale;
+		
+		newPosition = clone.transform.position;
+		newPosition.x = 420;
+		newPosition.y = 0;
+		newPosition.z = 0;
+		clone.transform.position = newPosition;
+
+		// 生成した数値をTweenPositionのy座標に設定する
+		tweenPos = clone.GetComponent("uTools.uTweenPosition") as uTools.uTweenPosition;
+		
+		fromPosition = tweenPos.from;
+		fromPosition.y = -270;
+		toPosition = tweenPos.to;
+		toPosition.y = -270;
+		
+		tweenPos.from = fromPosition;
+		tweenPos.to = toPosition;
+
+	}
 
 }
 
