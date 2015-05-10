@@ -39,6 +39,7 @@ public class RecordController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Application.targetFrameRate = 60;
 
 		//音量のON/OFF
 		if (PlayerPrefs.GetInt("SoundFlg") != 0) {

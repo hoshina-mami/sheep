@@ -53,6 +53,7 @@ public class MainController : MonoBehaviour {
 
 	// Use this for initializationb -----------------------------------------------------
 	void Start () {
+		Application.targetFrameRate = 60;
 
 		//音量のON/OFF
 		if (PlayerPrefs.GetInt("SoundFlg") != 0) {

@@ -23,6 +23,7 @@ public class OptionController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Application.targetFrameRate = 60;
 
 		UI            = GameObject.Find("UI");
 		Btn_on        = GameObject.Find("Btn_on");
