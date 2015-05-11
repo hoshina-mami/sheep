@@ -1,2 +1,169 @@
 @charset    'utf-8';
 @import     '_html5reset';
+
+body {
+	font-size: 16px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height: 1.5em;
+	color: #353535;
+	background-image: url("../images/bg_green.png");
+}
+
+.wrapper {
+	background-image: url("../images/bg.png");
+	background-repeat: repeat-x;
+	background-position: 0 -800px;
+}
+
+.header {
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	padding-top: 20px;
+
+	h1 {
+		background-image: url("../images/logo.png");
+		background-repeat: no-repeat;
+		width: 546px;
+		height: 132px;
+		margin: 0 auto;
+
+		p {
+			display: none;
+		}
+	}
+
+	h2 {
+		display: none;
+	}
+
+}
+
+.contents {
+	width: 80%;
+	margin: 0 auto;
+
+	.copy,
+	.news,
+	.howToPlay,
+	.contact {
+		margin-bottom: 30px;
+		clear : left;
+
+		p {
+			margin-bottom: 10px;
+		}
+	}
+
+	.copy {
+		color: #87621a;
+		text-align: center;
+	}
+
+	.howToPlay_list {
+		overflow: hidden;
+
+		li {
+			width: 31%;
+			float: left;
+			margin-right: 20px;
+
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h1 {
+		border-bottom: dotted 3px #fff;
+		// color: #fff;
+		font-size: 18px;
+		line-height: 40px;
+		margin-bottom: 10px;
+		padding-left: 40px;
+		position: relative;
+
+		&:before {
+			content: "";
+			background-image: url("../images/pic_1_1.png");
+			background-repeat: no-repeat;
+			background-size: 34px 34px;;
+			width: 34px;
+			height: 34px;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+		}
+	}
+
+	.notice {
+		color: #999;
+	}
+}
+
+.footer {
+	width: 80%;
+	margin: 20px auto;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+@media only screen and (max-width:700px){
+	.wrapper {
+		background-position: 0 -860px;
+	}
+
+	.header {
+		height: 140px;
+
+		h1 {
+			width: 400px;
+			background-size: 400px;
+		}
+	}
+
+	.contents{
+		.howToPlay_list {
+			li {
+				width: 29%;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width:481px){
+	body {
+		font-size: 14px;
+	}
+	.wrapper {
+		background-position: 0 -670px;
+  		background-size: 500px;
+	}
+
+	.header {
+		height: 100px;
+
+		h1 {
+			width: 273px;
+			background-size: 273px 66px;
+		}
+	}
+
+	.contents{
+		.howToPlay_list {
+			li {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	
+}
