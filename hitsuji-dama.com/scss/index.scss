@@ -60,6 +60,26 @@ body {
 		text-align: center;
 	}
 
+	.news_list {
+		li {
+			position: relative;
+			margin-bottom: 2px;
+			padding-left: 24px;
+		}
+
+		.new:before {
+			content: "";
+			background-image: url("../images/pic_new.png");
+			background-repeat: no-repeat;
+			background-size: 20px 20px;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 2px;
+			left: 0;
+		}
+	}
+
 	.howToPlay_list {
 		overflow: hidden;
 
@@ -102,7 +122,27 @@ body {
 	}
 
 	.notice {
-		color: #999;
+		color: #666;
+	}
+
+	.sleepnel {
+		.sleepnel_box {
+			overflow: hidden;
+		}
+
+		.sleepnel_link {
+			width: 200px;
+			display: block;
+  			float: left;
+
+  			img {
+  				width: 200px;
+  			}
+		}
+
+		.sleepnel_text {
+			margin-top: 15px;
+		}
 	}
 }
 
@@ -112,6 +152,7 @@ body {
 	color: #fff;
 	font-size: 12px;
 	text-align: center;
+	clear: left;
 }
 
 
@@ -162,6 +203,22 @@ body {
 			li {
 				width: 100%;
 				margin-bottom: 20px;
+			}
+		}
+
+		.sleepnel {
+			.sleepnel_link {
+				width: 200px;
+				display: block;
+	  			float: none;
+
+	  			img {
+	  				width: 200px;
+	  			}
+			}
+
+			.sleepnel_text {
+				margin-top: 12px;
 			}
 		}
 	}
