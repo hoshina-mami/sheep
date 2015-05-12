@@ -44,6 +44,10 @@ body {
 	margin: 0 auto;
 
 	.copy,
+	.store {
+		margin-bottom: 20px;
+	}
+
 	.news,
 	.howToPlay,
 	.contact {
@@ -58,6 +62,12 @@ body {
 	.copy {
 		color: #87621a;
 		text-align: center;
+		position: relative;
+	}
+
+	.store {
+		text-align: center;
+		position: relative;
 	}
 
 	.news_list {
@@ -111,7 +121,7 @@ body {
 			content: "";
 			background-image: url("../images/pic_1_1.png");
 			background-repeat: no-repeat;
-			background-size: 34px 34px;;
+			background-size: 34px 34px;
 			width: 34px;
 			height: 34px;
 			position: absolute;
@@ -153,6 +163,51 @@ body {
 	font-size: 12px;
 	text-align: center;
 	clear: left;
+}
+
+/* ひつじアニメ */
+.sheep_box {
+	position: relative;
+	right: -1000px;
+	z-index: 0;
+	animation-name: sheep_run;
+	animation-duration: 12s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.sheep_img {
+	img {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		z-index: 2;
+		animation-name: sheep_rotation;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+
+	&:before {
+		content: "";
+		background-image: url("../images/pic_shadow.png");
+		background-repeat: no-repeat;
+		background-size: 86px 28px;
+		width: 86px;
+		height: 28px;
+		position: absolute;
+		top: 74px;
+  		left: 7px;
+		z-index: 1;
+	}
+
+}
+@keyframes sheep_run {
+	0% {transform: translateX(0px);}
+	99.9%, to {transform: translateX(-1900px);}
+}
+@keyframes sheep_rotation {
+	0% {transform: rotate(0deg);}
+	99.9%, to {transform: rotate(-360deg);}
 }
 
 
@@ -221,6 +276,51 @@ body {
 				margin-top: 12px;
 			}
 		}
+	}
+
+	/* ひつじアニメ */
+	.sheep_box {
+		position: relative;
+		right: -520px;
+		z-index: 0;
+		animation-name: sheep_run;
+		animation-duration: 6s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+	.sheep_img {
+		img {
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			z-index: 2;
+			animation-name: sheep_rotation;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		&:before {
+			content: "";
+			background-image: url("../images/pic_shadow.png");
+			background-repeat: no-repeat;
+			background-size: 64px;
+			width: 64px;
+			height: 20px;
+			position: absolute;
+			top: 64px;
+	  		left: 9px;
+			z-index: 1;
+		}
+
+	}
+	@keyframes sheep_run {
+		0% {transform: translateX(0px);}
+		99.9%, to {transform: translateX(-800px);}
+	}
+	@keyframes sheep_rotation {
+		0% {transform: rotate(0deg);}
+		99.9%, to {transform: rotate(-360deg);}
 	}
 	
 }
