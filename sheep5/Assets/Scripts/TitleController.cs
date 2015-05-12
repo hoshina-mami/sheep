@@ -30,14 +30,12 @@ public class TitleController : MonoBehaviour {
 		Pic_noti           = GameObject.Find("Pic_noti");
 		Text_version       = GameObject.Find("Text_version");
 
-
 		//音量のON/OFF
 		if (PlayerPrefs.GetInt("SoundFlg") != 0) {
 			AudioListener.volume = 0;
 		} else {
 			AudioListener.volume = 0.7f;
 		}
-
 
 		//BGMを流す
 		if (GameObject.Find("BGM(Clone)") == null) {
