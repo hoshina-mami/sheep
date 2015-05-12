@@ -86,7 +86,6 @@ public class MainController : MonoBehaviour {
 		Text_readyGo_text  = Text_readyGo.GetComponent<Text> ();
 		Text_count_text    = Text_count.GetComponent<Text> ();
 
-
 		//初期表示で必要ないものを消す
 		Btn_ok.SetActive (false);//okボタン
 		Pic_maru.SetActive (false);//正解画像
