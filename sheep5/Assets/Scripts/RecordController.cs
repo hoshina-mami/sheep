@@ -36,6 +36,10 @@ public class RecordController : MonoBehaviour {
 	private Vector3 popupSheepScale;
 	private Vector3 popupSheepPosition;
 
+	//シェア用
+	private int retryCoinNum;
+	private string shareSheepName;
+
 
 	// Use this for initialization
 	void Start () {
@@ -74,7 +78,7 @@ public class RecordController : MonoBehaviour {
 		popupSheepScale.z = 1;
 
 		popupSheepPosition.x = 0;
-		popupSheepPosition.y = 100;
+		popupSheepPosition.y = 140;
 
 		//クリア問題数をリセット
 		PlayerPrefs.SetInt("thisStageClearCount" , 0);
@@ -199,6 +203,8 @@ public class RecordController : MonoBehaviour {
     	//ポップアップに表示するひつじデータを取得
     	SheepData popupSheepData = _GameData.GetStSheepData(_sheepId);
 
+    	shareSheepName = popupSheepData.SheepName;
+
     	//名前・説明文を表示
     	Text_sheepName_text.text = popupSheepData.SheepName;
     	Text_SheepDescription_text.text = popupSheepData.SheepDescription;
@@ -238,6 +244,23 @@ public class RecordController : MonoBehaviour {
      */
     public void LoadTitleScene () {
         Application.LoadLevel("Title");
+    }
+
+
+
+    /*
+     * シェアする
+     */
+    public void shareSocial () {
+
+    	retryCoinNum = PlayerPrefs.GetInt("RetryCoinNum");
+    	PlayerPrefs.SetInt("RetryCoinNum", retryCoinNum + 1);
+
+    	//string tweet = "" + shareSheepName + "を見つけたよ！和み系ひまつぶしゲーム「ひつじだま」 #ひつじだま http://hitsuji-dama.com/";
+    	string tweet = "" + shareSheepName + "を見つけたよ！ http://hitsuji-dama.com/";
+
+		Application.OpenURL("https://twitter.com/intent/tweet?text=" + WWW.EscapeURL(tweet));
+
     }
 
 }

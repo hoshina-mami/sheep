@@ -31,13 +31,17 @@ public class MainController : MonoBehaviour {
 	private GameObject Btn_ok;
 	private GameObject Btn_maruEnd;
 	private GameObject Btn_next;
+	private GameObject Btn_cancel;
+	private GameObject Btn_use;
 	private GameObject Text_stage;
 	private GameObject Text_readyGo;
 	private GameObject Text_count;
+	private GameObject Text_inGame;
 	private GameObject Text_maruCount;//正解時の正解表示
 	private GameObject Text_stageClear;//正解時の文言
 	private GameObject Text_batsuCount;//不正解時の正解表示
 	private GameObject Text_currentRecord;//不正解時の文言
+	private GameObject Text_retryNum;//リトライコインの個数
 	private GameObject Pic_tutorial;//チュートリアル画像
 	private GameObject Pic_tutorial2;//チュートリアル画像
 	private GameObject Pic_tutorial6;//チュートリアル画像
@@ -45,10 +49,15 @@ public class MainController : MonoBehaviour {
 	private GameObject Pic_batsu;//不正解画像
 	private Text Text_readyGo_text;//「よーいどん」のテキスト
 	private Text Text_count_text;//ユーザーのカウンターのテキスト
+	private GameObject Popup_mask;
+	private GameObject Popup;
 	private bool isStarted;
 
 	//ひつじを生成するもの
 	public GameObject SheepGenerator;
+
+	//シェア用
+	private int retryCoinNum;
 
 
 	// Use this for initializationb -----------------------------------------------------
@@ -71,25 +80,34 @@ public class MainController : MonoBehaviour {
 		Btn_ok             = GameObject.Find("Btn_ok");
 		Btn_maruEnd        = GameObject.Find("Btn_maruEnd");
 		Btn_next           = GameObject.Find("Btn_next");
+		Btn_cancel         = GameObject.Find("Btn_cancel");
+		Btn_use            = GameObject.Find("Btn_use");
 		Text_stage         = GameObject.Find("Text_stage");
 		Text_readyGo       = GameObject.Find("Text_readyGo");
 		Text_count         = GameObject.Find("Text_count");
+		Text_inGame        = GameObject.Find("Text_inGame");
 		Text_maruCount     = GameObject.Find("Text_maruCount");
 		Text_stageClear    = GameObject.Find("Text_stageClear");
 		Text_batsuCount    = GameObject.Find("Text_batsuCount");
 		Text_currentRecord = GameObject.Find("Text_currentRecord");
+		Text_retryNum      = GameObject.Find("Text_retryNum");
 		Pic_tutorial       = GameObject.Find("Pic_tutorial");
 		Pic_tutorial2      = GameObject.Find("Pic_tutorial2");
 		Pic_tutorial6      = GameObject.Find("Pic_tutorial6");
 		Pic_maru           = GameObject.Find("Pic_maru");
 		Pic_batsu          = GameObject.Find("Pic_batsu");
+		Popup_mask         = GameObject.Find("Popup_mask");
+		Popup              = GameObject.Find("Popup");
 		Text_readyGo_text  = Text_readyGo.GetComponent<Text> ();
 		Text_count_text    = Text_count.GetComponent<Text> ();
 
 		//初期表示で必要ないものを消す
-		Btn_ok.SetActive (false);//okボタン
+		Text_inGame.SetActive (false);//「かぞえてね」
 		Pic_maru.SetActive (false);//正解画像
 		Pic_batsu.SetActive (false);//不正解画像
+		Popup_mask.SetActive (false);//リトライポップアップマスク
+		Popup.SetActive (false);//リトライポップアップ
+		
 
 		//ステージ番号を取得する
 		_StageNum = PlayerPrefs.GetInt("StageNum");
@@ -108,6 +126,9 @@ public class MainController : MonoBehaviour {
 		if (thisStageClearCount == 0) {
 			thisStageClearCount = 1;
 		}
+
+		//リトライコインの数を取得
+		retryCoinNum = PlayerPrefs.GetInt("RetryCoinNum");
 
 		//ゲームスタートフラグをオフ（カウントボタン制御のため）
 		isStarted = false;
@@ -211,6 +232,7 @@ public class MainController : MonoBehaviour {
 
 		//ひつじを動かし始める
 		Invoke("startSheep",  2.0f);
+		Invoke("showInGameText",  2.5f);
 
 	}
 	void addDot () {
@@ -239,6 +261,7 @@ public class MainController : MonoBehaviour {
 	 * ひつじの動きを開始する
 	 */
 	void startSheep () {
+
 		// カウントボタンをアクティブにする
 		isStarted = true;
 		switchButtonInteractable (Btn_plus,  true);
@@ -302,9 +325,15 @@ public class MainController : MonoBehaviour {
 				}
 			}
 			
-
 		}
+	}
 
+
+	/*
+	 * 「かぞえてね」を表示
+	 */
+	void showInGameText () {
+		Text_inGame.SetActive (true);
 	}
 
 
@@ -340,8 +369,11 @@ public class MainController : MonoBehaviour {
 				Destroy(generator);
 			}
 
+			turnOnAlphaAnimation (Text_inGame);
+
 			//確認画面へ
 			Board.GetComponent<uTools.uTweenPosition> ().enabled = true;
+			Btn_ok.GetComponent<uTools.uTweenPosition> ().enabled = true;
 
 		}
 	}
@@ -388,6 +420,12 @@ public class MainController : MonoBehaviour {
 	 * 正解・不正解のチェックをする
 	 */
 	void checkAnswer () {
+
+		Btn_ok.SetActive (false);
+		Btn_plus.SetActive (false);
+		Btn_minus.SetActive (false);
+		Text_inGame.SetActive (false);
+
 		int countNum = int.Parse (Text_count_text.text);
 
 		if (countNum == ResultSheepCount) {
@@ -509,10 +547,81 @@ public class MainController : MonoBehaviour {
 
 	/*
 	 * Titleに戻る関数
-	 * Btn_endから呼ばれる
+	 * Btn_homeから呼ばれる
 	 */
 	public void LoadTitleScene () {		
 		Application.LoadLevel("Title");
 	}
+
+
+	/*
+	 * StageSelectに戻る関数
+	 * Btn_endから呼ばれる
+	 */
+	public void LoadStageSelectScene () {		
+		Application.LoadLevel("StageSelect");
+	}
+
+
+	/*
+     * シェアする
+     */
+    public void shareSocial () {
+
+    	PlayerPrefs.SetInt("RetryCoinNum", retryCoinNum + 1);
+
+    	string tweet = "ステージ" + _StageNum + "をクリアしたよ！和み系ひまつぶしゲーム「ひつじだま」 #ひつじだま http://hitsuji-dama.com/";
+
+		Application.OpenURL("https://twitter.com/intent/tweet?text=" + WWW.EscapeURL(tweet));
+
+    }
+
+
+    /*
+     * リトライポップアップを表示する
+     */
+    public void showRetryPopup () {
+
+    	GetComponent<AudioSource>().Play();
+
+    	Popup_mask.SetActive (true);
+		Popup.SetActive (true);
+
+		Text_retryNum.GetComponent<Text> ().text = "x " + retryCoinNum.ToString();
+
+		if (retryCoinNum < 1) {
+			switchButtonInteractable (Btn_use, false);
+		}
+
+    }
+
+
+ 	/*
+     * リトライポップアップを閉じる
+     */
+    public void hideRetryPopup () {
+
+    	Popup_mask.SetActive (false);
+		Popup.SetActive (false);
+
+    }
+
+
+	/*
+     * リトライコインを使う
+     */
+    public void useRetryCoin () {
+
+    	PlayerPrefs.SetInt("RetryCoinNum", retryCoinNum - 1);
+
+    	PlayerPrefs.SetInt("thisStageClearCount" , thisStageClearCount);
+
+    	Application.LoadLevel("Main");
+
+    }
+
+
+
+   
 }
 

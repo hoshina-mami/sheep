@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ed5f9ae7de41e4953a11047d1967f482
-timeCreated: 1431138511
+timeCreated: 1431937758
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -37,6 +37,7 @@ TextureImporter:
     21300060: pic_new
     21300062: text_tutorial2
     21300064: text_tutorial6
+    21300066: pic_retryCoin
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -175,8 +176,8 @@ TextureImporter:
     - name: btn_plus_on
       rect:
         serializedVersion: 2
-        x: 1891
-        y: 622
+        x: 1811
+        y: 945
         width: 150
         height: 126
       alignment: 0
@@ -335,8 +336,8 @@ TextureImporter:
     - name: btn_minus_on
       rect:
         serializedVersion: 2
-        x: 1811
-        y: 945
+        x: 1891
+        y: 622
         width: 150
         height: 126
       alignment: 0
@@ -355,8 +356,8 @@ TextureImporter:
     - name: pic_new
       rect:
         serializedVersion: 2
-        x: 1811
-        y: 1073
+        x: 642
+        y: 1615
         width: 99
         height: 99
       alignment: 0
@@ -379,6 +380,16 @@ TextureImporter:
         y: 0
         width: 974
         height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pic_retryCoin
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1073
+        width: 136
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
