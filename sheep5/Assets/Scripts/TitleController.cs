@@ -51,7 +51,7 @@ public class TitleController : MonoBehaviour {
 		}
 
 		//debug
-		Debug.Log(PlayerPrefs.GetInt("RetryCoinNum"));
+		//Debug.Log(PlayerPrefs.GetInt("RetryCoinNum"));
 
 		//start sheep animation
 		TitleControllerObj.GetComponent<CreateSheeps>().StartCreateSheep ();
