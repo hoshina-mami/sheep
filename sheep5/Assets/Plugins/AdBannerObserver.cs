@@ -52,22 +52,7 @@ public class AdBannerObserver : MonoBehaviour {
 #endif
 
     IEnumerator Start () {
-#if UNITY_IPHONE
-        ADBannerView banner = new ADBannerView();
-        banner.autoSize = true;
-        banner.autoPosition = ADPosition.Bottom;
-        
-        while (true) {
-            if (banner.error != null) {
-                Debug.Log("Error: " + banner.error.description);
-                break;
-            } else if (banner.loaded) {
-                banner.Show();
-                break;
-            }
-            yield return null;
-        }
-#elif UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
         plugin = new AndroidJavaClass("jp.radiumsoftware.unityplugin.admob.AdBannerController");
         unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
