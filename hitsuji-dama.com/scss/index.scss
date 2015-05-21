@@ -70,6 +70,23 @@ body {
 		position: relative;
 	}
 
+	.storeBtn {
+		display: inline-block;
+		text-decoration: none;
+
+		&.apple {
+			margin-right: 10px;
+		}
+		&.google {
+			margin-left: 10px;
+
+			img {
+				height: 40px;
+  				width: 130px;
+			}
+		}
+	}
+
 	.news_list {
 		li {
 			position: relative;
