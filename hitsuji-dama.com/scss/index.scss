@@ -9,6 +9,11 @@ body {
 	background-image: url("../images/bg_green.png");
 }
 
+a {
+	color: green;
+	text-decoration: none;
+}
+
 .wrapper {
 	background-image: url("../images/bg.png");
 	background-repeat: repeat-x;
@@ -92,6 +97,19 @@ body {
 			position: relative;
 			margin-bottom: 2px;
 			padding-left: 24px;
+
+			span {
+				display: inline-block;
+			}
+
+			.date {
+				// font-weight: bold;
+				color: #555;
+			}
+
+			.line_second {
+				margin-left: 113px;
+			}
 		}
 
 		.new:before {
@@ -265,12 +283,32 @@ body {
 		height: 100px;
 
 		h1 {
-			width: 273px;
-			background-size: 273px 66px;
+			width: 260px;
+			background-size: 260px;
 		}
 	}
 
 	.contents{
+		.storeBtn {
+			display: block;
+
+			&.apple {
+				margin-right: 0px;
+			}
+			&.google {
+				margin-top: 10px;
+				margin-left: 0px;
+			}
+		}
+
+		.news_list {
+			li {
+				.line_second {
+					margin-left: 0px;
+				}
+			}
+		}
+
 		.howToPlay_list {
 			li {
 				width: 100%;
