@@ -46,8 +46,35 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\AdBannerObserver.cs" />
-     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <Compile Include="Assets\Plugins\Nend\AD\NendAd.cs" />
+     <Compile Include="Assets\Plugins\Nend\AD\NendAdBanner.cs" />
+     <Compile Include="Assets\Plugins\Nend\AD\NendAdIcon.cs" />
+     <Compile Include="Assets\Plugins\Nend\AD\NendAdInterstitial.cs" />
+     <Compile Include="Assets\Plugins\Nend\Callback\NendAdBannerCallback.cs" />
+     <Compile Include="Assets\Plugins\Nend\Callback\NendAdIconCallback.cs" />
+     <Compile Include="Assets\Plugins\Nend\Callback\NendAdInterstitialCallback.cs" />
+     <Compile Include="Assets\Plugins\Nend\Common\Gravity.cs" />
+     <Compile Include="Assets\Plugins\Nend\Common\NendAdErrorEventArgs.cs" />
+     <Compile Include="Assets\Plugins\Nend\Common\NendAdInterstitialEnumerations.cs" />
+     <Compile Include="Assets\Plugins\Nend\Common\NendErrorCode.cs" />
+     <Compile Include="Assets\Plugins\Nend\Common\NendUtils.cs" />
+     <Compile Include="Assets\Plugins\Nend\Common\Orientation.cs" />
+     <Compile Include="Assets\Plugins\Nend\Layout\NendAdDefaultLayoutBuilder.cs" />
+     <Compile Include="Assets\Plugins\Nend\Layout\NendAdDefaultLayoutParams.cs" />
+     <Compile Include="Assets\Plugins\Nend\Layout\NendAdIconLayoutBuilder.cs" />
+     <Compile Include="Assets\Plugins\Nend\Layout\NendAdIconLayoutParams.cs" />
+     <Compile Include="Assets\Plugins\Nend\Layout\NendAdLayoutBuilder.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\Android\AndroidBannerInterface.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\Android\AndroidIconInterface.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\Android\AndroidInterstitialInterface.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\NendAdBannerInterface.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\NendAdIconInterface.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\NendAdInterstitialInterface.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\NendAdNativeInterfaceFactory.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\iOS\IOSBannerInterface.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\iOS\IOSIconInterface.cs" />
+     <Compile Include="Assets\Plugins\Nend\Platform\iOS\IOSInterstitialInterface.cs" />
+     <None Include="Assets\Plugins\iOS\NADView_readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
