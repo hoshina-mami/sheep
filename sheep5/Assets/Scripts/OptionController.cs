@@ -78,6 +78,14 @@ public class OptionController : MonoBehaviour {
         Application.OpenURL("http://hitsuji-dama.com/");
     }
 
+    /*
+     * LINEストアへ飛ぶ
+     */
+    public void GoLineStore () { 
+    	PlayerPrefs.SetInt("infoNotiFlg", 0);   	
+        Application.OpenURL("http://line.me/S/shop/sticker/author/85999");
+    }
+
 
 	/*
      * タイトル画面へ飛ぶ
@@ -111,9 +119,9 @@ public class OptionController : MonoBehaviour {
 		tweenPos = clone.GetComponent("uTools.uTweenPosition") as uTools.uTweenPosition;
 		
 		fromPosition = tweenPos.from;
-		fromPosition.y = -270;
+		fromPosition.y = -360;
 		toPosition = tweenPos.to;
-		toPosition.y = -270;
+		toPosition.y = -360;
 		
 		tweenPos.from = fromPosition;
 		tweenPos.to = toPosition;
