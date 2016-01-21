@@ -82,7 +82,7 @@ public class OptionController : MonoBehaviour {
      * LINEストアへ飛ぶ
      */
     public void GoLineStore () { 
-    	PlayerPrefs.SetInt("infoNotiFlg", 0);   	
+    	PlayerPrefs.SetInt("infoNotiFlg", 1);
         Application.OpenURL("http://line.me/S/shop/sticker/author/85999");
     }
 
