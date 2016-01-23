@@ -2,10 +2,10 @@
 @import     '_html5reset';
 
 body {
-	font-size: 16px;
+	font-size: 15px;
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	line-height: 1.5em;
-	color: #353535;
+	color: #483129;
 	background-image: url("../images/bg_green.png");
 }
 
@@ -13,6 +13,18 @@ a {
 	color: green;
 	text-decoration: none;
 }
+
+
+//util -----------------------------------------
+.utl_gray {
+	background-color: #f2f2f2;
+}
+
+.utl_inlineBlock {
+	display: inline-block;
+}
+//----------------------------------------------
+
 
 .wrapper {
 	background-image: url("../images/bg.png");
@@ -125,6 +137,12 @@ a {
 		}
 	}
 
+	.news_more {
+		width: 100%;
+		text-align: right;
+		font-size: 14px;
+	}
+
 	.howToPlay_list {
 		overflow: hidden;
 
@@ -140,6 +158,33 @@ a {
 
 		img {
 			width: 100%;
+		}
+	}
+
+	.lineStamp {
+		text-align: center;
+		margin-bottom: 20px;
+
+		.lineStamp_pic1 {
+			width: 100%;
+		}
+
+		.lineStamp_text {
+			color: #87621a;
+			font-weight: bold;
+		}
+	}
+
+	.sister {
+		padding: 10px;
+		margin-bottom: 20px;
+		overflow: hidden;
+
+		.pic_icon {
+			width: 90px;
+			height: 90px;
+			margin-right: 20px;
+			float: left;
 		}
 	}
 
@@ -168,6 +213,7 @@ a {
 
 	.notice {
 		color: #666;
+		font-size: 13px;
 	}
 
 	.sleepnel {
@@ -198,6 +244,10 @@ a {
 	font-size: 12px;
 	text-align: center;
 	clear: left;
+
+	a {
+		color: #fff;
+	}
 }
 
 /* ひつじアニメ */
@@ -329,6 +379,28 @@ a {
 
 			.sleepnel_text {
 				margin-top: 12px;
+			}
+		}
+
+		.sister {
+			.sister_bottom {
+				clear: left;
+			}
+
+			.sister_bottom {
+				display: block;
+				width:140px;
+				margin: 0 auto;
+
+				&.apple {
+					margin-right: 0px;
+				}
+				&.google {
+					margin-top: 10px;
+					img {
+						width: 135px;
+					}
+				}
 			}
 		}
 	}

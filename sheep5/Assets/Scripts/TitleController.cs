@@ -14,6 +14,7 @@ public class TitleController : MonoBehaviour {
 	private GameObject Btn_start;
 	private GameObject Btn_record;
 	private GameObject Btn_option;
+	private GameObject Btn_line;
 	private GameObject Pic_noti;
 	private GameObject Pic_noti2;
 	private GameObject Text_version;
@@ -28,6 +29,7 @@ public class TitleController : MonoBehaviour {
 		Btn_start          = GameObject.Find("Btn_start");
 		Btn_record         = GameObject.Find("Btn_record");
 		Btn_option         = GameObject.Find("Btn_option");
+		Btn_line           = GameObject.Find("Btn_line");
 		Pic_noti           = GameObject.Find("Pic_noti");
 		Pic_noti2          = GameObject.Find("Pic_noti2");
 		Text_version       = GameObject.Find("Text_version");
@@ -53,7 +55,7 @@ public class TitleController : MonoBehaviour {
 		}
 
 		//infoボタンのnoti表示
-		if (PlayerPrefs.GetInt("infoNotiFlg") == 0) {
+		if (PlayerPrefs.GetInt("infoNotiFlg") == 1) {
 			Pic_noti2.SetActive(false);
 		}
 
@@ -109,6 +111,7 @@ public class TitleController : MonoBehaviour {
 		Btn_start.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Btn_record.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Btn_option.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+		Btn_line.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Background.GetComponent<uTools.uTweenPosition> ().enabled = true;
 		Text_version.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		
@@ -139,5 +142,12 @@ public class TitleController : MonoBehaviour {
 	public void LoadOptionScene () {
 		Application.LoadLevel("Option");
 	}
+
+	/*
+     * LINEストアへ飛ぶ
+     */
+    public void GoLineStore () { 
+        Application.OpenURL("http://line.me/S/shop/sticker/author/85999");
+    }	
 
 }
