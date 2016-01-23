@@ -15,6 +15,7 @@ public class TitleController : MonoBehaviour {
 	private GameObject Btn_record;
 	private GameObject Btn_option;
 	private GameObject Pic_noti;
+	private GameObject Pic_noti2;
 	private GameObject Text_version;
 
 	// Use this for initialization
@@ -28,6 +29,7 @@ public class TitleController : MonoBehaviour {
 		Btn_record         = GameObject.Find("Btn_record");
 		Btn_option         = GameObject.Find("Btn_option");
 		Pic_noti           = GameObject.Find("Pic_noti");
+		Pic_noti2          = GameObject.Find("Pic_noti2");
 		Text_version       = GameObject.Find("Text_version");
 
 		//音量のON/OFF
@@ -48,6 +50,11 @@ public class TitleController : MonoBehaviour {
 		//ひつじ帳ボタンのnoti表示
 		if (PlayerPrefs.GetInt("titleNotiFlg") == 0) {
 			Pic_noti.SetActive(false);
+		}
+
+		//infoボタンのnoti表示
+		if (PlayerPrefs.GetInt("infoNotiFlg") == 0) {
+			Pic_noti2.SetActive(false);
 		}
 
 		//debug
