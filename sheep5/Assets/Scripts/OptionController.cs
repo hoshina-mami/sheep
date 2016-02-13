@@ -83,7 +83,11 @@ public class OptionController : MonoBehaviour {
      */
     public void GoLineStore () { 
     	PlayerPrefs.SetInt("infoNotiFlg", 1);
-        Application.OpenURL("http://line.me/S/shop/sticker/author/85999");
+        if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Application.OpenURL("http://line.me/S/sticker/1243998");
+		} else {
+			Application.OpenURL("http://line.me/S/shop/sticker/author/85999");
+		}
     }
 
 

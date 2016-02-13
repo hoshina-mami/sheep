@@ -8,6 +8,7 @@ public class RecordController : MonoBehaviour {
 	//public
 	public GameObject SheepBox;//ひつじを横に並べる用のプレハブ
 	public GameObject SheepImg;//ひつじ用のプレハブ
+	public Sprite btnSprite;
 
 	//private
 	private GameData _GameData;//ゲーム全体のデータ
@@ -16,6 +17,7 @@ public class RecordController : MonoBehaviour {
 	private GameObject Popup;
 	private GameObject Text_sheepName;
 	private GameObject Text_SheepDescription;
+	private GameObject Pic_title;
 	private Text Text_sheepName_text;//ポップアップ　ひつじの名前のテキスト
 	private Text Text_SheepDescription_text;//ポップアップ　ひつじの説明文のテキスト
 
@@ -57,6 +59,7 @@ public class RecordController : MonoBehaviour {
 		Content               = GameObject.Find("Content");
 		Popup_mask            = GameObject.Find("Popup_mask");
 		Popup                 = GameObject.Find("Popup");
+		Pic_title             = GameObject.Find("Pic_title");
 		Text_sheepName        = GameObject.Find("Text_sheepName");
 		Text_SheepDescription = GameObject.Find("Text_SheepDescription");
 		Text_sheepName_text   = Text_sheepName.GetComponent<Text> ();
@@ -88,6 +91,11 @@ public class RecordController : MonoBehaviour {
 
 		//ひつじ一覧生成
 		CreateSheepList();
+
+		//ひつじ帳ボタン背景設定
+		if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Pic_title.GetComponent<Image> ().sprite = btnSprite;
+		}
 	
 	}
 
@@ -253,12 +261,17 @@ public class RecordController : MonoBehaviour {
      */
     public void shareSocial () {
 
+    	string tweet;
+
     	retryCoinNum = PlayerPrefs.GetInt("RetryCoinNum");
     	PlayerPrefs.SetInt("RetryCoinNum", retryCoinNum + 1);
 
-    	string tweet = "" + shareSheepName + "を見つけたよ！ #ひつじだま http://hitsuji-dama.com/";
-    	//string tweet = "" + shareSheepName + "を見つけたよ！ http://hitsuji-dama.com/";
-
+    	if (Application.systemLanguage != SystemLanguage.Japanese) {
+			tweet = "" + shareSheepName + " was found! #HITSUJIDAMA http://hitsuji-dama.com/";
+		} else {
+			tweet = "" + shareSheepName + "を見つけたよ！ #ひつじだま http://hitsuji-dama.com/";
+		}
+    	
 		Application.OpenURL("https://twitter.com/intent/tweet?text=" + WWW.EscapeURL(tweet));
 
     }

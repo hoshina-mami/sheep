@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class TitleController : MonoBehaviour {
 
 	//public
 	public GameObject bgm;//生成したいプレハブ
+	public Sprite btnSprite;
 
 	//private
 	private GameObject cloneBgm;
@@ -48,6 +50,11 @@ public class TitleController : MonoBehaviour {
 
 		//クリア問題数をリセット
 		PlayerPrefs.SetInt("thisStageClearCount" , 0);
+
+		//ひつじ帳ボタン背景設定
+		if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Btn_record.GetComponent<Image> ().sprite = btnSprite;
+		}
 
 		//ひつじ帳ボタンのnoti表示
 		if (PlayerPrefs.GetInt("titleNotiFlg") == 0) {
@@ -147,7 +154,11 @@ public class TitleController : MonoBehaviour {
      * LINEストアへ飛ぶ
      */
     public void GoLineStore () { 
-        Application.OpenURL("http://line.me/S/shop/sticker/author/85999");
+    	if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Application.OpenURL("http://line.me/S/sticker/1243998");
+		} else {
+			Application.OpenURL("http://line.me/S/shop/sticker/author/85999");
+		}
     }	
 
 }
