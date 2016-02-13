@@ -256,7 +256,7 @@ public class RecordController : MonoBehaviour {
     	retryCoinNum = PlayerPrefs.GetInt("RetryCoinNum");
     	PlayerPrefs.SetInt("RetryCoinNum", retryCoinNum + 1);
 
-    	string tweet = "" + shareSheepName + "を見つけたよ！ #ひつじだま http://hitsuji-dama.com/";
+    	string tweet = "" + shareSheepName + "It's was found！ #HITSUJIDAMA http://hitsuji-dama.com/";
     	//string tweet = "" + shareSheepName + "を見つけたよ！ http://hitsuji-dama.com/";
 
 		Application.OpenURL("https://twitter.com/intent/tweet?text=" + WWW.EscapeURL(tweet));

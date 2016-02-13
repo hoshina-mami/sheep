@@ -250,8 +250,8 @@ public class GameData {
 		switch (sheepId) {
 			case 1:
 				_sheep.SheepId = 1;
-				_sheep.SheepName = "ひつじ";
-				_sheep.SheepDescription = "普通のひつじ。";
+				_sheep.SheepName = "sheep";
+				_sheep.SheepDescription = "They are ordinary sheeps.";
 				_sheep.SheepHint = "1度あそべば出会えるかも…？";
 				_sheep.UnlockStage = 1;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_1");
@@ -260,8 +260,8 @@ public class GameData {
 
 			case 2:
 				_sheep.SheepId = 2;
-				_sheep.SheepName = "りぼんひつじ";
-				_sheep.SheepDescription = "ちょっとオシャレをしてみたひつじ。";
+				_sheep.SheepName = "Ribbon sheep";
+				_sheep.SheepDescription = "They are snazzy sheeps.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 2;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_2");
@@ -270,8 +270,8 @@ public class GameData {
 
 			case 3:
 				_sheep.SheepId = 3;
-				_sheep.SheepName = "みかんひつじ";
-				_sheep.SheepDescription = "かがみもちに憧れるひつじ。お正月がすき。";
+				_sheep.SheepName = "Orange sheep";
+				_sheep.SheepDescription = "They are longing to japanese KAGAMI MOCHI.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_3");
@@ -280,8 +280,8 @@ public class GameData {
 
 			case 4:
 				_sheep.SheepId = 4;
-				_sheep.SheepName = "さくらひつじ";
-				_sheep.SheepDescription = "さくらもちみたいなひつじ。双子の弟がいる。";
+				_sheep.SheepName = "SAKURA sheep";
+				_sheep.SheepDescription = "They like SAKURA MOCHI that is rice cake wrapped in a cherry leaf.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 4;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_4");
@@ -290,8 +290,8 @@ public class GameData {
 
 			case 5:
 				_sheep.SheepId = 5;
-				_sheep.SheepName = "しろひつじ";
-				_sheep.SheepDescription = "まっしろなひつじ。そのうち普通のひつじになる。";
+				_sheep.SheepName = "White sheep";
+				_sheep.SheepDescription = "They will eventually become ordinary sheeps.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 8;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_5");
@@ -300,8 +300,8 @@ public class GameData {
 
 			case 6:
 				_sheep.SheepId = 6;
-				_sheep.SheepName = "くろひつじ";
-				_sheep.SheepDescription = "くろいひつじ。顔がちょっとこわい。";
+				_sheep.SheepName = "Black sheep";
+				_sheep.SheepDescription = "They like a prank.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 6;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_6");
@@ -310,8 +310,8 @@ public class GameData {
 
 			case 7:
 				_sheep.SheepId = 7;
-				_sheep.SheepName = "しあわせひつじ";
-				_sheep.SheepDescription = "四つ葉のクローバーを見つけてしあわせになったひつじ。";
+				_sheep.SheepName = "Happy sheep";
+				_sheep.SheepDescription = "They are happy mood.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 11;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_7");
@@ -320,8 +320,8 @@ public class GameData {
 
 			case 8:
 				_sheep.SheepId = 8;
-				_sheep.SheepName = "あずきひつじ";
-				_sheep.SheepDescription = "あずき色のひつじ。和菓子がすき。";
+				_sheep.SheepName = "Red beans sheep";
+				_sheep.SheepDescription = "They like Japanese confectionery.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 13;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_8");
@@ -330,8 +330,8 @@ public class GameData {
 
 			case 9:
 				_sheep.SheepId = 9;
-				_sheep.SheepName = "かしわひつじ";
-				_sheep.SheepDescription = "かしわもちみたいなひつじ。双子のお姉ちゃんがいる。";
+				_sheep.SheepName = "KASHIWA sheep";
+				_sheep.SheepDescription = "They like KASHIWA MOCHI that is rice cake wrapped in a daimyo oak leaf.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_9");
@@ -340,8 +340,8 @@ public class GameData {
 
 			case 10:
 				_sheep.SheepId = 10;
-				_sheep.SheepName = "ぶるーはわいひつじ";
-				_sheep.SheepDescription = "かき氷にありそうなひつじ。夏は元気。";
+				_sheep.SheepName = "Blue sheep";
+				_sheep.SheepDescription = "They love summer!";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 21;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_10");
@@ -350,8 +350,8 @@ public class GameData {
 
 			case 11:
 				_sheep.SheepId = 11;
-				_sheep.SheepName = "さんたひつじ";
-				_sheep.SheepDescription = "年中クリスマスを楽しみにしているひつじ。";
+				_sheep.SheepName = "Santa sheep";
+				_sheep.SheepDescription = "They love Christmas!";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_11");
@@ -360,8 +360,8 @@ public class GameData {
 
 			case 12:
 				_sheep.SheepId = 12;
-				_sheep.SheepName = "よもぎひつじ";
-				_sheep.SheepDescription = "ちょっと渋いひつじ。あずきひつじと仲良し。";
+				_sheep.SheepName = "Wormwood sheep";
+				_sheep.SheepDescription = "They are good friends with Red beans sheeps.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 11;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_12");
@@ -370,8 +370,8 @@ public class GameData {
 
 			case 13:
 				_sheep.SheepId = 13;
-				_sheep.SheepName = "ふぉんでゅひつじ";
-				_sheep.SheepDescription = "チョコレートフォンデュをしてみたひつじ。";
+				_sheep.SheepName = "Chocolate sheep";
+				_sheep.SheepDescription = "They love chocolate!!";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 17;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_13");
@@ -380,8 +380,8 @@ public class GameData {
 
 			case 14:
 				_sheep.SheepId = 14;
-				_sheep.SheepName = "あじさいひつじ";
-				_sheep.SheepDescription = "梅雨ごろに元気になるひつじ。カラフル。";
+				_sheep.SheepName = "Hydrangea sheep";
+				_sheep.SheepDescription = "They like rainy season.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 24;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_14");
@@ -390,8 +390,8 @@ public class GameData {
 
 			case 15:
 				_sheep.SheepId = 15;
-				_sheep.SheepName = "とまとひつじ";
-				_sheep.SheepDescription = "トマトみたいなひつじ。よく熟している。";
+				_sheep.SheepName = "Tomato sheep";
+				_sheep.SheepDescription = "They like ripe tomatoes.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 27;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_15");
@@ -400,8 +400,8 @@ public class GameData {
 
 			case 16:
 				_sheep.SheepId = 16;
-				_sheep.SheepName = "ほしぞらひつじ";
-				_sheep.SheepDescription = "ロマンティックなひつじ。流れ星に憧れている。";
+				_sheep.SheepName = "Star sheep";
+				_sheep.SheepDescription = "They like starry sky.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_16");
@@ -410,8 +410,8 @@ public class GameData {
 
 			case 17:
 				_sheep.SheepId = 17;
-				_sheep.SheepName = "あさがおひつじ";
-				_sheep.SheepDescription = "朝顔をつけてオシャレをしてみたひつじ。";
+				_sheep.SheepName = "ASAGAO sheep";
+				_sheep.SheepDescription = "They like morning glory.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_17");
@@ -420,8 +420,8 @@ public class GameData {
 				
 			case 18:
 				_sheep.SheepId = 18;
-				_sheep.SheepName = "れもんきゃんでぃーひつじ";
-				_sheep.SheepDescription = "レモン色のひつじ。初恋の味かもしれない。";
+				_sheep.SheepName = "Lemon sheep";
+				_sheep.SheepDescription = "They like lemon.";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_18");
@@ -430,8 +430,8 @@ public class GameData {
 
 			case 19:
 				_sheep.SheepId = 19;
-				_sheep.SheepName = "きんぐひつじ";
-				_sheep.SheepDescription = "ひつじの王様。全ステージクリアおめでとう！";
+				_sheep.SheepName = "King sheep";
+				_sheep.SheepDescription = "He is the king of sheeps. Congratulations on all stage completion!";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 30;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_19");
@@ -440,8 +440,8 @@ public class GameData {
 
 			case 20:
 				_sheep.SheepId = 20;
-				_sheep.SheepName = "はかせひつじ";
-				_sheep.SheepDescription = "博士号を取得しているひつじ。ひつじをコンプリートしてくれてありがとう！";
+				_sheep.SheepName = "Doctor sheep";
+				_sheep.SheepDescription = "He holds a PhD. Thank you for collecting all the sheep!";
 				_sheep.SheepHint = "";
 				_sheep.UnlockStage = 0;
 				_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_20");

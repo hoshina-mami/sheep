@@ -147,7 +147,7 @@ public class TitleController : MonoBehaviour {
      * LINEストアへ飛ぶ
      */
     public void GoLineStore () { 
-        Application.OpenURL("http://line.me/S/shop/sticker/author/85999");
+        Application.OpenURL("http://line.me/S/sticker/1243998");
     }	
 
 }

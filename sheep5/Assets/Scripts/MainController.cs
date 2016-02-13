@@ -180,7 +180,7 @@ public class MainController : MonoBehaviour {
 	void showStageInfo () {
 
 		//ステージ番号を表示
-		Text_stage.GetComponent<Text>().text = "ステージ  " + _StageNum.ToString() + "-" + thisStageClearCount.ToString();
+		Text_stage.GetComponent<Text>().text = "Stage  " + _StageNum.ToString() + "-" + thisStageClearCount.ToString();
 
 		switch (_StageNum) {
 			case 1:
@@ -223,7 +223,7 @@ public class MainController : MonoBehaviour {
 	//「よーいどん！」を表示
 	void showReadyGo () {
 
-		Text_readyGo_text.text = "よーい.";
+		Text_readyGo_text.text = "Ready.";
 
 		Invoke("addDot",  0.5f);
 		Invoke("addDot",  1.0f);
@@ -242,7 +242,7 @@ public class MainController : MonoBehaviour {
 	}
 	void showGo () {
 		
-		Text_readyGo_text.text  = "どん！";
+		Text_readyGo_text.text  = "Go！";
 		
 	}
 	void hideReadyGo () {
@@ -444,7 +444,7 @@ public class MainController : MonoBehaviour {
 					Text_stageClear.GetComponent<Text> ().text = "オールクリアおめでとう！";
 					Btn_next.SetActive(false);
 				} else {
-					Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
+					Text_stageClear.GetComponent<Text> ().text = "Stage" + _StageNum.ToString() + "　complete！";
 				}
 
 				if (_StageNum > _HighScoreStageNum) {
@@ -479,7 +479,7 @@ public class MainController : MonoBehaviour {
 
 			//不正解の場合
 			Text_batsuCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
-			Text_currentRecord.GetComponent<Text> ().text = "ざんねん...";
+			Text_currentRecord.GetComponent<Text> ().text = "failed...";
 			//Text_currentRecord.GetComponent<Text> ().text = "きろく　ステージ" + (_StageNum - 1).ToString();
 
 			//不正解画像表示
@@ -570,7 +570,7 @@ public class MainController : MonoBehaviour {
 
     	PlayerPrefs.SetInt("RetryCoinNum", retryCoinNum + 1);
 
-    	string tweet = "ステージ" + _StageNum + "をクリアしたよ！和み系ひまつぶしゲーム「ひつじだま」 #ひつじだま http://hitsuji-dama.com/";
+    	string tweet = "Stage" + _StageNum + "complete！Let's count cute rolling sheeps! #HITSUJIDAMA http://hitsuji-dama.com/";
 
 		Application.OpenURL("https://twitter.com/intent/tweet?text=" + WWW.EscapeURL(tweet));
 
