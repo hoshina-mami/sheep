@@ -1,0 +1,57 @@
+<linker>
+	<assembly fullname="UnityEngine">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SendMessage"/>
+			<method name="SendMessage"/>
+			<method name="SendMessage"/>
+			<method name="SendMessage"/>
+		</type>
+		<type fullname="UnityEngine.Component">
+			<method name="SendMessage"/>
+			<method name="SendMessage"/>
+			<method name="SendMessage"/>
+		</type>
+	</assembly>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="TitleController">
+			<method name="ClickOptionBtn"/>
+			<method name="GoLineStore"/>
+			<method name="ClickStartBtn"/>
+			<method name="ClickRecordBtn"/>
+		</type>
+		<type fullname="MainController">
+			<method name="LoadMainScene"/>
+			<method name="showRetryPopup"/>
+			<method name="LoadStageSelectScene"/>
+			<method name="hideRetryPopup"/>
+			<method name="shareSocial"/>
+			<method name="showResult"/>
+			<method name="useRetryCoin"/>
+			<method name="LoadTitleScene"/>
+			<method name="countDown"/>
+			<method name="countDown"/>
+			<method name="countUp"/>
+			<method name="countUp"/>
+		</type>
+		<type fullname="BtnStageNumController">
+			<method name="ClickStageNumBtn"/>
+		</type>
+		<type fullname="StageSelectController">
+			<method name="LoadTitleScene"/>
+		</type>
+		<type fullname="RecordSheepBtn">
+			<method name="showSheepPopup"/>
+		</type>
+		<type fullname="RecordController">
+			<method name="shareSocial"/>
+			<method name="LoadTitleScene"/>
+			<method name="closeSheepPopup"/>
+		</type>
+		<type fullname="OptionController">
+			<method name="clickOnBtn"/>
+			<method name="LoadTitleScene"/>
+			<method name="clickOffBtn"/>
+			<method name="GoWebSite"/>
+		</type>
+	</assembly>
+</linker>

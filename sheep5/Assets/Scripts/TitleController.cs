@@ -133,4 +133,11 @@ public class TitleController : MonoBehaviour {
 		Application.LoadLevel("Option");
 	}
 
+	/*
+     * LINEストアへ飛ぶ
+     */
+    public void GoLineStore () { 
+        Application.OpenURL("http://line.me/S/sticker/1243998");
+    }
+
 }
