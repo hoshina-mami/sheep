@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class TitleController : MonoBehaviour {
 
 	//public
 	public GameObject bgm;//生成したいプレハブ
+	public Sprite btnSprite;
 
 	//private
 	private GameObject cloneBgm;
@@ -14,7 +16,9 @@ public class TitleController : MonoBehaviour {
 	private GameObject Btn_start;
 	private GameObject Btn_record;
 	private GameObject Btn_option;
+	private GameObject Btn_line;
 	private GameObject Pic_noti;
+	private GameObject Pic_noti2;
 	private GameObject Text_version;
 
 	// Use this for initialization
@@ -27,7 +31,9 @@ public class TitleController : MonoBehaviour {
 		Btn_start          = GameObject.Find("Btn_start");
 		Btn_record         = GameObject.Find("Btn_record");
 		Btn_option         = GameObject.Find("Btn_option");
+		Btn_line           = GameObject.Find("Btn_line");
 		Pic_noti           = GameObject.Find("Pic_noti");
+		Pic_noti2          = GameObject.Find("Pic_noti2");
 		Text_version       = GameObject.Find("Text_version");
 
 		//音量のON/OFF
@@ -45,9 +51,19 @@ public class TitleController : MonoBehaviour {
 		//クリア問題数をリセット
 		PlayerPrefs.SetInt("thisStageClearCount" , 0);
 
+		//ひつじ帳ボタン背景設定
+		if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Btn_record.GetComponent<Image> ().sprite = btnSprite;
+		}
+
 		//ひつじ帳ボタンのnoti表示
 		if (PlayerPrefs.GetInt("titleNotiFlg") == 0) {
 			Pic_noti.SetActive(false);
+		}
+
+		//infoボタンのnoti表示
+		if (PlayerPrefs.GetInt("infoNotiFlg") == 1) {
+			Pic_noti2.SetActive(false);
 		}
 
 		//debug
@@ -102,6 +118,7 @@ public class TitleController : MonoBehaviour {
 		Btn_start.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Btn_record.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Btn_option.GetComponent<uTools.uTweenAlpha> ().enabled = true;
+		Btn_line.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		Background.GetComponent<uTools.uTweenPosition> ().enabled = true;
 		Text_version.GetComponent<uTools.uTweenAlpha> ().enabled = true;
 		
@@ -137,7 +154,11 @@ public class TitleController : MonoBehaviour {
      * LINEストアへ飛ぶ
      */
     public void GoLineStore () { 
-        Application.OpenURL("http://line.me/S/sticker/1243998");
-    }
+    	if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Application.OpenURL("http://line.me/S/sticker/1243998");
+		} else {
+			Application.OpenURL("http://line.me/S/shop/sticker/author/85999");
+		}
+    }	
 
 }

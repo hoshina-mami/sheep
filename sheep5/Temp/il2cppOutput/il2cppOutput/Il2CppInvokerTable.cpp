@@ -218,6 +218,7 @@ struct RaycastResultU5BU5D_t_765836103_0;
 #include "UnityEngine_UnityEngine_NetworkPlayer_1823588986.h"
 #include "UnityEngine_UnityEngine_NetworkViewID_1654468315.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform321659266.h"
+#include "UnityEngine_UnityEngine_SystemLanguage_1640468816.h"
 #include "UnityEngine_UnityEngine_CameraClearFlags1845996296.h"
 #include "UnityEngine_UnityEngine_TouchPhase2003040773.h"
 #include "UnityEngine_UnityEngine_TouchType896034160.h"
@@ -6579,6 +6580,13 @@ void* RuntimeInvoker_RuntimePlatform_t321659266_0 (const MethodInfo* method, voi
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
+void* RuntimeInvoker_SystemLanguage_t_1640468816_0 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef int32_t (*Func)(void* obj, const MethodInfo* method);
+	int32_t ret = ((Func)method->method)(obj, method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
 void* RuntimeInvoker_Object_t_Object_t_Object_t_Int32_t1628762099_0_Object_t_Object_t (const MethodInfo* method, void* obj, void** args)
 {
 	typedef Object_t * (*Func)(void* obj, Object_t * p1, Object_t * p2, int32_t p3, Object_t * p4, Object_t * p5, const MethodInfo* method);
@@ -11115,7 +11123,7 @@ void* RuntimeInvoker_Link_t_915832261_0 (const MethodInfo* method, void* obj, vo
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[1538] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[1539] = 
 {
 	RuntimeInvoker_Void_t_224166001_0,
 	RuntimeInvoker_Boolean_t_19515315_0_Object_t,
@@ -12007,6 +12015,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1538] =
 	RuntimeInvoker_Object_t_SByte_t1636693376_0_Object_t,
 	RuntimeInvoker_Object_t_Object_t_SByte_t1636693376_0_SByte_t1636693376_0_Object_t_SByte_t1636693376_0,
 	RuntimeInvoker_RuntimePlatform_t321659266_0,
+	RuntimeInvoker_SystemLanguage_t_1640468816_0,
 	RuntimeInvoker_Object_t_Object_t_Object_t_Int32_t1628762099_0_Object_t_Object_t,
 	RuntimeInvoker_CameraClearFlags_t1845996296_0,
 	RuntimeInvoker_Void_t_224166001_0_Object_t_Vector3U26_t_1010744929_0_Vector3U26_t_1010744929_0,

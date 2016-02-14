@@ -49,6 +49,7 @@
 		</type>
 		<type fullname="OptionController">
 			<method name="clickOnBtn"/>
+			<method name="GoLineStore"/>
 			<method name="LoadTitleScene"/>
 			<method name="clickOffBtn"/>
 			<method name="GoWebSite"/>

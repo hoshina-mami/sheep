@@ -214,8 +214,6 @@ struct YieldInstruction_t1800843402_0;
 struct YieldInstruction_t1800843402_0_marshaled;
 // UnityEngine.PlayerPrefsException
 struct PlayerPrefsException_t1285314057_0;
-// UnityEngine.iOS.ADBannerView/BannerWasClickedDelegate
-struct BannerWasClickedDelegate_t_810955872_0;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -245,6 +243,8 @@ struct BannerWasClickedDelegate_t_810955872_0;
 #include "UnityEngine_UnityEngine_SendMessageOptions_53436984MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform321659266.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform321659266MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SystemLanguage_1640468816.h"
+#include "UnityEngine_UnityEngine_SystemLanguage_1640468816MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_LogType_721401675.h"
 #include "UnityEngine_UnityEngine_LogType_721401675MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds_2024172332.h"
@@ -519,8 +519,6 @@ struct BannerWasClickedDelegate_t_810955872_0;
 #include "UnityEngine_UnityEngine_PlayerPrefsException1285314057MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_PlayerPrefs917814502.h"
 #include "UnityEngine_UnityEngine_PlayerPrefs917814502MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_iOS_ADBannerView_BannerWas_810955872.h"
-#include "UnityEngine_UnityEngine_iOS_ADBannerView_BannerWas_810955872MethodDeclarations.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -11784,6 +11782,15 @@ extern "C"  void Application_set_targetFrameRate_m498658007_0 (Object_t * __this
 	_il2cpp_icall_func = (Application_set_targetFrameRate_m498658007_0_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::set_targetFrameRate(System.Int32)");
 	_il2cpp_icall_func(___value);
 }
+// UnityEngine.SystemLanguage UnityEngine.Application::get_systemLanguage()
+extern "C"  int32_t Application_get_systemLanguage_m1182442618_0 (Object_t * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef int32_t (*Application_get_systemLanguage_m1182442618_0_ftn) ();
+	static Application_get_systemLanguage_m1182442618_0_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Application_get_systemLanguage_m1182442618_0_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_systemLanguage()");
+	return _il2cpp_icall_func();
+}
 // System.Void UnityEngine.Application::CallLogCallback(System.String,System.String,UnityEngine.LogType,System.Boolean)
 extern TypeInfo* Application_t1928857063_0_il2cpp_TypeInfo_var;
 extern "C"  void Application_CallLogCallback_m419361836_0 (Object_t * __this /* static, unused */, String_t* ___logString, String_t* ___stackTrace, int32_t ___type, bool ___invokedOnMainThread, const MethodInfo* method)
@@ -14933,52 +14940,6 @@ extern "C"  int32_t PlayerPrefs_GetInt_m1334009359_0 (Object_t * __this /* stati
 		int32_t L_2 = PlayerPrefs_GetInt_m_662221016_0(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
 		return L_2;
 	}
-}
-// System.Void UnityEngine.iOS.ADBannerView/BannerWasClickedDelegate::.ctor(System.Object,System.IntPtr)
-extern "C"  void BannerWasClickedDelegate__ctor_m1483041906_0 (BannerWasClickedDelegate_t_810955872_0 * __this, Object_t * ___object, IntPtr_t ___method, const MethodInfo* method)
-{
-	__this->___method_ptr_0 = (methodPointerType)((MethodInfo*)___method.___m_value_0)->method;
-	__this->___method_3 = ___method;
-	__this->___m_target_2 = ___object;
-}
-// System.Void UnityEngine.iOS.ADBannerView/BannerWasClickedDelegate::Invoke()
-extern "C"  void BannerWasClickedDelegate_Invoke_m1164690252_0 (BannerWasClickedDelegate_t_810955872_0 * __this, const MethodInfo* method)
-{
-	if(__this->___prev_9 != NULL)
-	{
-		BannerWasClickedDelegate_Invoke_m1164690252_0((BannerWasClickedDelegate_t_810955872_0 *)__this->___prev_9, method);
-	}
-	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->___method_3.___m_value_0));
-	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->___method_3.___m_value_0));
-	if ((__this->___m_target_2 != NULL || MethodHasParameters((MethodInfo*)(__this->___method_3.___m_value_0))) && ___methodIsStatic)
-	{
-		typedef void (*FunctionPointerType) (Object_t *, Object_t * __this, const MethodInfo* method);
-		((FunctionPointerType)__this->___method_ptr_0)(NULL,__this->___m_target_2,(MethodInfo*)(__this->___method_3.___m_value_0));
-	}
-	else
-	{
-		typedef void (*FunctionPointerType) (Object_t * __this, const MethodInfo* method);
-		((FunctionPointerType)__this->___method_ptr_0)(__this->___m_target_2,(MethodInfo*)(__this->___method_3.___m_value_0));
-	}
-}
-extern "C" void pinvoke_delegate_wrapper_BannerWasClickedDelegate_t_810955872_0(Il2CppObject* delegate)
-{
-	typedef void (STDCALL *native_function_ptr_type)();
-	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
-	// Native function invocation
-	_il2cpp_pinvoke_func();
-
-}
-// System.IAsyncResult UnityEngine.iOS.ADBannerView/BannerWasClickedDelegate::BeginInvoke(System.AsyncCallback,System.Object)
-extern "C"  Object_t * BannerWasClickedDelegate_BeginInvoke_m_1831247681_0 (BannerWasClickedDelegate_t_810955872_0 * __this, AsyncCallback_t_266361018_0 * ___callback, Object_t * ___object, const MethodInfo* method)
-{
-	void *__d_args[1] = {0};
-	return (Object_t *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
-}
-// System.Void UnityEngine.iOS.ADBannerView/BannerWasClickedDelegate::EndInvoke(System.IAsyncResult)
-extern "C"  void BannerWasClickedDelegate_EndInvoke_m_1573591166_0 (BannerWasClickedDelegate_t_810955872_0 * __this, Object_t * ___result, const MethodInfo* method)
-{
-	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

@@ -753,6 +753,7 @@
 #include "UnityEngine_UnityEngine_AssetBundleRequest_1756092890.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions_53436984.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform321659266.h"
+#include "UnityEngine_UnityEngine_SystemLanguage_1640468816.h"
 #include "UnityEngine_UnityEngine_LogType_721401675.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds_2024172332.h"
 #include "UnityEngine_UnityEngine_Coroutine_748028625.h"
@@ -900,6 +901,7 @@
 #include "UnityEngine_UnityEngine_TooltipAttribute1630278562.h"
 #include "UnityEngine_UnityEngine_SpaceAttribute_2124856257.h"
 #include "UnityEngine_UnityEngine_RangeAttribute1566984680.h"
+#include "UnityEngine_UnityEngine_MultilineAttribute_666471432.h"
 #include "UnityEngine_UnityEngine_TextAreaAttribute10991545.h"
 #include "UnityEngine_UnityEngine_StackTraceUtility_707416474.h"
 #include "UnityEngine_UnityEngine_UnityException_166670237.h"
@@ -1044,6 +1046,7 @@
 #include "AssemblyU2DCSharp_SheepSpriteAnim784938454.h"
 #include "AssemblyU2DCSharp_StageData_665732307.h"
 #include "AssemblyU2DCSharp_StageSelectController_506132293.h"
+#include "AssemblyU2DCSharp_TextLocalizer455616961.h"
 #include "AssemblyU2DCSharp_TitleController_17647687.h"
 #include "AssemblyU2DCSharp_uTools_uDragObject1131658875.h"
 #include "AssemblyU2DCSharp_uTools_PlayDirection_2125662114.h"
@@ -1522,7 +1525,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[6846] = 
+extern const int32_t g_FieldOffsetTable[6898] = 
 {
 	0,
 	0,
@@ -6030,6 +6033,50 @@ extern const int32_t g_FieldOffsetTable[6846] =
 	0,
 	0,
 	0,
+	offsetof(SystemLanguage_t_1640468816_0, ___value___1) + sizeof(Object_t),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	offsetof(LogType_t_721401675_0, ___value___1) + sizeof(Object_t),
 	0,
 	0,
@@ -7172,6 +7219,7 @@ extern const int32_t g_FieldOffsetTable[6846] =
 	offsetof(SpaceAttribute_t_2124856257_0, ___height_0),
 	offsetof(RangeAttribute_t1566984680_0, ___min_0),
 	offsetof(RangeAttribute_t1566984680_0, ___max_1),
+	offsetof(MultilineAttribute_t_666471432_0, ___lines_0),
 	offsetof(TextAreaAttribute_t10991545_0, ___minLines_0),
 	offsetof(TextAreaAttribute_t10991545_0, ___maxLines_1),
 	offsetof(StackTraceUtility_t_707416474_0_StaticFields, ___projectFolder_0),
@@ -8044,28 +8092,30 @@ extern const int32_t g_FieldOffsetTable[6846] =
 	offsetof(QuitController_t_255516922_0, ___Quit_2),
 	offsetof(RecordController_t_1382724664_0, ___SheepBox_2),
 	offsetof(RecordController_t_1382724664_0, ___SheepImg_3),
-	offsetof(RecordController_t_1382724664_0, ____GameData_4),
-	offsetof(RecordController_t_1382724664_0, ___Popup_mask_5),
-	offsetof(RecordController_t_1382724664_0, ___Popup_6),
-	offsetof(RecordController_t_1382724664_0, ___Text_sheepName_7),
-	offsetof(RecordController_t_1382724664_0, ___Text_SheepDescription_8),
-	offsetof(RecordController_t_1382724664_0, ___Text_sheepName_text_9),
-	offsetof(RecordController_t_1382724664_0, ___Text_SheepDescription_text_10),
-	offsetof(RecordController_t_1382724664_0, ___Content_11),
-	offsetof(RecordController_t_1382724664_0, ___cloneBox_12),
-	offsetof(RecordController_t_1382724664_0, ___cloneSheep_13),
-	offsetof(RecordController_t_1382724664_0, ___cloneAnimSheep_14),
-	offsetof(RecordController_t_1382724664_0, ___newScale_15),
-	offsetof(RecordController_t_1382724664_0, ___newPosition_16),
-	offsetof(RecordController_t_1382724664_0, ___sheepNewScale_17),
-	offsetof(RecordController_t_1382724664_0, ___cloneSheepNum_18),
-	offsetof(RecordController_t_1382724664_0, ____HighScoreStageNum_19),
-	offsetof(RecordController_t_1382724664_0, ___sheep_20),
-	offsetof(RecordController_t_1382724664_0, ___cloneSheepAnim_21),
-	offsetof(RecordController_t_1382724664_0, ___popupSheepScale_22),
-	offsetof(RecordController_t_1382724664_0, ___popupSheepPosition_23),
-	offsetof(RecordController_t_1382724664_0, ___retryCoinNum_24),
-	offsetof(RecordController_t_1382724664_0, ___shareSheepName_25),
+	offsetof(RecordController_t_1382724664_0, ___btnSprite_4),
+	offsetof(RecordController_t_1382724664_0, ____GameData_5),
+	offsetof(RecordController_t_1382724664_0, ___Popup_mask_6),
+	offsetof(RecordController_t_1382724664_0, ___Popup_7),
+	offsetof(RecordController_t_1382724664_0, ___Text_sheepName_8),
+	offsetof(RecordController_t_1382724664_0, ___Text_SheepDescription_9),
+	offsetof(RecordController_t_1382724664_0, ___Pic_title_10),
+	offsetof(RecordController_t_1382724664_0, ___Text_sheepName_text_11),
+	offsetof(RecordController_t_1382724664_0, ___Text_SheepDescription_text_12),
+	offsetof(RecordController_t_1382724664_0, ___Content_13),
+	offsetof(RecordController_t_1382724664_0, ___cloneBox_14),
+	offsetof(RecordController_t_1382724664_0, ___cloneSheep_15),
+	offsetof(RecordController_t_1382724664_0, ___cloneAnimSheep_16),
+	offsetof(RecordController_t_1382724664_0, ___newScale_17),
+	offsetof(RecordController_t_1382724664_0, ___newPosition_18),
+	offsetof(RecordController_t_1382724664_0, ___sheepNewScale_19),
+	offsetof(RecordController_t_1382724664_0, ___cloneSheepNum_20),
+	offsetof(RecordController_t_1382724664_0, ____HighScoreStageNum_21),
+	offsetof(RecordController_t_1382724664_0, ___sheep_22),
+	offsetof(RecordController_t_1382724664_0, ___cloneSheepAnim_23),
+	offsetof(RecordController_t_1382724664_0, ___popupSheepScale_24),
+	offsetof(RecordController_t_1382724664_0, ___popupSheepPosition_25),
+	offsetof(RecordController_t_1382724664_0, ___retryCoinNum_26),
+	offsetof(RecordController_t_1382724664_0, ___shareSheepName_27),
 	offsetof(RecordSheepBtn_t_938022355_0, ___RecordControllerObj_2),
 	offsetof(RecordSheepBtn_t_938022355_0, ___RecordController_3),
 	offsetof(RecordSheepBtn_t_938022355_0, ___sheepIdText_4),
@@ -8116,16 +8166,21 @@ extern const int32_t g_FieldOffsetTable[6846] =
 	offsetof(StageSelectController_t_506132293_0, ___newPosition_10),
 	offsetof(StageSelectController_t_506132293_0, ___cloneBtnNum_11),
 	offsetof(StageSelectController_t_506132293_0, ____HighScoreStageNum_12),
+	offsetof(TextLocalizer_t455616961_0, ___englishText_2),
+	offsetof(TextLocalizer_t455616961_0, ___englishFontSize_3),
 	offsetof(TitleController_t_17647687_0, ___bgm_2),
-	offsetof(TitleController_t_17647687_0, ___cloneBgm_3),
-	offsetof(TitleController_t_17647687_0, ___TitleControllerObj_4),
-	offsetof(TitleController_t_17647687_0, ___Background_5),
-	offsetof(TitleController_t_17647687_0, ___Logo_6),
-	offsetof(TitleController_t_17647687_0, ___Btn_start_7),
-	offsetof(TitleController_t_17647687_0, ___Btn_record_8),
-	offsetof(TitleController_t_17647687_0, ___Btn_option_9),
-	offsetof(TitleController_t_17647687_0, ___Pic_noti_10),
-	offsetof(TitleController_t_17647687_0, ___Text_version_11),
+	offsetof(TitleController_t_17647687_0, ___btnSprite_3),
+	offsetof(TitleController_t_17647687_0, ___cloneBgm_4),
+	offsetof(TitleController_t_17647687_0, ___TitleControllerObj_5),
+	offsetof(TitleController_t_17647687_0, ___Background_6),
+	offsetof(TitleController_t_17647687_0, ___Logo_7),
+	offsetof(TitleController_t_17647687_0, ___Btn_start_8),
+	offsetof(TitleController_t_17647687_0, ___Btn_record_9),
+	offsetof(TitleController_t_17647687_0, ___Btn_option_10),
+	offsetof(TitleController_t_17647687_0, ___Btn_line_11),
+	offsetof(TitleController_t_17647687_0, ___Pic_noti_12),
+	offsetof(TitleController_t_17647687_0, ___Pic_noti2_13),
+	offsetof(TitleController_t_17647687_0, ___Text_version_14),
 	offsetof(uDragObject_t1131658875_0, ___target_2),
 	offsetof(PlayDirection_t_2125662114_0, ___value___1) + sizeof(Object_t),
 	0,
@@ -8374,7 +8429,7 @@ extern const int32_t g_FieldOffsetTable[6846] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1723] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1726] = 
 {
 	sizeof (U3CModuleU3E_t1560363866_0), -1, 0, 0,
 	sizeof (Object_t), -1, 0, 0,
@@ -9555,6 +9610,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1723] =
 	sizeof (AssetBundle_t1143280681_0), -1, 0, 0,
 	sizeof (SendMessageOptions_t_53436984_0)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (RuntimePlatform_t321659266_0)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (SystemLanguage_t_1640468816_0)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (LogType_t_721401675_0)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (WaitForSeconds_t_2024172332_0), sizeof(WaitForSeconds_t_2024172332_0_marshaled), 0, 0,
 	sizeof (WaitForFixedUpdate_t_1780302542_0), -1, 0, 0,
@@ -9794,6 +9850,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1723] =
 	sizeof (TooltipAttribute_t1630278562_0), -1, 0, 0,
 	sizeof (SpaceAttribute_t_2124856257_0), -1, 0, 0,
 	sizeof (RangeAttribute_t1566984680_0), -1, 0, 0,
+	sizeof (MultilineAttribute_t_666471432_0), -1, 0, 0,
 	sizeof (TextAreaAttribute_t10991545_0), -1, 0, 0,
 	sizeof (SelectionBaseAttribute_t2005732264_0), -1, 0, 0,
 	sizeof (StackTraceUtility_t_707416474_0), -1, sizeof(StackTraceUtility_t_707416474_0_StaticFields), 0,
@@ -10031,6 +10088,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1723] =
 	sizeof (SheepSpriteAnim_t784938454_0), -1, 0, 0,
 	sizeof (StageData_t_665732307_0), -1, 0, 0,
 	sizeof (StageSelectController_t_506132293_0), -1, 0, 0,
+	sizeof (TextLocalizer_t455616961_0), -1, 0, 0,
 	sizeof (TitleController_t_17647687_0), -1, 0, 0,
 	sizeof (uDragObject_t1131658875_0), -1, 0, 0,
 	sizeof (PlayDirection_t_2125662114_0)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,

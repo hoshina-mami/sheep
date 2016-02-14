@@ -39,6 +39,8 @@ struct StageData_t_665732307_0;
 struct SheepData_t_896671990_0;
 // MainController
 struct MainController_t1236616688_0;
+// UnityEngine.UI.Image
+struct Image_t_2049549674_0;
 // UnityEngine.UI.Button
 struct Button_t696032599_0;
 // SheepGenerator
@@ -51,8 +53,6 @@ struct OptionController_t131042028_0;
 struct QuitController_t_255516922_0;
 // RecordController
 struct RecordController_t_1382724664_0;
-// UnityEngine.UI.Image
-struct Image_t_2049549674_0;
 // UnityEngine.Sprite
 struct Sprite_t1286782926_0;
 // System.String
@@ -65,6 +65,8 @@ struct SheepObject_t1902197407_0;
 struct SheepSpriteAnim_t784938454_0;
 // StageSelectController
 struct StageSelectController_t_506132293_0;
+// TextLocalizer
+struct TextLocalizer_t455616961_0;
 // TitleController
 struct TitleController_t_17647687_0;
 // uTools.uDragObject
@@ -178,10 +180,12 @@ struct U3CPrivateImplementationDetailsU3E_t349203504_0;
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU1464735257.h"
 #include "AssemblyU2DCSharp_SheepData_896671990.h"
 #include "AssemblyU2DCSharp_SheepData_896671990MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SystemLanguage_1640468816.h"
 #include "mscorlib_System_String_756155572MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MainController1236616688.h"
 #include "AssemblyU2DCSharp_MainController1236616688MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AudioListener_1369127551MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_2049549674.h"
 #include "UnityEngine_UI_UnityEngine_UI_Selectable1019922427MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Button696032599.h"
 #include "UnityEngine_UI_UnityEngine_UI_Selectable1019922427.h"
@@ -198,7 +202,6 @@ struct U3CPrivateImplementationDetailsU3E_t349203504_0;
 #include "AssemblyU2DCSharp_RecordController_1382724664.h"
 #include "AssemblyU2DCSharp_RecordController_1382724664MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Image_2049549674MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Image_2049549674.h"
 #include "UnityEngine_UnityEngine_Sprite1286782926.h"
 #include "UnityEngine_UnityEngine_Resources_1450837892.h"
 #include "AssemblyU2DCSharp_RecordSheepBtn_938022355.h"
@@ -213,6 +216,8 @@ struct U3CPrivateImplementationDetailsU3E_t349203504_0;
 #include "AssemblyU2DCSharp_SheepSpriteAnim784938454MethodDeclarations.h"
 #include "AssemblyU2DCSharp_StageSelectController_506132293.h"
 #include "AssemblyU2DCSharp_StageSelectController_506132293MethodDeclarations.h"
+#include "AssemblyU2DCSharp_TextLocalizer455616961.h"
+#include "AssemblyU2DCSharp_TextLocalizer455616961MethodDeclarations.h"
 #include "AssemblyU2DCSharp_TitleController_17647687.h"
 #include "AssemblyU2DCSharp_TitleController_17647687MethodDeclarations.h"
 #include "AssemblyU2DCSharp_uTools_uDragObject1131658875.h"
@@ -322,6 +327,8 @@ extern "C"  Object_t * Object_Instantiate_TisObject_t_m_1161579893_0_gshared (Ob
 #define Component_GetComponent_TisSheepRotation_t_1775153442_0_m275814464_0(__this, method) ((  SheepRotation_t_1775153442_0 * (*) (Component_t_867674284_0 *, const MethodInfo*))Component_GetComponent_TisObject_t_m267839954_0_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Text>()
 #define GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(__this, method) ((  Text_t_204341102_0 * (*) (GameObject_t_184308134_0 *, const MethodInfo*))GameObject_GetComponent_TisObject_t_m_1847194912_0_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Image>()
+#define GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0(__this, method) ((  Image_t_2049549674_0 * (*) (GameObject_t_184308134_0 *, const MethodInfo*))GameObject_GetComponent_TisObject_t_m_1847194912_0_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Button>()
 #define GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0(__this, method) ((  Button_t696032599_0 * (*) (GameObject_t_184308134_0 *, const MethodInfo*))GameObject_GetComponent_TisObject_t_m_1847194912_0_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<SheepGenerator>()
@@ -330,8 +337,6 @@ extern "C"  Object_t * Object_Instantiate_TisObject_t_m_1161579893_0_gshared (Ob
 #define GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0(__this, method) ((  uTweenPosition_t_1155963188_0 * (*) (GameObject_t_184308134_0 *, const MethodInfo*))GameObject_GetComponent_TisObject_t_m_1847194912_0_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.AudioSource>()
 #define GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0(__this, method) ((  AudioSource_t812398632_0 * (*) (GameObject_t_184308134_0 *, const MethodInfo*))GameObject_GetComponent_TisObject_t_m_1847194912_0_gshared)(__this, method)
-// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Image>()
-#define GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0(__this, method) ((  Image_t_2049549674_0 * (*) (GameObject_t_184308134_0 *, const MethodInfo*))GameObject_GetComponent_TisObject_t_m_1847194912_0_gshared)(__this, method)
 // !!0 UnityEngine.Resources::Load<System.Object>(System.String)
 extern "C"  Object_t * Resources_Load_TisObject_t_m_2086621874_0_gshared (Object_t * __this /* static, unused */, String_t* p0, const MethodInfo* method);
 #define Resources_Load_TisObject_t_m_2086621874_0(__this /* static, unused */, p0, method) ((  Object_t * (*) (Object_t * /* static, unused */, String_t*, const MethodInfo*))Resources_Load_TisObject_t_m_2086621874_0_gshared)(__this /* static, unused */, p0, method)
@@ -1552,87 +1557,127 @@ IL_0664:
 // SheepData GameData::GetStSheepData(System.Int32)
 extern TypeInfo* SheepData_t_896671990_0_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral12314726_0;
-extern Il2CppCodeGenString* _stringLiteral502819294_0;
+extern Il2CppCodeGenString* _stringLiteral79850811_0;
+extern Il2CppCodeGenString* _stringLiteral411308700_0;
 extern Il2CppCodeGenString* _stringLiteral1977470842_0;
 extern Il2CppCodeGenString* _stringLiteral1320786229_0;
 extern Il2CppCodeGenString* _stringLiteral_466242233_0;
-extern Il2CppCodeGenString* _stringLiteral_1775848667_0;
-extern Il2CppCodeGenString* _stringLiteral1107054428_0;
+extern Il2CppCodeGenString* _stringLiteral_776703567_0;
+extern Il2CppCodeGenString* _stringLiteral_1862299699_0;
 extern Il2CppCodeGenString* _stringLiteral1320786230_0;
 extern Il2CppCodeGenString* _stringLiteral_466242232_0;
-extern Il2CppCodeGenString* _stringLiteral_2136021857_0;
-extern Il2CppCodeGenString* _stringLiteral_191581027_0;
+extern Il2CppCodeGenString* _stringLiteral_629927671_0;
+extern Il2CppCodeGenString* _stringLiteral_1579135016_0;
 extern Il2CppCodeGenString* _stringLiteral1320786231_0;
 extern Il2CppCodeGenString* _stringLiteral_466242231_0;
-extern Il2CppCodeGenString* _stringLiteral959917271_0;
-extern Il2CppCodeGenString* _stringLiteral_1868366956_0;
+extern Il2CppCodeGenString* _stringLiteral178052194_0;
+extern Il2CppCodeGenString* _stringLiteral_1426647900_0;
 extern Il2CppCodeGenString* _stringLiteral1320786232_0;
 extern Il2CppCodeGenString* _stringLiteral_466242230_0;
-extern Il2CppCodeGenString* _stringLiteral_1073742448_0;
-extern Il2CppCodeGenString* _stringLiteral_125456303_0;
+extern Il2CppCodeGenString* _stringLiteral_711040380_0;
+extern Il2CppCodeGenString* _stringLiteral149109594_0;
 extern Il2CppCodeGenString* _stringLiteral1320786233_0;
 extern Il2CppCodeGenString* _stringLiteral_466242229_0;
-extern Il2CppCodeGenString* _stringLiteral_1081130616_0;
-extern Il2CppCodeGenString* _stringLiteral_778909505_0;
+extern Il2CppCodeGenString* _stringLiteral625962458_0;
+extern Il2CppCodeGenString* _stringLiteral_1563850174_0;
 extern Il2CppCodeGenString* _stringLiteral1320786234_0;
 extern Il2CppCodeGenString* _stringLiteral_466242228_0;
-extern Il2CppCodeGenString* _stringLiteral1100374863_0;
-extern Il2CppCodeGenString* _stringLiteral121437362_0;
+extern Il2CppCodeGenString* _stringLiteral_24328197_0;
+extern Il2CppCodeGenString* _stringLiteral_1174069965_0;
 extern Il2CppCodeGenString* _stringLiteral1320786235_0;
 extern Il2CppCodeGenString* _stringLiteral_466242227_0;
-extern Il2CppCodeGenString* _stringLiteral424334673_0;
-extern Il2CppCodeGenString* _stringLiteral_566407138_0;
+extern Il2CppCodeGenString* _stringLiteral938360975_0;
+extern Il2CppCodeGenString* _stringLiteral_1690460266_0;
 extern Il2CppCodeGenString* _stringLiteral1320786236_0;
 extern Il2CppCodeGenString* _stringLiteral_466242226_0;
-extern Il2CppCodeGenString* _stringLiteral681192675_0;
-extern Il2CppCodeGenString* _stringLiteral_343993893_0;
+extern Il2CppCodeGenString* _stringLiteral267062787_0;
+extern Il2CppCodeGenString* _stringLiteral2104598618_0;
 extern Il2CppCodeGenString* _stringLiteral1320786237_0;
 extern Il2CppCodeGenString* _stringLiteral_466242225_0;
-extern Il2CppCodeGenString* _stringLiteral1925364521_0;
-extern Il2CppCodeGenString* _stringLiteral1068256335_0;
+extern Il2CppCodeGenString* _stringLiteral497898037_0;
+extern Il2CppCodeGenString* _stringLiteral_1792636292_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299813_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607287_0;
-extern Il2CppCodeGenString* _stringLiteral1021465477_0;
-extern Il2CppCodeGenString* _stringLiteral1445334314_0;
+extern Il2CppCodeGenString* _stringLiteral_439960152_0;
+extern Il2CppCodeGenString* _stringLiteral_960512875_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299812_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607286_0;
-extern Il2CppCodeGenString* _stringLiteral_1829621422_0;
-extern Il2CppCodeGenString* _stringLiteral948650079_0;
+extern Il2CppCodeGenString* _stringLiteral_919807589_0;
+extern Il2CppCodeGenString* _stringLiteral496135962_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299811_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607285_0;
-extern Il2CppCodeGenString* _stringLiteral_1754632855_0;
-extern Il2CppCodeGenString* _stringLiteral_106309013_0;
+extern Il2CppCodeGenString* _stringLiteral_1524961705_0;
+extern Il2CppCodeGenString* _stringLiteral_1613138298_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299810_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607284_0;
-extern Il2CppCodeGenString* _stringLiteral218258657_0;
-extern Il2CppCodeGenString* _stringLiteral1937993513_0;
+extern Il2CppCodeGenString* _stringLiteral_305728046_0;
+extern Il2CppCodeGenString* _stringLiteral_793095891_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299809_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607283_0;
-extern Il2CppCodeGenString* _stringLiteral1546293524_0;
-extern Il2CppCodeGenString* _stringLiteral229960_0;
+extern Il2CppCodeGenString* _stringLiteral_2052885019_0;
+extern Il2CppCodeGenString* _stringLiteral_1643225581_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299808_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607282_0;
-extern Il2CppCodeGenString* _stringLiteral_751900961_0;
-extern Il2CppCodeGenString* _stringLiteral999303052_0;
+extern Il2CppCodeGenString* _stringLiteral_1966420435_0;
+extern Il2CppCodeGenString* _stringLiteral1034600099_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299807_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607281_0;
-extern Il2CppCodeGenString* _stringLiteral124238261_0;
-extern Il2CppCodeGenString* _stringLiteral_1104691127_0;
+extern Il2CppCodeGenString* _stringLiteral1346015937_0;
+extern Il2CppCodeGenString* _stringLiteral672342026_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299806_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607280_0;
-extern Il2CppCodeGenString* _stringLiteral_1107026138_0;
-extern Il2CppCodeGenString* _stringLiteral832065044_0;
+extern Il2CppCodeGenString* _stringLiteral_1196273202_0;
+extern Il2CppCodeGenString* _stringLiteral_1518045588_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299805_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607279_0;
-extern Il2CppCodeGenString* _stringLiteral791985404_0;
-extern Il2CppCodeGenString* _stringLiteral_1026239818_0;
+extern Il2CppCodeGenString* _stringLiteral_1978057806_0;
+extern Il2CppCodeGenString* _stringLiteral_1284748998_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299804_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607278_0;
-extern Il2CppCodeGenString* _stringLiteral1699210727_0;
-extern Il2CppCodeGenString* _stringLiteral_1293602737_0;
+extern Il2CppCodeGenString* _stringLiteral403424058_0;
+extern Il2CppCodeGenString* _stringLiteral_749103234_0;
 extern Il2CppCodeGenString* _stringLiteral_2005299782_0;
 extern Il2CppCodeGenString* _stringLiteral_1568607256_0;
+extern Il2CppCodeGenString* _stringLiteral12314726_0;
+extern Il2CppCodeGenString* _stringLiteral502819294_0;
+extern Il2CppCodeGenString* _stringLiteral_1775848667_0;
+extern Il2CppCodeGenString* _stringLiteral1107054428_0;
+extern Il2CppCodeGenString* _stringLiteral_2136021857_0;
+extern Il2CppCodeGenString* _stringLiteral_191581027_0;
+extern Il2CppCodeGenString* _stringLiteral959917271_0;
+extern Il2CppCodeGenString* _stringLiteral_1868366956_0;
+extern Il2CppCodeGenString* _stringLiteral_1073742448_0;
+extern Il2CppCodeGenString* _stringLiteral_125456303_0;
+extern Il2CppCodeGenString* _stringLiteral_1081130616_0;
+extern Il2CppCodeGenString* _stringLiteral_778909505_0;
+extern Il2CppCodeGenString* _stringLiteral1100374863_0;
+extern Il2CppCodeGenString* _stringLiteral121437362_0;
+extern Il2CppCodeGenString* _stringLiteral424334673_0;
+extern Il2CppCodeGenString* _stringLiteral_566407138_0;
+extern Il2CppCodeGenString* _stringLiteral681192675_0;
+extern Il2CppCodeGenString* _stringLiteral_343993893_0;
+extern Il2CppCodeGenString* _stringLiteral1925364521_0;
+extern Il2CppCodeGenString* _stringLiteral1068256335_0;
+extern Il2CppCodeGenString* _stringLiteral1021465477_0;
+extern Il2CppCodeGenString* _stringLiteral1445334314_0;
+extern Il2CppCodeGenString* _stringLiteral_1829621422_0;
+extern Il2CppCodeGenString* _stringLiteral948650079_0;
+extern Il2CppCodeGenString* _stringLiteral_1754632855_0;
+extern Il2CppCodeGenString* _stringLiteral_106309013_0;
+extern Il2CppCodeGenString* _stringLiteral218258657_0;
+extern Il2CppCodeGenString* _stringLiteral1937993513_0;
+extern Il2CppCodeGenString* _stringLiteral1546293524_0;
+extern Il2CppCodeGenString* _stringLiteral229960_0;
+extern Il2CppCodeGenString* _stringLiteral_751900961_0;
+extern Il2CppCodeGenString* _stringLiteral999303052_0;
+extern Il2CppCodeGenString* _stringLiteral124238261_0;
+extern Il2CppCodeGenString* _stringLiteral_1104691127_0;
+extern Il2CppCodeGenString* _stringLiteral_1107026138_0;
+extern Il2CppCodeGenString* _stringLiteral832065044_0;
+extern Il2CppCodeGenString* _stringLiteral791985404_0;
+extern Il2CppCodeGenString* _stringLiteral_1026239818_0;
+extern Il2CppCodeGenString* _stringLiteral1699210727_0;
+extern Il2CppCodeGenString* _stringLiteral_1293602737_0;
 extern "C"  SheepData_t_896671990_0 * GameData_GetStSheepData_m_1043165070_0 (GameData_t_49241417_0 * __this, int32_t ___sheepId, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
@@ -1640,87 +1685,127 @@ extern "C"  SheepData_t_896671990_0 * GameData_GetStSheepData_m_1043165070_0 (Ga
 	{
 		SheepData_t_896671990_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(1197);
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
-		_stringLiteral12314726_0 = il2cpp_codegen_string_literal_from_index(2786);
-		_stringLiteral502819294_0 = il2cpp_codegen_string_literal_from_index(2787);
+		_stringLiteral79850811_0 = il2cpp_codegen_string_literal_from_index(2786);
+		_stringLiteral411308700_0 = il2cpp_codegen_string_literal_from_index(2787);
 		_stringLiteral1977470842_0 = il2cpp_codegen_string_literal_from_index(2788);
 		_stringLiteral1320786229_0 = il2cpp_codegen_string_literal_from_index(2789);
 		_stringLiteral_466242233_0 = il2cpp_codegen_string_literal_from_index(2790);
-		_stringLiteral_1775848667_0 = il2cpp_codegen_string_literal_from_index(2791);
-		_stringLiteral1107054428_0 = il2cpp_codegen_string_literal_from_index(2792);
+		_stringLiteral_776703567_0 = il2cpp_codegen_string_literal_from_index(2791);
+		_stringLiteral_1862299699_0 = il2cpp_codegen_string_literal_from_index(2792);
 		_stringLiteral1320786230_0 = il2cpp_codegen_string_literal_from_index(2793);
 		_stringLiteral_466242232_0 = il2cpp_codegen_string_literal_from_index(2794);
-		_stringLiteral_2136021857_0 = il2cpp_codegen_string_literal_from_index(2795);
-		_stringLiteral_191581027_0 = il2cpp_codegen_string_literal_from_index(2796);
+		_stringLiteral_629927671_0 = il2cpp_codegen_string_literal_from_index(2795);
+		_stringLiteral_1579135016_0 = il2cpp_codegen_string_literal_from_index(2796);
 		_stringLiteral1320786231_0 = il2cpp_codegen_string_literal_from_index(2797);
 		_stringLiteral_466242231_0 = il2cpp_codegen_string_literal_from_index(2798);
-		_stringLiteral959917271_0 = il2cpp_codegen_string_literal_from_index(2799);
-		_stringLiteral_1868366956_0 = il2cpp_codegen_string_literal_from_index(2800);
+		_stringLiteral178052194_0 = il2cpp_codegen_string_literal_from_index(2799);
+		_stringLiteral_1426647900_0 = il2cpp_codegen_string_literal_from_index(2800);
 		_stringLiteral1320786232_0 = il2cpp_codegen_string_literal_from_index(2801);
 		_stringLiteral_466242230_0 = il2cpp_codegen_string_literal_from_index(2802);
-		_stringLiteral_1073742448_0 = il2cpp_codegen_string_literal_from_index(2803);
-		_stringLiteral_125456303_0 = il2cpp_codegen_string_literal_from_index(2804);
+		_stringLiteral_711040380_0 = il2cpp_codegen_string_literal_from_index(2803);
+		_stringLiteral149109594_0 = il2cpp_codegen_string_literal_from_index(2804);
 		_stringLiteral1320786233_0 = il2cpp_codegen_string_literal_from_index(2805);
 		_stringLiteral_466242229_0 = il2cpp_codegen_string_literal_from_index(2806);
-		_stringLiteral_1081130616_0 = il2cpp_codegen_string_literal_from_index(2807);
-		_stringLiteral_778909505_0 = il2cpp_codegen_string_literal_from_index(2808);
+		_stringLiteral625962458_0 = il2cpp_codegen_string_literal_from_index(2807);
+		_stringLiteral_1563850174_0 = il2cpp_codegen_string_literal_from_index(2808);
 		_stringLiteral1320786234_0 = il2cpp_codegen_string_literal_from_index(2809);
 		_stringLiteral_466242228_0 = il2cpp_codegen_string_literal_from_index(2810);
-		_stringLiteral1100374863_0 = il2cpp_codegen_string_literal_from_index(2811);
-		_stringLiteral121437362_0 = il2cpp_codegen_string_literal_from_index(2812);
+		_stringLiteral_24328197_0 = il2cpp_codegen_string_literal_from_index(2811);
+		_stringLiteral_1174069965_0 = il2cpp_codegen_string_literal_from_index(2812);
 		_stringLiteral1320786235_0 = il2cpp_codegen_string_literal_from_index(2813);
 		_stringLiteral_466242227_0 = il2cpp_codegen_string_literal_from_index(2814);
-		_stringLiteral424334673_0 = il2cpp_codegen_string_literal_from_index(2815);
-		_stringLiteral_566407138_0 = il2cpp_codegen_string_literal_from_index(2816);
+		_stringLiteral938360975_0 = il2cpp_codegen_string_literal_from_index(2815);
+		_stringLiteral_1690460266_0 = il2cpp_codegen_string_literal_from_index(2816);
 		_stringLiteral1320786236_0 = il2cpp_codegen_string_literal_from_index(2817);
 		_stringLiteral_466242226_0 = il2cpp_codegen_string_literal_from_index(2818);
-		_stringLiteral681192675_0 = il2cpp_codegen_string_literal_from_index(2819);
-		_stringLiteral_343993893_0 = il2cpp_codegen_string_literal_from_index(2820);
+		_stringLiteral267062787_0 = il2cpp_codegen_string_literal_from_index(2819);
+		_stringLiteral2104598618_0 = il2cpp_codegen_string_literal_from_index(2820);
 		_stringLiteral1320786237_0 = il2cpp_codegen_string_literal_from_index(2821);
 		_stringLiteral_466242225_0 = il2cpp_codegen_string_literal_from_index(2822);
-		_stringLiteral1925364521_0 = il2cpp_codegen_string_literal_from_index(2823);
-		_stringLiteral1068256335_0 = il2cpp_codegen_string_literal_from_index(2824);
+		_stringLiteral497898037_0 = il2cpp_codegen_string_literal_from_index(2823);
+		_stringLiteral_1792636292_0 = il2cpp_codegen_string_literal_from_index(2824);
 		_stringLiteral_2005299813_0 = il2cpp_codegen_string_literal_from_index(2825);
 		_stringLiteral_1568607287_0 = il2cpp_codegen_string_literal_from_index(2826);
-		_stringLiteral1021465477_0 = il2cpp_codegen_string_literal_from_index(2827);
-		_stringLiteral1445334314_0 = il2cpp_codegen_string_literal_from_index(2828);
+		_stringLiteral_439960152_0 = il2cpp_codegen_string_literal_from_index(2827);
+		_stringLiteral_960512875_0 = il2cpp_codegen_string_literal_from_index(2828);
 		_stringLiteral_2005299812_0 = il2cpp_codegen_string_literal_from_index(2829);
 		_stringLiteral_1568607286_0 = il2cpp_codegen_string_literal_from_index(2830);
-		_stringLiteral_1829621422_0 = il2cpp_codegen_string_literal_from_index(2831);
-		_stringLiteral948650079_0 = il2cpp_codegen_string_literal_from_index(2832);
+		_stringLiteral_919807589_0 = il2cpp_codegen_string_literal_from_index(2831);
+		_stringLiteral496135962_0 = il2cpp_codegen_string_literal_from_index(2832);
 		_stringLiteral_2005299811_0 = il2cpp_codegen_string_literal_from_index(2833);
 		_stringLiteral_1568607285_0 = il2cpp_codegen_string_literal_from_index(2834);
-		_stringLiteral_1754632855_0 = il2cpp_codegen_string_literal_from_index(2835);
-		_stringLiteral_106309013_0 = il2cpp_codegen_string_literal_from_index(2836);
+		_stringLiteral_1524961705_0 = il2cpp_codegen_string_literal_from_index(2835);
+		_stringLiteral_1613138298_0 = il2cpp_codegen_string_literal_from_index(2836);
 		_stringLiteral_2005299810_0 = il2cpp_codegen_string_literal_from_index(2837);
 		_stringLiteral_1568607284_0 = il2cpp_codegen_string_literal_from_index(2838);
-		_stringLiteral218258657_0 = il2cpp_codegen_string_literal_from_index(2839);
-		_stringLiteral1937993513_0 = il2cpp_codegen_string_literal_from_index(2840);
+		_stringLiteral_305728046_0 = il2cpp_codegen_string_literal_from_index(2839);
+		_stringLiteral_793095891_0 = il2cpp_codegen_string_literal_from_index(2840);
 		_stringLiteral_2005299809_0 = il2cpp_codegen_string_literal_from_index(2841);
 		_stringLiteral_1568607283_0 = il2cpp_codegen_string_literal_from_index(2842);
-		_stringLiteral1546293524_0 = il2cpp_codegen_string_literal_from_index(2843);
-		_stringLiteral229960_0 = il2cpp_codegen_string_literal_from_index(2844);
+		_stringLiteral_2052885019_0 = il2cpp_codegen_string_literal_from_index(2843);
+		_stringLiteral_1643225581_0 = il2cpp_codegen_string_literal_from_index(2844);
 		_stringLiteral_2005299808_0 = il2cpp_codegen_string_literal_from_index(2845);
 		_stringLiteral_1568607282_0 = il2cpp_codegen_string_literal_from_index(2846);
-		_stringLiteral_751900961_0 = il2cpp_codegen_string_literal_from_index(2847);
-		_stringLiteral999303052_0 = il2cpp_codegen_string_literal_from_index(2848);
+		_stringLiteral_1966420435_0 = il2cpp_codegen_string_literal_from_index(2847);
+		_stringLiteral1034600099_0 = il2cpp_codegen_string_literal_from_index(2848);
 		_stringLiteral_2005299807_0 = il2cpp_codegen_string_literal_from_index(2849);
 		_stringLiteral_1568607281_0 = il2cpp_codegen_string_literal_from_index(2850);
-		_stringLiteral124238261_0 = il2cpp_codegen_string_literal_from_index(2851);
-		_stringLiteral_1104691127_0 = il2cpp_codegen_string_literal_from_index(2852);
+		_stringLiteral1346015937_0 = il2cpp_codegen_string_literal_from_index(2851);
+		_stringLiteral672342026_0 = il2cpp_codegen_string_literal_from_index(2852);
 		_stringLiteral_2005299806_0 = il2cpp_codegen_string_literal_from_index(2853);
 		_stringLiteral_1568607280_0 = il2cpp_codegen_string_literal_from_index(2854);
-		_stringLiteral_1107026138_0 = il2cpp_codegen_string_literal_from_index(2855);
-		_stringLiteral832065044_0 = il2cpp_codegen_string_literal_from_index(2856);
+		_stringLiteral_1196273202_0 = il2cpp_codegen_string_literal_from_index(2855);
+		_stringLiteral_1518045588_0 = il2cpp_codegen_string_literal_from_index(2856);
 		_stringLiteral_2005299805_0 = il2cpp_codegen_string_literal_from_index(2857);
 		_stringLiteral_1568607279_0 = il2cpp_codegen_string_literal_from_index(2858);
-		_stringLiteral791985404_0 = il2cpp_codegen_string_literal_from_index(2859);
-		_stringLiteral_1026239818_0 = il2cpp_codegen_string_literal_from_index(2860);
+		_stringLiteral_1978057806_0 = il2cpp_codegen_string_literal_from_index(2859);
+		_stringLiteral_1284748998_0 = il2cpp_codegen_string_literal_from_index(2860);
 		_stringLiteral_2005299804_0 = il2cpp_codegen_string_literal_from_index(2861);
 		_stringLiteral_1568607278_0 = il2cpp_codegen_string_literal_from_index(2862);
-		_stringLiteral1699210727_0 = il2cpp_codegen_string_literal_from_index(2863);
-		_stringLiteral_1293602737_0 = il2cpp_codegen_string_literal_from_index(2864);
+		_stringLiteral403424058_0 = il2cpp_codegen_string_literal_from_index(2863);
+		_stringLiteral_749103234_0 = il2cpp_codegen_string_literal_from_index(2864);
 		_stringLiteral_2005299782_0 = il2cpp_codegen_string_literal_from_index(2865);
 		_stringLiteral_1568607256_0 = il2cpp_codegen_string_literal_from_index(2866);
+		_stringLiteral12314726_0 = il2cpp_codegen_string_literal_from_index(2867);
+		_stringLiteral502819294_0 = il2cpp_codegen_string_literal_from_index(2868);
+		_stringLiteral_1775848667_0 = il2cpp_codegen_string_literal_from_index(2869);
+		_stringLiteral1107054428_0 = il2cpp_codegen_string_literal_from_index(2870);
+		_stringLiteral_2136021857_0 = il2cpp_codegen_string_literal_from_index(2871);
+		_stringLiteral_191581027_0 = il2cpp_codegen_string_literal_from_index(2872);
+		_stringLiteral959917271_0 = il2cpp_codegen_string_literal_from_index(2873);
+		_stringLiteral_1868366956_0 = il2cpp_codegen_string_literal_from_index(2874);
+		_stringLiteral_1073742448_0 = il2cpp_codegen_string_literal_from_index(2875);
+		_stringLiteral_125456303_0 = il2cpp_codegen_string_literal_from_index(2876);
+		_stringLiteral_1081130616_0 = il2cpp_codegen_string_literal_from_index(2877);
+		_stringLiteral_778909505_0 = il2cpp_codegen_string_literal_from_index(2878);
+		_stringLiteral1100374863_0 = il2cpp_codegen_string_literal_from_index(2879);
+		_stringLiteral121437362_0 = il2cpp_codegen_string_literal_from_index(2880);
+		_stringLiteral424334673_0 = il2cpp_codegen_string_literal_from_index(2881);
+		_stringLiteral_566407138_0 = il2cpp_codegen_string_literal_from_index(2882);
+		_stringLiteral681192675_0 = il2cpp_codegen_string_literal_from_index(2883);
+		_stringLiteral_343993893_0 = il2cpp_codegen_string_literal_from_index(2884);
+		_stringLiteral1925364521_0 = il2cpp_codegen_string_literal_from_index(2885);
+		_stringLiteral1068256335_0 = il2cpp_codegen_string_literal_from_index(2886);
+		_stringLiteral1021465477_0 = il2cpp_codegen_string_literal_from_index(2887);
+		_stringLiteral1445334314_0 = il2cpp_codegen_string_literal_from_index(2888);
+		_stringLiteral_1829621422_0 = il2cpp_codegen_string_literal_from_index(2889);
+		_stringLiteral948650079_0 = il2cpp_codegen_string_literal_from_index(2890);
+		_stringLiteral_1754632855_0 = il2cpp_codegen_string_literal_from_index(2891);
+		_stringLiteral_106309013_0 = il2cpp_codegen_string_literal_from_index(2892);
+		_stringLiteral218258657_0 = il2cpp_codegen_string_literal_from_index(2893);
+		_stringLiteral1937993513_0 = il2cpp_codegen_string_literal_from_index(2894);
+		_stringLiteral1546293524_0 = il2cpp_codegen_string_literal_from_index(2895);
+		_stringLiteral229960_0 = il2cpp_codegen_string_literal_from_index(2896);
+		_stringLiteral_751900961_0 = il2cpp_codegen_string_literal_from_index(2897);
+		_stringLiteral999303052_0 = il2cpp_codegen_string_literal_from_index(2898);
+		_stringLiteral124238261_0 = il2cpp_codegen_string_literal_from_index(2899);
+		_stringLiteral_1104691127_0 = il2cpp_codegen_string_literal_from_index(2900);
+		_stringLiteral_1107026138_0 = il2cpp_codegen_string_literal_from_index(2901);
+		_stringLiteral832065044_0 = il2cpp_codegen_string_literal_from_index(2902);
+		_stringLiteral791985404_0 = il2cpp_codegen_string_literal_from_index(2903);
+		_stringLiteral_1026239818_0 = il2cpp_codegen_string_literal_from_index(2904);
+		_stringLiteral1699210727_0 = il2cpp_codegen_string_literal_from_index(2905);
+		_stringLiteral_1293602737_0 = il2cpp_codegen_string_literal_from_index(2906);
 		s_Il2CppMethodIntialized = true;
 	}
 	SheepData_t_896671990_0 * V_0 = {0};
@@ -1729,701 +1814,1406 @@ extern "C"  SheepData_t_896671990_0 * GameData_GetStSheepData_m_1043165070_0 (Ga
 		SheepData_t_896671990_0 * L_0 = (SheepData_t_896671990_0 *)il2cpp_codegen_object_new (SheepData_t_896671990_0_il2cpp_TypeInfo_var);
 		SheepData__ctor_m_1927184506_0(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		int32_t L_1 = ___sheepId;
-		V_1 = L_1;
-		int32_t L_2 = V_1;
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 0)
+		int32_t L_1 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_1) == ((int32_t)((int32_t)22))))
 		{
-			goto IL_0065;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 1)
-		{
-			goto IL_00b9;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 2)
-		{
-			goto IL_010d;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 3)
-		{
-			goto IL_0161;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 4)
-		{
-			goto IL_01b5;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 5)
-		{
-			goto IL_0209;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 6)
-		{
-			goto IL_025d;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 7)
-		{
-			goto IL_02b2;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 8)
-		{
-			goto IL_0307;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 9)
-		{
-			goto IL_035c;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 10)
-		{
-			goto IL_03b2;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 11)
-		{
-			goto IL_0407;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 12)
-		{
-			goto IL_045d;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 13)
-		{
-			goto IL_04b3;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 14)
-		{
-			goto IL_0509;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 15)
-		{
-			goto IL_055f;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 16)
-		{
-			goto IL_05b4;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 17)
-		{
-			goto IL_0609;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 18)
-		{
-			goto IL_065e;
-		}
-		if (((int32_t)((int32_t)L_2-(int32_t)1)) == 19)
-		{
-			goto IL_06b4;
+			goto IL_071f;
 		}
 	}
 	{
-		goto IL_0709;
+		int32_t L_2 = ___sheepId;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 0)
+		{
+			goto IL_0071;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 1)
+		{
+			goto IL_00c5;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 2)
+		{
+			goto IL_0119;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 3)
+		{
+			goto IL_016d;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 4)
+		{
+			goto IL_01c1;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 5)
+		{
+			goto IL_0215;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 6)
+		{
+			goto IL_0269;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 7)
+		{
+			goto IL_02be;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 8)
+		{
+			goto IL_0313;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 9)
+		{
+			goto IL_0368;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 10)
+		{
+			goto IL_03be;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 11)
+		{
+			goto IL_0413;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 12)
+		{
+			goto IL_0469;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 13)
+		{
+			goto IL_04bf;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 14)
+		{
+			goto IL_0515;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 15)
+		{
+			goto IL_056b;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 16)
+		{
+			goto IL_05c0;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 17)
+		{
+			goto IL_0615;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 18)
+		{
+			goto IL_066a;
+		}
+		if (((int32_t)((int32_t)L_3-(int32_t)1)) == 19)
+		{
+			goto IL_06c0;
+		}
+	}
+	{
+		goto IL_0715;
 	}
 
-IL_0065:
+IL_0071:
 	{
-		SheepData_t_896671990_0 * L_3 = V_0;
-		NullCheck(L_3);
-		L_3->___SheepId_0 = 1;
 		SheepData_t_896671990_0 * L_4 = V_0;
 		NullCheck(L_4);
-		L_4->___SheepName_1 = _stringLiteral12314726_0;
+		L_4->___SheepId_0 = 1;
 		SheepData_t_896671990_0 * L_5 = V_0;
 		NullCheck(L_5);
-		L_5->___SheepDescription_2 = _stringLiteral502819294_0;
+		L_5->___SheepName_1 = _stringLiteral79850811_0;
 		SheepData_t_896671990_0 * L_6 = V_0;
 		NullCheck(L_6);
-		L_6->___SheepHint_3 = _stringLiteral1977470842_0;
+		L_6->___SheepDescription_2 = _stringLiteral411308700_0;
 		SheepData_t_896671990_0 * L_7 = V_0;
 		NullCheck(L_7);
-		L_7->___UnlockStage_4 = 1;
+		L_7->___SheepHint_3 = _stringLiteral1977470842_0;
 		SheepData_t_896671990_0 * L_8 = V_0;
-		int32_t L_9 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786229_0, /*hidden argument*/NULL);
 		NullCheck(L_8);
-		L_8->___IsUnlocked_5 = L_9;
-		SheepData_t_896671990_0 * L_10 = V_0;
-		int32_t L_11 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242233_0, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		L_10->___IsChecked_6 = L_11;
-		goto IL_070e;
+		L_8->___UnlockStage_4 = 1;
+		SheepData_t_896671990_0 * L_9 = V_0;
+		int32_t L_10 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786229_0, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		L_9->___IsUnlocked_5 = L_10;
+		SheepData_t_896671990_0 * L_11 = V_0;
+		int32_t L_12 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242233_0, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		L_11->___IsChecked_6 = L_12;
+		goto IL_071a;
 	}
 
-IL_00b9:
+IL_00c5:
 	{
-		SheepData_t_896671990_0 * L_12 = V_0;
-		NullCheck(L_12);
-		L_12->___SheepId_0 = 2;
 		SheepData_t_896671990_0 * L_13 = V_0;
 		NullCheck(L_13);
-		L_13->___SheepName_1 = _stringLiteral_1775848667_0;
+		L_13->___SheepId_0 = 2;
 		SheepData_t_896671990_0 * L_14 = V_0;
 		NullCheck(L_14);
-		L_14->___SheepDescription_2 = _stringLiteral1107054428_0;
+		L_14->___SheepName_1 = _stringLiteral_776703567_0;
 		SheepData_t_896671990_0 * L_15 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_16 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_15);
-		L_15->___SheepHint_3 = L_16;
-		SheepData_t_896671990_0 * L_17 = V_0;
-		NullCheck(L_17);
-		L_17->___UnlockStage_4 = 2;
+		L_15->___SheepDescription_2 = _stringLiteral_1862299699_0;
+		SheepData_t_896671990_0 * L_16 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_17 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_16);
+		L_16->___SheepHint_3 = L_17;
 		SheepData_t_896671990_0 * L_18 = V_0;
-		int32_t L_19 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786230_0, /*hidden argument*/NULL);
 		NullCheck(L_18);
-		L_18->___IsUnlocked_5 = L_19;
-		SheepData_t_896671990_0 * L_20 = V_0;
-		int32_t L_21 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242232_0, /*hidden argument*/NULL);
-		NullCheck(L_20);
-		L_20->___IsChecked_6 = L_21;
-		goto IL_070e;
+		L_18->___UnlockStage_4 = 2;
+		SheepData_t_896671990_0 * L_19 = V_0;
+		int32_t L_20 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786230_0, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		L_19->___IsUnlocked_5 = L_20;
+		SheepData_t_896671990_0 * L_21 = V_0;
+		int32_t L_22 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242232_0, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		L_21->___IsChecked_6 = L_22;
+		goto IL_071a;
 	}
 
-IL_010d:
+IL_0119:
 	{
-		SheepData_t_896671990_0 * L_22 = V_0;
-		NullCheck(L_22);
-		L_22->___SheepId_0 = 3;
 		SheepData_t_896671990_0 * L_23 = V_0;
 		NullCheck(L_23);
-		L_23->___SheepName_1 = _stringLiteral_2136021857_0;
+		L_23->___SheepId_0 = 3;
 		SheepData_t_896671990_0 * L_24 = V_0;
 		NullCheck(L_24);
-		L_24->___SheepDescription_2 = _stringLiteral_191581027_0;
+		L_24->___SheepName_1 = _stringLiteral_629927671_0;
 		SheepData_t_896671990_0 * L_25 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_26 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_25);
-		L_25->___SheepHint_3 = L_26;
-		SheepData_t_896671990_0 * L_27 = V_0;
-		NullCheck(L_27);
-		L_27->___UnlockStage_4 = 0;
+		L_25->___SheepDescription_2 = _stringLiteral_1579135016_0;
+		SheepData_t_896671990_0 * L_26 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_27 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_26);
+		L_26->___SheepHint_3 = L_27;
 		SheepData_t_896671990_0 * L_28 = V_0;
-		int32_t L_29 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786231_0, /*hidden argument*/NULL);
 		NullCheck(L_28);
-		L_28->___IsUnlocked_5 = L_29;
-		SheepData_t_896671990_0 * L_30 = V_0;
-		int32_t L_31 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242231_0, /*hidden argument*/NULL);
-		NullCheck(L_30);
-		L_30->___IsChecked_6 = L_31;
-		goto IL_070e;
+		L_28->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_29 = V_0;
+		int32_t L_30 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786231_0, /*hidden argument*/NULL);
+		NullCheck(L_29);
+		L_29->___IsUnlocked_5 = L_30;
+		SheepData_t_896671990_0 * L_31 = V_0;
+		int32_t L_32 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242231_0, /*hidden argument*/NULL);
+		NullCheck(L_31);
+		L_31->___IsChecked_6 = L_32;
+		goto IL_071a;
 	}
 
-IL_0161:
+IL_016d:
 	{
-		SheepData_t_896671990_0 * L_32 = V_0;
-		NullCheck(L_32);
-		L_32->___SheepId_0 = 4;
 		SheepData_t_896671990_0 * L_33 = V_0;
 		NullCheck(L_33);
-		L_33->___SheepName_1 = _stringLiteral959917271_0;
+		L_33->___SheepId_0 = 4;
 		SheepData_t_896671990_0 * L_34 = V_0;
 		NullCheck(L_34);
-		L_34->___SheepDescription_2 = _stringLiteral_1868366956_0;
+		L_34->___SheepName_1 = _stringLiteral178052194_0;
 		SheepData_t_896671990_0 * L_35 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_36 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_35);
-		L_35->___SheepHint_3 = L_36;
-		SheepData_t_896671990_0 * L_37 = V_0;
-		NullCheck(L_37);
-		L_37->___UnlockStage_4 = 4;
+		L_35->___SheepDescription_2 = _stringLiteral_1426647900_0;
+		SheepData_t_896671990_0 * L_36 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_37 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_36);
+		L_36->___SheepHint_3 = L_37;
 		SheepData_t_896671990_0 * L_38 = V_0;
-		int32_t L_39 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786232_0, /*hidden argument*/NULL);
 		NullCheck(L_38);
-		L_38->___IsUnlocked_5 = L_39;
-		SheepData_t_896671990_0 * L_40 = V_0;
-		int32_t L_41 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242230_0, /*hidden argument*/NULL);
-		NullCheck(L_40);
-		L_40->___IsChecked_6 = L_41;
-		goto IL_070e;
+		L_38->___UnlockStage_4 = 4;
+		SheepData_t_896671990_0 * L_39 = V_0;
+		int32_t L_40 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786232_0, /*hidden argument*/NULL);
+		NullCheck(L_39);
+		L_39->___IsUnlocked_5 = L_40;
+		SheepData_t_896671990_0 * L_41 = V_0;
+		int32_t L_42 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242230_0, /*hidden argument*/NULL);
+		NullCheck(L_41);
+		L_41->___IsChecked_6 = L_42;
+		goto IL_071a;
 	}
 
-IL_01b5:
+IL_01c1:
 	{
-		SheepData_t_896671990_0 * L_42 = V_0;
-		NullCheck(L_42);
-		L_42->___SheepId_0 = 5;
 		SheepData_t_896671990_0 * L_43 = V_0;
 		NullCheck(L_43);
-		L_43->___SheepName_1 = _stringLiteral_1073742448_0;
+		L_43->___SheepId_0 = 5;
 		SheepData_t_896671990_0 * L_44 = V_0;
 		NullCheck(L_44);
-		L_44->___SheepDescription_2 = _stringLiteral_125456303_0;
+		L_44->___SheepName_1 = _stringLiteral_711040380_0;
 		SheepData_t_896671990_0 * L_45 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_46 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_45);
-		L_45->___SheepHint_3 = L_46;
-		SheepData_t_896671990_0 * L_47 = V_0;
-		NullCheck(L_47);
-		L_47->___UnlockStage_4 = 8;
+		L_45->___SheepDescription_2 = _stringLiteral149109594_0;
+		SheepData_t_896671990_0 * L_46 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_47 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_46);
+		L_46->___SheepHint_3 = L_47;
 		SheepData_t_896671990_0 * L_48 = V_0;
-		int32_t L_49 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786233_0, /*hidden argument*/NULL);
 		NullCheck(L_48);
-		L_48->___IsUnlocked_5 = L_49;
-		SheepData_t_896671990_0 * L_50 = V_0;
-		int32_t L_51 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242229_0, /*hidden argument*/NULL);
-		NullCheck(L_50);
-		L_50->___IsChecked_6 = L_51;
-		goto IL_070e;
+		L_48->___UnlockStage_4 = 8;
+		SheepData_t_896671990_0 * L_49 = V_0;
+		int32_t L_50 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786233_0, /*hidden argument*/NULL);
+		NullCheck(L_49);
+		L_49->___IsUnlocked_5 = L_50;
+		SheepData_t_896671990_0 * L_51 = V_0;
+		int32_t L_52 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242229_0, /*hidden argument*/NULL);
+		NullCheck(L_51);
+		L_51->___IsChecked_6 = L_52;
+		goto IL_071a;
 	}
 
-IL_0209:
+IL_0215:
 	{
-		SheepData_t_896671990_0 * L_52 = V_0;
-		NullCheck(L_52);
-		L_52->___SheepId_0 = 6;
 		SheepData_t_896671990_0 * L_53 = V_0;
 		NullCheck(L_53);
-		L_53->___SheepName_1 = _stringLiteral_1081130616_0;
+		L_53->___SheepId_0 = 6;
 		SheepData_t_896671990_0 * L_54 = V_0;
 		NullCheck(L_54);
-		L_54->___SheepDescription_2 = _stringLiteral_778909505_0;
+		L_54->___SheepName_1 = _stringLiteral625962458_0;
 		SheepData_t_896671990_0 * L_55 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_56 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_55);
-		L_55->___SheepHint_3 = L_56;
-		SheepData_t_896671990_0 * L_57 = V_0;
-		NullCheck(L_57);
-		L_57->___UnlockStage_4 = 6;
+		L_55->___SheepDescription_2 = _stringLiteral_1563850174_0;
+		SheepData_t_896671990_0 * L_56 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_57 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_56);
+		L_56->___SheepHint_3 = L_57;
 		SheepData_t_896671990_0 * L_58 = V_0;
-		int32_t L_59 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786234_0, /*hidden argument*/NULL);
 		NullCheck(L_58);
-		L_58->___IsUnlocked_5 = L_59;
-		SheepData_t_896671990_0 * L_60 = V_0;
-		int32_t L_61 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242228_0, /*hidden argument*/NULL);
-		NullCheck(L_60);
-		L_60->___IsChecked_6 = L_61;
-		goto IL_070e;
+		L_58->___UnlockStage_4 = 6;
+		SheepData_t_896671990_0 * L_59 = V_0;
+		int32_t L_60 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786234_0, /*hidden argument*/NULL);
+		NullCheck(L_59);
+		L_59->___IsUnlocked_5 = L_60;
+		SheepData_t_896671990_0 * L_61 = V_0;
+		int32_t L_62 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242228_0, /*hidden argument*/NULL);
+		NullCheck(L_61);
+		L_61->___IsChecked_6 = L_62;
+		goto IL_071a;
 	}
 
-IL_025d:
+IL_0269:
 	{
-		SheepData_t_896671990_0 * L_62 = V_0;
-		NullCheck(L_62);
-		L_62->___SheepId_0 = 7;
 		SheepData_t_896671990_0 * L_63 = V_0;
 		NullCheck(L_63);
-		L_63->___SheepName_1 = _stringLiteral1100374863_0;
+		L_63->___SheepId_0 = 7;
 		SheepData_t_896671990_0 * L_64 = V_0;
 		NullCheck(L_64);
-		L_64->___SheepDescription_2 = _stringLiteral121437362_0;
+		L_64->___SheepName_1 = _stringLiteral_24328197_0;
 		SheepData_t_896671990_0 * L_65 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_66 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_65);
-		L_65->___SheepHint_3 = L_66;
-		SheepData_t_896671990_0 * L_67 = V_0;
-		NullCheck(L_67);
-		L_67->___UnlockStage_4 = ((int32_t)11);
+		L_65->___SheepDescription_2 = _stringLiteral_1174069965_0;
+		SheepData_t_896671990_0 * L_66 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_67 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_66);
+		L_66->___SheepHint_3 = L_67;
 		SheepData_t_896671990_0 * L_68 = V_0;
-		int32_t L_69 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786235_0, /*hidden argument*/NULL);
 		NullCheck(L_68);
-		L_68->___IsUnlocked_5 = L_69;
-		SheepData_t_896671990_0 * L_70 = V_0;
-		int32_t L_71 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242227_0, /*hidden argument*/NULL);
-		NullCheck(L_70);
-		L_70->___IsChecked_6 = L_71;
-		goto IL_070e;
+		L_68->___UnlockStage_4 = ((int32_t)11);
+		SheepData_t_896671990_0 * L_69 = V_0;
+		int32_t L_70 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786235_0, /*hidden argument*/NULL);
+		NullCheck(L_69);
+		L_69->___IsUnlocked_5 = L_70;
+		SheepData_t_896671990_0 * L_71 = V_0;
+		int32_t L_72 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242227_0, /*hidden argument*/NULL);
+		NullCheck(L_71);
+		L_71->___IsChecked_6 = L_72;
+		goto IL_071a;
 	}
 
-IL_02b2:
+IL_02be:
 	{
-		SheepData_t_896671990_0 * L_72 = V_0;
-		NullCheck(L_72);
-		L_72->___SheepId_0 = 8;
 		SheepData_t_896671990_0 * L_73 = V_0;
 		NullCheck(L_73);
-		L_73->___SheepName_1 = _stringLiteral424334673_0;
+		L_73->___SheepId_0 = 8;
 		SheepData_t_896671990_0 * L_74 = V_0;
 		NullCheck(L_74);
-		L_74->___SheepDescription_2 = _stringLiteral_566407138_0;
+		L_74->___SheepName_1 = _stringLiteral938360975_0;
 		SheepData_t_896671990_0 * L_75 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_76 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_75);
-		L_75->___SheepHint_3 = L_76;
-		SheepData_t_896671990_0 * L_77 = V_0;
-		NullCheck(L_77);
-		L_77->___UnlockStage_4 = ((int32_t)13);
+		L_75->___SheepDescription_2 = _stringLiteral_1690460266_0;
+		SheepData_t_896671990_0 * L_76 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_77 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_76);
+		L_76->___SheepHint_3 = L_77;
 		SheepData_t_896671990_0 * L_78 = V_0;
-		int32_t L_79 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786236_0, /*hidden argument*/NULL);
 		NullCheck(L_78);
-		L_78->___IsUnlocked_5 = L_79;
-		SheepData_t_896671990_0 * L_80 = V_0;
-		int32_t L_81 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242226_0, /*hidden argument*/NULL);
-		NullCheck(L_80);
-		L_80->___IsChecked_6 = L_81;
-		goto IL_070e;
+		L_78->___UnlockStage_4 = ((int32_t)13);
+		SheepData_t_896671990_0 * L_79 = V_0;
+		int32_t L_80 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786236_0, /*hidden argument*/NULL);
+		NullCheck(L_79);
+		L_79->___IsUnlocked_5 = L_80;
+		SheepData_t_896671990_0 * L_81 = V_0;
+		int32_t L_82 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242226_0, /*hidden argument*/NULL);
+		NullCheck(L_81);
+		L_81->___IsChecked_6 = L_82;
+		goto IL_071a;
 	}
 
-IL_0307:
+IL_0313:
 	{
-		SheepData_t_896671990_0 * L_82 = V_0;
-		NullCheck(L_82);
-		L_82->___SheepId_0 = ((int32_t)9);
 		SheepData_t_896671990_0 * L_83 = V_0;
 		NullCheck(L_83);
-		L_83->___SheepName_1 = _stringLiteral681192675_0;
+		L_83->___SheepId_0 = ((int32_t)9);
 		SheepData_t_896671990_0 * L_84 = V_0;
 		NullCheck(L_84);
-		L_84->___SheepDescription_2 = _stringLiteral_343993893_0;
+		L_84->___SheepName_1 = _stringLiteral267062787_0;
 		SheepData_t_896671990_0 * L_85 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_86 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_85);
-		L_85->___SheepHint_3 = L_86;
-		SheepData_t_896671990_0 * L_87 = V_0;
-		NullCheck(L_87);
-		L_87->___UnlockStage_4 = 0;
+		L_85->___SheepDescription_2 = _stringLiteral2104598618_0;
+		SheepData_t_896671990_0 * L_86 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_87 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_86);
+		L_86->___SheepHint_3 = L_87;
 		SheepData_t_896671990_0 * L_88 = V_0;
-		int32_t L_89 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786237_0, /*hidden argument*/NULL);
 		NullCheck(L_88);
-		L_88->___IsUnlocked_5 = L_89;
-		SheepData_t_896671990_0 * L_90 = V_0;
-		int32_t L_91 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242225_0, /*hidden argument*/NULL);
-		NullCheck(L_90);
-		L_90->___IsChecked_6 = L_91;
-		goto IL_070e;
+		L_88->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_89 = V_0;
+		int32_t L_90 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786237_0, /*hidden argument*/NULL);
+		NullCheck(L_89);
+		L_89->___IsUnlocked_5 = L_90;
+		SheepData_t_896671990_0 * L_91 = V_0;
+		int32_t L_92 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242225_0, /*hidden argument*/NULL);
+		NullCheck(L_91);
+		L_91->___IsChecked_6 = L_92;
+		goto IL_071a;
 	}
 
-IL_035c:
+IL_0368:
 	{
-		SheepData_t_896671990_0 * L_92 = V_0;
-		NullCheck(L_92);
-		L_92->___SheepId_0 = ((int32_t)10);
 		SheepData_t_896671990_0 * L_93 = V_0;
 		NullCheck(L_93);
-		L_93->___SheepName_1 = _stringLiteral1925364521_0;
+		L_93->___SheepId_0 = ((int32_t)10);
 		SheepData_t_896671990_0 * L_94 = V_0;
 		NullCheck(L_94);
-		L_94->___SheepDescription_2 = _stringLiteral1068256335_0;
+		L_94->___SheepName_1 = _stringLiteral497898037_0;
 		SheepData_t_896671990_0 * L_95 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_96 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_95);
-		L_95->___SheepHint_3 = L_96;
-		SheepData_t_896671990_0 * L_97 = V_0;
-		NullCheck(L_97);
-		L_97->___UnlockStage_4 = ((int32_t)21);
+		L_95->___SheepDescription_2 = _stringLiteral_1792636292_0;
+		SheepData_t_896671990_0 * L_96 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_97 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_96);
+		L_96->___SheepHint_3 = L_97;
 		SheepData_t_896671990_0 * L_98 = V_0;
-		int32_t L_99 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299813_0, /*hidden argument*/NULL);
 		NullCheck(L_98);
-		L_98->___IsUnlocked_5 = L_99;
-		SheepData_t_896671990_0 * L_100 = V_0;
-		int32_t L_101 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607287_0, /*hidden argument*/NULL);
-		NullCheck(L_100);
-		L_100->___IsChecked_6 = L_101;
-		goto IL_070e;
+		L_98->___UnlockStage_4 = ((int32_t)21);
+		SheepData_t_896671990_0 * L_99 = V_0;
+		int32_t L_100 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299813_0, /*hidden argument*/NULL);
+		NullCheck(L_99);
+		L_99->___IsUnlocked_5 = L_100;
+		SheepData_t_896671990_0 * L_101 = V_0;
+		int32_t L_102 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607287_0, /*hidden argument*/NULL);
+		NullCheck(L_101);
+		L_101->___IsChecked_6 = L_102;
+		goto IL_071a;
 	}
 
-IL_03b2:
+IL_03be:
 	{
-		SheepData_t_896671990_0 * L_102 = V_0;
-		NullCheck(L_102);
-		L_102->___SheepId_0 = ((int32_t)11);
 		SheepData_t_896671990_0 * L_103 = V_0;
 		NullCheck(L_103);
-		L_103->___SheepName_1 = _stringLiteral1021465477_0;
+		L_103->___SheepId_0 = ((int32_t)11);
 		SheepData_t_896671990_0 * L_104 = V_0;
 		NullCheck(L_104);
-		L_104->___SheepDescription_2 = _stringLiteral1445334314_0;
+		L_104->___SheepName_1 = _stringLiteral_439960152_0;
 		SheepData_t_896671990_0 * L_105 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_106 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_105);
-		L_105->___SheepHint_3 = L_106;
-		SheepData_t_896671990_0 * L_107 = V_0;
-		NullCheck(L_107);
-		L_107->___UnlockStage_4 = 0;
+		L_105->___SheepDescription_2 = _stringLiteral_960512875_0;
+		SheepData_t_896671990_0 * L_106 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_107 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_106);
+		L_106->___SheepHint_3 = L_107;
 		SheepData_t_896671990_0 * L_108 = V_0;
-		int32_t L_109 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299812_0, /*hidden argument*/NULL);
 		NullCheck(L_108);
-		L_108->___IsUnlocked_5 = L_109;
-		SheepData_t_896671990_0 * L_110 = V_0;
-		int32_t L_111 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607286_0, /*hidden argument*/NULL);
-		NullCheck(L_110);
-		L_110->___IsChecked_6 = L_111;
-		goto IL_070e;
+		L_108->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_109 = V_0;
+		int32_t L_110 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299812_0, /*hidden argument*/NULL);
+		NullCheck(L_109);
+		L_109->___IsUnlocked_5 = L_110;
+		SheepData_t_896671990_0 * L_111 = V_0;
+		int32_t L_112 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607286_0, /*hidden argument*/NULL);
+		NullCheck(L_111);
+		L_111->___IsChecked_6 = L_112;
+		goto IL_071a;
 	}
 
-IL_0407:
+IL_0413:
 	{
-		SheepData_t_896671990_0 * L_112 = V_0;
-		NullCheck(L_112);
-		L_112->___SheepId_0 = ((int32_t)12);
 		SheepData_t_896671990_0 * L_113 = V_0;
 		NullCheck(L_113);
-		L_113->___SheepName_1 = _stringLiteral_1829621422_0;
+		L_113->___SheepId_0 = ((int32_t)12);
 		SheepData_t_896671990_0 * L_114 = V_0;
 		NullCheck(L_114);
-		L_114->___SheepDescription_2 = _stringLiteral948650079_0;
+		L_114->___SheepName_1 = _stringLiteral_919807589_0;
 		SheepData_t_896671990_0 * L_115 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_116 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_115);
-		L_115->___SheepHint_3 = L_116;
-		SheepData_t_896671990_0 * L_117 = V_0;
-		NullCheck(L_117);
-		L_117->___UnlockStage_4 = ((int32_t)11);
+		L_115->___SheepDescription_2 = _stringLiteral496135962_0;
+		SheepData_t_896671990_0 * L_116 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_117 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_116);
+		L_116->___SheepHint_3 = L_117;
 		SheepData_t_896671990_0 * L_118 = V_0;
-		int32_t L_119 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299811_0, /*hidden argument*/NULL);
 		NullCheck(L_118);
-		L_118->___IsUnlocked_5 = L_119;
-		SheepData_t_896671990_0 * L_120 = V_0;
-		int32_t L_121 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607285_0, /*hidden argument*/NULL);
-		NullCheck(L_120);
-		L_120->___IsChecked_6 = L_121;
-		goto IL_070e;
+		L_118->___UnlockStage_4 = ((int32_t)11);
+		SheepData_t_896671990_0 * L_119 = V_0;
+		int32_t L_120 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299811_0, /*hidden argument*/NULL);
+		NullCheck(L_119);
+		L_119->___IsUnlocked_5 = L_120;
+		SheepData_t_896671990_0 * L_121 = V_0;
+		int32_t L_122 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607285_0, /*hidden argument*/NULL);
+		NullCheck(L_121);
+		L_121->___IsChecked_6 = L_122;
+		goto IL_071a;
 	}
 
-IL_045d:
+IL_0469:
 	{
-		SheepData_t_896671990_0 * L_122 = V_0;
-		NullCheck(L_122);
-		L_122->___SheepId_0 = ((int32_t)13);
 		SheepData_t_896671990_0 * L_123 = V_0;
 		NullCheck(L_123);
-		L_123->___SheepName_1 = _stringLiteral_1754632855_0;
+		L_123->___SheepId_0 = ((int32_t)13);
 		SheepData_t_896671990_0 * L_124 = V_0;
 		NullCheck(L_124);
-		L_124->___SheepDescription_2 = _stringLiteral_106309013_0;
+		L_124->___SheepName_1 = _stringLiteral_1524961705_0;
 		SheepData_t_896671990_0 * L_125 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_126 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_125);
-		L_125->___SheepHint_3 = L_126;
-		SheepData_t_896671990_0 * L_127 = V_0;
-		NullCheck(L_127);
-		L_127->___UnlockStage_4 = ((int32_t)17);
+		L_125->___SheepDescription_2 = _stringLiteral_1613138298_0;
+		SheepData_t_896671990_0 * L_126 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_127 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_126);
+		L_126->___SheepHint_3 = L_127;
 		SheepData_t_896671990_0 * L_128 = V_0;
-		int32_t L_129 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299810_0, /*hidden argument*/NULL);
 		NullCheck(L_128);
-		L_128->___IsUnlocked_5 = L_129;
-		SheepData_t_896671990_0 * L_130 = V_0;
-		int32_t L_131 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607284_0, /*hidden argument*/NULL);
-		NullCheck(L_130);
-		L_130->___IsChecked_6 = L_131;
-		goto IL_070e;
+		L_128->___UnlockStage_4 = ((int32_t)17);
+		SheepData_t_896671990_0 * L_129 = V_0;
+		int32_t L_130 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299810_0, /*hidden argument*/NULL);
+		NullCheck(L_129);
+		L_129->___IsUnlocked_5 = L_130;
+		SheepData_t_896671990_0 * L_131 = V_0;
+		int32_t L_132 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607284_0, /*hidden argument*/NULL);
+		NullCheck(L_131);
+		L_131->___IsChecked_6 = L_132;
+		goto IL_071a;
 	}
 
-IL_04b3:
+IL_04bf:
 	{
-		SheepData_t_896671990_0 * L_132 = V_0;
-		NullCheck(L_132);
-		L_132->___SheepId_0 = ((int32_t)14);
 		SheepData_t_896671990_0 * L_133 = V_0;
 		NullCheck(L_133);
-		L_133->___SheepName_1 = _stringLiteral218258657_0;
+		L_133->___SheepId_0 = ((int32_t)14);
 		SheepData_t_896671990_0 * L_134 = V_0;
 		NullCheck(L_134);
-		L_134->___SheepDescription_2 = _stringLiteral1937993513_0;
+		L_134->___SheepName_1 = _stringLiteral_305728046_0;
 		SheepData_t_896671990_0 * L_135 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_136 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_135);
-		L_135->___SheepHint_3 = L_136;
-		SheepData_t_896671990_0 * L_137 = V_0;
-		NullCheck(L_137);
-		L_137->___UnlockStage_4 = ((int32_t)24);
+		L_135->___SheepDescription_2 = _stringLiteral_793095891_0;
+		SheepData_t_896671990_0 * L_136 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_137 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_136);
+		L_136->___SheepHint_3 = L_137;
 		SheepData_t_896671990_0 * L_138 = V_0;
-		int32_t L_139 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299809_0, /*hidden argument*/NULL);
 		NullCheck(L_138);
-		L_138->___IsUnlocked_5 = L_139;
-		SheepData_t_896671990_0 * L_140 = V_0;
-		int32_t L_141 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607283_0, /*hidden argument*/NULL);
-		NullCheck(L_140);
-		L_140->___IsChecked_6 = L_141;
-		goto IL_070e;
+		L_138->___UnlockStage_4 = ((int32_t)24);
+		SheepData_t_896671990_0 * L_139 = V_0;
+		int32_t L_140 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299809_0, /*hidden argument*/NULL);
+		NullCheck(L_139);
+		L_139->___IsUnlocked_5 = L_140;
+		SheepData_t_896671990_0 * L_141 = V_0;
+		int32_t L_142 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607283_0, /*hidden argument*/NULL);
+		NullCheck(L_141);
+		L_141->___IsChecked_6 = L_142;
+		goto IL_071a;
 	}
 
-IL_0509:
+IL_0515:
 	{
-		SheepData_t_896671990_0 * L_142 = V_0;
-		NullCheck(L_142);
-		L_142->___SheepId_0 = ((int32_t)15);
 		SheepData_t_896671990_0 * L_143 = V_0;
 		NullCheck(L_143);
-		L_143->___SheepName_1 = _stringLiteral1546293524_0;
+		L_143->___SheepId_0 = ((int32_t)15);
 		SheepData_t_896671990_0 * L_144 = V_0;
 		NullCheck(L_144);
-		L_144->___SheepDescription_2 = _stringLiteral229960_0;
+		L_144->___SheepName_1 = _stringLiteral_2052885019_0;
 		SheepData_t_896671990_0 * L_145 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_146 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_145);
-		L_145->___SheepHint_3 = L_146;
-		SheepData_t_896671990_0 * L_147 = V_0;
-		NullCheck(L_147);
-		L_147->___UnlockStage_4 = ((int32_t)27);
+		L_145->___SheepDescription_2 = _stringLiteral_1643225581_0;
+		SheepData_t_896671990_0 * L_146 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_147 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_146);
+		L_146->___SheepHint_3 = L_147;
 		SheepData_t_896671990_0 * L_148 = V_0;
-		int32_t L_149 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299808_0, /*hidden argument*/NULL);
 		NullCheck(L_148);
-		L_148->___IsUnlocked_5 = L_149;
-		SheepData_t_896671990_0 * L_150 = V_0;
-		int32_t L_151 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607282_0, /*hidden argument*/NULL);
-		NullCheck(L_150);
-		L_150->___IsChecked_6 = L_151;
-		goto IL_070e;
+		L_148->___UnlockStage_4 = ((int32_t)27);
+		SheepData_t_896671990_0 * L_149 = V_0;
+		int32_t L_150 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299808_0, /*hidden argument*/NULL);
+		NullCheck(L_149);
+		L_149->___IsUnlocked_5 = L_150;
+		SheepData_t_896671990_0 * L_151 = V_0;
+		int32_t L_152 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607282_0, /*hidden argument*/NULL);
+		NullCheck(L_151);
+		L_151->___IsChecked_6 = L_152;
+		goto IL_071a;
 	}
 
-IL_055f:
+IL_056b:
 	{
-		SheepData_t_896671990_0 * L_152 = V_0;
-		NullCheck(L_152);
-		L_152->___SheepId_0 = ((int32_t)16);
 		SheepData_t_896671990_0 * L_153 = V_0;
 		NullCheck(L_153);
-		L_153->___SheepName_1 = _stringLiteral_751900961_0;
+		L_153->___SheepId_0 = ((int32_t)16);
 		SheepData_t_896671990_0 * L_154 = V_0;
 		NullCheck(L_154);
-		L_154->___SheepDescription_2 = _stringLiteral999303052_0;
+		L_154->___SheepName_1 = _stringLiteral_1966420435_0;
 		SheepData_t_896671990_0 * L_155 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_156 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_155);
-		L_155->___SheepHint_3 = L_156;
-		SheepData_t_896671990_0 * L_157 = V_0;
-		NullCheck(L_157);
-		L_157->___UnlockStage_4 = 0;
+		L_155->___SheepDescription_2 = _stringLiteral1034600099_0;
+		SheepData_t_896671990_0 * L_156 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_157 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_156);
+		L_156->___SheepHint_3 = L_157;
 		SheepData_t_896671990_0 * L_158 = V_0;
-		int32_t L_159 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299807_0, /*hidden argument*/NULL);
 		NullCheck(L_158);
-		L_158->___IsUnlocked_5 = L_159;
-		SheepData_t_896671990_0 * L_160 = V_0;
-		int32_t L_161 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607281_0, /*hidden argument*/NULL);
-		NullCheck(L_160);
-		L_160->___IsChecked_6 = L_161;
-		goto IL_070e;
+		L_158->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_159 = V_0;
+		int32_t L_160 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299807_0, /*hidden argument*/NULL);
+		NullCheck(L_159);
+		L_159->___IsUnlocked_5 = L_160;
+		SheepData_t_896671990_0 * L_161 = V_0;
+		int32_t L_162 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607281_0, /*hidden argument*/NULL);
+		NullCheck(L_161);
+		L_161->___IsChecked_6 = L_162;
+		goto IL_071a;
 	}
 
-IL_05b4:
+IL_05c0:
 	{
-		SheepData_t_896671990_0 * L_162 = V_0;
-		NullCheck(L_162);
-		L_162->___SheepId_0 = ((int32_t)17);
 		SheepData_t_896671990_0 * L_163 = V_0;
 		NullCheck(L_163);
-		L_163->___SheepName_1 = _stringLiteral124238261_0;
+		L_163->___SheepId_0 = ((int32_t)17);
 		SheepData_t_896671990_0 * L_164 = V_0;
 		NullCheck(L_164);
-		L_164->___SheepDescription_2 = _stringLiteral_1104691127_0;
+		L_164->___SheepName_1 = _stringLiteral1346015937_0;
 		SheepData_t_896671990_0 * L_165 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_166 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_165);
-		L_165->___SheepHint_3 = L_166;
-		SheepData_t_896671990_0 * L_167 = V_0;
-		NullCheck(L_167);
-		L_167->___UnlockStage_4 = 0;
+		L_165->___SheepDescription_2 = _stringLiteral672342026_0;
+		SheepData_t_896671990_0 * L_166 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_167 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_166);
+		L_166->___SheepHint_3 = L_167;
 		SheepData_t_896671990_0 * L_168 = V_0;
-		int32_t L_169 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299806_0, /*hidden argument*/NULL);
 		NullCheck(L_168);
-		L_168->___IsUnlocked_5 = L_169;
-		SheepData_t_896671990_0 * L_170 = V_0;
-		int32_t L_171 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607280_0, /*hidden argument*/NULL);
-		NullCheck(L_170);
-		L_170->___IsChecked_6 = L_171;
-		goto IL_070e;
+		L_168->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_169 = V_0;
+		int32_t L_170 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299806_0, /*hidden argument*/NULL);
+		NullCheck(L_169);
+		L_169->___IsUnlocked_5 = L_170;
+		SheepData_t_896671990_0 * L_171 = V_0;
+		int32_t L_172 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607280_0, /*hidden argument*/NULL);
+		NullCheck(L_171);
+		L_171->___IsChecked_6 = L_172;
+		goto IL_071a;
 	}
 
-IL_0609:
+IL_0615:
 	{
-		SheepData_t_896671990_0 * L_172 = V_0;
-		NullCheck(L_172);
-		L_172->___SheepId_0 = ((int32_t)18);
 		SheepData_t_896671990_0 * L_173 = V_0;
 		NullCheck(L_173);
-		L_173->___SheepName_1 = _stringLiteral_1107026138_0;
+		L_173->___SheepId_0 = ((int32_t)18);
 		SheepData_t_896671990_0 * L_174 = V_0;
 		NullCheck(L_174);
-		L_174->___SheepDescription_2 = _stringLiteral832065044_0;
+		L_174->___SheepName_1 = _stringLiteral_1196273202_0;
 		SheepData_t_896671990_0 * L_175 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_176 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_175);
-		L_175->___SheepHint_3 = L_176;
-		SheepData_t_896671990_0 * L_177 = V_0;
-		NullCheck(L_177);
-		L_177->___UnlockStage_4 = 0;
+		L_175->___SheepDescription_2 = _stringLiteral_1518045588_0;
+		SheepData_t_896671990_0 * L_176 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_177 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_176);
+		L_176->___SheepHint_3 = L_177;
 		SheepData_t_896671990_0 * L_178 = V_0;
-		int32_t L_179 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299805_0, /*hidden argument*/NULL);
 		NullCheck(L_178);
-		L_178->___IsUnlocked_5 = L_179;
-		SheepData_t_896671990_0 * L_180 = V_0;
-		int32_t L_181 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607279_0, /*hidden argument*/NULL);
-		NullCheck(L_180);
-		L_180->___IsChecked_6 = L_181;
-		goto IL_070e;
+		L_178->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_179 = V_0;
+		int32_t L_180 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299805_0, /*hidden argument*/NULL);
+		NullCheck(L_179);
+		L_179->___IsUnlocked_5 = L_180;
+		SheepData_t_896671990_0 * L_181 = V_0;
+		int32_t L_182 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607279_0, /*hidden argument*/NULL);
+		NullCheck(L_181);
+		L_181->___IsChecked_6 = L_182;
+		goto IL_071a;
 	}
 
-IL_065e:
+IL_066a:
 	{
-		SheepData_t_896671990_0 * L_182 = V_0;
-		NullCheck(L_182);
-		L_182->___SheepId_0 = ((int32_t)19);
 		SheepData_t_896671990_0 * L_183 = V_0;
 		NullCheck(L_183);
-		L_183->___SheepName_1 = _stringLiteral791985404_0;
+		L_183->___SheepId_0 = ((int32_t)19);
 		SheepData_t_896671990_0 * L_184 = V_0;
 		NullCheck(L_184);
-		L_184->___SheepDescription_2 = _stringLiteral_1026239818_0;
+		L_184->___SheepName_1 = _stringLiteral_1978057806_0;
 		SheepData_t_896671990_0 * L_185 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_186 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_185);
-		L_185->___SheepHint_3 = L_186;
-		SheepData_t_896671990_0 * L_187 = V_0;
-		NullCheck(L_187);
-		L_187->___UnlockStage_4 = ((int32_t)30);
+		L_185->___SheepDescription_2 = _stringLiteral_1284748998_0;
+		SheepData_t_896671990_0 * L_186 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_187 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_186);
+		L_186->___SheepHint_3 = L_187;
 		SheepData_t_896671990_0 * L_188 = V_0;
-		int32_t L_189 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299804_0, /*hidden argument*/NULL);
 		NullCheck(L_188);
-		L_188->___IsUnlocked_5 = L_189;
-		SheepData_t_896671990_0 * L_190 = V_0;
-		int32_t L_191 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607278_0, /*hidden argument*/NULL);
-		NullCheck(L_190);
-		L_190->___IsChecked_6 = L_191;
-		goto IL_070e;
+		L_188->___UnlockStage_4 = ((int32_t)30);
+		SheepData_t_896671990_0 * L_189 = V_0;
+		int32_t L_190 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299804_0, /*hidden argument*/NULL);
+		NullCheck(L_189);
+		L_189->___IsUnlocked_5 = L_190;
+		SheepData_t_896671990_0 * L_191 = V_0;
+		int32_t L_192 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607278_0, /*hidden argument*/NULL);
+		NullCheck(L_191);
+		L_191->___IsChecked_6 = L_192;
+		goto IL_071a;
 	}
 
-IL_06b4:
+IL_06c0:
 	{
-		SheepData_t_896671990_0 * L_192 = V_0;
-		NullCheck(L_192);
-		L_192->___SheepId_0 = ((int32_t)20);
 		SheepData_t_896671990_0 * L_193 = V_0;
 		NullCheck(L_193);
-		L_193->___SheepName_1 = _stringLiteral1699210727_0;
+		L_193->___SheepId_0 = ((int32_t)20);
 		SheepData_t_896671990_0 * L_194 = V_0;
 		NullCheck(L_194);
-		L_194->___SheepDescription_2 = _stringLiteral_1293602737_0;
+		L_194->___SheepName_1 = _stringLiteral403424058_0;
 		SheepData_t_896671990_0 * L_195 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_196 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
 		NullCheck(L_195);
-		L_195->___SheepHint_3 = L_196;
-		SheepData_t_896671990_0 * L_197 = V_0;
-		NullCheck(L_197);
-		L_197->___UnlockStage_4 = 0;
+		L_195->___SheepDescription_2 = _stringLiteral_749103234_0;
+		SheepData_t_896671990_0 * L_196 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_197 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_196);
+		L_196->___SheepHint_3 = L_197;
 		SheepData_t_896671990_0 * L_198 = V_0;
-		int32_t L_199 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299782_0, /*hidden argument*/NULL);
 		NullCheck(L_198);
-		L_198->___IsUnlocked_5 = L_199;
-		SheepData_t_896671990_0 * L_200 = V_0;
-		int32_t L_201 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607256_0, /*hidden argument*/NULL);
-		NullCheck(L_200);
-		L_200->___IsChecked_6 = L_201;
-		goto IL_070e;
+		L_198->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_199 = V_0;
+		int32_t L_200 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299782_0, /*hidden argument*/NULL);
+		NullCheck(L_199);
+		L_199->___IsUnlocked_5 = L_200;
+		SheepData_t_896671990_0 * L_201 = V_0;
+		int32_t L_202 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607256_0, /*hidden argument*/NULL);
+		NullCheck(L_201);
+		L_201->___IsChecked_6 = L_202;
+		goto IL_071a;
 	}
 
-IL_0709:
+IL_0715:
 	{
-		goto IL_070e;
+		goto IL_071a;
 	}
 
-IL_070e:
+IL_071a:
 	{
-		SheepData_t_896671990_0 * L_202 = V_0;
-		return L_202;
+		goto IL_0e27;
+	}
+
+IL_071f:
+	{
+		int32_t L_203 = ___sheepId;
+		V_1 = L_203;
+		int32_t L_204 = V_1;
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 0)
+		{
+			goto IL_077e;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 1)
+		{
+			goto IL_07d2;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 2)
+		{
+			goto IL_0826;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 3)
+		{
+			goto IL_087a;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 4)
+		{
+			goto IL_08ce;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 5)
+		{
+			goto IL_0922;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 6)
+		{
+			goto IL_0976;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 7)
+		{
+			goto IL_09cb;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 8)
+		{
+			goto IL_0a20;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 9)
+		{
+			goto IL_0a75;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 10)
+		{
+			goto IL_0acb;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 11)
+		{
+			goto IL_0b20;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 12)
+		{
+			goto IL_0b76;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 13)
+		{
+			goto IL_0bcc;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 14)
+		{
+			goto IL_0c22;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 15)
+		{
+			goto IL_0c78;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 16)
+		{
+			goto IL_0ccd;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 17)
+		{
+			goto IL_0d22;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 18)
+		{
+			goto IL_0d77;
+		}
+		if (((int32_t)((int32_t)L_204-(int32_t)1)) == 19)
+		{
+			goto IL_0dcd;
+		}
+	}
+	{
+		goto IL_0e22;
+	}
+
+IL_077e:
+	{
+		SheepData_t_896671990_0 * L_205 = V_0;
+		NullCheck(L_205);
+		L_205->___SheepId_0 = 1;
+		SheepData_t_896671990_0 * L_206 = V_0;
+		NullCheck(L_206);
+		L_206->___SheepName_1 = _stringLiteral12314726_0;
+		SheepData_t_896671990_0 * L_207 = V_0;
+		NullCheck(L_207);
+		L_207->___SheepDescription_2 = _stringLiteral502819294_0;
+		SheepData_t_896671990_0 * L_208 = V_0;
+		NullCheck(L_208);
+		L_208->___SheepHint_3 = _stringLiteral1977470842_0;
+		SheepData_t_896671990_0 * L_209 = V_0;
+		NullCheck(L_209);
+		L_209->___UnlockStage_4 = 1;
+		SheepData_t_896671990_0 * L_210 = V_0;
+		int32_t L_211 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786229_0, /*hidden argument*/NULL);
+		NullCheck(L_210);
+		L_210->___IsUnlocked_5 = L_211;
+		SheepData_t_896671990_0 * L_212 = V_0;
+		int32_t L_213 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242233_0, /*hidden argument*/NULL);
+		NullCheck(L_212);
+		L_212->___IsChecked_6 = L_213;
+		goto IL_0e27;
+	}
+
+IL_07d2:
+	{
+		SheepData_t_896671990_0 * L_214 = V_0;
+		NullCheck(L_214);
+		L_214->___SheepId_0 = 2;
+		SheepData_t_896671990_0 * L_215 = V_0;
+		NullCheck(L_215);
+		L_215->___SheepName_1 = _stringLiteral_1775848667_0;
+		SheepData_t_896671990_0 * L_216 = V_0;
+		NullCheck(L_216);
+		L_216->___SheepDescription_2 = _stringLiteral1107054428_0;
+		SheepData_t_896671990_0 * L_217 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_218 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_217);
+		L_217->___SheepHint_3 = L_218;
+		SheepData_t_896671990_0 * L_219 = V_0;
+		NullCheck(L_219);
+		L_219->___UnlockStage_4 = 2;
+		SheepData_t_896671990_0 * L_220 = V_0;
+		int32_t L_221 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786230_0, /*hidden argument*/NULL);
+		NullCheck(L_220);
+		L_220->___IsUnlocked_5 = L_221;
+		SheepData_t_896671990_0 * L_222 = V_0;
+		int32_t L_223 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242232_0, /*hidden argument*/NULL);
+		NullCheck(L_222);
+		L_222->___IsChecked_6 = L_223;
+		goto IL_0e27;
+	}
+
+IL_0826:
+	{
+		SheepData_t_896671990_0 * L_224 = V_0;
+		NullCheck(L_224);
+		L_224->___SheepId_0 = 3;
+		SheepData_t_896671990_0 * L_225 = V_0;
+		NullCheck(L_225);
+		L_225->___SheepName_1 = _stringLiteral_2136021857_0;
+		SheepData_t_896671990_0 * L_226 = V_0;
+		NullCheck(L_226);
+		L_226->___SheepDescription_2 = _stringLiteral_191581027_0;
+		SheepData_t_896671990_0 * L_227 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_228 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_227);
+		L_227->___SheepHint_3 = L_228;
+		SheepData_t_896671990_0 * L_229 = V_0;
+		NullCheck(L_229);
+		L_229->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_230 = V_0;
+		int32_t L_231 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786231_0, /*hidden argument*/NULL);
+		NullCheck(L_230);
+		L_230->___IsUnlocked_5 = L_231;
+		SheepData_t_896671990_0 * L_232 = V_0;
+		int32_t L_233 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242231_0, /*hidden argument*/NULL);
+		NullCheck(L_232);
+		L_232->___IsChecked_6 = L_233;
+		goto IL_0e27;
+	}
+
+IL_087a:
+	{
+		SheepData_t_896671990_0 * L_234 = V_0;
+		NullCheck(L_234);
+		L_234->___SheepId_0 = 4;
+		SheepData_t_896671990_0 * L_235 = V_0;
+		NullCheck(L_235);
+		L_235->___SheepName_1 = _stringLiteral959917271_0;
+		SheepData_t_896671990_0 * L_236 = V_0;
+		NullCheck(L_236);
+		L_236->___SheepDescription_2 = _stringLiteral_1868366956_0;
+		SheepData_t_896671990_0 * L_237 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_238 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_237);
+		L_237->___SheepHint_3 = L_238;
+		SheepData_t_896671990_0 * L_239 = V_0;
+		NullCheck(L_239);
+		L_239->___UnlockStage_4 = 4;
+		SheepData_t_896671990_0 * L_240 = V_0;
+		int32_t L_241 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786232_0, /*hidden argument*/NULL);
+		NullCheck(L_240);
+		L_240->___IsUnlocked_5 = L_241;
+		SheepData_t_896671990_0 * L_242 = V_0;
+		int32_t L_243 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242230_0, /*hidden argument*/NULL);
+		NullCheck(L_242);
+		L_242->___IsChecked_6 = L_243;
+		goto IL_0e27;
+	}
+
+IL_08ce:
+	{
+		SheepData_t_896671990_0 * L_244 = V_0;
+		NullCheck(L_244);
+		L_244->___SheepId_0 = 5;
+		SheepData_t_896671990_0 * L_245 = V_0;
+		NullCheck(L_245);
+		L_245->___SheepName_1 = _stringLiteral_1073742448_0;
+		SheepData_t_896671990_0 * L_246 = V_0;
+		NullCheck(L_246);
+		L_246->___SheepDescription_2 = _stringLiteral_125456303_0;
+		SheepData_t_896671990_0 * L_247 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_248 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_247);
+		L_247->___SheepHint_3 = L_248;
+		SheepData_t_896671990_0 * L_249 = V_0;
+		NullCheck(L_249);
+		L_249->___UnlockStage_4 = 8;
+		SheepData_t_896671990_0 * L_250 = V_0;
+		int32_t L_251 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786233_0, /*hidden argument*/NULL);
+		NullCheck(L_250);
+		L_250->___IsUnlocked_5 = L_251;
+		SheepData_t_896671990_0 * L_252 = V_0;
+		int32_t L_253 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242229_0, /*hidden argument*/NULL);
+		NullCheck(L_252);
+		L_252->___IsChecked_6 = L_253;
+		goto IL_0e27;
+	}
+
+IL_0922:
+	{
+		SheepData_t_896671990_0 * L_254 = V_0;
+		NullCheck(L_254);
+		L_254->___SheepId_0 = 6;
+		SheepData_t_896671990_0 * L_255 = V_0;
+		NullCheck(L_255);
+		L_255->___SheepName_1 = _stringLiteral_1081130616_0;
+		SheepData_t_896671990_0 * L_256 = V_0;
+		NullCheck(L_256);
+		L_256->___SheepDescription_2 = _stringLiteral_778909505_0;
+		SheepData_t_896671990_0 * L_257 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_258 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_257);
+		L_257->___SheepHint_3 = L_258;
+		SheepData_t_896671990_0 * L_259 = V_0;
+		NullCheck(L_259);
+		L_259->___UnlockStage_4 = 6;
+		SheepData_t_896671990_0 * L_260 = V_0;
+		int32_t L_261 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786234_0, /*hidden argument*/NULL);
+		NullCheck(L_260);
+		L_260->___IsUnlocked_5 = L_261;
+		SheepData_t_896671990_0 * L_262 = V_0;
+		int32_t L_263 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242228_0, /*hidden argument*/NULL);
+		NullCheck(L_262);
+		L_262->___IsChecked_6 = L_263;
+		goto IL_0e27;
+	}
+
+IL_0976:
+	{
+		SheepData_t_896671990_0 * L_264 = V_0;
+		NullCheck(L_264);
+		L_264->___SheepId_0 = 7;
+		SheepData_t_896671990_0 * L_265 = V_0;
+		NullCheck(L_265);
+		L_265->___SheepName_1 = _stringLiteral1100374863_0;
+		SheepData_t_896671990_0 * L_266 = V_0;
+		NullCheck(L_266);
+		L_266->___SheepDescription_2 = _stringLiteral121437362_0;
+		SheepData_t_896671990_0 * L_267 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_268 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_267);
+		L_267->___SheepHint_3 = L_268;
+		SheepData_t_896671990_0 * L_269 = V_0;
+		NullCheck(L_269);
+		L_269->___UnlockStage_4 = ((int32_t)11);
+		SheepData_t_896671990_0 * L_270 = V_0;
+		int32_t L_271 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786235_0, /*hidden argument*/NULL);
+		NullCheck(L_270);
+		L_270->___IsUnlocked_5 = L_271;
+		SheepData_t_896671990_0 * L_272 = V_0;
+		int32_t L_273 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242227_0, /*hidden argument*/NULL);
+		NullCheck(L_272);
+		L_272->___IsChecked_6 = L_273;
+		goto IL_0e27;
+	}
+
+IL_09cb:
+	{
+		SheepData_t_896671990_0 * L_274 = V_0;
+		NullCheck(L_274);
+		L_274->___SheepId_0 = 8;
+		SheepData_t_896671990_0 * L_275 = V_0;
+		NullCheck(L_275);
+		L_275->___SheepName_1 = _stringLiteral424334673_0;
+		SheepData_t_896671990_0 * L_276 = V_0;
+		NullCheck(L_276);
+		L_276->___SheepDescription_2 = _stringLiteral_566407138_0;
+		SheepData_t_896671990_0 * L_277 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_278 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_277);
+		L_277->___SheepHint_3 = L_278;
+		SheepData_t_896671990_0 * L_279 = V_0;
+		NullCheck(L_279);
+		L_279->___UnlockStage_4 = ((int32_t)13);
+		SheepData_t_896671990_0 * L_280 = V_0;
+		int32_t L_281 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786236_0, /*hidden argument*/NULL);
+		NullCheck(L_280);
+		L_280->___IsUnlocked_5 = L_281;
+		SheepData_t_896671990_0 * L_282 = V_0;
+		int32_t L_283 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242226_0, /*hidden argument*/NULL);
+		NullCheck(L_282);
+		L_282->___IsChecked_6 = L_283;
+		goto IL_0e27;
+	}
+
+IL_0a20:
+	{
+		SheepData_t_896671990_0 * L_284 = V_0;
+		NullCheck(L_284);
+		L_284->___SheepId_0 = ((int32_t)9);
+		SheepData_t_896671990_0 * L_285 = V_0;
+		NullCheck(L_285);
+		L_285->___SheepName_1 = _stringLiteral681192675_0;
+		SheepData_t_896671990_0 * L_286 = V_0;
+		NullCheck(L_286);
+		L_286->___SheepDescription_2 = _stringLiteral_343993893_0;
+		SheepData_t_896671990_0 * L_287 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_288 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_287);
+		L_287->___SheepHint_3 = L_288;
+		SheepData_t_896671990_0 * L_289 = V_0;
+		NullCheck(L_289);
+		L_289->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_290 = V_0;
+		int32_t L_291 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1320786237_0, /*hidden argument*/NULL);
+		NullCheck(L_290);
+		L_290->___IsUnlocked_5 = L_291;
+		SheepData_t_896671990_0 * L_292 = V_0;
+		int32_t L_293 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_466242225_0, /*hidden argument*/NULL);
+		NullCheck(L_292);
+		L_292->___IsChecked_6 = L_293;
+		goto IL_0e27;
+	}
+
+IL_0a75:
+	{
+		SheepData_t_896671990_0 * L_294 = V_0;
+		NullCheck(L_294);
+		L_294->___SheepId_0 = ((int32_t)10);
+		SheepData_t_896671990_0 * L_295 = V_0;
+		NullCheck(L_295);
+		L_295->___SheepName_1 = _stringLiteral1925364521_0;
+		SheepData_t_896671990_0 * L_296 = V_0;
+		NullCheck(L_296);
+		L_296->___SheepDescription_2 = _stringLiteral1068256335_0;
+		SheepData_t_896671990_0 * L_297 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_298 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_297);
+		L_297->___SheepHint_3 = L_298;
+		SheepData_t_896671990_0 * L_299 = V_0;
+		NullCheck(L_299);
+		L_299->___UnlockStage_4 = ((int32_t)21);
+		SheepData_t_896671990_0 * L_300 = V_0;
+		int32_t L_301 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299813_0, /*hidden argument*/NULL);
+		NullCheck(L_300);
+		L_300->___IsUnlocked_5 = L_301;
+		SheepData_t_896671990_0 * L_302 = V_0;
+		int32_t L_303 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607287_0, /*hidden argument*/NULL);
+		NullCheck(L_302);
+		L_302->___IsChecked_6 = L_303;
+		goto IL_0e27;
+	}
+
+IL_0acb:
+	{
+		SheepData_t_896671990_0 * L_304 = V_0;
+		NullCheck(L_304);
+		L_304->___SheepId_0 = ((int32_t)11);
+		SheepData_t_896671990_0 * L_305 = V_0;
+		NullCheck(L_305);
+		L_305->___SheepName_1 = _stringLiteral1021465477_0;
+		SheepData_t_896671990_0 * L_306 = V_0;
+		NullCheck(L_306);
+		L_306->___SheepDescription_2 = _stringLiteral1445334314_0;
+		SheepData_t_896671990_0 * L_307 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_308 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_307);
+		L_307->___SheepHint_3 = L_308;
+		SheepData_t_896671990_0 * L_309 = V_0;
+		NullCheck(L_309);
+		L_309->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_310 = V_0;
+		int32_t L_311 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299812_0, /*hidden argument*/NULL);
+		NullCheck(L_310);
+		L_310->___IsUnlocked_5 = L_311;
+		SheepData_t_896671990_0 * L_312 = V_0;
+		int32_t L_313 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607286_0, /*hidden argument*/NULL);
+		NullCheck(L_312);
+		L_312->___IsChecked_6 = L_313;
+		goto IL_0e27;
+	}
+
+IL_0b20:
+	{
+		SheepData_t_896671990_0 * L_314 = V_0;
+		NullCheck(L_314);
+		L_314->___SheepId_0 = ((int32_t)12);
+		SheepData_t_896671990_0 * L_315 = V_0;
+		NullCheck(L_315);
+		L_315->___SheepName_1 = _stringLiteral_1829621422_0;
+		SheepData_t_896671990_0 * L_316 = V_0;
+		NullCheck(L_316);
+		L_316->___SheepDescription_2 = _stringLiteral948650079_0;
+		SheepData_t_896671990_0 * L_317 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_318 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_317);
+		L_317->___SheepHint_3 = L_318;
+		SheepData_t_896671990_0 * L_319 = V_0;
+		NullCheck(L_319);
+		L_319->___UnlockStage_4 = ((int32_t)11);
+		SheepData_t_896671990_0 * L_320 = V_0;
+		int32_t L_321 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299811_0, /*hidden argument*/NULL);
+		NullCheck(L_320);
+		L_320->___IsUnlocked_5 = L_321;
+		SheepData_t_896671990_0 * L_322 = V_0;
+		int32_t L_323 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607285_0, /*hidden argument*/NULL);
+		NullCheck(L_322);
+		L_322->___IsChecked_6 = L_323;
+		goto IL_0e27;
+	}
+
+IL_0b76:
+	{
+		SheepData_t_896671990_0 * L_324 = V_0;
+		NullCheck(L_324);
+		L_324->___SheepId_0 = ((int32_t)13);
+		SheepData_t_896671990_0 * L_325 = V_0;
+		NullCheck(L_325);
+		L_325->___SheepName_1 = _stringLiteral_1754632855_0;
+		SheepData_t_896671990_0 * L_326 = V_0;
+		NullCheck(L_326);
+		L_326->___SheepDescription_2 = _stringLiteral_106309013_0;
+		SheepData_t_896671990_0 * L_327 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_328 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_327);
+		L_327->___SheepHint_3 = L_328;
+		SheepData_t_896671990_0 * L_329 = V_0;
+		NullCheck(L_329);
+		L_329->___UnlockStage_4 = ((int32_t)17);
+		SheepData_t_896671990_0 * L_330 = V_0;
+		int32_t L_331 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299810_0, /*hidden argument*/NULL);
+		NullCheck(L_330);
+		L_330->___IsUnlocked_5 = L_331;
+		SheepData_t_896671990_0 * L_332 = V_0;
+		int32_t L_333 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607284_0, /*hidden argument*/NULL);
+		NullCheck(L_332);
+		L_332->___IsChecked_6 = L_333;
+		goto IL_0e27;
+	}
+
+IL_0bcc:
+	{
+		SheepData_t_896671990_0 * L_334 = V_0;
+		NullCheck(L_334);
+		L_334->___SheepId_0 = ((int32_t)14);
+		SheepData_t_896671990_0 * L_335 = V_0;
+		NullCheck(L_335);
+		L_335->___SheepName_1 = _stringLiteral218258657_0;
+		SheepData_t_896671990_0 * L_336 = V_0;
+		NullCheck(L_336);
+		L_336->___SheepDescription_2 = _stringLiteral1937993513_0;
+		SheepData_t_896671990_0 * L_337 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_338 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_337);
+		L_337->___SheepHint_3 = L_338;
+		SheepData_t_896671990_0 * L_339 = V_0;
+		NullCheck(L_339);
+		L_339->___UnlockStage_4 = ((int32_t)24);
+		SheepData_t_896671990_0 * L_340 = V_0;
+		int32_t L_341 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299809_0, /*hidden argument*/NULL);
+		NullCheck(L_340);
+		L_340->___IsUnlocked_5 = L_341;
+		SheepData_t_896671990_0 * L_342 = V_0;
+		int32_t L_343 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607283_0, /*hidden argument*/NULL);
+		NullCheck(L_342);
+		L_342->___IsChecked_6 = L_343;
+		goto IL_0e27;
+	}
+
+IL_0c22:
+	{
+		SheepData_t_896671990_0 * L_344 = V_0;
+		NullCheck(L_344);
+		L_344->___SheepId_0 = ((int32_t)15);
+		SheepData_t_896671990_0 * L_345 = V_0;
+		NullCheck(L_345);
+		L_345->___SheepName_1 = _stringLiteral1546293524_0;
+		SheepData_t_896671990_0 * L_346 = V_0;
+		NullCheck(L_346);
+		L_346->___SheepDescription_2 = _stringLiteral229960_0;
+		SheepData_t_896671990_0 * L_347 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_348 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_347);
+		L_347->___SheepHint_3 = L_348;
+		SheepData_t_896671990_0 * L_349 = V_0;
+		NullCheck(L_349);
+		L_349->___UnlockStage_4 = ((int32_t)27);
+		SheepData_t_896671990_0 * L_350 = V_0;
+		int32_t L_351 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299808_0, /*hidden argument*/NULL);
+		NullCheck(L_350);
+		L_350->___IsUnlocked_5 = L_351;
+		SheepData_t_896671990_0 * L_352 = V_0;
+		int32_t L_353 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607282_0, /*hidden argument*/NULL);
+		NullCheck(L_352);
+		L_352->___IsChecked_6 = L_353;
+		goto IL_0e27;
+	}
+
+IL_0c78:
+	{
+		SheepData_t_896671990_0 * L_354 = V_0;
+		NullCheck(L_354);
+		L_354->___SheepId_0 = ((int32_t)16);
+		SheepData_t_896671990_0 * L_355 = V_0;
+		NullCheck(L_355);
+		L_355->___SheepName_1 = _stringLiteral_751900961_0;
+		SheepData_t_896671990_0 * L_356 = V_0;
+		NullCheck(L_356);
+		L_356->___SheepDescription_2 = _stringLiteral999303052_0;
+		SheepData_t_896671990_0 * L_357 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_358 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_357);
+		L_357->___SheepHint_3 = L_358;
+		SheepData_t_896671990_0 * L_359 = V_0;
+		NullCheck(L_359);
+		L_359->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_360 = V_0;
+		int32_t L_361 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299807_0, /*hidden argument*/NULL);
+		NullCheck(L_360);
+		L_360->___IsUnlocked_5 = L_361;
+		SheepData_t_896671990_0 * L_362 = V_0;
+		int32_t L_363 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607281_0, /*hidden argument*/NULL);
+		NullCheck(L_362);
+		L_362->___IsChecked_6 = L_363;
+		goto IL_0e27;
+	}
+
+IL_0ccd:
+	{
+		SheepData_t_896671990_0 * L_364 = V_0;
+		NullCheck(L_364);
+		L_364->___SheepId_0 = ((int32_t)17);
+		SheepData_t_896671990_0 * L_365 = V_0;
+		NullCheck(L_365);
+		L_365->___SheepName_1 = _stringLiteral124238261_0;
+		SheepData_t_896671990_0 * L_366 = V_0;
+		NullCheck(L_366);
+		L_366->___SheepDescription_2 = _stringLiteral_1104691127_0;
+		SheepData_t_896671990_0 * L_367 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_368 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_367);
+		L_367->___SheepHint_3 = L_368;
+		SheepData_t_896671990_0 * L_369 = V_0;
+		NullCheck(L_369);
+		L_369->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_370 = V_0;
+		int32_t L_371 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299806_0, /*hidden argument*/NULL);
+		NullCheck(L_370);
+		L_370->___IsUnlocked_5 = L_371;
+		SheepData_t_896671990_0 * L_372 = V_0;
+		int32_t L_373 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607280_0, /*hidden argument*/NULL);
+		NullCheck(L_372);
+		L_372->___IsChecked_6 = L_373;
+		goto IL_0e27;
+	}
+
+IL_0d22:
+	{
+		SheepData_t_896671990_0 * L_374 = V_0;
+		NullCheck(L_374);
+		L_374->___SheepId_0 = ((int32_t)18);
+		SheepData_t_896671990_0 * L_375 = V_0;
+		NullCheck(L_375);
+		L_375->___SheepName_1 = _stringLiteral_1107026138_0;
+		SheepData_t_896671990_0 * L_376 = V_0;
+		NullCheck(L_376);
+		L_376->___SheepDescription_2 = _stringLiteral832065044_0;
+		SheepData_t_896671990_0 * L_377 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_378 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_377);
+		L_377->___SheepHint_3 = L_378;
+		SheepData_t_896671990_0 * L_379 = V_0;
+		NullCheck(L_379);
+		L_379->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_380 = V_0;
+		int32_t L_381 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299805_0, /*hidden argument*/NULL);
+		NullCheck(L_380);
+		L_380->___IsUnlocked_5 = L_381;
+		SheepData_t_896671990_0 * L_382 = V_0;
+		int32_t L_383 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607279_0, /*hidden argument*/NULL);
+		NullCheck(L_382);
+		L_382->___IsChecked_6 = L_383;
+		goto IL_0e27;
+	}
+
+IL_0d77:
+	{
+		SheepData_t_896671990_0 * L_384 = V_0;
+		NullCheck(L_384);
+		L_384->___SheepId_0 = ((int32_t)19);
+		SheepData_t_896671990_0 * L_385 = V_0;
+		NullCheck(L_385);
+		L_385->___SheepName_1 = _stringLiteral791985404_0;
+		SheepData_t_896671990_0 * L_386 = V_0;
+		NullCheck(L_386);
+		L_386->___SheepDescription_2 = _stringLiteral_1026239818_0;
+		SheepData_t_896671990_0 * L_387 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_388 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_387);
+		L_387->___SheepHint_3 = L_388;
+		SheepData_t_896671990_0 * L_389 = V_0;
+		NullCheck(L_389);
+		L_389->___UnlockStage_4 = ((int32_t)30);
+		SheepData_t_896671990_0 * L_390 = V_0;
+		int32_t L_391 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299804_0, /*hidden argument*/NULL);
+		NullCheck(L_390);
+		L_390->___IsUnlocked_5 = L_391;
+		SheepData_t_896671990_0 * L_392 = V_0;
+		int32_t L_393 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607278_0, /*hidden argument*/NULL);
+		NullCheck(L_392);
+		L_392->___IsChecked_6 = L_393;
+		goto IL_0e27;
+	}
+
+IL_0dcd:
+	{
+		SheepData_t_896671990_0 * L_394 = V_0;
+		NullCheck(L_394);
+		L_394->___SheepId_0 = ((int32_t)20);
+		SheepData_t_896671990_0 * L_395 = V_0;
+		NullCheck(L_395);
+		L_395->___SheepName_1 = _stringLiteral1699210727_0;
+		SheepData_t_896671990_0 * L_396 = V_0;
+		NullCheck(L_396);
+		L_396->___SheepDescription_2 = _stringLiteral_1293602737_0;
+		SheepData_t_896671990_0 * L_397 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_398 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		NullCheck(L_397);
+		L_397->___SheepHint_3 = L_398;
+		SheepData_t_896671990_0 * L_399 = V_0;
+		NullCheck(L_399);
+		L_399->___UnlockStage_4 = 0;
+		SheepData_t_896671990_0 * L_400 = V_0;
+		int32_t L_401 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_2005299782_0, /*hidden argument*/NULL);
+		NullCheck(L_400);
+		L_400->___IsUnlocked_5 = L_401;
+		SheepData_t_896671990_0 * L_402 = V_0;
+		int32_t L_403 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1568607256_0, /*hidden argument*/NULL);
+		NullCheck(L_402);
+		L_402->___IsChecked_6 = L_403;
+		goto IL_0e27;
+	}
+
+IL_0e22:
+	{
+		goto IL_0e27;
+	}
+
+IL_0e27:
+	{
+		SheepData_t_896671990_0 * L_404 = V_0;
+		return L_404;
 	}
 }
 // System.Void MainController::.ctor()
@@ -2437,6 +3227,7 @@ extern "C"  void MainController__ctor_m_1477894682_0 (MainController_t1236616688
 // System.Void MainController::Start()
 extern TypeInfo* GameData_t_49241417_0_il2cpp_TypeInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1807278322_0;
 extern Il2CppCodeGenString* _stringLiteral64356038_0;
 extern Il2CppCodeGenString* _stringLiteral_307410340_0;
@@ -2475,37 +3266,38 @@ extern "C"  void MainController_Start_m1764210406_0 (MainController_t1236616688_
 	{
 		GameData_t_49241417_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(1198);
 		GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484032);
-		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2867);
-		_stringLiteral64356038_0 = il2cpp_codegen_string_literal_from_index(2868);
-		_stringLiteral_307410340_0 = il2cpp_codegen_string_literal_from_index(2869);
-		_stringLiteral_2122005059_0 = il2cpp_codegen_string_literal_from_index(2870);
-		_stringLiteral_1360513875_0 = il2cpp_codegen_string_literal_from_index(2871);
-		_stringLiteral2000024255_0 = il2cpp_codegen_string_literal_from_index(2872);
-		_stringLiteral_2009155711_0 = il2cpp_codegen_string_literal_from_index(2873);
-		_stringLiteral_2122071274_0 = il2cpp_codegen_string_literal_from_index(2874);
-		_stringLiteral480045533_0 = il2cpp_codegen_string_literal_from_index(2875);
-		_stringLiteral1871215876_0 = il2cpp_codegen_string_literal_from_index(2876);
+		GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484033);
+		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2907);
+		_stringLiteral64356038_0 = il2cpp_codegen_string_literal_from_index(2908);
+		_stringLiteral_307410340_0 = il2cpp_codegen_string_literal_from_index(2909);
+		_stringLiteral_2122005059_0 = il2cpp_codegen_string_literal_from_index(2910);
+		_stringLiteral_1360513875_0 = il2cpp_codegen_string_literal_from_index(2911);
+		_stringLiteral2000024255_0 = il2cpp_codegen_string_literal_from_index(2912);
+		_stringLiteral_2009155711_0 = il2cpp_codegen_string_literal_from_index(2913);
+		_stringLiteral_2122071274_0 = il2cpp_codegen_string_literal_from_index(2914);
+		_stringLiteral480045533_0 = il2cpp_codegen_string_literal_from_index(2915);
+		_stringLiteral1871215876_0 = il2cpp_codegen_string_literal_from_index(2916);
 		_stringLiteral_106958452_0 = il2cpp_codegen_string_literal_from_index(2775);
-		_stringLiteral_1024866055_0 = il2cpp_codegen_string_literal_from_index(2877);
-		_stringLiteral_121864291_0 = il2cpp_codegen_string_literal_from_index(2878);
-		_stringLiteral686642665_0 = il2cpp_codegen_string_literal_from_index(2879);
-		_stringLiteral_937017338_0 = il2cpp_codegen_string_literal_from_index(2880);
-		_stringLiteral1685580833_0 = il2cpp_codegen_string_literal_from_index(2881);
-		_stringLiteral1985178698_0 = il2cpp_codegen_string_literal_from_index(2882);
-		_stringLiteral455350200_0 = il2cpp_codegen_string_literal_from_index(2883);
-		_stringLiteral_1149186448_0 = il2cpp_codegen_string_literal_from_index(2884);
-		_stringLiteral44178067_0 = il2cpp_codegen_string_literal_from_index(2885);
-		_stringLiteral1369520127_0 = il2cpp_codegen_string_literal_from_index(2886);
-		_stringLiteral1369520131_0 = il2cpp_codegen_string_literal_from_index(2887);
-		_stringLiteral_685123444_0 = il2cpp_codegen_string_literal_from_index(2888);
-		_stringLiteral225852962_0 = il2cpp_codegen_string_literal_from_index(2889);
-		_stringLiteral82359999_0 = il2cpp_codegen_string_literal_from_index(2890);
-		_stringLiteral77299852_0 = il2cpp_codegen_string_literal_from_index(2891);
+		_stringLiteral_1024866055_0 = il2cpp_codegen_string_literal_from_index(2917);
+		_stringLiteral_121864291_0 = il2cpp_codegen_string_literal_from_index(2918);
+		_stringLiteral686642665_0 = il2cpp_codegen_string_literal_from_index(2919);
+		_stringLiteral_937017338_0 = il2cpp_codegen_string_literal_from_index(2920);
+		_stringLiteral1685580833_0 = il2cpp_codegen_string_literal_from_index(2921);
+		_stringLiteral1985178698_0 = il2cpp_codegen_string_literal_from_index(2922);
+		_stringLiteral455350200_0 = il2cpp_codegen_string_literal_from_index(2923);
+		_stringLiteral_1149186448_0 = il2cpp_codegen_string_literal_from_index(2924);
+		_stringLiteral44178067_0 = il2cpp_codegen_string_literal_from_index(2925);
+		_stringLiteral1369520127_0 = il2cpp_codegen_string_literal_from_index(2926);
+		_stringLiteral1369520131_0 = il2cpp_codegen_string_literal_from_index(2927);
+		_stringLiteral_685123444_0 = il2cpp_codegen_string_literal_from_index(2928);
+		_stringLiteral225852962_0 = il2cpp_codegen_string_literal_from_index(2929);
+		_stringLiteral82359999_0 = il2cpp_codegen_string_literal_from_index(2930);
+		_stringLiteral77299852_0 = il2cpp_codegen_string_literal_from_index(2931);
 		_stringLiteral1370819528_0 = il2cpp_codegen_string_literal_from_index(2776);
-		_stringLiteral_1464115413_0 = il2cpp_codegen_string_literal_from_index(2892);
+		_stringLiteral_1464115413_0 = il2cpp_codegen_string_literal_from_index(2932);
 		_stringLiteral_1799560776_0 = il2cpp_codegen_string_literal_from_index(2781);
-		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2893);
-		_stringLiteral_1577669747_0 = il2cpp_codegen_string_literal_from_index(2894);
+		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2933);
+		_stringLiteral_1577669747_0 = il2cpp_codegen_string_literal_from_index(2934);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -2637,6 +3429,27 @@ IL_0291:
 		MainController_switchButtonInteractable_m1288691153_0(__this, L_45, (bool)0, /*hidden argument*/NULL);
 		GameObject_t_184308134_0 * L_46 = (__this->___Btn_minus_14);
 		MainController_switchButtonInteractable_m1288691153_0(__this, L_46, (bool)0, /*hidden argument*/NULL);
+		int32_t L_47 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_47) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_02f0;
+		}
+	}
+	{
+		GameObject_t_184308134_0 * L_48 = (__this->___Pic_tutorial_29);
+		NullCheck(L_48);
+		Image_t_2049549674_0 * L_49 = GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0(L_48, /*hidden argument*/GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var);
+		NullCheck(L_49);
+		Behaviour_set_enabled_m2046806933_0(L_49, (bool)0, /*hidden argument*/NULL);
+		GameObject_t_184308134_0 * L_50 = (__this->___Pic_tutorial2_30);
+		NullCheck(L_50);
+		Image_t_2049549674_0 * L_51 = GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0(L_50, /*hidden argument*/GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var);
+		NullCheck(L_51);
+		Behaviour_set_enabled_m2046806933_0(L_51, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_02f0:
+	{
 		MainController_showStageInfo_m_171901261_0(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -2658,7 +3471,7 @@ extern "C"  void MainController_switchButtonInteractable_m1288691153_0 (MainCont
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484033);
+		GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484034);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -2693,8 +3506,9 @@ extern "C"  void MainController_turnOnAlphaAnimation_m1172951448_0 (MainControll
 // System.Void MainController::showStageInfo()
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral_359138071_0;
+extern Il2CppCodeGenString* _stringLiteral_232876194_0;
 extern Il2CppCodeGenString* _stringLiteral45_0;
+extern Il2CppCodeGenString* _stringLiteral_359138071_0;
 extern Il2CppCodeGenString* _stringLiteral1868400394_0;
 extern Il2CppCodeGenString* _stringLiteral1468587054_0;
 extern "C"  void MainController_showStageInfo_m_171901261_0 (MainController_t1236616688_0 * __this, const MethodInfo* method)
@@ -2704,125 +3518,234 @@ extern "C"  void MainController_showStageInfo_m_171901261_0 (MainController_t123
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484032);
-		_stringLiteral_359138071_0 = il2cpp_codegen_string_literal_from_index(2895);
+		_stringLiteral_232876194_0 = il2cpp_codegen_string_literal_from_index(2935);
 		_stringLiteral45_0 = il2cpp_codegen_string_literal_from_index(691);
-		_stringLiteral1868400394_0 = il2cpp_codegen_string_literal_from_index(2896);
-		_stringLiteral1468587054_0 = il2cpp_codegen_string_literal_from_index(2897);
+		_stringLiteral_359138071_0 = il2cpp_codegen_string_literal_from_index(2936);
+		_stringLiteral1868400394_0 = il2cpp_codegen_string_literal_from_index(2937);
+		_stringLiteral1468587054_0 = il2cpp_codegen_string_literal_from_index(2938);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
 	{
-		GameObject_t_184308134_0 * L_0 = (__this->___Text_stage_20);
-		NullCheck(L_0);
-		Text_t_204341102_0 * L_1 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_0, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
-		int32_t* L_2 = &(__this->____StageNum_4);
-		String_t* L_3 = Int32_ToString_m1286526384_0(L_2, /*hidden argument*/NULL);
-		int32_t* L_4 = &(__this->___thisStageClearCount_6);
-		String_t* L_5 = Int32_ToString_m1286526384_0(L_4, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_6 = String_Concat_m_1361335099_0(NULL /*static, unused*/, _stringLiteral_359138071_0, L_3, _stringLiteral45_0, L_5, /*hidden argument*/NULL);
+		int32_t L_0 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_0) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		GameObject_t_184308134_0 * L_1 = (__this->___Text_stage_20);
 		NullCheck(L_1);
-		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_6);
-		int32_t L_7 = (__this->____StageNum_4);
-		V_0 = L_7;
-		int32_t L_8 = V_0;
-		if (((int32_t)((int32_t)L_8-(int32_t)1)) == 0)
-		{
-			goto IL_0071;
-		}
-		if (((int32_t)((int32_t)L_8-(int32_t)1)) == 1)
-		{
-			goto IL_00ac;
-		}
-		if (((int32_t)((int32_t)L_8-(int32_t)1)) == 2)
-		{
-			goto IL_005c;
-		}
-		if (((int32_t)((int32_t)L_8-(int32_t)1)) == 3)
-		{
-			goto IL_005c;
-		}
-		if (((int32_t)((int32_t)L_8-(int32_t)1)) == 4)
-		{
-			goto IL_005c;
-		}
-		if (((int32_t)((int32_t)L_8-(int32_t)1)) == 5)
-		{
-			goto IL_00e7;
-		}
+		Text_t_204341102_0 * L_2 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_1, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		int32_t* L_3 = &(__this->____StageNum_4);
+		String_t* L_4 = Int32_ToString_m1286526384_0(L_3, /*hidden argument*/NULL);
+		int32_t* L_5 = &(__this->___thisStageClearCount_6);
+		String_t* L_6 = Int32_ToString_m1286526384_0(L_5, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_7 = String_Concat_m_1361335099_0(NULL /*static, unused*/, _stringLiteral_232876194_0, L_4, _stringLiteral45_0, L_6, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_7);
+		goto IL_007b;
 	}
 
-IL_005c:
+IL_0046:
 	{
-		int32_t L_9 = V_0;
-		if ((((int32_t)L_9) == ((int32_t)((int32_t)16))))
+		GameObject_t_184308134_0 * L_8 = (__this->___Text_stage_20);
+		NullCheck(L_8);
+		Text_t_204341102_0 * L_9 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_8, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		int32_t* L_10 = &(__this->____StageNum_4);
+		String_t* L_11 = Int32_ToString_m1286526384_0(L_10, /*hidden argument*/NULL);
+		int32_t* L_12 = &(__this->___thisStageClearCount_6);
+		String_t* L_13 = Int32_ToString_m1286526384_0(L_12, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_14 = String_Concat_m_1361335099_0(NULL /*static, unused*/, _stringLiteral_359138071_0, L_11, _stringLiteral45_0, L_13, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_9, L_14);
+	}
+
+IL_007b:
+	{
+		int32_t L_15 = (__this->____StageNum_4);
+		V_0 = L_15;
+		int32_t L_16 = V_0;
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 0)
 		{
-			goto IL_00e7;
+			goto IL_0107;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 1)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 2)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 3)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 4)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 5)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 6)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 7)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 8)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 9)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 10)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 11)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 12)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 13)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 14)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 15)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 16)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 17)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 18)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 19)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 20)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 21)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 22)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 23)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 24)
+		{
+			goto IL_0142;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 25)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 26)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 27)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 28)
+		{
+			goto IL_017d;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)1)) == 29)
+		{
+			goto IL_017d;
 		}
 	}
 	{
-		int32_t L_10 = V_0;
-		if ((((int32_t)L_10) == ((int32_t)((int32_t)26))))
-		{
-			goto IL_00e7;
-		}
-	}
-	{
-		goto IL_0122;
+		goto IL_01b8;
 	}
 
-IL_0071:
+IL_0107:
 	{
-		GameObject_t_184308134_0 * L_11 = (__this->___Pic_tutorial2_30);
-		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_11, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_12 = (__this->___Pic_tutorial6_31);
-		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
-		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1868400394_0, (2.0f), /*hidden argument*/NULL);
-		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1468587054_0, (2.5f), /*hidden argument*/NULL);
-		goto IL_0168;
-	}
-
-IL_00ac:
-	{
-		GameObject_t_184308134_0 * L_13 = (__this->___Pic_tutorial_29);
-		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_14 = (__this->___Pic_tutorial6_31);
-		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
-		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1868400394_0, (2.0f), /*hidden argument*/NULL);
-		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1468587054_0, (2.5f), /*hidden argument*/NULL);
-		goto IL_0168;
-	}
-
-IL_00e7:
-	{
-		GameObject_t_184308134_0 * L_15 = (__this->___Pic_tutorial_29);
-		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_16 = (__this->___Pic_tutorial2_30);
-		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
-		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1868400394_0, (2.0f), /*hidden argument*/NULL);
-		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1468587054_0, (2.5f), /*hidden argument*/NULL);
-		goto IL_0168;
-	}
-
-IL_0122:
-	{
-		GameObject_t_184308134_0 * L_17 = (__this->___Pic_tutorial_29);
+		GameObject_t_184308134_0 * L_17 = (__this->___Pic_tutorial2_30);
 		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_17, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_18 = (__this->___Pic_tutorial2_30);
+		GameObject_t_184308134_0 * L_18 = (__this->___Pic_tutorial6_31);
 		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_19 = (__this->___Pic_tutorial6_31);
+		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1868400394_0, (2.0f), /*hidden argument*/NULL);
+		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1468587054_0, (2.5f), /*hidden argument*/NULL);
+		goto IL_01fe;
+	}
+
+IL_0142:
+	{
+		GameObject_t_184308134_0 * L_19 = (__this->___Pic_tutorial_29);
 		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+		GameObject_t_184308134_0 * L_20 = (__this->___Pic_tutorial6_31);
+		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1868400394_0, (2.0f), /*hidden argument*/NULL);
+		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1468587054_0, (2.5f), /*hidden argument*/NULL);
+		goto IL_01fe;
+	}
+
+IL_017d:
+	{
+		GameObject_t_184308134_0 * L_21 = (__this->___Pic_tutorial_29);
+		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_21, /*hidden argument*/NULL);
+		GameObject_t_184308134_0 * L_22 = (__this->___Pic_tutorial2_30);
+		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_22, /*hidden argument*/NULL);
+		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1868400394_0, (2.0f), /*hidden argument*/NULL);
+		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1468587054_0, (2.5f), /*hidden argument*/NULL);
+		goto IL_01fe;
+	}
+
+IL_01b8:
+	{
+		GameObject_t_184308134_0 * L_23 = (__this->___Pic_tutorial_29);
+		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_23, /*hidden argument*/NULL);
+		GameObject_t_184308134_0 * L_24 = (__this->___Pic_tutorial2_30);
+		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
+		GameObject_t_184308134_0 * L_25 = (__this->___Pic_tutorial6_31);
+		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_25, /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1868400394_0, (1.0f), /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral1468587054_0, (1.5f), /*hidden argument*/NULL);
-		goto IL_0168;
+		goto IL_01fe;
 	}
 
-IL_0168:
+IL_01fe:
 	{
 		return;
 	}
 }
 // System.Void MainController::showReadyGo()
+extern Il2CppCodeGenString* _stringLiteral_1851111669_0;
 extern Il2CppCodeGenString* _stringLiteral382557406_0;
 extern Il2CppCodeGenString* _stringLiteral_1422539544_0;
 extern Il2CppCodeGenString* _stringLiteral_903145275_0;
@@ -2834,18 +3757,38 @@ extern "C"  void MainController_showReadyGo_m_1774449262_0 (MainController_t1236
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral382557406_0 = il2cpp_codegen_string_literal_from_index(2898);
-		_stringLiteral_1422539544_0 = il2cpp_codegen_string_literal_from_index(2899);
-		_stringLiteral_903145275_0 = il2cpp_codegen_string_literal_from_index(2900);
-		_stringLiteral960016969_0 = il2cpp_codegen_string_literal_from_index(2901);
-		_stringLiteral_1584589287_0 = il2cpp_codegen_string_literal_from_index(2902);
-		_stringLiteral_521005215_0 = il2cpp_codegen_string_literal_from_index(2903);
+		_stringLiteral_1851111669_0 = il2cpp_codegen_string_literal_from_index(2939);
+		_stringLiteral382557406_0 = il2cpp_codegen_string_literal_from_index(2940);
+		_stringLiteral_1422539544_0 = il2cpp_codegen_string_literal_from_index(2941);
+		_stringLiteral_903145275_0 = il2cpp_codegen_string_literal_from_index(2942);
+		_stringLiteral960016969_0 = il2cpp_codegen_string_literal_from_index(2943);
+		_stringLiteral_1584589287_0 = il2cpp_codegen_string_literal_from_index(2944);
+		_stringLiteral_521005215_0 = il2cpp_codegen_string_literal_from_index(2945);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		Text_t_204341102_0 * L_0 = (__this->___Text_readyGo_text_34);
-		NullCheck(L_0);
-		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, _stringLiteral382557406_0);
+		int32_t L_0 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_0) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		Text_t_204341102_0 * L_1 = (__this->___Text_readyGo_text_34);
+		NullCheck(L_1);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, _stringLiteral_1851111669_0);
+		goto IL_0031;
+	}
+
+IL_0021:
+	{
+		Text_t_204341102_0 * L_2 = (__this->___Text_readyGo_text_34);
+		NullCheck(L_2);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, _stringLiteral382557406_0);
+	}
+
+IL_0031:
+	{
 		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral_1422539544_0, (0.5f), /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral_1422539544_0, (1.0f), /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m_1469421718_0(__this, _stringLiteral_903145275_0, (1.5f), /*hidden argument*/NULL);
@@ -2880,19 +3823,40 @@ extern "C"  void MainController_addDot_m508628518_0 (MainController_t1236616688_
 	}
 }
 // System.Void MainController::showGo()
+extern Il2CppCodeGenString* _stringLiteral71705_0;
 extern Il2CppCodeGenString* _stringLiteral12360439_0;
 extern "C"  void MainController_showGo_m1430314691_0 (MainController_t1236616688_0 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral12360439_0 = il2cpp_codegen_string_literal_from_index(2904);
+		_stringLiteral71705_0 = il2cpp_codegen_string_literal_from_index(2946);
+		_stringLiteral12360439_0 = il2cpp_codegen_string_literal_from_index(2947);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		Text_t_204341102_0 * L_0 = (__this->___Text_readyGo_text_34);
-		NullCheck(L_0);
-		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, _stringLiteral12360439_0);
+		int32_t L_0 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_0) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		Text_t_204341102_0 * L_1 = (__this->___Text_readyGo_text_34);
+		NullCheck(L_1);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, _stringLiteral71705_0);
+		goto IL_0031;
+	}
+
+IL_0021:
+	{
+		Text_t_204341102_0 * L_2 = (__this->___Text_readyGo_text_34);
+		NullCheck(L_2);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, _stringLiteral12360439_0);
+	}
+
+IL_0031:
+	{
 		return;
 	}
 }
@@ -2932,9 +3896,9 @@ extern "C"  void MainController_startSheep_m_1680510825_0 (MainController_t12366
 	{
 		DateTime_t_818288618_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(171);
 		Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483885);
-		GameObject_GetComponent_TisSheepGenerator_t_1953872013_0_m9427845_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484034);
+		GameObject_GetComponent_TisSheepGenerator_t_1953872013_0_m9427845_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484035);
 		_stringLiteral1320786231_0 = il2cpp_codegen_string_literal_from_index(2797);
-		_stringLiteral_1435731181_0 = il2cpp_codegen_string_literal_from_index(2905);
+		_stringLiteral_1435731181_0 = il2cpp_codegen_string_literal_from_index(2948);
 		_stringLiteral_2005299806_0 = il2cpp_codegen_string_literal_from_index(2853);
 		_stringLiteral1320786237_0 = il2cpp_codegen_string_literal_from_index(2821);
 		_stringLiteral_2005299812_0 = il2cpp_codegen_string_literal_from_index(2829);
@@ -3237,8 +4201,8 @@ extern "C"  void MainController_CountDetroySheepNum_m1327789095_0 (MainControlle
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484035);
-		_stringLiteral286956243_0 = il2cpp_codegen_string_literal_from_index(2906);
+		GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484036);
+		_stringLiteral286956243_0 = il2cpp_codegen_string_literal_from_index(2949);
 		s_Il2CppMethodIntialized = true;
 	}
 	GameObjectU5BU5D_t_1026454724_0* V_0 = {0};
@@ -3328,8 +4292,8 @@ extern "C"  void MainController_showResult_m_496393288_0 (MainController_t123661
 	if (!s_Il2CppMethodIntialized)
 	{
 		Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484030);
-		GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484035);
-		_stringLiteral247802598_0 = il2cpp_codegen_string_literal_from_index(2907);
+		GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484036);
+		_stringLiteral247802598_0 = il2cpp_codegen_string_literal_from_index(2950);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3363,13 +4327,17 @@ extern "C"  void MainController_showResult_m_496393288_0 (MainController_t123661
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral_2119413049_0;
 extern Il2CppCodeGenString* _stringLiteral201632065_0;
+extern Il2CppCodeGenString* _stringLiteral80204510_0;
+extern Il2CppCodeGenString* _stringLiteral1905771752_0;
 extern Il2CppCodeGenString* _stringLiteral383983401_0;
 extern Il2CppCodeGenString* _stringLiteral_1152905734_0;
 extern Il2CppCodeGenString* _stringLiteral_1799560776_0;
 extern Il2CppCodeGenString* _stringLiteral_1435731181_0;
 extern Il2CppCodeGenString* _stringLiteral1370819528_0;
 extern Il2CppCodeGenString* _stringLiteral1899931106_0;
+extern Il2CppCodeGenString* _stringLiteral_535996143_0;
 extern Il2CppCodeGenString* _stringLiteral_1805135349_0;
 extern "C"  void MainController_checkAnswer_m1872727626_0 (MainController_t1236616688_0 * __this, const MethodInfo* method)
 {
@@ -3378,15 +4346,19 @@ extern "C"  void MainController_checkAnswer_m1872727626_0 (MainController_t12366
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484032);
-		GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484036);
-		_stringLiteral201632065_0 = il2cpp_codegen_string_literal_from_index(2908);
-		_stringLiteral383983401_0 = il2cpp_codegen_string_literal_from_index(2909);
-		_stringLiteral_1152905734_0 = il2cpp_codegen_string_literal_from_index(2910);
+		GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484037);
+		_stringLiteral_2119413049_0 = il2cpp_codegen_string_literal_from_index(2951);
+		_stringLiteral201632065_0 = il2cpp_codegen_string_literal_from_index(2952);
+		_stringLiteral80204510_0 = il2cpp_codegen_string_literal_from_index(2953);
+		_stringLiteral1905771752_0 = il2cpp_codegen_string_literal_from_index(2954);
+		_stringLiteral383983401_0 = il2cpp_codegen_string_literal_from_index(2955);
+		_stringLiteral_1152905734_0 = il2cpp_codegen_string_literal_from_index(2956);
 		_stringLiteral_1799560776_0 = il2cpp_codegen_string_literal_from_index(2781);
-		_stringLiteral_1435731181_0 = il2cpp_codegen_string_literal_from_index(2905);
+		_stringLiteral_1435731181_0 = il2cpp_codegen_string_literal_from_index(2948);
 		_stringLiteral1370819528_0 = il2cpp_codegen_string_literal_from_index(2776);
-		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2893);
-		_stringLiteral_1805135349_0 = il2cpp_codegen_string_literal_from_index(2911);
+		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2933);
+		_stringLiteral_535996143_0 = il2cpp_codegen_string_literal_from_index(2957);
+		_stringLiteral_1805135349_0 = il2cpp_codegen_string_literal_from_index(2958);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
@@ -3412,7 +4384,7 @@ extern "C"  void MainController_checkAnswer_m1872727626_0 (MainController_t12366
 		int32_t L_8 = (__this->___ResultSheepCount_8);
 		if ((!(((uint32_t)L_7) == ((uint32_t)L_8))))
 		{
-			goto IL_0181;
+			goto IL_01e2;
 		}
 	}
 	{
@@ -3430,26 +4402,30 @@ extern "C"  void MainController_checkAnswer_m1872727626_0 (MainController_t12366
 		int32_t L_15 = (__this->___thisStageClearCount_6);
 		if ((((int32_t)L_15) <= ((int32_t)3)))
 		{
-			goto IL_0144;
+			goto IL_01a5;
 		}
 	}
 	{
 		int32_t L_16 = (__this->____StageNum_4);
 		if ((!(((uint32_t)L_16) == ((uint32_t)((int32_t)30)))))
 		{
+			goto IL_00e2;
+		}
+	}
+	{
+		int32_t L_17 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_17) == ((int32_t)((int32_t)22))))
+		{
 			goto IL_00bc;
 		}
 	}
 	{
-		GameObject_t_184308134_0 * L_17 = (__this->___Text_stageClear_25);
-		NullCheck(L_17);
-		Text_t_204341102_0 * L_18 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_17, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		GameObject_t_184308134_0 * L_18 = (__this->___Text_stageClear_25);
 		NullCheck(L_18);
-		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_18, _stringLiteral201632065_0);
-		GameObject_t_184308134_0 * L_19 = (__this->___Btn_next_17);
+		Text_t_204341102_0 * L_19 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_18, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
 		NullCheck(L_19);
-		GameObject_SetActive_m_756761895_0(L_19, (bool)0, /*hidden argument*/NULL);
-		goto IL_00e6;
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_19, _stringLiteral_2119413049_0);
+		goto IL_00d1;
 	}
 
 IL_00bc:
@@ -3457,94 +4433,153 @@ IL_00bc:
 		GameObject_t_184308134_0 * L_20 = (__this->___Text_stageClear_25);
 		NullCheck(L_20);
 		Text_t_204341102_0 * L_21 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_20, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
-		int32_t* L_22 = &(__this->____StageNum_4);
-		String_t* L_23 = Int32_ToString_m1286526384_0(L_22, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_24 = String_Concat_m1825781833_0(NULL /*static, unused*/, _stringLiteral383983401_0, L_23, _stringLiteral_1152905734_0, /*hidden argument*/NULL);
 		NullCheck(L_21);
-		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_21, L_24);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_21, _stringLiteral201632065_0);
 	}
 
-IL_00e6:
+IL_00d1:
 	{
-		int32_t L_25 = (__this->____StageNum_4);
-		int32_t L_26 = (__this->____HighScoreStageNum_5);
-		if ((((int32_t)L_25) <= ((int32_t)L_26)))
+		GameObject_t_184308134_0 * L_22 = (__this->___Btn_next_17);
+		NullCheck(L_22);
+		GameObject_SetActive_m_756761895_0(L_22, (bool)0, /*hidden argument*/NULL);
+		goto IL_0147;
+	}
+
+IL_00e2:
+	{
+		int32_t L_23 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_23) == ((int32_t)((int32_t)22))))
 		{
-			goto IL_0122;
+			goto IL_011d;
 		}
 	}
 	{
-		int32_t L_27 = (__this->____StageNum_4);
-		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral_1799560776_0, L_27, /*hidden argument*/NULL);
-		StageData_t_665732307_0 * L_28 = (__this->____StageData_3);
-		NullCheck(L_28);
-		bool L_29 = (L_28->___newSheepFlg_4);
-		if (!L_29)
+		GameObject_t_184308134_0 * L_24 = (__this->___Text_stageClear_25);
+		NullCheck(L_24);
+		Text_t_204341102_0 * L_25 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_24, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		int32_t* L_26 = &(__this->____StageNum_4);
+		String_t* L_27 = Int32_ToString_m1286526384_0(L_26, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_28 = String_Concat_m1825781833_0(NULL /*static, unused*/, _stringLiteral80204510_0, L_27, _stringLiteral1905771752_0, /*hidden argument*/NULL);
+		NullCheck(L_25);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_25, L_28);
+		goto IL_0147;
+	}
+
+IL_011d:
+	{
+		GameObject_t_184308134_0 * L_29 = (__this->___Text_stageClear_25);
+		NullCheck(L_29);
+		Text_t_204341102_0 * L_30 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_29, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		int32_t* L_31 = &(__this->____StageNum_4);
+		String_t* L_32 = Int32_ToString_m1286526384_0(L_31, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_33 = String_Concat_m1825781833_0(NULL /*static, unused*/, _stringLiteral383983401_0, L_32, _stringLiteral_1152905734_0, /*hidden argument*/NULL);
+		NullCheck(L_30);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_30, L_33);
+	}
+
+IL_0147:
+	{
+		int32_t L_34 = (__this->____StageNum_4);
+		int32_t L_35 = (__this->____HighScoreStageNum_5);
+		if ((((int32_t)L_34) <= ((int32_t)L_35)))
 		{
-			goto IL_0122;
+			goto IL_0183;
+		}
+	}
+	{
+		int32_t L_36 = (__this->____StageNum_4);
+		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral_1799560776_0, L_36, /*hidden argument*/NULL);
+		StageData_t_665732307_0 * L_37 = (__this->____StageData_3);
+		NullCheck(L_37);
+		bool L_38 = (L_37->___newSheepFlg_4);
+		if (!L_38)
+		{
+			goto IL_0183;
 		}
 	}
 	{
 		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral_1435731181_0, 1, /*hidden argument*/NULL);
 	}
 
-IL_0122:
+IL_0183:
 	{
-		int32_t L_30 = (__this->____StageNum_4);
-		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral1370819528_0, ((int32_t)((int32_t)L_30+(int32_t)1)), /*hidden argument*/NULL);
+		int32_t L_39 = (__this->____StageNum_4);
+		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral1370819528_0, ((int32_t)((int32_t)L_39+(int32_t)1)), /*hidden argument*/NULL);
 		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral1899931106_0, 0, /*hidden argument*/NULL);
-		goto IL_0160;
+		goto IL_01c1;
 	}
 
-IL_0144:
+IL_01a5:
 	{
-		GameObject_t_184308134_0 * L_31 = (__this->___Btn_maruEnd_16);
-		NullCheck(L_31);
-		GameObject_SetActive_m_756761895_0(L_31, (bool)0, /*hidden argument*/NULL);
-		int32_t L_32 = (__this->___thisStageClearCount_6);
-		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral1899931106_0, L_32, /*hidden argument*/NULL);
-	}
-
-IL_0160:
-	{
-		GameObject_t_184308134_0 * L_33 = (__this->___Pic_maru_32);
-		NullCheck(L_33);
-		GameObject_SetActive_m_756761895_0(L_33, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_34 = (__this->___Pic_maru_32);
-		NullCheck(L_34);
-		AudioSource_t812398632_0 * L_35 = GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0(L_34, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var);
-		NullCheck(L_35);
-		AudioSource_Play_m1360558992_0(L_35, /*hidden argument*/NULL);
-		goto IL_01d8;
-	}
-
-IL_0181:
-	{
-		GameObject_t_184308134_0 * L_36 = (__this->___Text_batsuCount_26);
-		NullCheck(L_36);
-		Text_t_204341102_0 * L_37 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_36, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
-		int32_t* L_38 = &(__this->___ResultSheepCount_8);
-		String_t* L_39 = Int32_ToString_m1286526384_0(L_38, /*hidden argument*/NULL);
-		NullCheck(L_37);
-		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_37, L_39);
-		GameObject_t_184308134_0 * L_40 = (__this->___Text_currentRecord_27);
+		GameObject_t_184308134_0 * L_40 = (__this->___Btn_maruEnd_16);
 		NullCheck(L_40);
-		Text_t_204341102_0 * L_41 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_40, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
-		NullCheck(L_41);
-		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_41, _stringLiteral_1805135349_0);
-		GameObject_t_184308134_0 * L_42 = (__this->___Pic_batsu_33);
+		GameObject_SetActive_m_756761895_0(L_40, (bool)0, /*hidden argument*/NULL);
+		int32_t L_41 = (__this->___thisStageClearCount_6);
+		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral1899931106_0, L_41, /*hidden argument*/NULL);
+	}
+
+IL_01c1:
+	{
+		GameObject_t_184308134_0 * L_42 = (__this->___Pic_maru_32);
 		NullCheck(L_42);
 		GameObject_SetActive_m_756761895_0(L_42, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_43 = (__this->___Pic_batsu_33);
+		GameObject_t_184308134_0 * L_43 = (__this->___Pic_maru_32);
 		NullCheck(L_43);
 		AudioSource_t812398632_0 * L_44 = GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0(L_43, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var);
 		NullCheck(L_44);
 		AudioSource_Play_m1360558992_0(L_44, /*hidden argument*/NULL);
+		goto IL_025f;
+	}
+
+IL_01e2:
+	{
+		GameObject_t_184308134_0 * L_45 = (__this->___Text_batsuCount_26);
+		NullCheck(L_45);
+		Text_t_204341102_0 * L_46 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_45, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		int32_t* L_47 = &(__this->___ResultSheepCount_8);
+		String_t* L_48 = Int32_ToString_m1286526384_0(L_47, /*hidden argument*/NULL);
+		NullCheck(L_46);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_46, L_48);
+		int32_t L_49 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_49) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_0223;
+		}
+	}
+	{
+		GameObject_t_184308134_0 * L_50 = (__this->___Text_currentRecord_27);
+		NullCheck(L_50);
+		Text_t_204341102_0 * L_51 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_50, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		NullCheck(L_51);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_51, _stringLiteral_535996143_0);
+		goto IL_0238;
+	}
+
+IL_0223:
+	{
+		GameObject_t_184308134_0 * L_52 = (__this->___Text_currentRecord_27);
+		NullCheck(L_52);
+		Text_t_204341102_0 * L_53 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_52, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		NullCheck(L_53);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_53, _stringLiteral_1805135349_0);
+	}
+
+IL_0238:
+	{
+		GameObject_t_184308134_0 * L_54 = (__this->___Pic_batsu_33);
+		NullCheck(L_54);
+		GameObject_SetActive_m_756761895_0(L_54, (bool)1, /*hidden argument*/NULL);
+		GameObject_t_184308134_0 * L_55 = (__this->___Pic_batsu_33);
+		NullCheck(L_55);
+		AudioSource_t812398632_0 * L_56 = GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0(L_55, /*hidden argument*/GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var);
+		NullCheck(L_56);
+		AudioSource_Play_m1360558992_0(L_56, /*hidden argument*/NULL);
 		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral1899931106_0, 0, /*hidden argument*/NULL);
 	}
 
-IL_01d8:
+IL_025f:
 	{
 		return;
 	}
@@ -3556,7 +4591,7 @@ extern "C"  void MainController_updateTotalCount_m_862798301_0 (MainController_t
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral453377851_0 = il2cpp_codegen_string_literal_from_index(2912);
+		_stringLiteral453377851_0 = il2cpp_codegen_string_literal_from_index(2959);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
@@ -3576,7 +4611,7 @@ extern "C"  void MainController_countUp_m372598766_0 (MainController_t1236616688
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484036);
+		GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484037);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
@@ -3625,7 +4660,7 @@ extern "C"  void MainController_countDown_m1099930549_0 (MainController_t1236616
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484036);
+		GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484037);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
@@ -3689,7 +4724,7 @@ extern "C"  void MainController_LoadTitleScene_m1931367032_0 (MainController_t12
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral80818744_0 = il2cpp_codegen_string_literal_from_index(2913);
+		_stringLiteral80818744_0 = il2cpp_codegen_string_literal_from_index(2960);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3704,7 +4739,7 @@ extern "C"  void MainController_LoadStageSelectScene_m2029691574_0 (MainControll
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral1663948154_0 = il2cpp_codegen_string_literal_from_index(2914);
+		_stringLiteral1663948154_0 = il2cpp_codegen_string_literal_from_index(2961);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3716,8 +4751,10 @@ extern "C"  void MainController_LoadStageSelectScene_m2029691574_0 (MainControll
 extern TypeInfo* Int32_t1628762099_0_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral_1577669747_0;
+extern Il2CppCodeGenString* _stringLiteral80204510_0;
+extern Il2CppCodeGenString* _stringLiteral180873569_0;
 extern Il2CppCodeGenString* _stringLiteral383983401_0;
-extern Il2CppCodeGenString* _stringLiteral640794565_0;
+extern Il2CppCodeGenString* _stringLiteral663231559_0;
 extern Il2CppCodeGenString* _stringLiteral_19930553_0;
 extern "C"  void MainController_shareSocial_m1100405264_0 (MainController_t1236616688_0 * __this, const MethodInfo* method)
 {
@@ -3726,26 +4763,51 @@ extern "C"  void MainController_shareSocial_m1100405264_0 (MainController_t12366
 	{
 		Int32_t1628762099_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(8);
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
-		_stringLiteral_1577669747_0 = il2cpp_codegen_string_literal_from_index(2894);
-		_stringLiteral383983401_0 = il2cpp_codegen_string_literal_from_index(2909);
-		_stringLiteral640794565_0 = il2cpp_codegen_string_literal_from_index(2915);
-		_stringLiteral_19930553_0 = il2cpp_codegen_string_literal_from_index(2916);
+		_stringLiteral_1577669747_0 = il2cpp_codegen_string_literal_from_index(2934);
+		_stringLiteral80204510_0 = il2cpp_codegen_string_literal_from_index(2953);
+		_stringLiteral180873569_0 = il2cpp_codegen_string_literal_from_index(2962);
+		_stringLiteral383983401_0 = il2cpp_codegen_string_literal_from_index(2955);
+		_stringLiteral663231559_0 = il2cpp_codegen_string_literal_from_index(2963);
+		_stringLiteral_19930553_0 = il2cpp_codegen_string_literal_from_index(2964);
 		s_Il2CppMethodIntialized = true;
 	}
 	String_t* V_0 = {0};
 	{
 		int32_t L_0 = (__this->___retryCoinNum_40);
 		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral_1577669747_0, ((int32_t)((int32_t)L_0+(int32_t)1)), /*hidden argument*/NULL);
-		int32_t L_1 = (__this->____StageNum_4);
-		int32_t L_2 = L_1;
-		Object_t * L_3 = Box(Int32_t1628762099_0_il2cpp_TypeInfo_var, &L_2);
+		int32_t L_1 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_1) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		int32_t L_2 = (__this->____StageNum_4);
+		int32_t L_3 = L_2;
+		Object_t * L_4 = Box(Int32_t1628762099_0_il2cpp_TypeInfo_var, &L_3);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_4 = String_Concat_m_1485633153_0(NULL /*static, unused*/, _stringLiteral383983401_0, L_3, _stringLiteral640794565_0, /*hidden argument*/NULL);
-		V_0 = L_4;
-		String_t* L_5 = V_0;
-		String_t* L_6 = WWW_EscapeURL_m1167392721_0(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
-		String_t* L_7 = String_Concat_m138640077_0(NULL /*static, unused*/, _stringLiteral_19930553_0, L_6, /*hidden argument*/NULL);
-		Application_OpenURL_m1861717334_0(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		String_t* L_5 = String_Concat_m_1485633153_0(NULL /*static, unused*/, _stringLiteral80204510_0, L_4, _stringLiteral180873569_0, /*hidden argument*/NULL);
+		V_0 = L_5;
+		goto IL_0059;
+	}
+
+IL_003e:
+	{
+		int32_t L_6 = (__this->____StageNum_4);
+		int32_t L_7 = L_6;
+		Object_t * L_8 = Box(Int32_t1628762099_0_il2cpp_TypeInfo_var, &L_7);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_9 = String_Concat_m_1485633153_0(NULL /*static, unused*/, _stringLiteral383983401_0, L_8, _stringLiteral663231559_0, /*hidden argument*/NULL);
+		V_0 = L_9;
+	}
+
+IL_0059:
+	{
+		String_t* L_10 = V_0;
+		String_t* L_11 = WWW_EscapeURL_m1167392721_0(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_12 = String_Concat_m138640077_0(NULL /*static, unused*/, _stringLiteral_19930553_0, L_11, /*hidden argument*/NULL);
+		Application_OpenURL_m1861717334_0(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -3762,7 +4824,7 @@ extern "C"  void MainController_showRetryPopup_m332631999_0 (MainController_t123
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484030);
 		GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484032);
-		_stringLiteral3752_0 = il2cpp_codegen_string_literal_from_index(2917);
+		_stringLiteral3752_0 = il2cpp_codegen_string_literal_from_index(2965);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3822,8 +4884,8 @@ extern "C"  void MainController_useRetryCoin_m385693840_0 (MainController_t12366
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral_1577669747_0 = il2cpp_codegen_string_literal_from_index(2894);
-		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2893);
+		_stringLiteral_1577669747_0 = il2cpp_codegen_string_literal_from_index(2934);
+		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2933);
 		_stringLiteral2390489_0 = il2cpp_codegen_string_literal_from_index(2779);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -3855,10 +4917,10 @@ extern "C"  void OptionController_Start_m_1001438038_0 (OptionController_t131042
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral2708_1 = il2cpp_codegen_string_literal_from_index(2918);
-		_stringLiteral2000024258_0 = il2cpp_codegen_string_literal_from_index(2919);
-		_stringLiteral1871209708_0 = il2cpp_codegen_string_literal_from_index(2920);
-		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2867);
+		_stringLiteral2708_1 = il2cpp_codegen_string_literal_from_index(2966);
+		_stringLiteral2000024258_0 = il2cpp_codegen_string_literal_from_index(2967);
+		_stringLiteral1871209708_0 = il2cpp_codegen_string_literal_from_index(2968);
+		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2907);
 		_stringLiteral1162850719_0 = il2cpp_codegen_string_literal_from_index(2783);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -3903,7 +4965,7 @@ extern "C"  void OptionController_clickOnBtn_m1756372879_0 (OptionController_t13
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2867);
+		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2907);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3923,7 +4985,7 @@ extern "C"  void OptionController_clickOffBtn_m1087608957_0 (OptionController_t1
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2867);
+		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2907);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3943,7 +5005,7 @@ extern "C"  void OptionController_switchButtonInteractable_m1430474645_0 (Option
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484033);
+		GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484034);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3963,11 +5025,48 @@ extern "C"  void OptionController_GoWebSite_m_1877868741_0 (OptionController_t13
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral_340353376_0 = il2cpp_codegen_string_literal_from_index(2921);
+		_stringLiteral_340353376_0 = il2cpp_codegen_string_literal_from_index(2969);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
 		Application_OpenURL_m1861717334_0(NULL /*static, unused*/, _stringLiteral_340353376_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void OptionController::GoLineStore()
+extern Il2CppCodeGenString* _stringLiteral157682685_0;
+extern Il2CppCodeGenString* _stringLiteral268132187_0;
+extern Il2CppCodeGenString* _stringLiteral_182670408_0;
+extern "C"  void OptionController_GoLineStore_m_187569267_0 (OptionController_t131042028_0 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		_stringLiteral157682685_0 = il2cpp_codegen_string_literal_from_index(2970);
+		_stringLiteral268132187_0 = il2cpp_codegen_string_literal_from_index(2971);
+		_stringLiteral_182670408_0 = il2cpp_codegen_string_literal_from_index(2972);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral157682685_0, 1, /*hidden argument*/NULL);
+		int32_t L_0 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_0) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		Application_OpenURL_m1861717334_0(NULL /*static, unused*/, _stringLiteral268132187_0, /*hidden argument*/NULL);
+		goto IL_0030;
+	}
+
+IL_0026:
+	{
+		Application_OpenURL_m1861717334_0(NULL /*static, unused*/, _stringLiteral_182670408_0, /*hidden argument*/NULL);
+	}
+
+IL_0030:
+	{
 		return;
 	}
 }
@@ -3978,7 +5077,7 @@ extern "C"  void OptionController_LoadTitleScene_m794820916_0 (OptionController_
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral80818744_0 = il2cpp_codegen_string_literal_from_index(2913);
+		_stringLiteral80818744_0 = il2cpp_codegen_string_literal_from_index(2960);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4057,13 +5156,13 @@ extern "C"  void OptionController_CreateSheep_m_1636665977_0 (OptionController_t
 		Vector3_t_725341337_0  L_27 = (L_26->___from_13);
 		__this->___fromPosition_10 = L_27;
 		Vector3_t_725341337_0 * L_28 = &(__this->___fromPosition_10);
-		L_28->___y_2 = (-270.0f);
+		L_28->___y_2 = (-360.0f);
 		uTweenPosition_t_1155963188_0 * L_29 = (__this->___tweenPos_12);
 		NullCheck(L_29);
 		Vector3_t_725341337_0  L_30 = (L_29->___to_14);
 		__this->___toPosition_11 = L_30;
 		Vector3_t_725341337_0 * L_31 = &(__this->___toPosition_11);
-		L_31->___y_2 = (-270.0f);
+		L_31->___y_2 = (-360.0f);
 		uTweenPosition_t_1155963188_0 * L_32 = (__this->___tweenPos_12);
 		Vector3_t_725341337_0  L_33 = (__this->___fromPosition_10);
 		NullCheck(L_32);
@@ -4090,7 +5189,7 @@ extern "C"  void QuitController_Start_m_2111064432_0 (QuitController_t_255516922
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral2528879_0 = il2cpp_codegen_string_literal_from_index(2922);
+		_stringLiteral2528879_0 = il2cpp_codegen_string_literal_from_index(2973);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4131,10 +5230,12 @@ extern "C"  void RecordController__ctor_m249569870_0 (RecordController_t_1382724
 // System.Void RecordController::Start()
 extern TypeInfo* GameData_t_49241417_0_il2cpp_TypeInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1807278322_0;
 extern Il2CppCodeGenString* _stringLiteral_1678783399_0;
 extern Il2CppCodeGenString* _stringLiteral82359999_0;
 extern Il2CppCodeGenString* _stringLiteral77299852_0;
+extern Il2CppCodeGenString* _stringLiteral242714435_0;
 extern Il2CppCodeGenString* _stringLiteral1347771924_0;
 extern Il2CppCodeGenString* _stringLiteral570656883_0;
 extern Il2CppCodeGenString* _stringLiteral1899931106_0;
@@ -4146,13 +5247,15 @@ extern "C"  void RecordController_Start_m_803292338_0 (RecordController_t_138272
 	{
 		GameData_t_49241417_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(1198);
 		GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484032);
-		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2867);
+		GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484033);
+		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2907);
 		_stringLiteral_1678783399_0 = il2cpp_codegen_string_literal_from_index(2727);
-		_stringLiteral82359999_0 = il2cpp_codegen_string_literal_from_index(2890);
-		_stringLiteral77299852_0 = il2cpp_codegen_string_literal_from_index(2891);
-		_stringLiteral1347771924_0 = il2cpp_codegen_string_literal_from_index(2923);
-		_stringLiteral570656883_0 = il2cpp_codegen_string_literal_from_index(2924);
-		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2893);
+		_stringLiteral82359999_0 = il2cpp_codegen_string_literal_from_index(2930);
+		_stringLiteral77299852_0 = il2cpp_codegen_string_literal_from_index(2931);
+		_stringLiteral242714435_0 = il2cpp_codegen_string_literal_from_index(2974);
+		_stringLiteral1347771924_0 = il2cpp_codegen_string_literal_from_index(2975);
+		_stringLiteral570656883_0 = il2cpp_codegen_string_literal_from_index(2976);
+		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2933);
 		_stringLiteral_1799560776_0 = il2cpp_codegen_string_literal_from_index(2781);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -4178,57 +5281,76 @@ IL_002f:
 	{
 		GameData_t_49241417_0 * L_1 = (GameData_t_49241417_0 *)il2cpp_codegen_object_new (GameData_t_49241417_0_il2cpp_TypeInfo_var);
 		GameData__ctor_m_1956549825_0(L_1, /*hidden argument*/NULL);
-		__this->____GameData_4 = L_1;
+		__this->____GameData_5 = L_1;
 		GameObject_t_184308134_0 * L_2 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral_1678783399_0, /*hidden argument*/NULL);
-		__this->___Content_11 = L_2;
+		__this->___Content_13 = L_2;
 		GameObject_t_184308134_0 * L_3 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral82359999_0, /*hidden argument*/NULL);
-		__this->___Popup_mask_5 = L_3;
+		__this->___Popup_mask_6 = L_3;
 		GameObject_t_184308134_0 * L_4 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral77299852_0, /*hidden argument*/NULL);
-		__this->___Popup_6 = L_4;
-		GameObject_t_184308134_0 * L_5 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral1347771924_0, /*hidden argument*/NULL);
-		__this->___Text_sheepName_7 = L_5;
-		GameObject_t_184308134_0 * L_6 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral570656883_0, /*hidden argument*/NULL);
-		__this->___Text_SheepDescription_8 = L_6;
-		GameObject_t_184308134_0 * L_7 = (__this->___Text_sheepName_7);
-		NullCheck(L_7);
-		Text_t_204341102_0 * L_8 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_7, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
-		__this->___Text_sheepName_text_9 = L_8;
-		GameObject_t_184308134_0 * L_9 = (__this->___Text_SheepDescription_8);
-		NullCheck(L_9);
-		Text_t_204341102_0 * L_10 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_9, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
-		__this->___Text_SheepDescription_text_10 = L_10;
-		GameObject_t_184308134_0 * L_11 = (__this->___Popup_mask_5);
-		NullCheck(L_11);
-		GameObject_SetActive_m_756761895_0(L_11, (bool)0, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_12 = (__this->___Popup_6);
+		__this->___Popup_7 = L_4;
+		GameObject_t_184308134_0 * L_5 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral242714435_0, /*hidden argument*/NULL);
+		__this->___Pic_title_10 = L_5;
+		GameObject_t_184308134_0 * L_6 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral1347771924_0, /*hidden argument*/NULL);
+		__this->___Text_sheepName_8 = L_6;
+		GameObject_t_184308134_0 * L_7 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral570656883_0, /*hidden argument*/NULL);
+		__this->___Text_SheepDescription_9 = L_7;
+		GameObject_t_184308134_0 * L_8 = (__this->___Text_sheepName_8);
+		NullCheck(L_8);
+		Text_t_204341102_0 * L_9 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_8, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		__this->___Text_sheepName_text_11 = L_9;
+		GameObject_t_184308134_0 * L_10 = (__this->___Text_SheepDescription_9);
+		NullCheck(L_10);
+		Text_t_204341102_0 * L_11 = GameObject_GetComponent_TisText_t_204341102_0_m202917489_0(L_10, /*hidden argument*/GameObject_GetComponent_TisText_t_204341102_0_m202917489_0_MethodInfo_var);
+		__this->___Text_SheepDescription_text_12 = L_11;
+		GameObject_t_184308134_0 * L_12 = (__this->___Popup_mask_6);
 		NullCheck(L_12);
 		GameObject_SetActive_m_756761895_0(L_12, (bool)0, /*hidden argument*/NULL);
-		Vector3_t_725341337_0 * L_13 = &(__this->___newScale_15);
-		L_13->___x_1 = (1.0f);
-		Vector3_t_725341337_0 * L_14 = &(__this->___newScale_15);
-		L_14->___y_2 = (1.0f);
-		Vector3_t_725341337_0 * L_15 = &(__this->___newScale_15);
-		L_15->___z_3 = (1.0f);
-		Vector3_t_725341337_0 * L_16 = &(__this->___sheepNewScale_17);
-		L_16->___x_1 = (0.86f);
-		Vector3_t_725341337_0 * L_17 = &(__this->___sheepNewScale_17);
-		L_17->___y_2 = (0.86f);
-		Vector3_t_725341337_0 * L_18 = &(__this->___sheepNewScale_17);
-		L_18->___z_3 = (1.0f);
-		Vector3_t_725341337_0 * L_19 = &(__this->___popupSheepScale_22);
-		L_19->___x_1 = (1.4f);
-		Vector3_t_725341337_0 * L_20 = &(__this->___popupSheepScale_22);
-		L_20->___y_2 = (1.4f);
-		Vector3_t_725341337_0 * L_21 = &(__this->___popupSheepScale_22);
-		L_21->___z_3 = (1.0f);
-		Vector3_t_725341337_0 * L_22 = &(__this->___popupSheepPosition_23);
-		L_22->___x_1 = (0.0f);
-		Vector3_t_725341337_0 * L_23 = &(__this->___popupSheepPosition_23);
-		L_23->___y_2 = (140.0f);
+		GameObject_t_184308134_0 * L_13 = (__this->___Popup_7);
+		NullCheck(L_13);
+		GameObject_SetActive_m_756761895_0(L_13, (bool)0, /*hidden argument*/NULL);
+		Vector3_t_725341337_0 * L_14 = &(__this->___newScale_17);
+		L_14->___x_1 = (1.0f);
+		Vector3_t_725341337_0 * L_15 = &(__this->___newScale_17);
+		L_15->___y_2 = (1.0f);
+		Vector3_t_725341337_0 * L_16 = &(__this->___newScale_17);
+		L_16->___z_3 = (1.0f);
+		Vector3_t_725341337_0 * L_17 = &(__this->___sheepNewScale_19);
+		L_17->___x_1 = (0.86f);
+		Vector3_t_725341337_0 * L_18 = &(__this->___sheepNewScale_19);
+		L_18->___y_2 = (0.86f);
+		Vector3_t_725341337_0 * L_19 = &(__this->___sheepNewScale_19);
+		L_19->___z_3 = (1.0f);
+		Vector3_t_725341337_0 * L_20 = &(__this->___popupSheepScale_24);
+		L_20->___x_1 = (1.4f);
+		Vector3_t_725341337_0 * L_21 = &(__this->___popupSheepScale_24);
+		L_21->___y_2 = (1.4f);
+		Vector3_t_725341337_0 * L_22 = &(__this->___popupSheepScale_24);
+		L_22->___z_3 = (1.0f);
+		Vector3_t_725341337_0 * L_23 = &(__this->___popupSheepPosition_25);
+		L_23->___x_1 = (0.0f);
+		Vector3_t_725341337_0 * L_24 = &(__this->___popupSheepPosition_25);
+		L_24->___y_2 = (140.0f);
 		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral1899931106_0, 0, /*hidden argument*/NULL);
-		int32_t L_24 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1799560776_0, /*hidden argument*/NULL);
-		__this->____HighScoreStageNum_19 = L_24;
+		int32_t L_25 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1799560776_0, /*hidden argument*/NULL);
+		__this->____HighScoreStageNum_21 = L_25;
 		RecordController_CreateSheepList_m1891576169_0(__this, /*hidden argument*/NULL);
+		int32_t L_26 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_26) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_01c7;
+		}
+	}
+	{
+		GameObject_t_184308134_0 * L_27 = (__this->___Pic_title_10);
+		NullCheck(L_27);
+		Image_t_2049549674_0 * L_28 = GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0(L_27, /*hidden argument*/GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var);
+		Sprite_t1286782926_0 * L_29 = (__this->___btnSprite_4);
+		NullCheck(L_28);
+		Image_set_sprite_m572551402_0(L_28, L_29, /*hidden argument*/NULL);
+	}
+
+IL_01c7:
+	{
 		return;
 	}
 }
@@ -4254,15 +5376,15 @@ extern "C"  void RecordController_CreateSheepList_m1891576169_0 (RecordControlle
 		Int32_t1628762099_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(8);
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483885);
-		GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484037);
+		GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484033);
 		Resources_Load_TisSprite_t1286782926_0_m_407737166_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484038);
 		Component_GetComponent_TisText_t_204341102_0_m1610753993_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484039);
 		Component_GetComponentInChildren_TisText_t_204341102_0_m582470501_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484028);
-		GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484033);
-		_stringLiteral435605852_0 = il2cpp_codegen_string_literal_from_index(2925);
-		_stringLiteral2994_0 = il2cpp_codegen_string_literal_from_index(2926);
-		_stringLiteral_47759644_0 = il2cpp_codegen_string_literal_from_index(2927);
-		_stringLiteral_685080149_0 = il2cpp_codegen_string_literal_from_index(2928);
+		GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484034);
+		_stringLiteral435605852_0 = il2cpp_codegen_string_literal_from_index(2977);
+		_stringLiteral2994_0 = il2cpp_codegen_string_literal_from_index(2978);
+		_stringLiteral_47759644_0 = il2cpp_codegen_string_literal_from_index(2979);
+		_stringLiteral_685080149_0 = il2cpp_codegen_string_literal_from_index(2980);
 		_stringLiteral_2005299782_0 = il2cpp_codegen_string_literal_from_index(2865);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -4281,19 +5403,19 @@ IL_0009:
 	{
 		GameObject_t_184308134_0 * L_0 = (__this->___SheepBox_2);
 		GameObject_t_184308134_0 * L_1 = Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0(NULL /*static, unused*/, L_0, /*hidden argument*/Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var);
-		__this->___cloneBox_12 = L_1;
-		GameObject_t_184308134_0 * L_2 = (__this->___cloneBox_12);
+		__this->___cloneBox_14 = L_1;
+		GameObject_t_184308134_0 * L_2 = (__this->___cloneBox_14);
 		NullCheck(L_2);
 		Transform_t1584899523_0 * L_3 = GameObject_get_transform_m1278640159_0(L_2, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_4 = (__this->___Content_11);
+		GameObject_t_184308134_0 * L_4 = (__this->___Content_13);
 		NullCheck(L_4);
 		Transform_t1584899523_0 * L_5 = GameObject_get_transform_m1278640159_0(L_4, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		Transform_SetParent_m263985879_0(L_3, L_5, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_6 = (__this->___cloneBox_12);
+		GameObject_t_184308134_0 * L_6 = (__this->___cloneBox_14);
 		NullCheck(L_6);
 		Transform_t1584899523_0 * L_7 = GameObject_get_transform_m1278640159_0(L_6, /*hidden argument*/NULL);
-		Vector3_t_725341337_0  L_8 = (__this->___newScale_15);
+		Vector3_t_725341337_0  L_8 = (__this->___newScale_17);
 		NullCheck(L_7);
 		Transform_set_localScale_m310756934_0(L_7, L_8, /*hidden argument*/NULL);
 		V_2 = 1;
@@ -4305,14 +5427,14 @@ IL_0053:
 		int32_t L_9 = V_2;
 		int32_t L_10 = V_1;
 		V_3 = ((int32_t)((int32_t)L_9+(int32_t)((int32_t)((int32_t)L_10*(int32_t)4))));
-		GameData_t_49241417_0 * L_11 = (__this->____GameData_4);
+		GameData_t_49241417_0 * L_11 = (__this->____GameData_5);
 		int32_t L_12 = V_3;
 		NullCheck(L_11);
 		SheepData_t_896671990_0 * L_13 = GameData_GetStSheepData_m_1043165070_0(L_11, L_12, /*hidden argument*/NULL);
 		V_4 = L_13;
 		GameObject_t_184308134_0 * L_14 = (__this->___SheepImg_3);
 		GameObject_t_184308134_0 * L_15 = Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0(NULL /*static, unused*/, L_14, /*hidden argument*/Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var);
-		__this->___cloneSheep_13 = L_15;
+		__this->___cloneSheep_15 = L_15;
 		SheepData_t_896671990_0 * L_16 = V_4;
 		NullCheck(L_16);
 		int32_t L_17 = (L_16->___UnlockStage_4);
@@ -4325,14 +5447,14 @@ IL_0053:
 		SheepData_t_896671990_0 * L_18 = V_4;
 		NullCheck(L_18);
 		int32_t L_19 = (L_18->___UnlockStage_4);
-		int32_t L_20 = (__this->____HighScoreStageNum_19);
+		int32_t L_20 = (__this->____HighScoreStageNum_21);
 		if ((((int32_t)L_19) > ((int32_t)L_20)))
 		{
 			goto IL_0128;
 		}
 	}
 	{
-		GameObject_t_184308134_0 * L_21 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_21 = (__this->___cloneSheep_15);
 		NullCheck(L_21);
 		Image_t_2049549674_0 * L_22 = GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0(L_21, /*hidden argument*/GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var);
 		int32_t L_23 = V_3;
@@ -4343,15 +5465,15 @@ IL_0053:
 		Sprite_t1286782926_0 * L_27 = Resources_Load_TisSprite_t1286782926_0_m_407737166_0(NULL /*static, unused*/, L_26, /*hidden argument*/Resources_Load_TisSprite_t1286782926_0_m_407737166_0_MethodInfo_var);
 		NullCheck(L_22);
 		Image_set_sprite_m572551402_0(L_22, L_27, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_28 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_28 = (__this->___cloneSheep_15);
 		NullCheck(L_28);
 		Transform_t1584899523_0 * L_29 = GameObject_get_transform_m1278640159_0(L_28, /*hidden argument*/NULL);
 		NullCheck(L_29);
 		Transform_t1584899523_0 * L_30 = Transform_FindChild_m_2145054410_0(L_29, _stringLiteral_47759644_0, /*hidden argument*/NULL);
 		NullCheck(L_30);
 		Text_t_204341102_0 * L_31 = Component_GetComponent_TisText_t_204341102_0_m1610753993_0(L_30, /*hidden argument*/Component_GetComponent_TisText_t_204341102_0_m1610753993_0_MethodInfo_var);
-		__this->___cloneSheepNum_18 = L_31;
-		Text_t_204341102_0 * L_32 = (__this->___cloneSheepNum_18);
+		__this->___cloneSheepNum_20 = L_31;
+		Text_t_204341102_0 * L_32 = (__this->___cloneSheepNum_20);
 		String_t* L_33 = Int32_ToString_m1286526384_0((&V_3), /*hidden argument*/NULL);
 		NullCheck(L_32);
 		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_32, L_33);
@@ -4366,7 +5488,7 @@ IL_0053:
 		}
 	}
 	{
-		GameObject_t_184308134_0 * L_37 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_37 = (__this->___cloneSheep_15);
 		NullCheck(L_37);
 		Transform_t1584899523_0 * L_38 = GameObject_get_transform_m1278640159_0(L_37, /*hidden argument*/NULL);
 		NullCheck(L_38);
@@ -4408,7 +5530,7 @@ IL_0128:
 	}
 	{
 		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral_2005299782_0, 1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_45 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_45 = (__this->___cloneSheep_15);
 		NullCheck(L_45);
 		Image_t_2049549674_0 * L_46 = GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0(L_45, /*hidden argument*/GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var);
 		int32_t L_47 = V_3;
@@ -4419,15 +5541,15 @@ IL_0128:
 		Sprite_t1286782926_0 * L_51 = Resources_Load_TisSprite_t1286782926_0_m_407737166_0(NULL /*static, unused*/, L_50, /*hidden argument*/Resources_Load_TisSprite_t1286782926_0_m_407737166_0_MethodInfo_var);
 		NullCheck(L_46);
 		Image_set_sprite_m572551402_0(L_46, L_51, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_52 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_52 = (__this->___cloneSheep_15);
 		NullCheck(L_52);
 		Transform_t1584899523_0 * L_53 = GameObject_get_transform_m1278640159_0(L_52, /*hidden argument*/NULL);
 		NullCheck(L_53);
 		Transform_t1584899523_0 * L_54 = Transform_FindChild_m_2145054410_0(L_53, _stringLiteral_47759644_0, /*hidden argument*/NULL);
 		NullCheck(L_54);
 		Text_t_204341102_0 * L_55 = Component_GetComponentInChildren_TisText_t_204341102_0_m582470501_0(L_54, /*hidden argument*/Component_GetComponentInChildren_TisText_t_204341102_0_m582470501_0_MethodInfo_var);
-		__this->___cloneSheepNum_18 = L_55;
-		Text_t_204341102_0 * L_56 = (__this->___cloneSheepNum_18);
+		__this->___cloneSheepNum_20 = L_55;
+		Text_t_204341102_0 * L_56 = (__this->___cloneSheepNum_20);
 		String_t* L_57 = Int32_ToString_m1286526384_0((&V_3), /*hidden argument*/NULL);
 		NullCheck(L_56);
 		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_56, L_57);
@@ -4440,7 +5562,7 @@ IL_0128:
 		}
 	}
 	{
-		GameObject_t_184308134_0 * L_60 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_60 = (__this->___cloneSheep_15);
 		NullCheck(L_60);
 		Transform_t1584899523_0 * L_61 = GameObject_get_transform_m1278640159_0(L_60, /*hidden argument*/NULL);
 		NullCheck(L_61);
@@ -4467,7 +5589,7 @@ IL_01dd:
 		}
 	}
 	{
-		GameObject_t_184308134_0 * L_66 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_66 = (__this->___cloneSheep_15);
 		NullCheck(L_66);
 		Image_t_2049549674_0 * L_67 = GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0(L_66, /*hidden argument*/GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var);
 		int32_t L_68 = V_3;
@@ -4478,15 +5600,15 @@ IL_01dd:
 		Sprite_t1286782926_0 * L_72 = Resources_Load_TisSprite_t1286782926_0_m_407737166_0(NULL /*static, unused*/, L_71, /*hidden argument*/Resources_Load_TisSprite_t1286782926_0_m_407737166_0_MethodInfo_var);
 		NullCheck(L_67);
 		Image_set_sprite_m572551402_0(L_67, L_72, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_73 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_73 = (__this->___cloneSheep_15);
 		NullCheck(L_73);
 		Transform_t1584899523_0 * L_74 = GameObject_get_transform_m1278640159_0(L_73, /*hidden argument*/NULL);
 		NullCheck(L_74);
 		Transform_t1584899523_0 * L_75 = Transform_FindChild_m_2145054410_0(L_74, _stringLiteral_47759644_0, /*hidden argument*/NULL);
 		NullCheck(L_75);
 		Text_t_204341102_0 * L_76 = Component_GetComponentInChildren_TisText_t_204341102_0_m582470501_0(L_75, /*hidden argument*/Component_GetComponentInChildren_TisText_t_204341102_0_m582470501_0_MethodInfo_var);
-		__this->___cloneSheepNum_18 = L_76;
-		Text_t_204341102_0 * L_77 = (__this->___cloneSheepNum_18);
+		__this->___cloneSheepNum_20 = L_76;
+		Text_t_204341102_0 * L_77 = (__this->___cloneSheepNum_20);
 		String_t* L_78 = Int32_ToString_m1286526384_0((&V_3), /*hidden argument*/NULL);
 		NullCheck(L_77);
 		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_77, L_78);
@@ -4501,7 +5623,7 @@ IL_01dd:
 		}
 	}
 	{
-		GameObject_t_184308134_0 * L_82 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_82 = (__this->___cloneSheep_15);
 		NullCheck(L_82);
 		Transform_t1584899523_0 * L_83 = GameObject_get_transform_m1278640159_0(L_82, /*hidden argument*/NULL);
 		NullCheck(L_83);
@@ -4519,12 +5641,12 @@ IL_0277:
 
 IL_027c:
 	{
-		GameObject_t_184308134_0 * L_86 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_86 = (__this->___cloneSheep_15);
 		NullCheck(L_86);
 		Button_t696032599_0 * L_87 = GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0(L_86, /*hidden argument*/GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var);
 		NullCheck(L_87);
 		Selectable_set_interactable_m_1608280877_0(L_87, (bool)0, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_88 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_88 = (__this->___cloneSheep_15);
 		NullCheck(L_88);
 		Transform_t1584899523_0 * L_89 = GameObject_get_transform_m1278640159_0(L_88, /*hidden argument*/NULL);
 		NullCheck(L_89);
@@ -4542,12 +5664,12 @@ IL_02ad:
 
 IL_02b2:
 	{
-		GameObject_t_184308134_0 * L_92 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_92 = (__this->___cloneSheep_15);
 		NullCheck(L_92);
 		Button_t696032599_0 * L_93 = GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0(L_92, /*hidden argument*/GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var);
 		NullCheck(L_93);
 		Selectable_set_interactable_m_1608280877_0(L_93, (bool)0, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_94 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_94 = (__this->___cloneSheep_15);
 		NullCheck(L_94);
 		Transform_t1584899523_0 * L_95 = GameObject_get_transform_m1278640159_0(L_94, /*hidden argument*/NULL);
 		NullCheck(L_95);
@@ -4560,18 +5682,18 @@ IL_02b2:
 
 IL_02e3:
 	{
-		GameObject_t_184308134_0 * L_98 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_98 = (__this->___cloneSheep_15);
 		NullCheck(L_98);
 		Transform_t1584899523_0 * L_99 = GameObject_get_transform_m1278640159_0(L_98, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_100 = (__this->___cloneBox_12);
+		GameObject_t_184308134_0 * L_100 = (__this->___cloneBox_14);
 		NullCheck(L_100);
 		Transform_t1584899523_0 * L_101 = GameObject_get_transform_m1278640159_0(L_100, /*hidden argument*/NULL);
 		NullCheck(L_99);
 		Transform_SetParent_m263985879_0(L_99, L_101, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_102 = (__this->___cloneSheep_13);
+		GameObject_t_184308134_0 * L_102 = (__this->___cloneSheep_15);
 		NullCheck(L_102);
 		Transform_t1584899523_0 * L_103 = GameObject_get_transform_m1278640159_0(L_102, /*hidden argument*/NULL);
-		Vector3_t_725341337_0  L_104 = (__this->___sheepNewScale_17);
+		Vector3_t_725341337_0  L_104 = (__this->___sheepNewScale_19);
 		NullCheck(L_103);
 		Transform_set_localScale_m310756934_0(L_103, L_104, /*hidden argument*/NULL);
 		int32_t L_105 = V_2;
@@ -4623,9 +5745,9 @@ extern "C"  void RecordController_showSheepPopup_m_2127080043_0 (RecordControlle
 		GameObject_t_184308134_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(1029);
 		Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484030);
 		Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483885);
-		GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484035);
+		GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484036);
 		Component_GetComponent_TisSheepRotation_t_1775153442_0_m275814464_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484031);
-		_stringLiteral79850811_0 = il2cpp_codegen_string_literal_from_index(2929);
+		_stringLiteral79850811_0 = il2cpp_codegen_string_literal_from_index(2786);
 		_stringLiteral_572778963_0 = il2cpp_codegen_string_literal_from_index(2785);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -4634,7 +5756,7 @@ extern "C"  void RecordController_showSheepPopup_m_2127080043_0 (RecordControlle
 		AudioSource_t812398632_0 * L_0 = Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0_MethodInfo_var);
 		NullCheck(L_0);
 		AudioSource_Play_m1360558992_0(L_0, /*hidden argument*/NULL);
-		GameData_t_49241417_0 * L_1 = (__this->____GameData_4);
+		GameData_t_49241417_0 * L_1 = (__this->____GameData_5);
 		int32_t L_2 = ____sheepId;
 		NullCheck(L_1);
 		SheepData_t_896671990_0 * L_3 = GameData_GetStSheepData_m_1043165070_0(L_1, L_2, /*hidden argument*/NULL);
@@ -4642,14 +5764,14 @@ extern "C"  void RecordController_showSheepPopup_m_2127080043_0 (RecordControlle
 		SheepData_t_896671990_0 * L_4 = V_0;
 		NullCheck(L_4);
 		String_t* L_5 = (L_4->___SheepName_1);
-		__this->___shareSheepName_25 = L_5;
-		Text_t_204341102_0 * L_6 = (__this->___Text_sheepName_text_9);
+		__this->___shareSheepName_27 = L_5;
+		Text_t_204341102_0 * L_6 = (__this->___Text_sheepName_text_11);
 		SheepData_t_896671990_0 * L_7 = V_0;
 		NullCheck(L_7);
 		String_t* L_8 = (L_7->___SheepName_1);
 		NullCheck(L_6);
 		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_6, L_8);
-		Text_t_204341102_0 * L_9 = (__this->___Text_SheepDescription_text_10);
+		Text_t_204341102_0 * L_9 = (__this->___Text_SheepDescription_text_12);
 		SheepData_t_896671990_0 * L_10 = V_0;
 		NullCheck(L_10);
 		String_t* L_11 = (L_10->___SheepDescription_2);
@@ -4661,24 +5783,24 @@ extern "C"  void RecordController_showSheepPopup_m_2127080043_0 (RecordControlle
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_15 = String_Concat_m389863537_0(NULL /*static, unused*/, _stringLiteral79850811_0, L_14, /*hidden argument*/NULL);
 		Object_t1159094344_0 * L_16 = Resources_Load_m_2107575451_0(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
-		__this->___sheep_20 = ((GameObject_t_184308134_0 *)CastclassSealed(L_16, GameObject_t_184308134_0_il2cpp_TypeInfo_var));
-		GameObject_t_184308134_0 * L_17 = (__this->___sheep_20);
+		__this->___sheep_22 = ((GameObject_t_184308134_0 *)CastclassSealed(L_16, GameObject_t_184308134_0_il2cpp_TypeInfo_var));
+		GameObject_t_184308134_0 * L_17 = (__this->___sheep_22);
 		GameObject_t_184308134_0 * L_18 = Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0(NULL /*static, unused*/, L_17, /*hidden argument*/Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var);
-		__this->___cloneSheepAnim_21 = L_18;
-		GameObject_t_184308134_0 * L_19 = (__this->___cloneSheepAnim_21);
+		__this->___cloneSheepAnim_23 = L_18;
+		GameObject_t_184308134_0 * L_19 = (__this->___cloneSheepAnim_23);
 		NullCheck(L_19);
 		Transform_t1584899523_0 * L_20 = GameObject_get_transform_m1278640159_0(L_19, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_21 = (__this->___Popup_6);
+		GameObject_t_184308134_0 * L_21 = (__this->___Popup_7);
 		NullCheck(L_21);
 		Transform_t1584899523_0 * L_22 = GameObject_get_transform_m1278640159_0(L_21, /*hidden argument*/NULL);
 		NullCheck(L_20);
 		Transform_SetParent_m263985879_0(L_20, L_22, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_23 = (__this->___cloneSheepAnim_21);
+		GameObject_t_184308134_0 * L_23 = (__this->___cloneSheepAnim_23);
 		NullCheck(L_23);
 		uTweenPosition_t_1155963188_0 * L_24 = GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0(L_23, /*hidden argument*/GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var);
 		NullCheck(L_24);
 		Behaviour_set_enabled_m2046806933_0(L_24, (bool)0, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_25 = (__this->___cloneSheepAnim_21);
+		GameObject_t_184308134_0 * L_25 = (__this->___cloneSheepAnim_23);
 		NullCheck(L_25);
 		Transform_t1584899523_0 * L_26 = GameObject_get_transform_m1278640159_0(L_25, /*hidden argument*/NULL);
 		NullCheck(L_26);
@@ -4687,22 +5809,22 @@ extern "C"  void RecordController_showSheepPopup_m_2127080043_0 (RecordControlle
 		SheepRotation_t_1775153442_0 * L_28 = Component_GetComponent_TisSheepRotation_t_1775153442_0_m275814464_0(L_27, /*hidden argument*/Component_GetComponent_TisSheepRotation_t_1775153442_0_m275814464_0_MethodInfo_var);
 		NullCheck(L_28);
 		Behaviour_set_enabled_m2046806933_0(L_28, (bool)0, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_29 = (__this->___cloneSheepAnim_21);
+		GameObject_t_184308134_0 * L_29 = (__this->___cloneSheepAnim_23);
 		NullCheck(L_29);
 		Transform_t1584899523_0 * L_30 = GameObject_get_transform_m1278640159_0(L_29, /*hidden argument*/NULL);
-		Vector3_t_725341337_0  L_31 = (__this->___popupSheepScale_22);
+		Vector3_t_725341337_0  L_31 = (__this->___popupSheepScale_24);
 		NullCheck(L_30);
 		Transform_set_localScale_m310756934_0(L_30, L_31, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_32 = (__this->___cloneSheepAnim_21);
+		GameObject_t_184308134_0 * L_32 = (__this->___cloneSheepAnim_23);
 		NullCheck(L_32);
 		Transform_t1584899523_0 * L_33 = GameObject_get_transform_m1278640159_0(L_32, /*hidden argument*/NULL);
-		Vector3_t_725341337_0  L_34 = (__this->___popupSheepPosition_23);
+		Vector3_t_725341337_0  L_34 = (__this->___popupSheepPosition_25);
 		NullCheck(L_33);
 		Transform_set_localPosition_m_790636393_0(L_33, L_34, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_35 = (__this->___Popup_mask_5);
+		GameObject_t_184308134_0 * L_35 = (__this->___Popup_mask_6);
 		NullCheck(L_35);
 		GameObject_SetActive_m_756761895_0(L_35, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_36 = (__this->___Popup_6);
+		GameObject_t_184308134_0 * L_36 = (__this->___Popup_7);
 		NullCheck(L_36);
 		GameObject_SetActive_m_756761895_0(L_36, (bool)1, /*hidden argument*/NULL);
 		return;
@@ -4722,12 +5844,12 @@ extern "C"  void RecordController_closeSheepPopup_m_1938292811_0 (RecordControll
 		AudioSource_t812398632_0 * L_0 = Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0_MethodInfo_var);
 		NullCheck(L_0);
 		AudioSource_Play_m1360558992_0(L_0, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_1 = (__this->___cloneSheepAnim_21);
+		GameObject_t_184308134_0 * L_1 = (__this->___cloneSheepAnim_23);
 		Object_Destroy_m176400816_0(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_2 = (__this->___Popup_mask_5);
+		GameObject_t_184308134_0 * L_2 = (__this->___Popup_mask_6);
 		NullCheck(L_2);
 		GameObject_SetActive_m_756761895_0(L_2, (bool)0, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_3 = (__this->___Popup_6);
+		GameObject_t_184308134_0 * L_3 = (__this->___Popup_7);
 		NullCheck(L_3);
 		GameObject_SetActive_m_756761895_0(L_3, (bool)0, /*hidden argument*/NULL);
 		return;
@@ -4740,7 +5862,7 @@ extern "C"  void RecordController_LoadTitleScene_m1436664592_0 (RecordController
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral80818744_0 = il2cpp_codegen_string_literal_from_index(2913);
+		_stringLiteral80818744_0 = il2cpp_codegen_string_literal_from_index(2960);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4751,6 +5873,7 @@ extern "C"  void RecordController_LoadTitleScene_m1436664592_0 (RecordController
 // System.Void RecordController::shareSocial()
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral_1577669747_0;
+extern Il2CppCodeGenString* _stringLiteral1012070548_0;
 extern Il2CppCodeGenString* _stringLiteral_1231834639_0;
 extern Il2CppCodeGenString* _stringLiteral_19930553_0;
 extern "C"  void RecordController_shareSocial_m1774383224_0 (RecordController_t_1382724664_0 * __this, const MethodInfo* method)
@@ -4759,26 +5882,49 @@ extern "C"  void RecordController_shareSocial_m1774383224_0 (RecordController_t_
 	if (!s_Il2CppMethodIntialized)
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
-		_stringLiteral_1577669747_0 = il2cpp_codegen_string_literal_from_index(2894);
-		_stringLiteral_1231834639_0 = il2cpp_codegen_string_literal_from_index(2930);
-		_stringLiteral_19930553_0 = il2cpp_codegen_string_literal_from_index(2916);
+		_stringLiteral_1577669747_0 = il2cpp_codegen_string_literal_from_index(2934);
+		_stringLiteral1012070548_0 = il2cpp_codegen_string_literal_from_index(2981);
+		_stringLiteral_1231834639_0 = il2cpp_codegen_string_literal_from_index(2982);
+		_stringLiteral_19930553_0 = il2cpp_codegen_string_literal_from_index(2964);
 		s_Il2CppMethodIntialized = true;
 	}
 	String_t* V_0 = {0};
 	{
 		int32_t L_0 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1577669747_0, /*hidden argument*/NULL);
-		__this->___retryCoinNum_24 = L_0;
-		int32_t L_1 = (__this->___retryCoinNum_24);
+		__this->___retryCoinNum_26 = L_0;
+		int32_t L_1 = (__this->___retryCoinNum_26);
 		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral_1577669747_0, ((int32_t)((int32_t)L_1+(int32_t)1)), /*hidden argument*/NULL);
+		int32_t L_2 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_2) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_0049;
+		}
+	}
+	{
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_2 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
-		String_t* L_3 = (__this->___shareSheepName_25);
-		String_t* L_4 = String_Concat_m1825781833_0(NULL /*static, unused*/, L_2, L_3, _stringLiteral_1231834639_0, /*hidden argument*/NULL);
-		V_0 = L_4;
-		String_t* L_5 = V_0;
-		String_t* L_6 = WWW_EscapeURL_m1167392721_0(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
-		String_t* L_7 = String_Concat_m138640077_0(NULL /*static, unused*/, _stringLiteral_19930553_0, L_6, /*hidden argument*/NULL);
-		Application_OpenURL_m1861717334_0(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		String_t* L_3 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		String_t* L_4 = (__this->___shareSheepName_27);
+		String_t* L_5 = String_Concat_m1825781833_0(NULL /*static, unused*/, L_3, L_4, _stringLiteral1012070548_0, /*hidden argument*/NULL);
+		V_0 = L_5;
+		goto IL_005f;
+	}
+
+IL_0049:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_6 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->___Empty_2;
+		String_t* L_7 = (__this->___shareSheepName_27);
+		String_t* L_8 = String_Concat_m1825781833_0(NULL /*static, unused*/, L_6, L_7, _stringLiteral_1231834639_0, /*hidden argument*/NULL);
+		V_0 = L_8;
+	}
+
+IL_005f:
+	{
+		String_t* L_9 = V_0;
+		String_t* L_10 = WWW_EscapeURL_m1167392721_0(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_11 = String_Concat_m138640077_0(NULL /*static, unused*/, _stringLiteral_19930553_0, L_10, /*hidden argument*/NULL);
+		Application_OpenURL_m1861717334_0(NULL /*static, unused*/, L_11, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -4799,7 +5945,7 @@ extern "C"  void RecordSheepBtn_Start_m_908163255_0 (RecordSheepBtn_t_938022355_
 	if (!s_Il2CppMethodIntialized)
 	{
 		GameObject_GetComponent_TisRecordController_t_1382724664_0_m574740688_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484040);
-		_stringLiteral_1423933715_0 = il2cpp_codegen_string_literal_from_index(2931);
+		_stringLiteral_1423933715_0 = il2cpp_codegen_string_literal_from_index(2983);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4826,10 +5972,10 @@ extern "C"  void RecordSheepBtn_showSheepPopup_m_1948556119_0 (RecordSheepBtn_t_
 	{
 		Int32_t1628762099_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(8);
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
-		GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484036);
+		GameObject_GetComponent_TisAudioSource_t812398632_0_m1155306151_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484037);
 		Component_GetComponentInChildren_TisText_t_204341102_0_m582470501_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484028);
-		_stringLiteral_685080149_0 = il2cpp_codegen_string_literal_from_index(2928);
-		_stringLiteral_430682070_0 = il2cpp_codegen_string_literal_from_index(2932);
+		_stringLiteral_685080149_0 = il2cpp_codegen_string_literal_from_index(2980);
+		_stringLiteral_430682070_0 = il2cpp_codegen_string_literal_from_index(2984);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4891,7 +6037,7 @@ extern "C"  void SheepGenerator_Start_m_1309099837_0 (SheepGenerator_t_195387201
 	if (!s_Il2CppMethodIntialized)
 	{
 		GameObject_GetComponent_TisMainController_t1236616688_0_m232058856_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484041);
-		_stringLiteral239926869_0 = il2cpp_codegen_string_literal_from_index(2933);
+		_stringLiteral239926869_0 = il2cpp_codegen_string_literal_from_index(2985);
 		_stringLiteral_1819592040_0 = il2cpp_codegen_string_literal_from_index(2780);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -4925,7 +6071,7 @@ extern "C"  void SheepGenerator_InitSheep_m_571208803_0 (SheepGenerator_t_195387
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		GameObject_t_184308134_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(1029);
 		uTweenPosition_t_1155963188_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(1194);
-		_stringLiteral79850811_0 = il2cpp_codegen_string_literal_from_index(2929);
+		_stringLiteral79850811_0 = il2cpp_codegen_string_literal_from_index(2786);
 		_stringLiteral_1028037945_0 = il2cpp_codegen_string_literal_from_index(2784);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -5000,7 +6146,7 @@ extern "C"  void SheepGenerator_StartCreateSheep_m510822878_0 (SheepGenerator_t_
 	if (!s_Il2CppMethodIntialized)
 	{
 		_stringLiteral1162850719_0 = il2cpp_codegen_string_literal_from_index(2783);
-		_stringLiteral_2005226435_0 = il2cpp_codegen_string_literal_from_index(2934);
+		_stringLiteral_2005226435_0 = il2cpp_codegen_string_literal_from_index(2986);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5132,7 +6278,7 @@ extern "C"  void SheepObject_Start_m237663569_0 (SheepObject_t1902197407_0 * __t
 	if (!s_Il2CppMethodIntialized)
 	{
 		GameObject_GetComponent_TisMainController_t1236616688_0_m232058856_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484041);
-		_stringLiteral239926869_0 = il2cpp_codegen_string_literal_from_index(2933);
+		_stringLiteral239926869_0 = il2cpp_codegen_string_literal_from_index(2985);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5163,7 +6309,7 @@ extern "C"  bool SheepObject_checkMainController_m_1158058784_0 (SheepObject_t19
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral239926869_0 = il2cpp_codegen_string_literal_from_index(2933);
+		_stringLiteral239926869_0 = il2cpp_codegen_string_literal_from_index(2985);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5273,7 +6419,7 @@ extern "C"  void SheepSpriteAnim_Start_m_1290167942_0 (SheepSpriteAnim_t78493845
 	if (!s_Il2CppMethodIntialized)
 	{
 		Component_GetComponent_TisImage_t_2049549674_0_m_588446870_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483960);
-		_stringLiteral68342453_0 = il2cpp_codegen_string_literal_from_index(2935);
+		_stringLiteral68342453_0 = il2cpp_codegen_string_literal_from_index(2987);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5352,9 +6498,9 @@ extern "C"  void StageSelectController_Start_m_1060406667_0 (StageSelectControll
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2867);
+		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2907);
 		_stringLiteral_1678783399_0 = il2cpp_codegen_string_literal_from_index(2727);
-		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2893);
+		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2933);
 		_stringLiteral_1799560776_0 = il2cpp_codegen_string_literal_from_index(2781);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -5404,7 +6550,7 @@ extern "C"  void StageSelectController_CreateStageNumBtn_m1949093003_0 (StageSel
 	{
 		Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483885);
 		GameObject_GetComponentInChildren_TisText_t_204341102_0_m_1370114035_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484042);
-		GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484033);
+		GameObject_GetComponent_TisButton_t696032599_0_m_1482873204_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484034);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
@@ -5530,11 +6676,62 @@ extern "C"  void StageSelectController_LoadTitleScene_m1762402249_0 (StageSelect
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral80818744_0 = il2cpp_codegen_string_literal_from_index(2913);
+		_stringLiteral80818744_0 = il2cpp_codegen_string_literal_from_index(2960);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
 		Application_LoadLevel_m_1572393411_0(NULL /*static, unused*/, _stringLiteral80818744_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void TextLocalizer::.ctor()
+extern "C"  void TextLocalizer__ctor_m_1284627409_0 (TextLocalizer_t455616961_0 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967_0(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void TextLocalizer::Start()
+extern const MethodInfo* Component_GetComponent_TisText_t_204341102_0_m1610753993_0_MethodInfo_var;
+extern "C"  void TextLocalizer_Start_m1957477679_0 (TextLocalizer_t455616961_0 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		Component_GetComponent_TisText_t_204341102_0_m1610753993_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484039);
+		s_Il2CppMethodIntialized = true;
+	}
+	Text_t_204341102_0 * V_0 = {0};
+	{
+		Text_t_204341102_0 * L_0 = Component_GetComponent_TisText_t_204341102_0_m1610753993_0(__this, /*hidden argument*/Component_GetComponent_TisText_t_204341102_0_m1610753993_0_MethodInfo_var);
+		V_0 = L_0;
+		int32_t L_1 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_1) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		Text_t_204341102_0 * L_2 = V_0;
+		String_t* L_3 = (__this->___englishText_2);
+		NullCheck(L_2);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_3);
+		int32_t L_4 = (__this->___englishFontSize_3);
+		if (!L_4)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		Text_t_204341102_0 * L_5 = V_0;
+		int32_t L_6 = (__this->___englishFontSize_3);
+		NullCheck(L_5);
+		Text_set_fontSize_m2013207524_0(L_5, L_6, /*hidden argument*/NULL);
+	}
+
+IL_0036:
+	{
 		return;
 	}
 }
@@ -5548,6 +6745,7 @@ extern "C"  void TitleController__ctor_m_554570249_0 (TitleController_t_17647687
 }
 // System.Void TitleController::Start()
 extern const MethodInfo* Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var;
 extern const MethodInfo* GameObject_GetComponent_TisCreateSheeps_t_786303729_0_m_507336023_0_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1591620707_0;
 extern Il2CppCodeGenString* _stringLiteral661270862_0;
@@ -5555,104 +6753,146 @@ extern Il2CppCodeGenString* _stringLiteral2374091_0;
 extern Il2CppCodeGenString* _stringLiteral_1354657633_0;
 extern Il2CppCodeGenString* _stringLiteral912861108_0;
 extern Il2CppCodeGenString* _stringLiteral837632984_0;
+extern Il2CppCodeGenString* _stringLiteral_2122127337_0;
 extern Il2CppCodeGenString* _stringLiteral_685080149_0;
+extern Il2CppCodeGenString* _stringLiteral237351911_0;
 extern Il2CppCodeGenString* _stringLiteral_1753686042_0;
 extern Il2CppCodeGenString* _stringLiteral1807278322_0;
 extern Il2CppCodeGenString* _stringLiteral353922828_0;
 extern Il2CppCodeGenString* _stringLiteral1899931106_0;
 extern Il2CppCodeGenString* _stringLiteral_1435731181_0;
+extern Il2CppCodeGenString* _stringLiteral157682685_0;
 extern "C"  void TitleController_Start_m_1607432457_0 (TitleController_t_17647687_0 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
 		Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483885);
+		GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484033);
 		GameObject_GetComponent_TisCreateSheeps_t_786303729_0_m_507336023_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484043);
-		_stringLiteral1591620707_0 = il2cpp_codegen_string_literal_from_index(2936);
+		_stringLiteral1591620707_0 = il2cpp_codegen_string_literal_from_index(2988);
 		_stringLiteral661270862_0 = il2cpp_codegen_string_literal_from_index(2711);
-		_stringLiteral2374091_0 = il2cpp_codegen_string_literal_from_index(2937);
-		_stringLiteral_1354657633_0 = il2cpp_codegen_string_literal_from_index(2938);
-		_stringLiteral912861108_0 = il2cpp_codegen_string_literal_from_index(2939);
-		_stringLiteral837632984_0 = il2cpp_codegen_string_literal_from_index(2940);
-		_stringLiteral_685080149_0 = il2cpp_codegen_string_literal_from_index(2928);
-		_stringLiteral_1753686042_0 = il2cpp_codegen_string_literal_from_index(2941);
-		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2867);
-		_stringLiteral353922828_0 = il2cpp_codegen_string_literal_from_index(2942);
-		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2893);
-		_stringLiteral_1435731181_0 = il2cpp_codegen_string_literal_from_index(2905);
+		_stringLiteral2374091_0 = il2cpp_codegen_string_literal_from_index(2989);
+		_stringLiteral_1354657633_0 = il2cpp_codegen_string_literal_from_index(2990);
+		_stringLiteral912861108_0 = il2cpp_codegen_string_literal_from_index(2991);
+		_stringLiteral837632984_0 = il2cpp_codegen_string_literal_from_index(2992);
+		_stringLiteral_2122127337_0 = il2cpp_codegen_string_literal_from_index(2993);
+		_stringLiteral_685080149_0 = il2cpp_codegen_string_literal_from_index(2980);
+		_stringLiteral237351911_0 = il2cpp_codegen_string_literal_from_index(2994);
+		_stringLiteral_1753686042_0 = il2cpp_codegen_string_literal_from_index(2995);
+		_stringLiteral1807278322_0 = il2cpp_codegen_string_literal_from_index(2907);
+		_stringLiteral353922828_0 = il2cpp_codegen_string_literal_from_index(2996);
+		_stringLiteral1899931106_0 = il2cpp_codegen_string_literal_from_index(2933);
+		_stringLiteral_1435731181_0 = il2cpp_codegen_string_literal_from_index(2948);
+		_stringLiteral157682685_0 = il2cpp_codegen_string_literal_from_index(2970);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
 		Application_set_targetFrameRate_m498658007_0(NULL /*static, unused*/, ((int32_t)60), /*hidden argument*/NULL);
 		GameObject_t_184308134_0 * L_0 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral1591620707_0, /*hidden argument*/NULL);
-		__this->___TitleControllerObj_4 = L_0;
+		__this->___TitleControllerObj_5 = L_0;
 		GameObject_t_184308134_0 * L_1 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral661270862_0, /*hidden argument*/NULL);
-		__this->___Background_5 = L_1;
+		__this->___Background_6 = L_1;
 		GameObject_t_184308134_0 * L_2 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral2374091_0, /*hidden argument*/NULL);
-		__this->___Logo_6 = L_2;
+		__this->___Logo_7 = L_2;
 		GameObject_t_184308134_0 * L_3 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral_1354657633_0, /*hidden argument*/NULL);
-		__this->___Btn_start_7 = L_3;
+		__this->___Btn_start_8 = L_3;
 		GameObject_t_184308134_0 * L_4 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral912861108_0, /*hidden argument*/NULL);
-		__this->___Btn_record_8 = L_4;
+		__this->___Btn_record_9 = L_4;
 		GameObject_t_184308134_0 * L_5 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral837632984_0, /*hidden argument*/NULL);
-		__this->___Btn_option_9 = L_5;
-		GameObject_t_184308134_0 * L_6 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral_685080149_0, /*hidden argument*/NULL);
-		__this->___Pic_noti_10 = L_6;
-		GameObject_t_184308134_0 * L_7 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral_1753686042_0, /*hidden argument*/NULL);
-		__this->___Text_version_11 = L_7;
-		int32_t L_8 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1807278322_0, /*hidden argument*/NULL);
-		if (!L_8)
+		__this->___Btn_option_10 = L_5;
+		GameObject_t_184308134_0 * L_6 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral_2122127337_0, /*hidden argument*/NULL);
+		__this->___Btn_line_11 = L_6;
+		GameObject_t_184308134_0 * L_7 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral_685080149_0, /*hidden argument*/NULL);
+		__this->___Pic_noti_12 = L_7;
+		GameObject_t_184308134_0 * L_8 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral237351911_0, /*hidden argument*/NULL);
+		__this->___Pic_noti2_13 = L_8;
+		GameObject_t_184308134_0 * L_9 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral_1753686042_0, /*hidden argument*/NULL);
+		__this->___Text_version_14 = L_9;
+		int32_t L_10 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral1807278322_0, /*hidden argument*/NULL);
+		if (!L_10)
 		{
-			goto IL_00a5;
+			goto IL_00c5;
 		}
 	}
 	{
 		AudioListener_set_volume_m1072709503_0(NULL /*static, unused*/, (0.0f), /*hidden argument*/NULL);
-		goto IL_00af;
+		goto IL_00cf;
 	}
 
-IL_00a5:
+IL_00c5:
 	{
 		AudioListener_set_volume_m1072709503_0(NULL /*static, unused*/, (0.7f), /*hidden argument*/NULL);
 	}
 
-IL_00af:
+IL_00cf:
 	{
-		GameObject_t_184308134_0 * L_9 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral353922828_0, /*hidden argument*/NULL);
-		bool L_10 = Object_op_Equality_m_330376344_0(NULL /*static, unused*/, L_9, (Object_t1159094344_0 *)NULL, /*hidden argument*/NULL);
-		if (!L_10)
+		GameObject_t_184308134_0 * L_11 = GameObject_Find_m332785498_0(NULL /*static, unused*/, _stringLiteral353922828_0, /*hidden argument*/NULL);
+		bool L_12 = Object_op_Equality_m_330376344_0(NULL /*static, unused*/, L_11, (Object_t1159094344_0 *)NULL, /*hidden argument*/NULL);
+		if (!L_12)
 		{
-			goto IL_00d5;
+			goto IL_00f5;
 		}
 	}
 	{
-		GameObject_t_184308134_0 * L_11 = (__this->___bgm_2);
-		GameObject_t_184308134_0 * L_12 = Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0(NULL /*static, unused*/, L_11, /*hidden argument*/Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var);
-		__this->___cloneBgm_3 = L_12;
+		GameObject_t_184308134_0 * L_13 = (__this->___bgm_2);
+		GameObject_t_184308134_0 * L_14 = Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0(NULL /*static, unused*/, L_13, /*hidden argument*/Object_Instantiate_TisGameObject_t_184308134_0_m_377358367_0_MethodInfo_var);
+		__this->___cloneBgm_4 = L_14;
 	}
 
-IL_00d5:
+IL_00f5:
 	{
 		PlayerPrefs_SetInt_m_809795300_0(NULL /*static, unused*/, _stringLiteral1899931106_0, 0, /*hidden argument*/NULL);
-		int32_t L_13 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1435731181_0, /*hidden argument*/NULL);
-		if (L_13)
+		int32_t L_15 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_15) == ((int32_t)((int32_t)22))))
 		{
-			goto IL_00fb;
+			goto IL_0122;
 		}
 	}
 	{
-		GameObject_t_184308134_0 * L_14 = (__this->___Pic_noti_10);
-		NullCheck(L_14);
-		GameObject_SetActive_m_756761895_0(L_14, (bool)0, /*hidden argument*/NULL);
+		GameObject_t_184308134_0 * L_16 = (__this->___Btn_record_9);
+		NullCheck(L_16);
+		Image_t_2049549674_0 * L_17 = GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0(L_16, /*hidden argument*/GameObject_GetComponent_TisImage_t_2049549674_0_m2140199269_0_MethodInfo_var);
+		Sprite_t1286782926_0 * L_18 = (__this->___btnSprite_3);
+		NullCheck(L_17);
+		Image_set_sprite_m572551402_0(L_17, L_18, /*hidden argument*/NULL);
 	}
 
-IL_00fb:
+IL_0122:
 	{
-		GameObject_t_184308134_0 * L_15 = (__this->___TitleControllerObj_4);
-		NullCheck(L_15);
-		CreateSheeps_t_786303729_0 * L_16 = GameObject_GetComponent_TisCreateSheeps_t_786303729_0_m_507336023_0(L_15, /*hidden argument*/GameObject_GetComponent_TisCreateSheeps_t_786303729_0_m_507336023_0_MethodInfo_var);
-		NullCheck(L_16);
-		CreateSheeps_StartCreateSheep_m_491839302_0(L_16, /*hidden argument*/NULL);
+		int32_t L_19 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral_1435731181_0, /*hidden argument*/NULL);
+		if (L_19)
+		{
+			goto IL_013d;
+		}
+	}
+	{
+		GameObject_t_184308134_0 * L_20 = (__this->___Pic_noti_12);
+		NullCheck(L_20);
+		GameObject_SetActive_m_756761895_0(L_20, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_013d:
+	{
+		int32_t L_21 = PlayerPrefs_GetInt_m1334009359_0(NULL /*static, unused*/, _stringLiteral157682685_0, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_21) == ((uint32_t)1))))
+		{
+			goto IL_0159;
+		}
+	}
+	{
+		GameObject_t_184308134_0 * L_22 = (__this->___Pic_noti2_13);
+		NullCheck(L_22);
+		GameObject_SetActive_m_756761895_0(L_22, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_0159:
+	{
+		GameObject_t_184308134_0 * L_23 = (__this->___TitleControllerObj_5);
+		NullCheck(L_23);
+		CreateSheeps_t_786303729_0 * L_24 = GameObject_GetComponent_TisCreateSheeps_t_786303729_0_m_507336023_0(L_23, /*hidden argument*/GameObject_GetComponent_TisCreateSheeps_t_786303729_0_m_507336023_0_MethodInfo_var);
+		NullCheck(L_24);
+		CreateSheeps_StartCreateSheep_m_491839302_0(L_24, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -5665,7 +6905,7 @@ extern "C"  void TitleController_ClickStartBtn_m_1789434153_0 (TitleController_t
 	if (!s_Il2CppMethodIntialized)
 	{
 		Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484030);
-		_stringLiteral_861135816_0 = il2cpp_codegen_string_literal_from_index(2943);
+		_stringLiteral_861135816_0 = il2cpp_codegen_string_literal_from_index(2997);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5687,8 +6927,8 @@ extern "C"  void TitleController_ClickRecordBtn_m_289148848_0 (TitleController_t
 	if (!s_Il2CppMethodIntialized)
 	{
 		Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484030);
-		_stringLiteral_1435731181_0 = il2cpp_codegen_string_literal_from_index(2905);
-		_stringLiteral_1365805611_0 = il2cpp_codegen_string_literal_from_index(2944);
+		_stringLiteral_1435731181_0 = il2cpp_codegen_string_literal_from_index(2948);
+		_stringLiteral_1365805611_0 = il2cpp_codegen_string_literal_from_index(2998);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5710,7 +6950,7 @@ extern "C"  void TitleController_ClickOptionBtn_m_1965045076_0 (TitleController_
 	if (!s_Il2CppMethodIntialized)
 	{
 		Component_GetComponent_TisAudioSource_t812398632_0_m_473561089_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484030);
-		_stringLiteral1253265457_0 = il2cpp_codegen_string_literal_from_index(2945);
+		_stringLiteral1253265457_0 = il2cpp_codegen_string_literal_from_index(2999);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5733,9 +6973,9 @@ extern "C"  void TitleController_hideObjects_m402661671_0 (TitleController_t_176
 	if (!s_Il2CppMethodIntialized)
 	{
 		GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484029);
-		GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484035);
-		_stringLiteral94756405_0 = il2cpp_codegen_string_literal_from_index(2946);
-		_stringLiteral109403483_0 = il2cpp_codegen_string_literal_from_index(2947);
+		GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484036);
+		_stringLiteral94756405_0 = il2cpp_codegen_string_literal_from_index(3000);
+		_stringLiteral109403483_0 = il2cpp_codegen_string_literal_from_index(3001);
 		s_Il2CppMethodIntialized = true;
 	}
 	GameObjectU5BU5D_t_1026454724_0* V_0 = {0};
@@ -5747,105 +6987,110 @@ extern "C"  void TitleController_hideObjects_m402661671_0 (TitleController_t_176
 	GameObjectU5BU5D_t_1026454724_0* V_6 = {0};
 	int32_t V_7 = 0;
 	{
-		GameObject_t_184308134_0 * L_0 = (__this->___Logo_6);
+		GameObject_t_184308134_0 * L_0 = (__this->___Logo_7);
 		NullCheck(L_0);
 		uTweenAlpha_t_701530469_0 * L_1 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_0, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
 		NullCheck(L_1);
 		Behaviour_set_enabled_m2046806933_0(L_1, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_2 = (__this->___Btn_start_7);
+		GameObject_t_184308134_0 * L_2 = (__this->___Btn_start_8);
 		NullCheck(L_2);
 		uTweenAlpha_t_701530469_0 * L_3 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_2, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
 		NullCheck(L_3);
 		Behaviour_set_enabled_m2046806933_0(L_3, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_4 = (__this->___Btn_record_8);
+		GameObject_t_184308134_0 * L_4 = (__this->___Btn_record_9);
 		NullCheck(L_4);
 		uTweenAlpha_t_701530469_0 * L_5 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_4, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
 		NullCheck(L_5);
 		Behaviour_set_enabled_m2046806933_0(L_5, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_6 = (__this->___Btn_option_9);
+		GameObject_t_184308134_0 * L_6 = (__this->___Btn_option_10);
 		NullCheck(L_6);
 		uTweenAlpha_t_701530469_0 * L_7 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_6, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
 		NullCheck(L_7);
 		Behaviour_set_enabled_m2046806933_0(L_7, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_8 = (__this->___Background_5);
+		GameObject_t_184308134_0 * L_8 = (__this->___Btn_line_11);
 		NullCheck(L_8);
-		uTweenPosition_t_1155963188_0 * L_9 = GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0(L_8, /*hidden argument*/GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var);
+		uTweenAlpha_t_701530469_0 * L_9 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_8, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
 		NullCheck(L_9);
 		Behaviour_set_enabled_m2046806933_0(L_9, (bool)1, /*hidden argument*/NULL);
-		GameObject_t_184308134_0 * L_10 = (__this->___Text_version_11);
+		GameObject_t_184308134_0 * L_10 = (__this->___Background_6);
 		NullCheck(L_10);
-		uTweenAlpha_t_701530469_0 * L_11 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_10, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
+		uTweenPosition_t_1155963188_0 * L_11 = GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0(L_10, /*hidden argument*/GameObject_GetComponent_TisuTweenPosition_t_1155963188_0_m739104570_0_MethodInfo_var);
 		NullCheck(L_11);
 		Behaviour_set_enabled_m2046806933_0(L_11, (bool)1, /*hidden argument*/NULL);
-		GameObjectU5BU5D_t_1026454724_0* L_12 = GameObject_FindGameObjectsWithTag_m_1236093878_0(NULL /*static, unused*/, _stringLiteral94756405_0, /*hidden argument*/NULL);
-		V_0 = L_12;
-		GameObjectU5BU5D_t_1026454724_0* L_13 = V_0;
-		V_2 = L_13;
+		GameObject_t_184308134_0 * L_12 = (__this->___Text_version_14);
+		NullCheck(L_12);
+		uTweenAlpha_t_701530469_0 * L_13 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_12, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
+		NullCheck(L_13);
+		Behaviour_set_enabled_m2046806933_0(L_13, (bool)1, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t_1026454724_0* L_14 = GameObject_FindGameObjectsWithTag_m_1236093878_0(NULL /*static, unused*/, _stringLiteral94756405_0, /*hidden argument*/NULL);
+		V_0 = L_14;
+		GameObjectU5BU5D_t_1026454724_0* L_15 = V_0;
+		V_2 = L_15;
 		V_3 = 0;
-		goto IL_008e;
+		goto IL_009f;
 	}
 
-IL_007a:
+IL_008b:
 	{
-		GameObjectU5BU5D_t_1026454724_0* L_14 = V_2;
-		int32_t L_15 = V_3;
-		NullCheck(L_14);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, L_15);
-		int32_t L_16 = L_15;
-		V_1 = (*(GameObject_t_184308134_0 **)(GameObject_t_184308134_0 **)SZArrayLdElema(L_14, L_16, sizeof(GameObject_t_184308134_0 *)));
-		GameObject_t_184308134_0 * L_17 = V_1;
-		NullCheck(L_17);
-		uTweenAlpha_t_701530469_0 * L_18 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_17, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
-		NullCheck(L_18);
-		Behaviour_set_enabled_m2046806933_0(L_18, (bool)1, /*hidden argument*/NULL);
-		int32_t L_19 = V_3;
-		V_3 = ((int32_t)((int32_t)L_19+(int32_t)1));
+		GameObjectU5BU5D_t_1026454724_0* L_16 = V_2;
+		int32_t L_17 = V_3;
+		NullCheck(L_16);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, L_17);
+		int32_t L_18 = L_17;
+		V_1 = (*(GameObject_t_184308134_0 **)(GameObject_t_184308134_0 **)SZArrayLdElema(L_16, L_18, sizeof(GameObject_t_184308134_0 *)));
+		GameObject_t_184308134_0 * L_19 = V_1;
+		NullCheck(L_19);
+		uTweenAlpha_t_701530469_0 * L_20 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_19, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
+		NullCheck(L_20);
+		Behaviour_set_enabled_m2046806933_0(L_20, (bool)1, /*hidden argument*/NULL);
+		int32_t L_21 = V_3;
+		V_3 = ((int32_t)((int32_t)L_21+(int32_t)1));
 	}
 
-IL_008e:
+IL_009f:
 	{
-		int32_t L_20 = V_3;
-		GameObjectU5BU5D_t_1026454724_0* L_21 = V_2;
-		NullCheck(L_21);
-		if ((((int32_t)L_20) < ((int32_t)(((int32_t)((int32_t)(((Array_t *)L_21)->max_length)))))))
+		int32_t L_22 = V_3;
+		GameObjectU5BU5D_t_1026454724_0* L_23 = V_2;
+		NullCheck(L_23);
+		if ((((int32_t)L_22) < ((int32_t)(((int32_t)((int32_t)(((Array_t *)L_23)->max_length)))))))
 		{
-			goto IL_007a;
+			goto IL_008b;
 		}
 	}
 	{
-		GameObjectU5BU5D_t_1026454724_0* L_22 = GameObject_FindGameObjectsWithTag_m_1236093878_0(NULL /*static, unused*/, _stringLiteral109403483_0, /*hidden argument*/NULL);
-		V_4 = L_22;
-		GameObjectU5BU5D_t_1026454724_0* L_23 = V_4;
-		V_6 = L_23;
+		GameObjectU5BU5D_t_1026454724_0* L_24 = GameObject_FindGameObjectsWithTag_m_1236093878_0(NULL /*static, unused*/, _stringLiteral109403483_0, /*hidden argument*/NULL);
+		V_4 = L_24;
+		GameObjectU5BU5D_t_1026454724_0* L_25 = V_4;
+		V_6 = L_25;
 		V_7 = 0;
-		goto IL_00c9;
+		goto IL_00da;
 	}
 
-IL_00af:
+IL_00c0:
 	{
-		GameObjectU5BU5D_t_1026454724_0* L_24 = V_6;
-		int32_t L_25 = V_7;
-		NullCheck(L_24);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_24, L_25);
-		int32_t L_26 = L_25;
-		V_5 = (*(GameObject_t_184308134_0 **)(GameObject_t_184308134_0 **)SZArrayLdElema(L_24, L_26, sizeof(GameObject_t_184308134_0 *)));
-		GameObject_t_184308134_0 * L_27 = V_5;
-		NullCheck(L_27);
-		uTweenAlpha_t_701530469_0 * L_28 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_27, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
-		NullCheck(L_28);
-		Behaviour_set_enabled_m2046806933_0(L_28, (bool)1, /*hidden argument*/NULL);
-		int32_t L_29 = V_7;
-		V_7 = ((int32_t)((int32_t)L_29+(int32_t)1));
+		GameObjectU5BU5D_t_1026454724_0* L_26 = V_6;
+		int32_t L_27 = V_7;
+		NullCheck(L_26);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_26, L_27);
+		int32_t L_28 = L_27;
+		V_5 = (*(GameObject_t_184308134_0 **)(GameObject_t_184308134_0 **)SZArrayLdElema(L_26, L_28, sizeof(GameObject_t_184308134_0 *)));
+		GameObject_t_184308134_0 * L_29 = V_5;
+		NullCheck(L_29);
+		uTweenAlpha_t_701530469_0 * L_30 = GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0(L_29, /*hidden argument*/GameObject_GetComponent_TisuTweenAlpha_t_701530469_0_m_1100562723_0_MethodInfo_var);
+		NullCheck(L_30);
+		Behaviour_set_enabled_m2046806933_0(L_30, (bool)1, /*hidden argument*/NULL);
+		int32_t L_31 = V_7;
+		V_7 = ((int32_t)((int32_t)L_31+(int32_t)1));
 	}
 
-IL_00c9:
+IL_00da:
 	{
-		int32_t L_30 = V_7;
-		GameObjectU5BU5D_t_1026454724_0* L_31 = V_6;
-		NullCheck(L_31);
-		if ((((int32_t)L_30) < ((int32_t)(((int32_t)((int32_t)(((Array_t *)L_31)->max_length)))))))
+		int32_t L_32 = V_7;
+		GameObjectU5BU5D_t_1026454724_0* L_33 = V_6;
+		NullCheck(L_33);
+		if ((((int32_t)L_32) < ((int32_t)(((int32_t)((int32_t)(((Array_t *)L_33)->max_length)))))))
 		{
-			goto IL_00af;
+			goto IL_00c0;
 		}
 	}
 	{
@@ -5859,7 +7104,7 @@ extern "C"  void TitleController_LoadStageSelectScene_m_806908283_0 (TitleContro
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral1663948154_0 = il2cpp_codegen_string_literal_from_index(2914);
+		_stringLiteral1663948154_0 = il2cpp_codegen_string_literal_from_index(2961);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5874,7 +7119,7 @@ extern "C"  void TitleController_LoadRecordScene_m_886645046_0 (TitleController_
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral_1851041679_0 = il2cpp_codegen_string_literal_from_index(2948);
+		_stringLiteral_1851041679_0 = il2cpp_codegen_string_literal_from_index(3002);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5889,7 +7134,7 @@ extern "C"  void TitleController_LoadOptionScene_m_810184154_0 (TitleController_
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral_1926269803_0 = il2cpp_codegen_string_literal_from_index(2949);
+		_stringLiteral_1926269803_0 = il2cpp_codegen_string_literal_from_index(3003);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5899,16 +7144,35 @@ extern "C"  void TitleController_LoadOptionScene_m_810184154_0 (TitleController_
 }
 // System.Void TitleController::GoLineStore()
 extern Il2CppCodeGenString* _stringLiteral268132187_0;
+extern Il2CppCodeGenString* _stringLiteral_182670408_0;
 extern "C"  void TitleController_GoLineStore_m_394690534_0 (TitleController_t_17647687_0 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral268132187_0 = il2cpp_codegen_string_literal_from_index(2950);
+		_stringLiteral268132187_0 = il2cpp_codegen_string_literal_from_index(2971);
+		_stringLiteral_182670408_0 = il2cpp_codegen_string_literal_from_index(2972);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
+		int32_t L_0 = Application_get_systemLanguage_m1182442618_0(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_0) == ((int32_t)((int32_t)22))))
+		{
+			goto IL_001b;
+		}
+	}
+	{
 		Application_OpenURL_m1861717334_0(NULL /*static, unused*/, _stringLiteral268132187_0, /*hidden argument*/NULL);
+		goto IL_0025;
+	}
+
+IL_001b:
+	{
+		Application_OpenURL_m1861717334_0(NULL /*static, unused*/, _stringLiteral_182670408_0, /*hidden argument*/NULL);
+	}
+
+IL_0025:
+	{
 		return;
 	}
 }
@@ -8063,7 +9327,7 @@ extern "C"  void uSliderColors_Start_m_630354915_0 (uSliderColors_t181032089_0 *
 		uSliderColors_OnValueChanged_m_936486334_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(399);
 		UnityAction_1__ctor_m480548041_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483889);
 		UnityEvent_1_AddListener_m994670587_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483840);
-		_stringLiteral821529059_0 = il2cpp_codegen_string_literal_from_index(2951);
+		_stringLiteral821529059_0 = il2cpp_codegen_string_literal_from_index(3004);
 		s_Il2CppMethodIntialized = true;
 	}
 	UnityAction_1_t_1952876745_0 * V_0 = {0};
@@ -9318,7 +10582,7 @@ extern "C"  Slider_t1174073094_0 * uTweenSlider_get_cacheSlider_m_1018118125_0 (
 	{
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
 		Component_GetComponent_TisSlider_t1174073094_0_m2021109205_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484045);
-		_stringLiteral759753228_0 = il2cpp_codegen_string_literal_from_index(2952);
+		_stringLiteral759753228_0 = il2cpp_codegen_string_literal_from_index(3005);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -9519,7 +10783,7 @@ extern "C"  Text_t_204341102_0 * uTweenText_get_cacheText_m232128327_0 (uTweenTe
 	{
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
 		Component_GetComponent_TisText_t_204341102_0_m1610753993_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147484039);
-		_stringLiteral1781218740_0 = il2cpp_codegen_string_literal_from_index(2953);
+		_stringLiteral1781218740_0 = il2cpp_codegen_string_literal_from_index(3006);
 		s_Il2CppMethodIntialized = true;
 	}
 	{

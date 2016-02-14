@@ -7905,6 +7905,7 @@ extern "C" void Application_get_isEditor_m1279348309_0 ();
 extern "C" void Application_get_platform_m_1376334440_0 ();
 extern "C" void Application_OpenURL_m1861717334_0 ();
 extern "C" void Application_set_targetFrameRate_m498658007_0 ();
+extern "C" void Application_get_systemLanguage_m1182442618_0 ();
 extern "C" void Application_CallLogCallback_m419361836_0 ();
 extern "C" void Application_LoadLevel_m_1572393411_0 ();
 extern "C" void Behaviour__ctor_m1624944828_0 ();
@@ -8932,6 +8933,7 @@ extern "C" void TooltipAttribute__ctor_m_953520690_0 ();
 extern "C" void SpaceAttribute__ctor_m_658125193_0 ();
 extern "C" void SpaceAttribute__ctor_m_1995133804_0 ();
 extern "C" void RangeAttribute__ctor_m1279576482_0 ();
+extern "C" void MultilineAttribute__ctor_m_1844421282_0 ();
 extern "C" void TextAreaAttribute__ctor_m_1717393841_0 ();
 extern "C" void SelectionBaseAttribute__ctor_m_464631250_0 ();
 extern "C" void StackTraceUtility__cctor_m1486031939_0 ();
@@ -10522,6 +10524,7 @@ extern "C" void OptionController_clickOnBtn_m1756372879_0 ();
 extern "C" void OptionController_clickOffBtn_m1087608957_0 ();
 extern "C" void OptionController_switchButtonInteractable_m1430474645_0 ();
 extern "C" void OptionController_GoWebSite_m_1877868741_0 ();
+extern "C" void OptionController_GoLineStore_m_187569267_0 ();
 extern "C" void OptionController_LoadTitleScene_m794820916_0 ();
 extern "C" void OptionController_CreateSheep_m_1636665977_0 ();
 extern "C" void QuitController__ctor_m_1058202224_0 ();
@@ -10562,6 +10565,8 @@ extern "C" void StageSelectController__ctor_m_7544459_0 ();
 extern "C" void StageSelectController_Start_m_1060406667_0 ();
 extern "C" void StageSelectController_CreateStageNumBtn_m1949093003_0 ();
 extern "C" void StageSelectController_LoadTitleScene_m1762402249_0 ();
+extern "C" void TextLocalizer__ctor_m_1284627409_0 ();
+extern "C" void TextLocalizer_Start_m1957477679_0 ();
 extern "C" void TitleController__ctor_m_554570249_0 ();
 extern "C" void TitleController_Start_m_1607432457_0 ();
 extern "C" void TitleController_ClickStartBtn_m_1789434153_0 ();
@@ -10896,7 +10901,7 @@ extern "C" void IOSInterstitialInterface_DismissInterstitialAd_m1571211461_0 ();
 extern "C" void IOSInterstitialInterface__LoadInterstitialAd_m1411106047_0 ();
 extern "C" void IOSInterstitialInterface__ShowInterstitialAd_m5804875_0 ();
 extern "C" void IOSInterstitialInterface__DismissInterstitialAd_m158512592_0 ();
-extern const methodPointerType g_MethodPointers[10885] = 
+extern const methodPointerType g_MethodPointers[10890] = 
 {
 	Object__ctor_m1772956182_0,
 	Object_Equals_m_1736930423_0,
@@ -18792,6 +18797,7 @@ extern const methodPointerType g_MethodPointers[10885] =
 	Application_get_platform_m_1376334440_0,
 	Application_OpenURL_m1861717334_0,
 	Application_set_targetFrameRate_m498658007_0,
+	Application_get_systemLanguage_m1182442618_0,
 	Application_CallLogCallback_m419361836_0,
 	Application_LoadLevel_m_1572393411_0,
 	Behaviour__ctor_m1624944828_0,
@@ -19819,6 +19825,7 @@ extern const methodPointerType g_MethodPointers[10885] =
 	SpaceAttribute__ctor_m_658125193_0,
 	SpaceAttribute__ctor_m_1995133804_0,
 	RangeAttribute__ctor_m1279576482_0,
+	MultilineAttribute__ctor_m_1844421282_0,
 	TextAreaAttribute__ctor_m_1717393841_0,
 	SelectionBaseAttribute__ctor_m_464631250_0,
 	StackTraceUtility__cctor_m1486031939_0,
@@ -21409,6 +21416,7 @@ extern const methodPointerType g_MethodPointers[10885] =
 	OptionController_clickOffBtn_m1087608957_0,
 	OptionController_switchButtonInteractable_m1430474645_0,
 	OptionController_GoWebSite_m_1877868741_0,
+	OptionController_GoLineStore_m_187569267_0,
 	OptionController_LoadTitleScene_m794820916_0,
 	OptionController_CreateSheep_m_1636665977_0,
 	QuitController__ctor_m_1058202224_0,
@@ -21449,6 +21457,8 @@ extern const methodPointerType g_MethodPointers[10885] =
 	StageSelectController_Start_m_1060406667_0,
 	StageSelectController_CreateStageNumBtn_m1949093003_0,
 	StageSelectController_LoadTitleScene_m1762402249_0,
+	TextLocalizer__ctor_m_1284627409_0,
+	TextLocalizer_Start_m1957477679_0,
 	TitleController__ctor_m_554570249_0,
 	TitleController_Start_m_1607432457_0,
 	TitleController_ClickStartBtn_m_1789434153_0,

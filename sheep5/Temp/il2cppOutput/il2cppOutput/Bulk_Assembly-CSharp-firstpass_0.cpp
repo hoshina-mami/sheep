@@ -723,7 +723,7 @@ extern "C"  String_t* NendAdBanner_MakeParams_m_34728174_0 (NendAdBanner_t_20503
 		StringBuilder_t586045924_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(36);
 		_stringLiteral58_0 = il2cpp_codegen_string_literal_from_index(622);
 		_stringLiteral3569038_0 = il2cpp_codegen_string_literal_from_index(1220);
-		_stringLiteral97196323_0 = il2cpp_codegen_string_literal_from_index(2954);
+		_stringLiteral97196323_0 = il2cpp_codegen_string_literal_from_index(3007);
 		s_Il2CppMethodIntialized = true;
 	}
 	StringBuilder_t586045924_0 * V_0 = {0};
@@ -1153,7 +1153,7 @@ extern "C"  void Icon__ctor_m_800174936_0 (Icon_t2133397358_0 * __this, const Me
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral_1877103645_0 = il2cpp_codegen_string_literal_from_index(2955);
+		_stringLiteral_1877103645_0 = il2cpp_codegen_string_literal_from_index(3008);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -1609,7 +1609,7 @@ extern "C"  String_t* NendAdIcon_MakeParams_m1645441503_0 (NendAdIcon_t878522906
 		StringBuilder_t586045924_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(36);
 		_stringLiteral58_0 = il2cpp_codegen_string_literal_from_index(622);
 		_stringLiteral3569038_0 = il2cpp_codegen_string_literal_from_index(1220);
-		_stringLiteral97196323_0 = il2cpp_codegen_string_literal_from_index(2954);
+		_stringLiteral97196323_0 = il2cpp_codegen_string_literal_from_index(3007);
 		_stringLiteral44_0 = il2cpp_codegen_string_literal_from_index(229);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -3738,7 +3738,7 @@ extern "C"  void NendAdIconLayoutParams__ctor_m_1230592083_0 (NendAdIconLayoutPa
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		_stringLiteral_1877103645_0 = il2cpp_codegen_string_literal_from_index(2955);
+		_stringLiteral_1877103645_0 = il2cpp_codegen_string_literal_from_index(3008);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3760,7 +3760,7 @@ extern "C"  String_t* NendAdIconLayoutParams_Join_m_772376476_0 (NendAdIconLayou
 	{
 		StringBuilder_t586045924_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(36);
 		_stringLiteral3569038_0 = il2cpp_codegen_string_literal_from_index(1220);
-		_stringLiteral97196323_0 = il2cpp_codegen_string_literal_from_index(2954);
+		_stringLiteral97196323_0 = il2cpp_codegen_string_literal_from_index(3007);
 		s_Il2CppMethodIntialized = true;
 	}
 	StringBuilder_t586045924_0 * V_0 = {0};
@@ -3877,7 +3877,7 @@ extern "C"  void Stub_TryCreateBanner_m_1067622225_0 (Stub_t205309156_0 * __this
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_267559191_0 = il2cpp_codegen_string_literal_from_index(2956);
+		_stringLiteral_267559191_0 = il2cpp_codegen_string_literal_from_index(3009);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3900,7 +3900,7 @@ extern "C"  void Stub_ShowBanner_m1719834951_0 (Stub_t205309156_0 * __this, Stri
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral1751495055_0 = il2cpp_codegen_string_literal_from_index(2957);
+		_stringLiteral1751495055_0 = il2cpp_codegen_string_literal_from_index(3010);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3923,7 +3923,7 @@ extern "C"  void Stub_HideBanner_m250094626_0 (Stub_t205309156_0 * __this, Strin
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_1129275692_0 = il2cpp_codegen_string_literal_from_index(2958);
+		_stringLiteral_1129275692_0 = il2cpp_codegen_string_literal_from_index(3011);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3946,7 +3946,7 @@ extern "C"  void Stub_ResumeBanner_m1234022999_0 (Stub_t205309156_0 * __this, St
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral194045631_0 = il2cpp_codegen_string_literal_from_index(2959);
+		_stringLiteral194045631_0 = il2cpp_codegen_string_literal_from_index(3012);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3969,7 +3969,7 @@ extern "C"  void Stub_PauseBanner_m1487168304_0 (Stub_t205309156_0 * __this, Str
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral1359073096_0 = il2cpp_codegen_string_literal_from_index(2960);
+		_stringLiteral1359073096_0 = il2cpp_codegen_string_literal_from_index(3013);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -3992,7 +3992,7 @@ extern "C"  void Stub_DestroyBanner_m1600336748_0 (Stub_t205309156_0 * __this, S
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral2137558348_0 = il2cpp_codegen_string_literal_from_index(2961);
+		_stringLiteral2137558348_0 = il2cpp_codegen_string_literal_from_index(3014);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4016,7 +4016,7 @@ extern "C"  void Stub_LayoutBanner_m1804122678_0 (Stub_t205309156_0 * __this, St
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral158190780_0 = il2cpp_codegen_string_literal_from_index(2962);
+		_stringLiteral158190780_0 = il2cpp_codegen_string_literal_from_index(3015);
 		_stringLiteral1396_0 = il2cpp_codegen_string_literal_from_index(141);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -4041,7 +4041,7 @@ extern "C"  void Stub_TryCreateIcons_m_385671091_0 (Stub_t205309156_0 * __this, 
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_526730935_0 = il2cpp_codegen_string_literal_from_index(2963);
+		_stringLiteral_526730935_0 = il2cpp_codegen_string_literal_from_index(3016);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4064,7 +4064,7 @@ extern "C"  void Stub_ShowIcons_m_1819773771_0 (Stub_t205309156_0 * __this, Stri
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_600147485_0 = il2cpp_codegen_string_literal_from_index(2964);
+		_stringLiteral_600147485_0 = il2cpp_codegen_string_literal_from_index(3017);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4087,7 +4087,7 @@ extern "C"  void Stub_HideIcons_m1596498554_0 (Stub_t205309156_0 * __this, Strin
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_1108717570_0 = il2cpp_codegen_string_literal_from_index(2965);
+		_stringLiteral_1108717570_0 = il2cpp_codegen_string_literal_from_index(3018);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4110,7 +4110,7 @@ extern "C"  void Stub_ResumeIcons_m_449971803_0 (Stub_t205309156_0 * __this, Str
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_650387789_0 = il2cpp_codegen_string_literal_from_index(2966);
+		_stringLiteral_650387789_0 = il2cpp_codegen_string_literal_from_index(3019);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4133,7 +4133,7 @@ extern "C"  void Stub_PauseIcons_m1082214828_0 (Stub_t205309156_0 * __this, Stri
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_751353590_0 = il2cpp_codegen_string_literal_from_index(2967);
+		_stringLiteral_751353590_0 = il2cpp_codegen_string_literal_from_index(3020);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4156,7 +4156,7 @@ extern "C"  void Stub_DestroyIcons_m_2100723216_0 (Stub_t205309156_0 * __this, S
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_172051834_0 = il2cpp_codegen_string_literal_from_index(2968);
+		_stringLiteral_172051834_0 = il2cpp_codegen_string_literal_from_index(3021);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4180,7 +4180,7 @@ extern "C"  void Stub_LayoutIcons_m_2086596386_0 (Stub_t205309156_0 * __this, St
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_1621375722_0 = il2cpp_codegen_string_literal_from_index(2969);
+		_stringLiteral_1621375722_0 = il2cpp_codegen_string_literal_from_index(3022);
 		_stringLiteral1396_0 = il2cpp_codegen_string_literal_from_index(141);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -4210,7 +4210,7 @@ extern "C"  void Stub_LoadInterstitialAd_m1070481222_0 (Stub_t205309156_0 * __th
 		Boolean_t_19515315_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(49);
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_1864585989_0 = il2cpp_codegen_string_literal_from_index(2970);
+		_stringLiteral_1864585989_0 = il2cpp_codegen_string_literal_from_index(3023);
 		_stringLiteral1396_0 = il2cpp_codegen_string_literal_from_index(141);
 		s_Il2CppMethodIntialized = true;
 	}
@@ -4268,7 +4268,7 @@ extern "C"  void Stub_ShowInterstitialAd_m1874576292_0 (Stub_t205309156_0 * __th
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral53916946_0 = il2cpp_codegen_string_literal_from_index(2971);
+		_stringLiteral53916946_0 = il2cpp_codegen_string_literal_from_index(3024);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4291,7 +4291,7 @@ extern "C"  void Stub_ShowFinishInterstitialAd_m1395568209_0 (Stub_t205309156_0 
 	{
 		String_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(11);
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral_1721475579_0 = il2cpp_codegen_string_literal_from_index(2972);
+		_stringLiteral_1721475579_0 = il2cpp_codegen_string_literal_from_index(3025);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -4312,7 +4312,7 @@ extern "C"  void Stub_DismissInterstitialAd_m_2050174615_0 (Stub_t205309156_0 * 
 	if (!s_Il2CppMethodIntialized)
 	{
 		Debug_t_388328406_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(826);
-		_stringLiteral1250027897_0 = il2cpp_codegen_string_literal_from_index(2973);
+		_stringLiteral1250027897_0 = il2cpp_codegen_string_literal_from_index(3026);
 		s_Il2CppMethodIntialized = true;
 	}
 	{

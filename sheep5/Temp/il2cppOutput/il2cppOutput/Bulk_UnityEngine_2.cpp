@@ -13,12 +13,14 @@
 #include <limits>
 #include <assert.h>
 
+// System.Type
+struct Type_t;
+// System.Type[]
+struct TypeU5BU5D_t_722972841_0;
 // UnityEngine.DisallowMultipleComponent
 struct DisallowMultipleComponent_t2020741865_0;
 // UnityEngine.RequireComponent
 struct RequireComponent_t1440006881_0;
-// System.Type
-struct Type_t;
 // UnityEngine.AddComponentMenu
 struct AddComponentMenu_t566700708_0;
 // System.String
@@ -67,6 +69,8 @@ struct TooltipAttribute_t1630278562_0;
 struct SpaceAttribute_t_2124856257_0;
 // UnityEngine.RangeAttribute
 struct RangeAttribute_t1566984680_0;
+// UnityEngine.MultilineAttribute
+struct MultilineAttribute_t_666471432_0;
 // UnityEngine.TextAreaAttribute
 struct TextAreaAttribute_t10991545_0;
 // UnityEngine.SelectionBaseAttribute
@@ -115,8 +119,6 @@ struct UnityEventBase_t2037213698_0;
 struct PersistentCallGroup_t_1679366146_0;
 // UnityEngine.Events.InvokableCallList
 struct InvokableCallList_t1016904887_0;
-// System.Type[]
-struct TypeU5BU5D_t_722972841_0;
 // UnityEngine.Events.UnityEvent
 struct UnityEvent_t158998417_0;
 // UnityEngine.Internal.DefaultValueAttribute
@@ -145,37 +147,47 @@ struct AsyncCallback_t_266361018_0;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array1621492670.h"
-#include "UnityEngine_UnityEngine_DisallowMultipleComponent2020741865.h"
-#include "UnityEngine_UnityEngine_DisallowMultipleComponent2020741865MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AttributeHelperEngine1411473443.h"
+#include "UnityEngine_UnityEngine_AttributeHelperEngine1411473443MethodDeclarations.h"
 #include "mscorlib_System_Void_224166001.h"
+#include "UnityEngine_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_DisallowMultipleComponent2020741865.h"
+#include "UnityEngine_UnityEngine_ExecuteInEditMode_1792787522.h"
+#include "UnityEngine_UnityEngine_RequireComponent1440006881.h"
+#include "mscorlib_System_Type_224215755.h"
+#include "System_System_Collections_Generic_Stack_1_gen1753567493MethodDeclarations.h"
+#include "mscorlib_System_Type_224215755MethodDeclarations.h"
+#include "System_System_Collections_Generic_Stack_1_gen1753567493.h"
+#include "mscorlib_ArrayTypes.h"
+#include "mscorlib_System_Object_887538054.h"
+#include "mscorlib_System_Int321628762099.h"
+#include "mscorlib_System_RuntimeTypeHandle_1394772513.h"
+#include "mscorlib_System_Reflection_MemberInfo_64224368.h"
+#include "mscorlib_System_Reflection_MemberInfo_64224368MethodDeclarations.h"
+#include "mscorlib_System_Boolean_19515315.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen_1140530411MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen_1140530411.h"
+#include "UnityEngine_UnityEngine_DisallowMultipleComponent2020741865MethodDeclarations.h"
 #include "mscorlib_System_Attribute675283329MethodDeclarations.h"
 #include "mscorlib_System_Attribute675283329.h"
-#include "UnityEngine_UnityEngine_RequireComponent1440006881.h"
 #include "UnityEngine_UnityEngine_RequireComponent1440006881MethodDeclarations.h"
-#include "mscorlib_System_Type_224215755.h"
 #include "UnityEngine_UnityEngine_AddComponentMenu566700708.h"
 #include "UnityEngine_UnityEngine_AddComponentMenu566700708MethodDeclarations.h"
 #include "mscorlib_System_String_756155572.h"
-#include "mscorlib_System_Int321628762099.h"
 #include "UnityEngine_UnityEngine_ContextMenu271536197.h"
 #include "UnityEngine_UnityEngine_ContextMenu271536197MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_ExecuteInEditMode_1792787522.h"
 #include "UnityEngine_UnityEngine_ExecuteInEditMode_1792787522MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color_388944582.h"
 #include "UnityEngine_UnityEngine_Color_388944582MethodDeclarations.h"
 #include "mscorlib_System_Single_766435453.h"
 #include "UnityEngine_UnityEngine_UnityString_1852934019MethodDeclarations.h"
-#include "mscorlib_ArrayTypes.h"
-#include "mscorlib_System_Object_887538054.h"
 #include "UnityEngine_UnityEngine_Vector4_725341336MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector4_725341336.h"
-#include "mscorlib_System_Boolean_19515315.h"
 #include "mscorlib_System_Single_766435453MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Mathf_380118987MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SetupCoroutine2114767076.h"
 #include "UnityEngine_UnityEngine_SetupCoroutine2114767076MethodDeclarations.h"
 #include "mscorlib_System_Object_887538054MethodDeclarations.h"
-#include "mscorlib_System_Type_224215755MethodDeclarations.h"
 #include "mscorlib_System_Reflection_BindingFlags_1175949782.h"
 #include "mscorlib_System_Reflection_Binder1890870994.h"
 #include "mscorlib_System_Reflection_ParameterModifier_615889032.h"
@@ -219,7 +231,6 @@ struct AsyncCallback_t_266361018_0;
 #include "UnityEngine_UnityEngine_Rendering_StencilOp_1675874990MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_LocalU984508268.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_LocalU984508268MethodDeclarations.h"
-#include "UnityEngine_ArrayTypes.h"
 #include "UnityEngine_UnityEngine_Texture2D_485082364MethodDeclarations.h"
 #include "mscorlib_System_String_756155572MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Lead_1959514221.h"
@@ -263,6 +274,8 @@ struct AsyncCallback_t_266361018_0;
 #include "UnityEngine_UnityEngine_SpaceAttribute_2124856257MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RangeAttribute1566984680.h"
 #include "UnityEngine_UnityEngine_RangeAttribute1566984680MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_MultilineAttribute_666471432.h"
+#include "UnityEngine_UnityEngine_MultilineAttribute_666471432MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_TextAreaAttribute10991545.h"
 #include "UnityEngine_UnityEngine_TextAreaAttribute10991545MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SelectionBaseAttribute2005732264.h"
@@ -277,8 +290,6 @@ struct AsyncCallback_t_266361018_0;
 #include "mscorlib_System_Text_StringBuilder586045924.h"
 #include "mscorlib_System_ArgumentException1159624695.h"
 #include "mscorlib_System_Exception2143823668MethodDeclarations.h"
-#include "mscorlib_System_Reflection_MemberInfo_64224368.h"
-#include "mscorlib_System_Reflection_MemberInfo_64224368MethodDeclarations.h"
 #include "mscorlib_System_Char_224738991.h"
 #include "mscorlib_System_Int321628762099MethodDeclarations.h"
 #include "mscorlib_System_Diagnostics_StackFrame86437538.h"
@@ -320,7 +331,6 @@ struct AsyncCallback_t_266361018_0;
 #include "UnityEngine_UnityEngine_Events_InvokableCall_1595048839MethodDeclarations.h"
 #include "UnityEngine_UnityEngineInternal_NetFxCoreExtensions45183286MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction502362143.h"
-#include "mscorlib_System_RuntimeTypeHandle_1394772513.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction502362143MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Events_UnityEventCallState2055280706.h"
 #include "UnityEngine_UnityEngine_Events_UnityEventCallState2055280706MethodDeclarations.h"
@@ -390,6 +400,455 @@ extern "C"  Object_t * Component_GetComponent_TisObject_t_m267839954_0_gshared (
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.AttributeHelperEngine::.cctor()
+extern TypeInfo* DisallowMultipleComponentU5BU5D_t607717387_0_il2cpp_TypeInfo_var;
+extern TypeInfo* AttributeHelperEngine_t1411473443_0_il2cpp_TypeInfo_var;
+extern TypeInfo* ExecuteInEditModeU5BU5D_t_586920032_0_il2cpp_TypeInfo_var;
+extern TypeInfo* RequireComponentU5BU5D_t867146243_0_il2cpp_TypeInfo_var;
+extern "C"  void AttributeHelperEngine__cctor_m_1608887232_0 (Object_t * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		DisallowMultipleComponentU5BU5D_t607717387_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(934);
+		AttributeHelperEngine_t1411473443_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(936);
+		ExecuteInEditModeU5BU5D_t_586920032_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(937);
+		RequireComponentU5BU5D_t867146243_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(939);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		((AttributeHelperEngine_t1411473443_0_StaticFields*)AttributeHelperEngine_t1411473443_0_il2cpp_TypeInfo_var->static_fields)->____disallowMultipleComponentArray_0 = ((DisallowMultipleComponentU5BU5D_t607717387_0*)SZArrayNew(DisallowMultipleComponentU5BU5D_t607717387_0_il2cpp_TypeInfo_var, (uint32_t)1));
+		((AttributeHelperEngine_t1411473443_0_StaticFields*)AttributeHelperEngine_t1411473443_0_il2cpp_TypeInfo_var->static_fields)->____executeInEditModeArray_1 = ((ExecuteInEditModeU5BU5D_t_586920032_0*)SZArrayNew(ExecuteInEditModeU5BU5D_t_586920032_0_il2cpp_TypeInfo_var, (uint32_t)1));
+		((AttributeHelperEngine_t1411473443_0_StaticFields*)AttributeHelperEngine_t1411473443_0_il2cpp_TypeInfo_var->static_fields)->____requireComponentArray_2 = ((RequireComponentU5BU5D_t867146243_0*)SZArrayNew(RequireComponentU5BU5D_t867146243_0_il2cpp_TypeInfo_var, (uint32_t)1));
+		return;
+	}
+}
+// System.Type UnityEngine.AttributeHelperEngine::GetParentTypeDisallowingMultipleInclusion(System.Type)
+extern const Il2CppType* MonoBehaviour_t_92453903_0_0_0_0_var;
+extern const Il2CppType* DisallowMultipleComponent_t2020741865_0_0_0_0_var;
+extern TypeInfo* Stack_1_t1753567493_0_il2cpp_TypeInfo_var;
+extern TypeInfo* Type_t_il2cpp_TypeInfo_var;
+extern const MethodInfo* Stack_1__ctor_m_923550805_0_MethodInfo_var;
+extern const MethodInfo* Stack_1_Push_m_681402364_0_MethodInfo_var;
+extern const MethodInfo* Stack_1_Pop_m167231674_0_MethodInfo_var;
+extern "C"  Type_t * AttributeHelperEngine_GetParentTypeDisallowingMultipleInclusion_m799857845_0 (Object_t * __this /* static, unused */, Type_t * ___type, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		MonoBehaviour_t_92453903_0_0_0_0_var = il2cpp_codegen_type_from_index(941);
+		DisallowMultipleComponent_t2020741865_0_0_0_0_var = il2cpp_codegen_type_from_index(935);
+		Stack_1_t1753567493_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(942);
+		Type_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(3);
+		Stack_1__ctor_m_923550805_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483726);
+		Stack_1_Push_m_681402364_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483727);
+		Stack_1_Pop_m167231674_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483728);
+		s_Il2CppMethodIntialized = true;
+	}
+	Stack_1_t1753567493_0 * V_0 = {0};
+	Type_t * V_1 = {0};
+	ObjectU5BU5D_t1774424924_0* V_2 = {0};
+	int32_t V_3 = 0;
+	{
+		Stack_1_t1753567493_0 * L_0 = (Stack_1_t1753567493_0 *)il2cpp_codegen_object_new (Stack_1_t1753567493_0_il2cpp_TypeInfo_var);
+		Stack_1__ctor_m_923550805_0(L_0, /*hidden argument*/Stack_1__ctor_m_923550805_0_MethodInfo_var);
+		V_0 = L_0;
+		goto IL_001a;
+	}
+
+IL_000b:
+	{
+		Stack_1_t1753567493_0 * L_1 = V_0;
+		Type_t * L_2 = ___type;
+		NullCheck(L_1);
+		Stack_1_Push_m_681402364_0(L_1, L_2, /*hidden argument*/Stack_1_Push_m_681402364_0_MethodInfo_var);
+		Type_t * L_3 = ___type;
+		NullCheck(L_3);
+		Type_t * L_4 = (Type_t *)VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Type::get_BaseType() */, L_3);
+		___type = L_4;
+	}
+
+IL_001a:
+	{
+		Type_t * L_5 = ___type;
+		if (!L_5)
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		Type_t * L_6 = ___type;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_7 = Type_GetTypeFromHandle_m_488061862_0(NULL /*static, unused*/, LoadTypeToken(MonoBehaviour_t_92453903_0_0_0_0_var), /*hidden argument*/NULL);
+		if ((!(((Object_t*)(Type_t *)L_6) == ((Object_t*)(Type_t *)L_7))))
+		{
+			goto IL_000b;
+		}
+	}
+
+IL_0030:
+	{
+		V_1 = (Type_t *)NULL;
+		goto IL_005c;
+	}
+
+IL_0037:
+	{
+		Stack_1_t1753567493_0 * L_8 = V_0;
+		NullCheck(L_8);
+		Type_t * L_9 = Stack_1_Pop_m167231674_0(L_8, /*hidden argument*/Stack_1_Pop_m167231674_0_MethodInfo_var);
+		V_1 = L_9;
+		Type_t * L_10 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_11 = Type_GetTypeFromHandle_m_488061862_0(NULL /*static, unused*/, LoadTypeToken(DisallowMultipleComponent_t2020741865_0_0_0_0_var), /*hidden argument*/NULL);
+		NullCheck(L_10);
+		ObjectU5BU5D_t1774424924_0* L_12 = (ObjectU5BU5D_t1774424924_0*)VirtFuncInvoker2< ObjectU5BU5D_t1774424924_0*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_10, L_11, (bool)0);
+		V_2 = L_12;
+		ObjectU5BU5D_t1774424924_0* L_13 = V_2;
+		NullCheck(L_13);
+		V_3 = (((int32_t)((int32_t)(((Array_t *)L_13)->max_length))));
+		int32_t L_14 = V_3;
+		if (!L_14)
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		Type_t * L_15 = V_1;
+		return L_15;
+	}
+
+IL_005c:
+	{
+		Stack_1_t1753567493_0 * L_16 = V_0;
+		NullCheck(L_16);
+		int32_t L_17 = (int32_t)VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 System.Collections.Generic.Stack`1<System.Type>::get_Count() */, L_16);
+		if ((((int32_t)L_17) > ((int32_t)0)))
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		return (Type_t *)NULL;
+	}
+}
+// System.Type[] UnityEngine.AttributeHelperEngine::GetRequiredComponents(System.Type)
+extern const Il2CppType* RequireComponent_t1440006881_0_0_0_0_var;
+extern const Il2CppType* MonoBehaviour_t_92453903_0_0_0_0_var;
+extern TypeInfo* Type_t_il2cpp_TypeInfo_var;
+extern TypeInfo* RequireComponentU5BU5D_t867146243_0_il2cpp_TypeInfo_var;
+extern TypeInfo* TypeU5BU5D_t_722972841_0_il2cpp_TypeInfo_var;
+extern TypeInfo* List_1_t_1140530411_0_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1__ctor_m_1179608863_0_MethodInfo_var;
+extern const MethodInfo* List_1_ToArray_m1108445279_0_MethodInfo_var;
+extern "C"  TypeU5BU5D_t_722972841_0* AttributeHelperEngine_GetRequiredComponents_m_1628851829_0 (Object_t * __this /* static, unused */, Type_t * ___klass, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		RequireComponent_t1440006881_0_0_0_0_var = il2cpp_codegen_type_from_index(940);
+		MonoBehaviour_t_92453903_0_0_0_0_var = il2cpp_codegen_type_from_index(941);
+		Type_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(3);
+		RequireComponentU5BU5D_t867146243_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(939);
+		TypeU5BU5D_t_722972841_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(57);
+		List_1_t_1140530411_0_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(943);
+		List_1__ctor_m_1179608863_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483729);
+		List_1_ToArray_m1108445279_0_MethodInfo_var = il2cpp_codegen_method_info_from_index(2147483730);
+		s_Il2CppMethodIntialized = true;
+	}
+	List_1_t_1140530411_0 * V_0 = {0};
+	RequireComponentU5BU5D_t867146243_0* V_1 = {0};
+	Type_t * V_2 = {0};
+	RequireComponent_t1440006881_0 * V_3 = {0};
+	RequireComponentU5BU5D_t867146243_0* V_4 = {0};
+	int32_t V_5 = 0;
+	TypeU5BU5D_t_722972841_0* V_6 = {0};
+	{
+		V_0 = (List_1_t_1140530411_0 *)NULL;
+		goto IL_00e0;
+	}
+
+IL_0007:
+	{
+		Type_t * L_0 = ___klass;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m_488061862_0(NULL /*static, unused*/, LoadTypeToken(RequireComponent_t1440006881_0_0_0_0_var), /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ObjectU5BU5D_t1774424924_0* L_2 = (ObjectU5BU5D_t1774424924_0*)VirtFuncInvoker2< ObjectU5BU5D_t1774424924_0*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_1, (bool)0);
+		V_1 = ((RequireComponentU5BU5D_t867146243_0*)Castclass(L_2, RequireComponentU5BU5D_t867146243_0_il2cpp_TypeInfo_var));
+		Type_t * L_3 = ___klass;
+		NullCheck(L_3);
+		Type_t * L_4 = (Type_t *)VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Type::get_BaseType() */, L_3);
+		V_2 = L_4;
+		RequireComponentU5BU5D_t867146243_0* L_5 = V_1;
+		V_4 = L_5;
+		V_5 = 0;
+		goto IL_00d2;
+	}
+
+IL_0030:
+	{
+		RequireComponentU5BU5D_t867146243_0* L_6 = V_4;
+		int32_t L_7 = V_5;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_7);
+		int32_t L_8 = L_7;
+		V_3 = (*(RequireComponent_t1440006881_0 **)(RequireComponent_t1440006881_0 **)SZArrayLdElema(L_6, L_8, sizeof(RequireComponent_t1440006881_0 *)));
+		List_1_t_1140530411_0 * L_9 = V_0;
+		if (L_9)
+		{
+			goto IL_007b;
+		}
+	}
+	{
+		RequireComponentU5BU5D_t867146243_0* L_10 = V_1;
+		NullCheck(L_10);
+		if ((!(((uint32_t)(((int32_t)((int32_t)(((Array_t *)L_10)->max_length))))) == ((uint32_t)1))))
+		{
+			goto IL_007b;
+		}
+	}
+	{
+		Type_t * L_11 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_12 = Type_GetTypeFromHandle_m_488061862_0(NULL /*static, unused*/, LoadTypeToken(MonoBehaviour_t_92453903_0_0_0_0_var), /*hidden argument*/NULL);
+		if ((!(((Object_t*)(Type_t *)L_11) == ((Object_t*)(Type_t *)L_12))))
+		{
+			goto IL_007b;
+		}
+	}
+	{
+		TypeU5BU5D_t_722972841_0* L_13 = ((TypeU5BU5D_t_722972841_0*)SZArrayNew(TypeU5BU5D_t_722972841_0_il2cpp_TypeInfo_var, (uint32_t)3));
+		RequireComponent_t1440006881_0 * L_14 = V_3;
+		NullCheck(L_14);
+		Type_t * L_15 = (L_14->___m_Type0_0);
+		NullCheck(L_13);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, 0);
+		ArrayElementTypeCheck (L_13, L_15);
+		*((Type_t **)(Type_t **)SZArrayLdElema(L_13, 0, sizeof(Type_t *))) = (Type_t *)L_15;
+		TypeU5BU5D_t_722972841_0* L_16 = L_13;
+		RequireComponent_t1440006881_0 * L_17 = V_3;
+		NullCheck(L_17);
+		Type_t * L_18 = (L_17->___m_Type1_1);
+		NullCheck(L_16);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, 1);
+		ArrayElementTypeCheck (L_16, L_18);
+		*((Type_t **)(Type_t **)SZArrayLdElema(L_16, 1, sizeof(Type_t *))) = (Type_t *)L_18;
+		TypeU5BU5D_t_722972841_0* L_19 = L_16;
+		RequireComponent_t1440006881_0 * L_20 = V_3;
+		NullCheck(L_20);
+		Type_t * L_21 = (L_20->___m_Type2_2);
+		NullCheck(L_19);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, 2);
+		ArrayElementTypeCheck (L_19, L_21);
+		*((Type_t **)(Type_t **)SZArrayLdElema(L_19, 2, sizeof(Type_t *))) = (Type_t *)L_21;
+		V_6 = L_19;
+		TypeU5BU5D_t_722972841_0* L_22 = V_6;
+		return L_22;
+	}
+
+IL_007b:
+	{
+		List_1_t_1140530411_0 * L_23 = V_0;
+		if (L_23)
+		{
+			goto IL_0087;
+		}
+	}
+	{
+		List_1_t_1140530411_0 * L_24 = (List_1_t_1140530411_0 *)il2cpp_codegen_object_new (List_1_t_1140530411_0_il2cpp_TypeInfo_var);
+		List_1__ctor_m_1179608863_0(L_24, /*hidden argument*/List_1__ctor_m_1179608863_0_MethodInfo_var);
+		V_0 = L_24;
+	}
+
+IL_0087:
+	{
+		RequireComponent_t1440006881_0 * L_25 = V_3;
+		NullCheck(L_25);
+		Type_t * L_26 = (L_25->___m_Type0_0);
+		if (!L_26)
+		{
+			goto IL_009e;
+		}
+	}
+	{
+		List_1_t_1140530411_0 * L_27 = V_0;
+		RequireComponent_t1440006881_0 * L_28 = V_3;
+		NullCheck(L_28);
+		Type_t * L_29 = (L_28->___m_Type0_0);
+		NullCheck(L_27);
+		VirtActionInvoker1< Type_t * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<System.Type>::Add(!0) */, L_27, L_29);
+	}
+
+IL_009e:
+	{
+		RequireComponent_t1440006881_0 * L_30 = V_3;
+		NullCheck(L_30);
+		Type_t * L_31 = (L_30->___m_Type1_1);
+		if (!L_31)
+		{
+			goto IL_00b5;
+		}
+	}
+	{
+		List_1_t_1140530411_0 * L_32 = V_0;
+		RequireComponent_t1440006881_0 * L_33 = V_3;
+		NullCheck(L_33);
+		Type_t * L_34 = (L_33->___m_Type1_1);
+		NullCheck(L_32);
+		VirtActionInvoker1< Type_t * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<System.Type>::Add(!0) */, L_32, L_34);
+	}
+
+IL_00b5:
+	{
+		RequireComponent_t1440006881_0 * L_35 = V_3;
+		NullCheck(L_35);
+		Type_t * L_36 = (L_35->___m_Type2_2);
+		if (!L_36)
+		{
+			goto IL_00cc;
+		}
+	}
+	{
+		List_1_t_1140530411_0 * L_37 = V_0;
+		RequireComponent_t1440006881_0 * L_38 = V_3;
+		NullCheck(L_38);
+		Type_t * L_39 = (L_38->___m_Type2_2);
+		NullCheck(L_37);
+		VirtActionInvoker1< Type_t * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<System.Type>::Add(!0) */, L_37, L_39);
+	}
+
+IL_00cc:
+	{
+		int32_t L_40 = V_5;
+		V_5 = ((int32_t)((int32_t)L_40+(int32_t)1));
+	}
+
+IL_00d2:
+	{
+		int32_t L_41 = V_5;
+		RequireComponentU5BU5D_t867146243_0* L_42 = V_4;
+		NullCheck(L_42);
+		if ((((int32_t)L_41) < ((int32_t)(((int32_t)((int32_t)(((Array_t *)L_42)->max_length)))))))
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		Type_t * L_43 = V_2;
+		___klass = L_43;
+	}
+
+IL_00e0:
+	{
+		Type_t * L_44 = ___klass;
+		if (!L_44)
+		{
+			goto IL_00f6;
+		}
+	}
+	{
+		Type_t * L_45 = ___klass;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_46 = Type_GetTypeFromHandle_m_488061862_0(NULL /*static, unused*/, LoadTypeToken(MonoBehaviour_t_92453903_0_0_0_0_var), /*hidden argument*/NULL);
+		if ((!(((Object_t*)(Type_t *)L_45) == ((Object_t*)(Type_t *)L_46))))
+		{
+			goto IL_0007;
+		}
+	}
+
+IL_00f6:
+	{
+		List_1_t_1140530411_0 * L_47 = V_0;
+		if (L_47)
+		{
+			goto IL_00fe;
+		}
+	}
+	{
+		return (TypeU5BU5D_t_722972841_0*)NULL;
+	}
+
+IL_00fe:
+	{
+		List_1_t_1140530411_0 * L_48 = V_0;
+		NullCheck(L_48);
+		TypeU5BU5D_t_722972841_0* L_49 = List_1_ToArray_m1108445279_0(L_48, /*hidden argument*/List_1_ToArray_m1108445279_0_MethodInfo_var);
+		return L_49;
+	}
+}
+// System.Boolean UnityEngine.AttributeHelperEngine::CheckIsEditorScript(System.Type)
+extern const Il2CppType* ExecuteInEditMode_t_1792787522_0_0_0_0_var;
+extern const Il2CppType* MonoBehaviour_t_92453903_0_0_0_0_var;
+extern TypeInfo* Type_t_il2cpp_TypeInfo_var;
+extern "C"  bool AttributeHelperEngine_CheckIsEditorScript_m2105533310_0 (Object_t * __this /* static, unused */, Type_t * ___klass, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		ExecuteInEditMode_t_1792787522_0_0_0_0_var = il2cpp_codegen_type_from_index(938);
+		MonoBehaviour_t_92453903_0_0_0_0_var = il2cpp_codegen_type_from_index(941);
+		Type_t_il2cpp_TypeInfo_var = il2cpp_codegen_type_info_from_index(3);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t1774424924_0* V_0 = {0};
+	int32_t V_1 = 0;
+	{
+		goto IL_002b;
+	}
+
+IL_0005:
+	{
+		Type_t * L_0 = ___klass;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_1 = Type_GetTypeFromHandle_m_488061862_0(NULL /*static, unused*/, LoadTypeToken(ExecuteInEditMode_t_1792787522_0_0_0_0_var), /*hidden argument*/NULL);
+		NullCheck(L_0);
+		ObjectU5BU5D_t1774424924_0* L_2 = (ObjectU5BU5D_t1774424924_0*)VirtFuncInvoker2< ObjectU5BU5D_t1774424924_0*, Type_t *, bool >::Invoke(13 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_1, (bool)0);
+		V_0 = L_2;
+		ObjectU5BU5D_t1774424924_0* L_3 = V_0;
+		NullCheck(L_3);
+		V_1 = (((int32_t)((int32_t)(((Array_t *)L_3)->max_length))));
+		int32_t L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_0023:
+	{
+		Type_t * L_5 = ___klass;
+		NullCheck(L_5);
+		Type_t * L_6 = (Type_t *)VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Type::get_BaseType() */, L_5);
+		___klass = L_6;
+	}
+
+IL_002b:
+	{
+		Type_t * L_7 = ___klass;
+		if (!L_7)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		Type_t * L_8 = ___klass;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_9 = Type_GetTypeFromHandle_m_488061862_0(NULL /*static, unused*/, LoadTypeToken(MonoBehaviour_t_92453903_0_0_0_0_var), /*hidden argument*/NULL);
+		if ((!(((Object_t*)(Type_t *)L_8) == ((Object_t*)(Type_t *)L_9))))
+		{
+			goto IL_0005;
+		}
+	}
+
+IL_0041:
+	{
+		return (bool)0;
+	}
+}
 // System.Void UnityEngine.DisallowMultipleComponent::.ctor()
 extern "C"  void DisallowMultipleComponent__ctor_m_1124452729_0 (DisallowMultipleComponent_t2020741865_0 * __this, const MethodInfo* method)
 {
@@ -3183,6 +3642,15 @@ extern "C"  void RangeAttribute__ctor_m1279576482_0 (RangeAttribute_t1566984680_
 		__this->___min_0 = L_0;
 		float L_1 = ___max;
 		__this->___max_1 = L_1;
+		return;
+	}
+}
+// System.Void UnityEngine.MultilineAttribute::.ctor()
+extern "C"  void MultilineAttribute__ctor_m_1844421282_0 (MultilineAttribute_t_666471432_0 * __this, const MethodInfo* method)
+{
+	{
+		PropertyAttribute__ctor_m1741701746_0(__this, /*hidden argument*/NULL);
+		__this->___lines_0 = 3;
 		return;
 	}
 }

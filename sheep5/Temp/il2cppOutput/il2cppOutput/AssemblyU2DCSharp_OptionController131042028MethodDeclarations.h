@@ -31,6 +31,8 @@ extern "C"  void OptionController_clickOffBtn_m1087608957_0 (OptionController_t1
 extern "C"  void OptionController_switchButtonInteractable_m1430474645_0 (OptionController_t131042028_0 * __this, GameObject_t_184308134_0 * ____target, bool ____isInteractable, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void OptionController::GoWebSite()
 extern "C"  void OptionController_GoWebSite_m_1877868741_0 (OptionController_t131042028_0 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void OptionController::GoLineStore()
+extern "C"  void OptionController_GoLineStore_m_187569267_0 (OptionController_t131042028_0 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void OptionController::LoadTitleScene()
 extern "C"  void OptionController_LoadTitleScene_m794820916_0 (OptionController_t131042028_0 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void OptionController::CreateSheep()

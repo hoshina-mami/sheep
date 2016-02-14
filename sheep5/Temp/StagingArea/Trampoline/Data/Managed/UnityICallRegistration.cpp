@@ -1,4 +1,4 @@
-//Generated on : 2016/02/13 23:40:11
+//Generated on : 2016/02/14 16:40:09
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AnimationCurve
@@ -62,6 +62,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 		void Register_UnityEngine_Application_get_platform();
 		Register_UnityEngine_Application_get_platform();
+
+		//UnityEngine.SystemLanguage UnityEngine.Application::get_systemLanguage()
+		void Register_UnityEngine_Application_get_systemLanguage();
+		Register_UnityEngine_Application_get_systemLanguage();
 
 	//End Registrations for type : UnityEngine.Application
 

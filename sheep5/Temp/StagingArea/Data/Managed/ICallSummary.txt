@@ -11,6 +11,7 @@ UnityEngine.Application::OpenURL
 UnityEngine.Application::Quit
 UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
+UnityEngine.Application::get_systemLanguage
 UnityEngine.AssetBundle::LoadAsset_Internal
 UnityEngine.AssetBundle::LoadAssetWithSubAssets_Internal
 UnityEngine.AssetBundleCreateRequest::DisableCompatibilityChecks
