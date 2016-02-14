@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\SheepSpriteAnim.cs" />
      <Compile Include="Assets\Scripts\StageData.cs" />
      <Compile Include="Assets\Scripts\StageSelectController.cs" />
+     <Compile Include="Assets\Scripts\TextLocalizer.cs" />
      <Compile Include="Assets\Scripts\TitleController.cs" />
      <Compile Include="Assets\uGUI\Scripts\Internal\uDragObject.cs" />
      <Compile Include="Assets\uGUI\Scripts\Internal\uEnum.cs" />

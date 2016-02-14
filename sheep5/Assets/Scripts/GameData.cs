@@ -246,6 +246,213 @@ public class GameData {
 	public SheepData GetStSheepData (int sheepId) {
 		
 		SheepData _sheep = new SheepData();
+
+		if (Application.systemLanguage != SystemLanguage.Japanese) {
+			switch (sheepId) {
+				case 1:
+					_sheep.SheepId = 1;
+					_sheep.SheepName = "Sheep";
+					_sheep.SheepDescription = "They are ordinary sheeps.";
+					_sheep.SheepHint = "1度あそべば出会えるかも…？";
+					_sheep.UnlockStage = 1;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_1");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_1");
+					break;
+
+				case 2:
+					_sheep.SheepId = 2;
+					_sheep.SheepName = "Ribbon sheep";
+					_sheep.SheepDescription = "They are snazzy sheeps.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 2;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_2");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_2");
+					break;
+
+				case 3:
+					_sheep.SheepId = 3;
+					_sheep.SheepName = "Orange sheep";
+					_sheep.SheepDescription = "They are longing to japanese KAGAMI MOCHI.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 0;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_3");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_3");
+					break;
+
+				case 4:
+					_sheep.SheepId = 4;
+					_sheep.SheepName = "SAKURA sheep";
+					_sheep.SheepDescription = "They like SAKURA MOCHI that is rice cake wrapped in a cherry leaf.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 4;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_4");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_4");
+					break;
+
+				case 5:
+					_sheep.SheepId = 5;
+					_sheep.SheepName = "White sheep";
+					_sheep.SheepDescription = "They will eventually become ordinary sheeps.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 8;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_5");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_5");
+					break;
+
+				case 6:
+					_sheep.SheepId = 6;
+					_sheep.SheepName = "Black sheep";
+					_sheep.SheepDescription = "They like a prank.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 6;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_6");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_6");
+					break;
+
+				case 7:
+					_sheep.SheepId = 7;
+					_sheep.SheepName = "Happy sheep";
+					_sheep.SheepDescription = "They are happy mood.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 11;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_7");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_7");
+					break;
+
+				case 8:
+					_sheep.SheepId = 8;
+					_sheep.SheepName = "Red beans sheep";
+					_sheep.SheepDescription = "They like Japanese confectionery.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 13;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_8");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_8");
+					break;
+
+				case 9:
+					_sheep.SheepId = 9;
+					_sheep.SheepName = "KASHIWA sheep";
+					_sheep.SheepDescription = "They like KASHIWA MOCHI that is rice cake wrapped in a daimyo oak leaf.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 0;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_9");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_9");
+					break;
+
+				case 10:
+					_sheep.SheepId = 10;
+					_sheep.SheepName = "Blue sheep";
+					_sheep.SheepDescription = "They love summer!";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 21;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_10");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_10");
+					break;
+
+				case 11:
+					_sheep.SheepId = 11;
+					_sheep.SheepName = "Santa sheep";
+					_sheep.SheepDescription = "They love Christmas!";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 0;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_11");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_11");
+					break;
+
+				case 12:
+					_sheep.SheepId = 12;
+					_sheep.SheepName = "Wormwood sheep";
+					_sheep.SheepDescription = "They are good friends with Red beans sheeps.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 11;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_12");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_12");
+					break;
+
+				case 13:
+					_sheep.SheepId = 13;
+					_sheep.SheepName = "Chocolate sheep";
+					_sheep.SheepDescription = "They love chocolate!!";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 17;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_13");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_13");
+					break;
+
+				case 14:
+					_sheep.SheepId = 14;
+					_sheep.SheepName = "Hydrangea sheep";
+					_sheep.SheepDescription = "They like Hydrangea and rainy season.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 24;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_14");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_14");
+					break;
+
+				case 15:
+					_sheep.SheepId = 15;
+					_sheep.SheepName = "Tomato sheep";
+					_sheep.SheepDescription = "They like ripe tomatoes.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 27;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_15");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_15");
+					break;
+
+				case 16:
+					_sheep.SheepId = 16;
+					_sheep.SheepName = "Star sheep";
+					_sheep.SheepDescription = "They like starry sky.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 0;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_16");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_16");
+					break;
+
+				case 17:
+					_sheep.SheepId = 17;
+					_sheep.SheepName = "ASAGAO sheep";
+					_sheep.SheepDescription = "They like morning glory.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 0;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_17");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_17");
+					break;
+					
+				case 18:
+					_sheep.SheepId = 18;
+					_sheep.SheepName = "Lemon sheep";
+					_sheep.SheepDescription = "They like lemon.";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 0;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_18");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_18");
+					break;
+
+				case 19:
+					_sheep.SheepId = 19;
+					_sheep.SheepName = "King sheep";
+					_sheep.SheepDescription = "He is the king of sheeps. Congratulations on all stage completion!";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 30;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_19");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_19");
+					break;
+
+				case 20:
+					_sheep.SheepId = 20;
+					_sheep.SheepName = "Doctor sheep";
+					_sheep.SheepDescription = "He holds a PhD. Thank you for collecting all the sheep!";
+					_sheep.SheepHint = "";
+					_sheep.UnlockStage = 0;
+					_sheep.IsUnlocked = PlayerPrefs.GetInt("SheepUnlockedFlg_20");
+					_sheep.IsChecked = PlayerPrefs.GetInt("SheepCheckedFlg_20");
+					break;
+
+				default:
+					break;
+			}
+		} else {
 		
 		switch (sheepId) {
 			case 1:
@@ -451,6 +658,7 @@ public class GameData {
 			default:
 				break;
 		}
+	}
 
 		return _sheep;
 		

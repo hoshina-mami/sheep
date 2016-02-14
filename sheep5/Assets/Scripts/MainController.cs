@@ -137,6 +137,12 @@ public class MainController : MonoBehaviour {
 		switchButtonInteractable (Btn_plus, false);
 		switchButtonInteractable (Btn_minus, false);
 
+		//チュートリアルテキスト背景設定
+		if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Pic_tutorial.GetComponent<Image> ().enabled = false;
+			Pic_tutorial2.GetComponent<Image> ().enabled = false;
+		}
+
 
 		//ゲームスタート --------------------
 		showStageInfo();
@@ -180,7 +186,11 @@ public class MainController : MonoBehaviour {
 	void showStageInfo () {
 
 		//ステージ番号を表示
-		Text_stage.GetComponent<Text>().text = "ステージ  " + _StageNum.ToString() + "-" + thisStageClearCount.ToString();
+		if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Text_stage.GetComponent<Text>().text = "Stage  " + _StageNum.ToString() + "-" + thisStageClearCount.ToString();
+		} else {
+			Text_stage.GetComponent<Text>().text = "ステージ  " + _StageNum.ToString() + "-" + thisStageClearCount.ToString();
+		}
 
 		switch (_StageNum) {
 			case 1:
@@ -192,6 +202,19 @@ public class MainController : MonoBehaviour {
 				break;
 
 			case 2:
+			case 3:
+			case 4:
+			case 5:
+			case 11:
+			case 12:
+			case 13:
+			case 14:
+			case 15:
+			case 21:
+			case 22:
+			case 23:
+			case 24:
+			case 25:
 				//チュートリアル画像を残す＆そのための間をとる
 				Destroy(Pic_tutorial);
 				Destroy(Pic_tutorial6);
@@ -200,8 +223,20 @@ public class MainController : MonoBehaviour {
 				break;
 
 			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
 			case 16:
+			case 17:
+			case 18:
+			case 19:
+			case 20:
 			case 26:
+			case 27:
+			case 28:
+			case 29:
+			case 30:
 				//チュートリアル画像を残す＆そのための間をとる
 				Destroy(Pic_tutorial);
 				Destroy(Pic_tutorial2);
@@ -223,7 +258,11 @@ public class MainController : MonoBehaviour {
 	//「よーいどん！」を表示
 	void showReadyGo () {
 
-		Text_readyGo_text.text = "よーい.";
+		if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Text_readyGo_text.text = "Ready.";
+		} else {
+			Text_readyGo_text.text = "よーい.";
+		}
 
 		Invoke("addDot",  0.5f);
 		Invoke("addDot",  1.0f);
@@ -242,7 +281,11 @@ public class MainController : MonoBehaviour {
 	}
 	void showGo () {
 		
-		Text_readyGo_text.text  = "どん！";
+		if (Application.systemLanguage != SystemLanguage.Japanese) {
+			Text_readyGo_text.text = "Go!";
+		} else {
+			Text_readyGo_text.text  = "どん！";
+		}
 		
 	}
 	void hideReadyGo () {
@@ -441,10 +484,18 @@ public class MainController : MonoBehaviour {
 
 				//ステージ30クリアの場合
 				if (_StageNum == 30) {
-					Text_stageClear.GetComponent<Text> ().text = "オールクリアおめでとう！";
+					if (Application.systemLanguage != SystemLanguage.Japanese) {
+						Text_stageClear.GetComponent<Text> ().text = "All stage complete!";
+					} else {
+						Text_stageClear.GetComponent<Text> ().text = "オールクリアおめでとう！";
+					}
 					Btn_next.SetActive(false);
 				} else {
-					Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
+					if (Application.systemLanguage != SystemLanguage.Japanese) {
+						Text_stageClear.GetComponent<Text> ().text = "Stage" + _StageNum.ToString() + "　complete！";
+					} else {
+						Text_stageClear.GetComponent<Text> ().text = "ステージ" + _StageNum.ToString() + "　クリア！";
+					}
 				}
 
 				if (_StageNum > _HighScoreStageNum) {
@@ -479,8 +530,11 @@ public class MainController : MonoBehaviour {
 
 			//不正解の場合
 			Text_batsuCount.GetComponent<Text> ().text = ResultSheepCount.ToString();
-			Text_currentRecord.GetComponent<Text> ().text = "ざんねん...";
-			//Text_currentRecord.GetComponent<Text> ().text = "きろく　ステージ" + (_StageNum - 1).ToString();
+			if (Application.systemLanguage != SystemLanguage.Japanese) {
+				Text_currentRecord.GetComponent<Text> ().text = "failed...";
+			} else {
+				Text_currentRecord.GetComponent<Text> ().text = "ざんねん...";
+			}
 
 			//不正解画像表示
 			Pic_batsu.SetActive(true);
@@ -568,9 +622,15 @@ public class MainController : MonoBehaviour {
      */
     public void shareSocial () {
 
+    	string tweet;
+
     	PlayerPrefs.SetInt("RetryCoinNum", retryCoinNum + 1);
 
-    	string tweet = "ステージ" + _StageNum + "をクリアしたよ！和み系ひまつぶしゲーム「ひつじだま」 #ひつじだま http://hitsuji-dama.com/";
+    	if (Application.systemLanguage != SystemLanguage.Japanese) {
+			tweet = "Stage" + _StageNum + " complete！Let's count cute rolling sheeps! #HITSUJIDAMA http://hitsuji-dama.com/";
+		} else {
+			tweet = "ステージ" + _StageNum + " クリア！和み系ひまつぶしゲーム #ひつじだま プレイ中！ http://hitsuji-dama.com/";
+		}
 
 		Application.OpenURL("https://twitter.com/intent/tweet?text=" + WWW.EscapeURL(tweet));
 
