@@ -80,17 +80,12 @@
      <Compile Include="Assets\uGUI\Scripts\Tween\uTweenText.cs" />
      <Compile Include="Assets\uGUI\Scripts\Tween\uTweenValue.cs" />
      <Compile Include="Assets\uGUI\Scripts\Tween\uTweener.cs" />
-     <None Include="Assets\Plugins\iOS\NADView_readme.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{AAA9F55C-E83C-8096-B95F-A2DF1CAD65DB}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
