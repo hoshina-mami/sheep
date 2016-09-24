@@ -52,6 +52,19 @@ public class StageSelectController : MonoBehaviour {
 	
 	}
 
+	void Update () {
+		// プラットフォームがアンドロイドかチェック
+		if (Application.platform == RuntimePlatform.Android)
+		{
+		    // エスケープキー取得
+		    if (Input.GetKey(KeyCode.Escape))
+		    {
+		        Application.LoadLevel("Title");
+		        return;
+		    }
+		}
+	}
+
 
 	/*
 	 * ステージ選択ボタンを生成する処理

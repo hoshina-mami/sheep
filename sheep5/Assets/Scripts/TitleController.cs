@@ -66,12 +66,23 @@ public class TitleController : MonoBehaviour {
 			Pic_noti2.SetActive(false);
 		}
 
-		//debug
-		//Debug.Log(PlayerPrefs.GetInt("RetryCoinNum"));
-
 		//start sheep animation
 		TitleControllerObj.GetComponent<CreateSheeps>().StartCreateSheep ();
 	
+	}
+
+	void Update () {
+		// プラットフォームがアンドロイドかチェック
+		if (Application.platform == RuntimePlatform.Android)
+		{
+		    // エスケープキー取得
+		    if (Input.GetKey(KeyCode.Escape))
+		    {
+		        // アプリケーション終了
+		        Application.Quit();
+		        return;
+		    }
+		}
 	}
 
 

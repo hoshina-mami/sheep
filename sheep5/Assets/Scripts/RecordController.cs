@@ -99,6 +99,19 @@ public class RecordController : MonoBehaviour {
 	
 	}
 
+	void Update () {
+		// プラットフォームがアンドロイドかチェック
+		if (Application.platform == RuntimePlatform.Android)
+		{
+		    // エスケープキー取得
+		    if (Input.GetKey(KeyCode.Escape))
+		    {
+		        Application.LoadLevel("Title");
+		        return;
+		    }
+		}
+	}
+
 
 	/*
 	 * ひつじ一覧を生成する処理
